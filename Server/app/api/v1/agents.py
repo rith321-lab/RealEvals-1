@@ -24,7 +24,6 @@ async def get_my_agents(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user)
 ):
-    """Get all agents for current user"""
     controller = AgentController(db)
     return await controller.get_user_agents(current_user.id)
 
@@ -34,7 +33,7 @@ async def get_agent(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user)
 ):
-    """Get specific agent details"""
+    
     try:
         agent_uuid = UUID(agent_id)
     except ValueError:

@@ -6,17 +6,15 @@ function HomePage() {
   return (
     <HomeLayout>
       <div className="min-h-[90vh] flex flex-col lg:flex-row items-center justify-center gap-10 px-8 lg:px-16 text-white">
-        {/* Text Section */}
         <div className="lg:w-1/2 text-center lg:text-left space-y-6">
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Elevate Your Skills with
+            Evaluate Agents with
             <span className="text-yellow-500"> RealEvals</span>
           </h1>
           <p className="text-lg text-gray-300">Test Agents with ease</p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-            <Link to="/courses">
+            <Link to="/tasks">
               <button className="bg-yellow-500 px-6 py-3 rounded-md font-semibold text-lg transition hover:bg-yellow-600">
                 Explore Tasks
               </button>

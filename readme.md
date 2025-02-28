@@ -1,138 +1,195 @@
-# API Endpoints Documentation
+# RealEvals with WebArena: Take-Home Project
 
-## Authentication APIs (`/auth`)
+## Overview
 
-### 1. Register a User
+RealEvals is a system designed to evaluate AI agents on realistic web-based tasks using WebArena. This project provides a working prototype with a clean user interface, authentication, task management, agent submission, real-time leaderboard updates, and admin controls.
 
-**Endpoint:** `POST /auth/register`
-**Description:** Registers a new user and returns an authentication token.
-**Request Body:** `UserRegisterRequest`
-**Response:** `TokenResponse`
+## Tech Stack
 
-### 2. Login
+### Frontend:
 
-**Endpoint:** `POST /auth/login`
-**Description:** Authenticates a user and returns an authentication token.
-**Request Body:** `UserLoginRequest`
-**Response:** `TokenResponse`
+- React.js (Vite)
+- React Router for navigation
+- React Query for data fetching and caching
+- Tailwind CSS for styling
+- JWT-based authentication
 
----
+### Backend:
 
-## Agent Management APIs (`/agents`)
+- FastAPI (Python)
+- SQLite database
+- Background tasks using FastAPI
+- JWT-based authentication
 
-### 3. Create Agent
+## Features
 
-**Endpoint:** `POST /agents`
-**Description:** Creates a new agent for the authenticated user.
-**Request Body:** `AgentCreate`
-**Response:** `AgentResponse`
+### 1. Authentication
 
-### 4. Get My Agents
+- User can register and log in
+- JWT authentication is used for securing routes
+- Role-based access control (Admin vs. User)
 
-**Endpoint:** `GET /agents`
-**Description:** Retrieves a list of all agents created by the authenticated user.
-**Response:** `List[AgentResponse]`
+### 2. Task Management
 
-### 5. Get Agent by ID
+- Admin can create, update, and delete tasks
+- Users can view available tasks
 
-**Endpoint:** `GET /agents/{agent_id}`
-**Description:** Fetches details of a specific agent.
-**Response:** `AgentResponse`
+### 3. Agent Submission & Evaluation
 
----
+- Users can create AI agents and submit them for evaluation
+- Submissions are queued and processed asynchronously
+- Status updates from "Queuing" -> "Processing" -> "Completed" or "Failed"
+- Results are stored in the database
 
-## Submissions APIs (`/submissions`)
+### 4. Leaderboard
 
-### 6. Submit an Agent
-
-**Endpoint:** `POST /submissions`
-**Description:** Submits an agent for evaluation.
-**Request Body:** `SubmissionCreate`
-**Response:** `SubmissionResponse`
-
-### 7. Get My Submissions
-
-**Endpoint:** `GET /submissions`
-**Description:** Retrieves a list of submissions for the authenticated user with pagination.
-**Query Parameters:** `skip`, `limit`
-**Response:** `SubmissionListResponse`
-
-### 8. Get Submission by ID
-
-**Endpoint:** `GET /submissions/{submission_id}`
-**Description:** Fetches details of a specific submission.
-**Response:** `SubmissionResponse`
-
-### 9. Get Leaderboard for a Task
-
-**Endpoint:** `GET /submissions/leaderboard/{task_id}`
-**Description:** Retrieves the leaderboard for a specific task.
-**Response:** `List[LeaderboardResponse]`
-
-### 10. Get My Submissions by Task
-
-**Endpoint:** `GET /submissions/task/{task_id}`
-**Description:** Fetches all submissions for a specific task made by the authenticated user.
-**Response:** `SubmissionListResponse`
+- Displays top-performing agents per task
+- Updates dynamically when new submissions are processed
+- Ranks agents based on evaluation metrics (accuracy, time, etc.)
 
 ---
 
-## Task Management APIs (`/tasks`)
+## Backend API Endpoints
 
-### 11. Create a Task
+### Authentication APIs (`/auth`)
 
-**Endpoint:** `POST /tasks`
-**Description:** Creates a new task (Admin only).
-**Request Body:** `TaskCreate`
-**Response:** `TaskResponse`
+**1. Register a User**\
+`POST /auth/register`\
+Registers a new user and returns an authentication token.
 
-### 12. Get All Tasks
+**2. Login**\
+`POST /auth/login`\
+Authenticates a user and returns an authentication token.
 
-**Endpoint:** `GET /tasks`
-**Description:** Retrieves all available tasks with pagination.
-**Query Parameters:** `skip`, `limit`
-**Response:** `TaskListResponse`
+### Agent Management APIs (`/agents`)
 
-### 13. Get Task by ID
+**3. Create Agent**\
+`POST /agents`\
+Creates a new agent for the authenticated user.
 
-**Endpoint:** `GET /tasks/{task_id}`
-**Description:** Fetches details of a specific task.
-**Response:** `TaskResponse`
+**4. Get My Agents**\
+`GET /agents`\
+Retrieves all agents created by the authenticated user.
 
-### 14. Update Task
+**5. Get Agent by ID**\
+`GET /agents/{agent_id}`\
+Fetches details of a specific agent.
 
-**Endpoint:** `PUT /tasks/{task_id}`
-**Description:** Updates an existing task (Admin only).
-**Request Body:** `TaskUpdate`
-**Response:** `TaskResponse`
+### Submissions APIs (`/submissions`)
 
-### 15. Delete Task
+**6. Submit an Agent**\
+`POST /submissions`\
+Submits an agent for evaluation.
 
-**Endpoint:** `DELETE /tasks/{task_id}`
-**Description:** Deletes a task (Admin only).
-**Response:** `{"message": "Task deleted successfully"}`
+**7. Get My Submissions**\
+`GET /submissions`\
+Retrieves a list of submissions for the authenticated user.
+
+**8. Get Submission by ID**\
+`GET /submissions/{submission_id}`\
+Fetches details of a specific submission.
+
+**9. Get Leaderboard for a Task**\
+`GET /submissions/leaderboard/{task_id}`\
+Retrieves the leaderboard for a specific task.
+
+### Task Management APIs (`/tasks`)
+
+**10. Create a Task**\
+`POST /tasks`\
+Creates a new task (Admin only).
+
+**11. Get All Tasks**\
+`GET /tasks`\
+Retrieves all available tasks.
+
+**12. Get Task by ID**\
+`GET /tasks/{task_id}`\
+Fetches details of a specific task.
+
+**13. Update Task**\
+`PUT /tasks/{task_id}`\
+Updates an existing task (Admin only).
+
+**14. Delete Task**\
+`DELETE /tasks/{task_id}`\
+Deletes a task (Admin only).
 
 ---
 
-## Authentication & Authorization
+## Frontend Implementation
 
-- All APIs require authentication via a Bearer token except `/auth/register` and `/auth/login`.
-- Admin-specific APIs require admin-level privileges.
+### Role-Based Access Control
+
+- Admin has access to all routes including task management and dashboards.
+- Users can submit agents and view their own submissions.
+
+### Handling Submissions & Queueing
+
+- When an agent is submitted, it is stored in the database with status `Queuing`.
+- A background task processes submissions asynchronously.
+- Status updates automatically using React Query when a new submission is made.
+
+### Leaderboard Handling
+
+- React Query is used to update the leaderboard dynamically.
+- Invalidation of queries ensures new data is fetched when submissions are processed.
+- Sorting is applied to rank agents based on performance metrics.
+
+### Challenges & Future Improvements
+
+- **Optimized Queue Processing**: Background processing can be optimized to scale for a larger number of submissions.
+- **More Detailed Metrics**: Currently, ranking is based on simple criteria; we can add more complex evaluation metrics.
+
+---
 
 ## Database Schema
 
-Below is the ER diagram representing the database design for the system:
+### Tables:
 
-![Database Schema](https://1drv.ms/i/s!AnQfRZdUKMDSj4t80PMnYPSZl8ekPA) <!-- Replace with actual image link -->
-
-### Schema Overview
-
-- **User**: Stores user details including authentication info.
-- **Agent**: Represents agents associated with users.
+- **User**: Stores user credentials and roles.
+- **Agent**: Represents AI agents associated with users.
 - **Task**: Defines different tasks assigned to agents.
-- **Submission**: Records submissions of agents for tasks.
-- **EvaluationResult**: Stores the evaluation results of submissions.
+- **Submission**: Records submissions of agents for evaluation.
 - **Leaderboard**: Maintains ranking based on submission scores.
-- **TaskMetrics**: Defines evaluation parameters for tasks.
 
-Each table has appropriate relationships ensuring normalized and structured data storage.
+---
+
+## Installation & Setup
+
+### Backend Setup
+
+```sh
+# Clone the repository
+git clone <repo-url>
+cd backend
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the FastAPI server
+uvicorn main:app --reload
+```
+
+### Frontend Setup
+
+```sh
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+yarn install  # or `npm install`
+
+# Start the React application
+yarn dev  # or `npm run dev`
+```
+
+---
+
+## Conclusion
+
+This project provides a fully functional prototype for RealEvals with authentication, task management, agent submission, and a dynamic leaderboard. While there are challenges such as optimizing real-time updates and scaling the queueing system, the current implementation demonstrates a solid foundation for evaluating AI agents in a web-based environment.

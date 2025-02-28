@@ -4,9 +4,13 @@ import HomeLayout from '../../Layouts/HomeLayout';
 import axiosInstance from '../../Helper/axiosInstance';
 import toast from 'react-hot-toast';
 import ReactMarkdown from 'react-markdown';
-import { useFetchLeaderboard, useFetchSubmissions, useFetchTaskDetail } from '../../hooks/taskHooks';
+import { useFetchLeaderboard, useFetchSubmissions, useFetchTaskDetail } from '../../hooks/TaskHooks';
+import SubmissionList from '../../components/SubmissionList';
+import { useQueryClient } from '@tanstack/react-query';
 
 function TaskDetails() {
+  const queryClient = useQueryClient();
+  const { taskId } = useParams();
   const [activeTab, setActiveTab] = useState('description');
   const [fillAgentDetail, setFillAgentDetail] = useState(false);
   const [agentDetail, setAgentDetail] = useState({
@@ -19,27 +23,29 @@ function TaskDetails() {
     },
   });
 
-  const { taskId } = useParams();
-  const { taskDetail, fetchTaskDetail } = useFetchTaskDetail(taskId);
-  const { submissions: mySubmissions, fetchSubmissions } = useFetchSubmissions(taskId);
-  const { leaderboard } = useFetchLeaderboard({ taskId });
-
-  console.log(leaderboard);
+  const taskDetail = useFetchTaskDetail(taskId);
+  const submissions = useFetchSubmissions(taskId);
+  const leaderboard = useFetchLeaderboard(taskId);
 
   const handleAgentSubmit = async () => {
     if (!agentDetail.name || !agentDetail.description || !agentDetail.accuracy) {
       toast.error('All fields are required!');
       return;
     }
+
     try {
       const { data } = await axiosInstance.post('/agents', agentDetail);
       toast.success('Agent created successfully!');
+
       if (data?.id) {
-        const submissionData = await axiosInstance.post('/submissions', { agentId: data.id, taskId });
-        console.log(submissionData);
+        await axiosInstance.post('/submissions', { agentId: data.id, taskId });
         toast.success('Submitted for testing!');
         setFillAgentDetail(false);
         setActiveTab('submissions');
+
+        queryClient.invalidateQueries(['leaderboard', taskId]);
+
+        queryClient.invalidateQueries(['submissions', taskId]);
       }
     } catch (error) {
       toast.error('Submission failed!');
@@ -87,26 +93,7 @@ function TaskDetails() {
             </div>
           )}
 
-          {activeTab === 'submissions' && (
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-              <h2 className="text-xl font-semibold text-yellow-500 mb-4">My Submissions</h2>
-              {mySubmissions.length === 0 ? (
-                <p className="text-gray-400">No submissions yet.</p>
-              ) : (
-                <ul className="space-y-4">
-                  {/* {mySubmissions.map((submission, index) => (
-                    <li key={index} className="bg-gray-800 p-4 rounded-lg">
-                      <p className="text-lg font-semibold">Agent: {submission.agentName}</p>
-                      <p className="text-gray-300">Status: {submission.status}</p>
-                      <p className="text-gray-400 text-sm">
-                        Submitted at: {new Date(submission.createdAt).toLocaleString()}
-                      </p>
-                    </li>
-                  ))} */}
-                </ul>
-              )}
-            </div>
-          )}
+          {activeTab === 'submissions' && <SubmissionList submissionsData={submissions} />}
 
           {activeTab === 'testing' && (
             <div className="text-center bg-gray-900 p-6 rounded-lg shadow-lg">
@@ -173,15 +160,10 @@ function TaskDetails() {
                   </tr>
                 </thead>
                 <tbody>
-                  {leaderboard.map((entry, index) => (
+                  {leaderboard?.map((entry, index) => (
                     <tr key={index} className="border-b border-gray-700 hover:bg-gray-800 transition-all duration-300">
                       <td className="py-3">{entry.rank}</td>
-                      <td
-                        className="py-3 text-yellow-500 cursor-pointer hover:underline"
-                        onClick={() => handleAgentClick(entry.agentId)}
-                      >
-                        {entry.agentName}
-                      </td>
+                      <td className="py-3">{entry.agentName}</td>
                       <td className="py-3">{(entry.accuracy * 100).toFixed(2)}%</td>
                       <td className="py-3">{entry.timeTaken.toFixed(2)}s</td>
                     </tr>

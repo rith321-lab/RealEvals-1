@@ -16,6 +16,7 @@ class AgentService:
                 **agent_data,
                 userId=user_id
             )
+            print(agent)
             self._db.add(agent)
             self._db.commit()
             self._db.refresh(agent)

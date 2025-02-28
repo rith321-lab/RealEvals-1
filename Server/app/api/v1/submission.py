@@ -31,9 +31,7 @@ async def get_my_submissions(
     db: Session = Depends(get_db),
     current_user = Depends(get_current_user)
 ):
-    """
-    Get list of user's submissions with pagination.
-    """
+
     controller = SubmissionController(db)
     return await controller.get_user_submissions(
         current_user.id,
@@ -75,9 +73,7 @@ async def get_my_submissions_by_task(
     db: Session = Depends(get_db),
     current_user = Depends(get_current_user)
 ):
-    """
-    Get all submissions of the current user for a particular task.
-    """
+    
     try:
         task_uuid = uuid.UUID(task_id)
         controller = SubmissionController(db)

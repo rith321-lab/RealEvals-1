@@ -1,69 +1,83 @@
-import { useEffect, useState } from 'react';
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import axiosInstance from '../Helper/axiosInstance';
 import toast from 'react-hot-toast';
+import { useEffect, useState } from 'react';
 
-export const useFetchLeaderboard = ({ taskId }) => {
-  const [leaderboard, setLeaderboard] = useState([]);
+export const useFetchSubmissions = (taskId) => {
+  const queryClient = useQueryClient();
 
-  const fetchLeaderboard = async () => {
-    if (!taskId) return;
-
-    try {
-      const { data } = await axiosInstance.get(`/submissions/leaderboard/${taskId}`);
-      toast.success('Successfully fetched leaderboard');
-      setLeaderboard(data);
-    } catch (error) {
-      console.error('Error fetching leaderboard:', error);
-      toast.error('Failed to fetch leaderboard');
-    }
-  };
+  const { data: submissions = [], refetch: fetchSubmissions } = useQuery({
+    queryKey: ['submissions', taskId],
+    queryFn: async () => {
+      if (!taskId) return [];
+      const { data } = await axiosInstance.get(`/submissions/task/${taskId}`);
+      return data;
+    },
+    enabled: !!taskId,
+  });
 
   useEffect(() => {
-    fetchLeaderboard();
-  }, [taskId]);
+    if (!taskId) return;
 
-  return { leaderboard, fetchLeaderboard };
+    let delay = 1000;
+    let maxLimit = 5;
+    let attempt = 0;
+
+    const pollSubmissions = async () => {
+      if (attempt >= maxLimit) {
+        console.log('Max polling attempts reached.');
+        return;
+      }
+
+      await fetchSubmissions();
+
+      const updatedSubmissions = queryClient.getQueryData(['submissions', taskId]) || [];
+
+      const allCompleted = []
+        .concat(updatedSubmissions)
+        .every((sub) => sub.status === 'FAILED' || sub.status === 'COMPLETED');
+
+      if (allCompleted) {
+        console.log('All submissions completed. Stopping polling.');
+        return;
+      }
+
+      attempt++;
+      delay *= 2;
+
+      setTimeout(pollSubmissions, delay);
+    };
+
+    pollSubmissions();
+  }, [taskId, queryClient, fetchSubmissions]);
+
+  return submissions;
+};
+
+export const useFetchLeaderboard = (taskId) => {
+  const { data: leaderboard, refetch: fetchLeaderboard } = useQuery({
+    queryKey: ['leaderboard', taskId],
+    queryFn: async () => {
+      if (!taskId) return [];
+      const { data } = await axiosInstance.get(`/submissions/leaderboard/${taskId}`);
+      return data;
+    },
+    enabled: !!taskId,
+  });
+
+  return leaderboard;
 };
 
 export const useFetchTaskDetail = (taskId) => {
-  const [taskDetail, setTaskDetail] = useState(null);
-
-  const fetchTaskDetail = async () => {
-    if (!taskId) return;
-
-    try {
+  const { data: taskDetail, refetch: fetchTaskDetail } = useQuery({
+    queryKey: ['taskDetail', taskId],
+    queryFn: async () => {
+      if (!taskId) return null;
       const { data } = await axiosInstance.get(`/tasks/${taskId}`);
-      setTaskDetail(data);
-      toast.success('Fetched task details successfully');
-    } catch (error) {
-      toast.error('Failed to fetch task details');
-    }
-  };
+      return data;
+    },
+    enabled: !!taskId, // Fetch only if taskId exists
+  });
 
-  useEffect(() => {
-    fetchTaskDetail();
-  }, [taskId]);
-
-  return { taskDetail, fetchTaskDetail };
-};
-
-export const useFetchSubmissions = (taskId) => {
-  const [submissions, setSubmissions] = useState([]);
-
-  const fetchSubmissions = async () => {
-    if (!taskId) return;
-
-    try {
-      const { data } = await axiosInstance.get(`/submissions?taskId=${taskId}`);
-      setSubmissions(data);
-    } catch (error) {
-      toast.error('Failed to fetch submissions');
-    }
-  };
-
-  useEffect(() => {
-    fetchSubmissions();
-  }, [taskId]);
-
-  return { submissions, fetchSubmissions };
+  return taskDetail;
 };

@@ -15,7 +15,7 @@ function Login() {
   useEffect(() => {
     const token = localStorage.getItem('access_token');
     if (token) {
-      navigate('/'); // Redirect to home if already logged in
+      navigate('/');
     }
   }, [navigate]);
 
@@ -38,14 +38,15 @@ function Login() {
       const response = await axiosInstance.post('/auth/login', loginData);
       const { access_token, refresh_token, role } = response.data;
 
-      // Store tokens in localStorage
       localStorage.setItem('access_token', access_token);
       localStorage.setItem('refresh_token', refresh_token);
       localStorage.setItem('role', role);
 
       toast.success('Login successful!');
 
-      navigate('/'); // Redirect to home page
+      window.dispatchEvent(new Event('storage'));
+
+      navigate('/');
     } catch (error) {
       toast.error(error.response?.data?.detail || 'Login failed!');
     }
@@ -58,8 +59,8 @@ function Login() {
           onSubmit={onLogin}
           className="flex flex-col justify-center gap-6 rounded-lg p-8 w-96 bg-base-100 shadow-2xl"
         >
+          Notify
           <h1 className="text-center text-3xl font-bold text-primary">Login</h1>
-
           <div className="flex flex-col gap-2">
             <label htmlFor="email" className="font-semibold text-lg">
               Email
@@ -74,7 +75,6 @@ function Login() {
               value={loginData.email}
             />
           </div>
-
           <div className="flex flex-col gap-2">
             <label htmlFor="password" className="font-semibold text-lg">
               Password
@@ -89,11 +89,9 @@ function Login() {
               value={loginData.password}
             />
           </div>
-
           <button type="submit" className="btn btn-primary w-full mt-4 text-lg">
             Login
           </button>
-
           <p className="text-center text-lg">
             Don't have an account?{' '}
             <Link to="/signup" className="text-secondary hover:underline">
