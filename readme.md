@@ -2,7 +2,7 @@
 
 ## Overview
 
-RealEvals is a system designed to evaluate AI agents on realistic web-based tasks using WebArena. This project provides a working prototype with a clean user interface, authentication, task management, agent submission, real-time leaderboard updates, and admin controls.
+RealEvals is a system designed to evaluate AI agents on realistic web-based tasks using WebArena. This project provides a working prototype with a clean user interface, authentication, task management, agent submission, real-time leaderboard updates, and admin controls. The platform enables efficient testing and benchmarking of AI agents in web environments.
 
 ## Screenshots
 ![Screenshot (822)](https://github.com/user-attachments/assets/d53a8717-3c2b-4a5e-a14d-1e0e71f5eb69)
