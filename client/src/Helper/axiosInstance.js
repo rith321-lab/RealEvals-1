@@ -5,7 +5,11 @@ const BASE_URL = 'http://localhost:8000';
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
-  withCredentials: true, // Keeps cookies for authentication
+  withCredentials: false, // Changed to false to avoid CORS issues
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  }
 });
 
 // ✅ Attach Authorization Token for Every Request

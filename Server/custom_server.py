@@ -17,10 +17,10 @@ app = FastAPI(
 # Set up CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["http://localhost:5173"],  # Frontend URL
+    allow_credentials=False,  # Changed to False to avoid CORS preflight issues
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "Accept"],
 )
 
 # Set Supabase credentials in environment
@@ -29,6 +29,14 @@ os.environ["SUPABASE_KEY"] = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzd
 
 # Import directly from relative paths
 from app.db.database import init_db, get_db
+from app.api.v1.auth import router as auth_router
+from app.api.v1 import tasks, agents, submission
+
+# Include API routers
+app.include_router(auth_router, prefix="/api/v1")
+app.include_router(tasks.router, prefix="/api/v1")
+app.include_router(agents.router, prefix="/api/v1")
+app.include_router(submission.router, prefix="/api/v1")
 
 # Health check route
 @app.get("/health", tags=["Health"])

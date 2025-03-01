@@ -34,24 +34,62 @@ function Login() {
     setLoading(true);
     
     try {
-      const response = await axiosInstance.post('/users/login', user);
+      console.log('Attempting login with:', { email: user.email });
+      const response = await axiosInstance.post('/api/v1/auth/login', user);
+      
+      console.log('Login response:', response);
       
       if (response.status === 200) {
-        const { token, user: userData } = response.data;
+        // Log the full response data to see what we're getting
+        console.log('Login successful, full response data:', response.data);
         
-        // Store token and userData
-        localStorage.setItem('access_token', token);
+        // Extract tokens and role from response
+        const { access_token, refresh_token, role, token_type } = response.data;
+        
+        if (!access_token) {
+          console.error('No access token found in response:', response.data);
+          toast.error('Authentication error: No token received');
+          return;
+        }
+        
+        console.log('Storing tokens in localStorage...');
+        
+        // Store tokens and role
+        localStorage.setItem('access_token', access_token);
+        localStorage.setItem('refresh_token', refresh_token || '');
+        localStorage.setItem('token_type', token_type || 'bearer');
+        localStorage.setItem('role', role || 'USER'); // Default to USER if role is not provided
+        
+        // Create user data object from login info
+        const userData = {
+          email: user.email,
+          role: role || 'USER'
+        };
+        
         localStorage.setItem('user_data', JSON.stringify(userData));
-        localStorage.setItem('role', userData.role);
+        
+        console.log('Tokens stored in localStorage:', {
+          access_token: localStorage.getItem('access_token'),
+          role: localStorage.getItem('role'),
+          user_data: localStorage.getItem('user_data')
+        });
         
         // Update auth context
-        login(userData, token);
+        console.log('Updating auth context...');
+        login(userData, access_token);
         
         toast.success('Login successful');
-        navigate('/');
+        console.log('Authentication state updated, redirecting to home page');
+        
+        // Add a small delay before navigation to ensure state updates
+        setTimeout(() => {
+          // Force a page reload to ensure the auth state is fully updated
+          window.location.href = '/tasks/create';
+        }, 500);
       }
     } catch (error) {
-      toast.error(error.response?.data?.message || 'Failed to login');
+      console.error('Login error:', error);
+      toast.error(error.response?.data?.detail || 'Failed to login');
     } finally {
       setLoading(false);
     }

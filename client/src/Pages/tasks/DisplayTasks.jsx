@@ -17,7 +17,7 @@ function DisplayTasks() {
     async function fetchTasks() {
       setLoading(true);
       try {
-        const response = await axiosInstance.get('/tasks');
+        const response = await axiosInstance.get('/api/v1/tasks');
         console.log(response);
         setTasks(response.data.items || []);
       } catch (error) {

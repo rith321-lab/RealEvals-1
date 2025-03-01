@@ -12,13 +12,33 @@ import Leaderboard from './Pages/Leaderboard';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import NotFound from './Pages/NotFound';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { AuthContext } from './utils/AuthContext';
 
 function ProtectedRoute({ children, allowedRoles }) {
-  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('access_token'));
-  const [userRole, setUserRole] = useState(localStorage.getItem('role') || '');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [userRole, setUserRole] = useState('');
+  
+  useEffect(() => {
+    const token = localStorage.getItem('access_token');
+    const userData = localStorage.getItem('user_data');
+    
+    if (token && userData) {
+      setIsAuthenticated(true);
+      try {
+        const parsedUserData = JSON.parse(userData);
+        setUserRole(parsedUserData.role || '');
+      } catch (error) {
+        console.error('Error parsing user data:', error);
+        setUserRole('');
+      }
+    } else {
+      setIsAuthenticated(false);
+      setUserRole('');
+    }
+  }, []);
 
-  if (!isLoggedIn) {
+  if (!isAuthenticated) {
     return <Navigate to="/login" replace />;
   }
 

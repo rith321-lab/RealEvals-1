@@ -22,12 +22,12 @@ class AuthService:
     def _create_access_token(self, subject: str) -> str:
         expires_delta = datetime.utcnow() + timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
         to_encode = {"exp": expires_delta, "sub": subject}
-        return jwt.encode(to_encode, settings.JWT_SECRET_KEY, settings.JWT_ALGORITHM)
+        return jwt.encode(to_encode, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM)
 
     def _create_refresh_token(self, subject: str) -> str:
         expires_delta = datetime.utcnow() + timedelta(days=settings.REFRESH_TOKEN_EXPIRE_DAYS)  
         to_encode = {"exp": expires_delta, "sub": subject}
-        return jwt.encode(to_encode, settings.JWT_SECRET_KEY, settings.JWT_ALGORITHM) 
+        return jwt.encode(to_encode, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM)
 
     def register_user(self, user_data: dict) -> dict:
         try:
