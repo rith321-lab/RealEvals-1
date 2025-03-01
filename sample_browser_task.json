@@ -1,0 +1,22 @@
+{
+  "url": "https://www.google.com",
+  "steps": [
+    {
+      "type": "input",
+      "selector": "input[name='q']",
+      "value": "browser use api documentation"
+    },
+    {
+      "type": "click",
+      "selector": "input[name='btnK']"
+    },
+    {
+      "type": "wait",
+      "time": 2000
+    },
+    {
+      "type": "screenshot",
+      "name": "search_results"
+    }
+  ]
+} 

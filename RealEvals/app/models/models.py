@@ -1,9 +1,35 @@
-from sqlalchemy import Column, String, Enum, Integer, DateTime, Boolean, Float, ForeignKey, JSON, UUID
+from sqlalchemy import Column, String, Enum, Integer, DateTime, Boolean, Float, ForeignKey, JSON
+from sqlalchemy.dialects.postgresql import UUID as pgUUID
+from sqlalchemy.types import TypeDecorator
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 import uuid
 from .enums import UserRole, TaskDifficulty, SubmissionStatus, EvaluationStatus
 from ..db.database import Base
+
+# Custom UUID type to make it compatible with both SQLite and PostgreSQL
+class UUID(TypeDecorator):
+    impl = String
+    
+    def __init__(self, as_uuid=False, *args, **kwargs):
+        # Ignore the as_uuid parameter
+        super().__init__(*args, **kwargs)
+    
+    def process_bind_param(self, value, dialect):
+        if value is None:
+            return value
+        elif dialect.name == 'postgresql':
+            return str(value)
+        else:
+            return str(value)
+            
+    def process_result_value(self, value, dialect):
+        if value is None:
+            return value
+        else:
+            if not isinstance(value, uuid.UUID):
+                value = uuid.UUID(value)
+            return value
 
 class User(Base):
     __tablename__ = "users"

@@ -10,11 +10,11 @@ export const useFetchLeaderboard = ({ taskId }) => {
 
     try {
       const { data } = await axiosInstance.get(`/submissions/leaderboard/${taskId}`);
-      toast.success('Successfully fetched leaderboard');
       setLeaderboard(data);
     } catch (error) {
       console.error('Error fetching leaderboard:', error);
-      toast.error('Failed to fetch leaderboard');
+      toast.error('Failed to fetch leaderboard data');
+      setLeaderboard([]);
     }
   };
 
@@ -34,9 +34,10 @@ export const useFetchTaskDetail = (taskId) => {
     try {
       const { data } = await axiosInstance.get(`/tasks/${taskId}`);
       setTaskDetail(data);
-      toast.success('Fetched task details successfully');
     } catch (error) {
+      console.error('Error fetching task details:', error);
       toast.error('Failed to fetch task details');
+      setTaskDetail(null);
     }
   };
 
@@ -54,10 +55,12 @@ export const useFetchSubmissions = (taskId) => {
     if (!taskId) return;
 
     try {
-      const { data } = await axiosInstance.get(`/submissions?taskId=${taskId}`);
+      const { data } = await axiosInstance.get(`/submissions/task/${taskId}`);
       setSubmissions(data);
     } catch (error) {
+      console.error('Error fetching submissions:', error);
       toast.error('Failed to fetch submissions');
+      setSubmissions([]);
     }
   };
 

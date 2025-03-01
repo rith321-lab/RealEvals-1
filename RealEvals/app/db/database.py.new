@@ -1,0 +1,73 @@
+"""
+Database connection module for Supabase integration
+"""
+import os
+from typing import Optional, Dict, Any
+from supabase import create_client, Client
+from loguru import logger
+from app.core.config import settings
+
+# Global Supabase client instance
+_supabase_client: Optional[Client] = None
+
+# Dummy Base class for SQLAlchemy compatibility
+class Base:
+    pass
+
+def init_db(force_recreate: bool = False) -> Client:
+    """
+    Initialize and return the Supabase client
+    
+    Args:
+        force_recreate: If True, force recreation of the client even if it already exists
+        
+    Returns:
+        Initialized Supabase client
+    """
+    global _supabase_client
+    
+    # Re-create the client if requested or if it doesn't exist yet
+    if _supabase_client is None or force_recreate:
+        try:
+            logger.info("Initializing Supabase client")
+            
+            # Get Supabase credentials
+            supabase_url = settings.SUPABASE_URL
+            supabase_key = settings.SUPABASE_KEY
+            
+            if not supabase_url or not supabase_key:
+                error_msg = "Missing Supabase credentials. Please set SUPABASE_URL and SUPABASE_KEY environment variables."
+                logger.error(error_msg)
+                raise ValueError(error_msg)
+            
+            # Create the Supabase client
+            _supabase_client = create_client(supabase_url, supabase_key)
+            logger.info("Supabase client initialized successfully")
+            
+        except Exception as e:
+            logger.error(f"Failed to initialize Supabase client: {str(e)}")
+            raise e
+    
+    return _supabase_client
+
+
+def get_db() -> Client:
+    """
+    Get the initialized Supabase client
+    
+    Returns:
+        The initialized Supabase client
+    
+    Raises:
+        RuntimeError: If the database client has not been initialized
+    """
+    if _supabase_client is None:
+        try:
+            # Attempt to initialize the client if it doesn't exist
+            return init_db()
+        except Exception as e:
+            error_msg = f"Database client not initialized and initialization failed: {str(e)}"
+            logger.error(error_msg)
+            raise RuntimeError(error_msg)
+    
+    return _supabase_client

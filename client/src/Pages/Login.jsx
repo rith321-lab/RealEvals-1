@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
-import HomeLayout from '../Layouts/HomeLayout';
+import AuthLayout from '../Layouts/AuthLayout';
 import axiosInstance from '../Helper/axiosInstance';
 
 function Login() {
@@ -52,16 +52,16 @@ function Login() {
   }
 
   return (
-    <HomeLayout>
-      <div className="flex items-center justify-center min-h-[90vh] bg-base-200">
+    <AuthLayout>
+      <div className="flex items-center justify-center min-h-[80vh]">
         <form
           onSubmit={onLogin}
-          className="flex flex-col justify-center gap-6 rounded-lg p-8 w-96 bg-base-100 shadow-2xl"
+          className="flex flex-col justify-center gap-6 rounded-lg p-8 w-96 bg-white shadow-xl border border-primary-100"
         >
-          <h1 className="text-center text-3xl font-bold text-primary">Login</h1>
+          <h1 className="text-center text-3xl font-bold text-primary-600">Login</h1>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="font-semibold text-lg">
+            <label htmlFor="email" className="font-semibold text-lg text-secondary-800">
               Email
             </label>
             <input
@@ -69,14 +69,14 @@ function Login() {
               name="email"
               id="email"
               placeholder="Enter your email..."
-              className="input input-bordered w-full"
+              className="w-full p-3 border border-primary-200 rounded-md focus:ring focus:ring-primary-100 focus:border-primary-400 text-secondary-800"
               onChange={handleUserInput}
               value={loginData.email}
             />
           </div>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="password" className="font-semibold text-lg">
+            <label htmlFor="password" className="font-semibold text-lg text-secondary-800">
               Password
             </label>
             <input
@@ -84,25 +84,28 @@ function Login() {
               name="password"
               id="password"
               placeholder="Enter your password..."
-              className="input input-bordered w-full"
+              className="w-full p-3 border border-primary-200 rounded-md focus:ring focus:ring-primary-100 focus:border-primary-400 text-secondary-800"
               onChange={handleUserInput}
               value={loginData.password}
             />
           </div>
 
-          <button type="submit" className="btn btn-primary w-full mt-4 text-lg">
-            Login
+          <button 
+            type="submit" 
+            className="w-full mt-4 py-3 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold rounded-md shadow-md transition-all duration-300"
+          >
+            LOGIN
           </button>
 
-          <p className="text-center text-lg">
+          <p className="text-center text-lg text-secondary-700">
             Don't have an account?{' '}
-            <Link to="/signup" className="text-secondary hover:underline">
+            <Link to="/signup" className="text-primary-600 hover:text-primary-800 font-medium">
               Signup
             </Link>
           </p>
         </form>
       </div>
-    </HomeLayout>
+    </AuthLayout>
   );
 }
 

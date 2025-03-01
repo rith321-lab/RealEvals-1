@@ -1,10 +1,10 @@
 from fastapi import HTTPException
 from ..schemas.auth_schema import UserRegisterRequest, UserLoginRequest, TokenResponse
 from ..services.auth_service import AuthService
-from sqlalchemy.orm import Session
+from supabase import Client
 
 class AuthController:
-    def __init__(self, db: Session):
+    def __init__(self, db: Client):
         self.auth_service = AuthService(db)
 
     async def register(self, request: UserRegisterRequest) -> TokenResponse:

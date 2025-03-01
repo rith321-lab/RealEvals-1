@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000/api/v1';
+// Updated to point to our FastAPI server on port 8000
+const BASE_URL = 'http://localhost:8000';
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
@@ -18,7 +19,15 @@ axiosInstance.interceptors.request.use(
   },
   (error) => {
     return Promise.reject(error);
-  },
+  }
+);
+
+// ✅ Refresh token or handle auth errors
+axiosInstance.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    return Promise.reject(error);
+  }
 );
 
 export default axiosInstance;

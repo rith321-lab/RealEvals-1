@@ -31,79 +31,83 @@ function HomeLayout({ children }) {
   };
 
   return (
-    <div data-theme="dark" className="min-h-[90vh]">
+    <div className="min-h-screen bg-white">
       {/* Drawer for Sidebar */}
       <div className="drawer absolute left-0 z-50 w-fit">
         <input className="drawer-toggle" id="my-drawer" type="checkbox" />
         <div className="drawer-content">
           {/* Toggle Button for Drawer */}
           <label htmlFor="my-drawer" className="cursor-pointer relative">
-            <FiMenu size={'32px'} className="font-bold text-white m-4" />
+            <FiMenu size={'32px'} className="font-bold text-primary-600 m-4 hover:text-primary-700 transition-colors" />
           </label>
         </div>
         <div className="drawer-side w-auto">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
           {/* Sidebar Content */}
-          <ul className="menu p-4 w-48 h-[100%] sm:w-80 bg-base-200 text-base-content relative">
+          <ul className="menu p-4 w-48 h-[100%] sm:w-80 bg-gradient-to-br from-white to-primary-50 shadow-lg text-secondary-800 relative border-r border-primary-100">
             {/* Close Button */}
             <li className="w-fit absolute right-2 z-50">
-              <button onClick={hideDrawer}>
-                <AiFillCloseCircle size={24} />
+              <button onClick={hideDrawer} className="hover:bg-primary-100 rounded-full p-1 transition-colors">
+                <AiFillCloseCircle size={24} className="text-primary-500" />
               </button>
             </li>
             {/* Navigation Links */}
-            <li>
-              <Link to="/">Home</Link>
+            <li className="my-1">
+              <Link to="/" className="rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-primary-200 hover:text-primary-700 transition-all font-medium">Home</Link>
             </li>
             {isLoggedIn && userRole === 'ADMIN' && (
               <>
-                <li>
-                  <Link to="/admin/dashboard">Admin Dashboard</Link>
+                <li className="my-1">
+                  <Link to="/admin/dashboard" className="rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-primary-200 hover:text-primary-700 transition-all font-medium">Admin Dashboard</Link>
                 </li>
-                <li>
-                  <Link to="/tasks/create">Create Task</Link>
+                <li className="my-1">
+                  <Link to="/tasks/create" className="rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-primary-200 hover:text-primary-700 transition-all font-medium">Create Task</Link>
                 </li>
               </>
             )}
-            <li>
-              <Link to="/tasks">All Tasks</Link>
+            <li className="my-1">
+              <Link to="/tasks" className="rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-primary-200 hover:text-primary-700 transition-all font-medium">All Tasks</Link>
             </li>
-            <li>
-              <Link to="/leaderboard">Leaderboard</Link>
+            <li className="my-1">
+              <Link to="/leaderboard" className="rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-primary-200 hover:text-primary-700 transition-all font-medium">Leaderboard</Link>
             </li>
-            <li>
-              <Link to="/contact">Contact Us</Link>
+            <li className="my-1">
+              <Link to="/contact" className="rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-primary-200 hover:text-primary-700 transition-all font-medium">Contact Us</Link>
             </li>
-            <li>
-              <Link to="/about">About Us</Link>
+            <li className="my-1">
+              <Link to="/about" className="rounded-lg hover:bg-gradient-to-r hover:from-white hover:to-primary-200 hover:text-primary-700 transition-all font-medium">About Us</Link>
             </li>
 
             {/* Login/Signup or Profile/Logout Buttons */}
-            {!isLoggedIn ? (
-              <div className="w-full flex items-center justify-center gap-2 mt-4">
-                <Link to="/login" className="btn btn-primary">
-                  Login
-                </Link>
-                <Link to="/signup" className="btn btn-secondary">
-                  Signup
-                </Link>
-              </div>
-            ) : (
-              <div className="w-full flex items-center justify-center gap-2 mt-4">
-                <Link to="/user/profile" className="btn btn-primary">
-                  Profile
-                </Link>
-                <button onClick={handleLogout} className="btn btn-secondary">
-                  Logout
-                </button>
-              </div>
-            )}
+            <div className="w-full flex items-center justify-center gap-3 mt-8">
+              {!isLoggedIn ? (
+                <>
+                  <Link to="/login" className="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-md transition-colors w-full text-center">
+                    Login
+                  </Link>
+                  <Link to="/signup" className="bg-white hover:bg-gray-100 text-primary-600 border border-primary-300 px-5 py-2 rounded-md transition-colors w-full text-center">
+                    Signup
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link to="/user/profile" className="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-md transition-colors w-full text-center">
+                    Profile
+                  </Link>
+                  <button onClick={handleLogout} className="bg-white hover:bg-gray-100 text-primary-600 border border-primary-300 px-5 py-2 rounded-md transition-colors w-full">
+                    Logout
+                  </button>
+                </>
+              )}
+            </div>
           </ul>
         </div>
       </div>
 
       {/* Main Content */}
-      {children}
+      <div className="container mx-auto pt-16">
+        {children}
+      </div>
     </div>
   );
 }
