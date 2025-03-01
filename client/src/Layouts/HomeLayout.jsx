@@ -5,17 +5,16 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function HomeLayout({ children }) {
   const navigate = useNavigate();
-
-  const [isLoggedIn, setIsLoggedIn] = useState('true');
-  const [userRole, setUserRole] = useState('ADMIN');
-
-  const [isDarkMode, setIsDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
-
+  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('access_token'));
+  const [userRole, setUserRole] = useState(localStorage.getItem('role') || '');
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    mediaQuery.addEventListener('change', () => {
-      setIsDarkMode(mediaQuery.matches);
-    });
+    const handleStorageChange = () => {
+      setIsLoggedIn(!!localStorage.getItem('access_token'));
+      setUserRole(localStorage.getItem('role') || '');
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
 
   function hideDrawer() {
@@ -25,9 +24,14 @@ function HomeLayout({ children }) {
 
   const handleLogout = async (e) => {
     e.preventDefault();
-    // Simple logout logic
-    localStorage.removeItem('token'); // Clear token (if any)
-    navigate('/login'); // Redirect to login page
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    localStorage.removeItem('role');
+    localStorage.removeItem('user_data');
+
+    window.dispatchEvent(new Event('storage'));
+
+    navigate('/login');
   };
 
   return (
@@ -36,7 +40,6 @@ function HomeLayout({ children }) {
       <div className="drawer absolute left-0 z-50 w-fit">
         <input className="drawer-toggle" id="my-drawer" type="checkbox" />
         <div className="drawer-content">
-          {/* Toggle Button for Drawer */}
           <label htmlFor="my-drawer" className="cursor-pointer relative">
             <FiMenu size={'32px'} className="font-bold text-primary-600 m-4 hover:text-primary-700 transition-colors" />
           </label>
