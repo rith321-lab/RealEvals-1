@@ -1,103 +1,127 @@
-# LMS Frontend
+# RealEvals Frontend - WebArena Take-Home Project
 
-### Setup instruction
+## Overview
 
-1. Clone the project
+The frontend of RealEvals is a React.js-based user interface that enables AI agents to be evaluated on realistic web-based tasks using WebArena. It provides authentication, role-based access, task management, agent submission, and real-time leaderboard updates.
 
-```
-    git clone https://github.com/singhsanket143/lms-frontend-hn.git
-```
+## Features
 
-2. Move into the directory
+### 1. **User Authentication**
 
-```
-    cd lms-frontend-hn
-```
+- Users can register and log in using JWT-based authentication.
+- Role-based access control (Admin & User) is enforced.
+- Authentication state is managed using local storage.
+- Protected routes ensure only authorized users access specific pages.
 
-3. install dependencies
+### 2. **Role-Based Access Control**
 
-```
-    npm i
-```
+- Admin has full control and can:
+  - Create and delete tasks.
+  - View all stats (number of agents, tasks, etc.).
+  - Access all user routes.
+- Users can:
+  - Log in and submit AI agents for evaluation.
+  - Track submission status.
+  - View leaderboards and task details.
 
-4. run the server
+### 3. **Task Management (Admin Only)**
 
-```
-    npm run dev
-```
+- Admin can create tasks with a description, difficulty level, and environment.
+- Tasks are displayed on the dashboard.
 
+### 4. **Agent Submission & Status Tracking**
 
+- Users can submit agents for evaluation.
+- A background task in FastAPI processes the submission asynchronously.
+- Status updates:
+  - `Queued` → `Processing` → `Completed` / `Failed`
 
-### Setup instructions for tailwind
+### 5. **Real-Time Leaderboard & Submission Tracking**
 
-[Tail wind official instruction doc](https://tailwindcss.com/docs/installation)
+- React Query is used to automatically update:
+  - Leaderboard rankings based on performance metrics (accuracy, time, etc.).
+  - Submission statuses (avoiding costly API polling).
 
-1. Install tailwindcss
+## Tech Stack
 
-```
-    npm install -D tailwindcss postcss autoprefixer
-```
+- **Frontend:** React.js (with React Router & React Query)
+- **Authentication:** JWT (stored in local storage)
+- **UI Components:** TailwindCSS for styling
 
-2. Create tailwind config file 
+## Setup Instructions
 
-```
-    npx tailwindcss init
-```
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/realevals-frontend.git
+   cd realevals-frontend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Configure environment variables (`.env` file):
+   ```sh
+   REACT_APP_API_URL=http://localhost:5173
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
 
-3. Add file extensions to tailwind config file in the contents property
-```
-    "./src/**/*.{html,js,jsx,ts,tsx}", "./index.html",
+## Core Components & Architecture
 
-```
+### 1. **Authentication & Role-Based Access**
 
-4. Add the tailwind directives at the top of the `index.css` file
+- `AuthContext.js`: Manages authentication state.
+- `ProtectedRoute.js`: Wraps restricted routes based on role.
+- `Login.js` & `Signup.js`: Handle authentication.
 
-```
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-```
+### 2. **Admin Dashboard**
 
-5. Add the following details in the plugin property of tainwind config
+- `AdminDashboard.js`: Displays system stats, tasks, and agents.
+- `CreateTask.js`: Allows admins to create new tasks.
+- `TaskList.js`: Shows all tasks and allows deletion.
 
-```
-    [require("daisyui"), require("@tailwindcss/line-clamp")]
-```
+### 3. **Task & Agent Management**
 
-### Adding plugins and dependencies 
+- `DisplayTasks.js`: Lists available tasks.
+- `TaskDetails.js`: Shows task-specific details.
+- `SubmitAgent.js`: Allows users to submit AI agents.
 
-```
-npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axi
-os react-hot-toast @tailwindcss/line-clamp
-```
+### 4. **Real-Time Status & Leaderboard Updates**
 
+- React Query is used to invalidate and refetch data on updates.
+- `Leaderboard.js`: Displays top-performing agents.
+- `SubmissionStatus.js`: Tracks the status of submitted agents.
 
-### Configure auto import sort esline
+## API Endpoints Used
 
-1. Install simple import sore
+| Method | Endpoint               | Description                             |
+| ------ | ---------------------- | --------------------------------------- |
+| POST   | `/auth/login`          | Logs in a user                          |
+| POST   | `/auth/signup`         | Registers a new user                    |
+| GET    | `/tasks`               | Fetches available tasks                 |
+| POST   | `/tasks`               | Creates a new task (Admin only)         |
+| DELETE | `/tasks/:id`           | Deletes a task (Admin only)             |
+| POST   | `/agents/submit`       | Submits an agent for evaluation         |
+| GET    | `/submissions`         | Fetches submission statuses             |
+| GET    | `/leaderboard/:taskId` | Fetches leaderboard for a specific task |
 
-```
-    npm i -D eslint-plugin-simple-import-sort
-```
+## Key Decisions & Optimizations
 
-2. Add rule in `.eslint.cjs`
+- **React Query for State Management**
+  - Ensures automatic updates when new agents are added or when the leaderboard changes.
+  - Avoids frequent API polling, reducing unnecessary requests.
+- **Role-Based Route Protection**
+  - Implemented via `ProtectedRoute.js` to ensure admin-only actions.
+- **Performance Optimization**
+  - Used lazy loading for components.
+  - Minimized re-renders using memoization (`useMemo`, `useCallback`).
 
-```
-    'simple-import-sort/imports': 'error'
-```
+## Screenshots
 
-3. add simple-import sort plugin in `.eslint.cjs`
+(Add relevant UI screenshots here)
 
-```
-    plugins: [..., 'simple-import-sort']
-```
+## Conclusion
 
-4. To enable auto import sort on file save in vscode
-
-    - Open `settings.json`
-    - add the following config
-```
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
-```
+This frontend provides an intuitive interface for evaluating AI agents while ensuring real-time updates using React Query. The architecture is modular, making it easy to extend for future WebArena integration.

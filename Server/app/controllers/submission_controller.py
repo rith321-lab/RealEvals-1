@@ -22,11 +22,15 @@ class SubmissionController:
     async def create_submission(self, submission_data: SubmissionCreate, user_id: uuid.UUID, background_tasks: BackgroundTasks) -> SubmissionResponse:
         try:
             submission = self.submission_service.create_submission(user_id, submission_data.agentId, submission_data.taskId)
+<<<<<<< HEAD:RealEvals/app/controllers/submission_controller.py
             
             # Pass options to the process_submission method if provided
             options = submission_data.options if hasattr(submission_data, 'options') else None
             background_tasks.add_task(self.submission_service.process_submission, submission.id, options)
             
+=======
+            background_tasks.add_task(self.submission_service.process_submission, submission.id,submission_data.taskId)
+>>>>>>> 3c266bd207f7bfaddbaff471d9c0a0073a0857d1:Server/app/controllers/submission_controller.py
             return self._format_submission_response(submission)
         except Exception as e:
             raise HTTPException(status_code=400, detail=str(e))
@@ -159,6 +163,7 @@ class SubmissionController:
             return leaderboard_entries
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e))
+<<<<<<< HEAD:RealEvals/app/controllers/submission_controller.py
             
     async def get_user_submissions_by_task(self, user_id: uuid.UUID, task_id: uuid.UUID, skip: int = 0, limit: int = 20) -> SubmissionListResponse:
         """Get all submissions of a user for a specific task"""
@@ -183,3 +188,10 @@ class SubmissionController:
                 )
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e))
+=======
+
+    async def get_user_submissions_by_task(self,userId:uuid.UUID,taskId:uuid.UUID,skip:int=0 , limit : int = 20) -> SubmissionListResponse :
+        result = self.submission_service.get_user_submissions_by_task(userId,taskId, skip, limit)
+        return SubmissionListResponse(items=[self._format_submission_response(sub) for sub in result["items"]], total=result["total"])
+        
+>>>>>>> 3c266bd207f7bfaddbaff471d9c0a0073a0857d1:Server/app/controllers/submission_controller.py

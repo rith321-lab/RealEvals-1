@@ -16,8 +16,21 @@ class EvaluationResultResponse(BaseModel):
             raise ValueError("Score must be between 0 and 100")
         return v
 
+    @field_validator('timeTaken')
+    def validate_time_taken(cls, v):
+        if v < 0:
+            raise ValueError("Time taken must be a positive value")
+        return v
+
+    @field_validator('accuracy')
+    def validate_accuracy(cls, v):
+        if not (0 <= v <= 1):
+            raise ValueError("Accuracy must be between 0 and 1")
+        return v
+
     class Config:
         from_attributes = True
+
 
 class SubmissionCreate(BaseModel):
     agentId: UUID

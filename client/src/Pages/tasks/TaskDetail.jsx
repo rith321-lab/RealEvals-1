@@ -4,9 +4,13 @@ import HomeLayout from '../../Layouts/HomeLayout';
 import axiosInstance from '../../Helper/axiosInstance';
 import toast from 'react-hot-toast';
 import ReactMarkdown from 'react-markdown';
-import { useFetchLeaderboard, useFetchSubmissions, useFetchTaskDetail } from '../../hooks/taskHooks';
+import { useFetchLeaderboard, useFetchSubmissions, useFetchTaskDetail } from '../../hooks/TaskHooks';
+import SubmissionList from '../../components/SubmissionList';
+import { useQueryClient } from '@tanstack/react-query';
 
 function TaskDetails() {
+  const queryClient = useQueryClient();
+  const { taskId } = useParams();
   const [activeTab, setActiveTab] = useState('description');
   const [fillAgentDetail, setFillAgentDetail] = useState(false);
   const [isExecuting, setIsExecuting] = useState(false);
@@ -23,27 +27,29 @@ function TaskDetails() {
     },
   });
 
-  const { taskId } = useParams();
-  const { taskDetail, fetchTaskDetail } = useFetchTaskDetail(taskId);
-  const { submissions: mySubmissions, fetchSubmissions } = useFetchSubmissions(taskId);
-  const { leaderboard } = useFetchLeaderboard({ taskId });
-
-  console.log(leaderboard);
+  const taskDetail = useFetchTaskDetail(taskId);
+  const submissions = useFetchSubmissions(taskId);
+  const leaderboard = useFetchLeaderboard(taskId);
 
   const handleAgentSubmit = async () => {
     if (!agentDetail.name || !agentDetail.description || !agentDetail.accuracy) {
       toast.error('All fields are required!');
       return;
     }
+
     try {
       const { data } = await axiosInstance.post('/agents', agentDetail);
       toast.success('Agent created successfully!');
+
       if (data?.id) {
-        const submissionData = await axiosInstance.post('/submissions', { agentId: data.id, taskId });
-        console.log(submissionData);
+        await axiosInstance.post('/submissions', { agentId: data.id, taskId });
         toast.success('Submitted for testing!');
         setFillAgentDetail(false);
         setActiveTab('submissions');
+
+        queryClient.invalidateQueries(['leaderboard', taskId]);
+
+        queryClient.invalidateQueries(['submissions', taskId]);
       }
     } catch (error) {
       toast.error('Submission failed!');
@@ -91,7 +97,7 @@ function TaskDetails() {
         }
         
         // Refresh submissions to show the new execution
-        fetchSubmissions();
+        queryClient.invalidateQueries(['submissions', taskId]);
         setActiveTab('results');
       } else {
         toast.error('Task execution failed. Please try again.');
@@ -191,34 +197,7 @@ function TaskDetails() {
             </div>
           )}
 
-          {activeTab === 'submissions' && (
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-primary-100">
-              <h2 className="text-xl font-semibold text-primary-600 mb-4">My Submissions</h2>
-              {mySubmissions.length === 0 ? (
-                <p className="text-secondary-500">No submissions yet.</p>
-              ) : (
-                <ul className="space-y-4">
-                  {mySubmissions.map((submission, index) => (
-                    <li key={index} className="bg-gradient-to-r from-white to-primary-50 p-4 rounded-lg border border-primary-100 shadow-sm">
-                      <p className="text-lg font-semibold text-secondary-800">Agent: {submission.agent_name}</p>
-                      <p className="text-secondary-700">Status: 
-                        <span className={`ml-1 ${
-                          submission.status === 'completed' ? 'text-primary-600' : 
-                          submission.status === 'failed' ? 'text-red-500' : 
-                          'text-orange-500'
-                        }`}>
-                          {submission.status}
-                        </span>
-                      </p>
-                      <p className="text-secondary-500 text-sm">
-                        Submitted at: {new Date(submission.created_at).toLocaleString()}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          )}
+          {activeTab === 'submissions' && <SubmissionList submissionsData={submissions} />}
 
           {activeTab === 'testing' && (
             <div className="text-center bg-white p-6 rounded-lg shadow-lg border border-primary-100">
@@ -346,14 +325,12 @@ function TaskDetails() {
                   </tr>
                 </thead>
                 <tbody>
-                  {leaderboard.map((entry, index) => (
-                    <tr key={index} className="border-b border-primary-100 hover:bg-primary-50 transition-all duration-300">
-                      <td className="py-3 px-4 text-secondary-800">{entry.rank}</td>
-                      <td className="py-3 px-4 text-primary-600 cursor-pointer hover:underline">
-                        {entry.agent_name}
-                      </td>
-                      <td className="py-3 px-4 text-secondary-800">{entry.score}</td>
-                      <td className="py-3 px-4 text-secondary-800">{entry.completion_time}s</td>
+                  {leaderboard?.map((entry, index) => (
+                    <tr key={index} className="border-b border-gray-700 hover:bg-gray-800 transition-all duration-300">
+                      <td className="py-3">{entry.rank}</td>
+                      <td className="py-3">{entry.agentName}</td>
+                      <td className="py-3">{(entry.accuracy * 100).toFixed(2)}%</td>
+                      <td className="py-3">{entry.timeTaken.toFixed(2)}s</td>
                     </tr>
                   ))}
                 </tbody>
