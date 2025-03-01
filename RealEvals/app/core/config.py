@@ -1,6 +1,7 @@
 from pydantic_settings import BaseSettings
 from typing import List
 import json
+import os
 
 class Settings(BaseSettings):
     APP_NAME: str
@@ -18,7 +19,13 @@ class Settings(BaseSettings):
     CORS_ORIGINS: str
     CORS_CREDENTIALS: bool
     LOG_LEVEL: str
-    ADMIN_SECRET_KEY : str
+    ADMIN_SECRET_KEY: str
+    BROWSER_USE_API_KEY: str = "your_api_key_here"  # Default placeholder, should be set in .env
+    
+    # Supabase settings
+    SUPABASE_URL: str = os.getenv("SUPABASE_URL", "")
+    SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "")
+    SUPABASE_SERVICE_KEY: str = os.getenv("SUPABASE_SERVICE_KEY", "")
 
     @property
     def CORS_ORIGINS_LIST(self) -> List[str]:

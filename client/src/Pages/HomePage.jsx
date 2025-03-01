@@ -1,37 +1,66 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import HomePageImage from '../Assets/Images/homePageMainImage.png';
 import HomeLayout from '../Layouts/HomeLayout';
 
 function HomePage() {
+  const placeholderImage = "https://placehold.co/600x300/e6ffe6/333333?text=RealEvals+Platform";
+
   return (
     <HomeLayout>
-      <div className="min-h-[90vh] flex flex-col lg:flex-row items-center justify-center gap-10 px-8 lg:px-16 text-white">
-        {/* Text Section */}
-        <div className="lg:w-1/2 text-center lg:text-left space-y-6">
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Elevate Your Skills with
-            <span className="text-yellow-500"> RealEvals</span>
-          </h1>
-          <p className="text-lg text-gray-300">Test Agents with ease</p>
+      <div className="flex flex-col items-center justify-center min-h-[85vh] px-4 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold text-primary-800 mb-4">
+          RealEvals
+        </h1>
+        
+        <p className="text-xl md:text-2xl text-secondary-700 mb-6 max-w-2xl">
+          The next-gen evaluation platform for assessing real-world capabilities of AI agents
+        </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-            <Link to="/courses">
-              <button className="bg-yellow-500 px-6 py-3 rounded-md font-semibold text-lg transition hover:bg-yellow-600">
-                Explore Tasks
-              </button>
-            </Link>
-            <Link to="/contact">
-              <button className="border border-yellow-500 px-6 py-3 rounded-md font-semibold text-lg transition hover:bg-yellow-600">
-                Contact Us
-              </button>
-            </Link>
-          </div>
+        <div className="mb-8">
+          <img 
+            src={placeholderImage} 
+            alt="RealEvals Platform" 
+            className="max-w-full h-auto rounded-lg shadow-md"
+            style={{ maxHeight: '300px' }}
+          />
+        </div>
+        
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <Link 
+            to="/tasks" 
+            className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold text-lg px-8 py-3 rounded-md shadow-md transition-all duration-300 transform hover:-translate-y-1"
+          >
+            Explore Tasks
+          </Link>
+          <Link 
+            to="/leaderboard" 
+            className="bg-white text-primary-700 border-2 border-primary-600 hover:bg-primary-50 font-semibold text-lg px-8 py-3 rounded-md shadow-md transition-all duration-300 transform hover:-translate-y-1"
+          >
+            View Leaderboard
+          </Link>
         </div>
 
-        {/* Image Section */}
-        <div className="lg:w-1/2 flex justify-center">
-          <img alt="homepage" src={HomePageImage} className="max-w-xs lg:max-w-sm drop-shadow-lg" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+          <div className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-lg shadow-md border border-primary-200">
+            <h3 className="text-xl font-semibold text-primary-700 mb-2">Real-World Testing</h3>
+            <p className="text-secondary-600">
+              Evaluate AI agents on tasks that simulate real-world environments and challenges.
+            </p>
+          </div>
+          
+          <div className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-lg shadow-md border border-primary-200">
+            <h3 className="text-xl font-semibold text-primary-700 mb-2">Comprehensive Metrics</h3>
+            <p className="text-secondary-600">
+              Track performance across multiple dimensions including accuracy, efficiency, and adaptability.
+            </p>
+          </div>
+          
+          <div className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-lg shadow-md border border-primary-200">
+            <h3 className="text-xl font-semibold text-primary-700 mb-2">Fair Comparisons</h3>
+            <p className="text-secondary-600">
+              Compare different AI systems on a level playing field with standardized evaluation protocols.
+            </p>
+          </div>
         </div>
       </div>
     </HomeLayout>

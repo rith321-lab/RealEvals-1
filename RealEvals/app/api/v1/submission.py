@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, Query, HTTPException
 from sqlalchemy.orm import Session
 from ...db.database import get_db
 from fastapi import BackgroundTasks
@@ -7,7 +7,10 @@ from ...schemas.submission_schema import (
     SubmissionCreate, 
     SubmissionResponse, 
     SubmissionListResponse,
-    LeaderboardResponse
+    LeaderboardResponse,
+    SubmissionStatusResponse,
+    SubmissionControlRequest,
+    SubmissionControlResponse
 )
 from ...core.security import get_current_user
 import uuid
@@ -51,6 +54,39 @@ async def get_submission(
         submission_uuid = uuid.UUID(submission_id)
         controller = SubmissionController(db)
         return await controller.get_submission_details(submission_uuid, current_user.id)
+    except ValueError:
+        raise HTTPException(status_code=400, detail="Invalid submission ID format")
+
+@router.get("/{submission_id}/status", response_model=SubmissionStatusResponse)
+async def get_submission_status(
+    submission_id: str,
+    db: Session = Depends(get_db),
+    current_user = Depends(get_current_user)
+):
+    """
+    Get detailed status of a submission including Browser Use task progress.
+    """
+    try:
+        submission_uuid = uuid.UUID(submission_id)
+        controller = SubmissionController(db)
+        return await controller.get_submission_status(submission_uuid, current_user.id)
+    except ValueError:
+        raise HTTPException(status_code=400, detail="Invalid submission ID format")
+
+@router.post("/{submission_id}/control", response_model=SubmissionControlResponse)
+async def control_submission(
+    submission_id: str,
+    control: SubmissionControlRequest,
+    db: Session = Depends(get_db),
+    current_user = Depends(get_current_user)
+):
+    """
+    Control a submission (pause, resume, stop).
+    """
+    try:
+        submission_uuid = uuid.UUID(submission_id)
+        controller = SubmissionController(db)
+        return await controller.control_submission(submission_uuid, current_user.id, control)
     except ValueError:
         raise HTTPException(status_code=400, detail="Invalid submission ID format")
 

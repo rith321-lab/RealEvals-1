@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
-import HomeLayout from '../Layouts/HomeLayout';
+import AuthLayout from '../Layouts/AuthLayout';
 import axiosInstance from '../Helper/axiosInstance';
 
 function Signup() {
@@ -73,14 +73,17 @@ function Signup() {
   }
 
   return (
-    <HomeLayout>
-      <div className="flex items-center justify-center min-h-[90vh] bg-base-200">
-        <form onSubmit={createNewAccount} className="flex flex-col gap-6 rounded-lg p-8 w-96 bg-base-100 shadow-2xl">
-          <h1 className="text-center text-3xl font-bold text-primary">Signup</h1>
+    <AuthLayout>
+      <div className="flex items-center justify-center min-h-[80vh]">
+        <form 
+          onSubmit={createNewAccount} 
+          className="flex flex-col gap-6 rounded-lg p-8 w-96 bg-white shadow-xl border border-primary-100"
+        >
+          <h1 className="text-center text-3xl font-bold text-primary-600">Signup</h1>
 
           {/* Name Input */}
           <div className="flex flex-col gap-2">
-            <label htmlFor="firstName" className="font-semibold text-lg">
+            <label htmlFor="firstName" className="font-semibold text-lg text-secondary-800">
               Name
             </label>
             <input
@@ -88,7 +91,7 @@ function Signup() {
               name="firstName"
               id="firstName"
               placeholder="Enter your name..."
-              className="input input-bordered w-full"
+              className="w-full p-3 border border-primary-200 rounded-md focus:ring focus:ring-primary-100 focus:border-primary-400 text-secondary-800"
               onChange={handleUserInput}
               value={signupData.firstName}
             />
@@ -96,7 +99,7 @@ function Signup() {
 
           {/* Email Input */}
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="font-semibold text-lg">
+            <label htmlFor="email" className="font-semibold text-lg text-secondary-800">
               Email
             </label>
             <input
@@ -104,7 +107,7 @@ function Signup() {
               name="email"
               id="email"
               placeholder="Enter your email..."
-              className="input input-bordered w-full"
+              className="w-full p-3 border border-primary-200 rounded-md focus:ring focus:ring-primary-100 focus:border-primary-400 text-secondary-800"
               onChange={handleUserInput}
               value={signupData.email}
             />
@@ -112,7 +115,7 @@ function Signup() {
 
           {/* Password Input */}
           <div className="flex flex-col gap-2">
-            <label htmlFor="password" className="font-semibold text-lg">
+            <label htmlFor="password" className="font-semibold text-lg text-secondary-800">
               Password
             </label>
             <input
@@ -120,25 +123,28 @@ function Signup() {
               name="password"
               id="password"
               placeholder="Enter your password..."
-              className="input input-bordered w-full"
+              className="w-full p-3 border border-primary-200 rounded-md focus:ring focus:ring-primary-100 focus:border-primary-400 text-secondary-800"
               onChange={handleUserInput}
               value={signupData.password}
             />
           </div>
 
-          <button type="submit" className="btn btn-primary w-full mt-4 text-lg">
-            Create Account
+          <button 
+            type="submit" 
+            className="w-full mt-4 py-3 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold rounded-md shadow-md transition-all duration-300"
+          >
+            CREATE ACCOUNT
           </button>
 
-          <p className="text-center text-lg">
+          <p className="text-center text-lg text-secondary-700">
             Already have an account?{' '}
-            <Link to="/login" className="text-secondary hover:underline">
+            <Link to="/login" className="text-primary-600 hover:text-primary-800 font-medium">
               Login
             </Link>
           </p>
         </form>
       </div>
-    </HomeLayout>
+    </AuthLayout>
   );
 }
 
