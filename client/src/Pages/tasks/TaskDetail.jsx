@@ -588,6 +588,7 @@ function TaskDetails() {
               </CardContent>
             </Card>
           )}
+          </div>
         </div>
       </div>
     </HomeLayout>
