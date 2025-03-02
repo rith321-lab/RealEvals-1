@@ -8,13 +8,49 @@ class TaskService:
     def __init__(self):
         self._db = get_db()
 
-    def get_tasks(self) -> List[Dict[str, Any]]:
+    def get_tasks(self, skip: int = 0, limit: int = 10) -> List[Dict[str, Any]]:
         """
-        Get all tasks from the database
+        Get all tasks from the database with pagination
+        
+        Args:
+            skip: Number of records to skip
+            limit: Maximum number of records to return
         """
         try:
             result = self._db.table("tasks").select("*").execute()
-            return result.data
+            
+            # Apply pagination in memory since Supabase doesn't support it directly
+            paginated_data = result.data[skip:skip + limit] if result.data else []
+            
+            # Convert the database records to the expected format
+            formatted_tasks = []
+            for db_task in paginated_data:
+                # Try to parse environment as JSON if it's a string
+                environment_config = {}
+                environment_type = "default"
+                if db_task.get("environment"):
+                    try:
+                        import json
+                        env_data = json.loads(db_task.get("environment"))
+                        if isinstance(env_data, dict):
+                            environment_type = env_data.get("type", "default")
+                            environment_config = env_data.get("config", {})
+                    except:
+                        # If parsing fails, use the raw value
+                        environment_type = db_task.get("environment")
+                
+                formatted_tasks.append({
+                    "id": db_task.get("id"),
+                    "title": db_task.get("name"),
+                    "description": db_task.get("description"),
+                    "instructions": db_task.get("instructions"),
+                    "webArenaEnvironment": environment_type,
+                    "environmentConfig": environment_config,
+                    "createdAt": db_task.get("created_at"),
+                    "updatedAt": db_task.get("updated_at")
+                })
+            
+            return formatted_tasks
         except Exception as e:
             logger.error(f"Error getting tasks: {str(e)}")
             raise HTTPException(
@@ -34,8 +70,34 @@ class TaskService:
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail=f"Task with ID {task_id} not found"
                 )
-                
-            return result.data[0]
+            
+            # Convert the database record to the expected format
+            db_task = result.data[0]
+            
+            # Try to parse environment as JSON if it's a string
+            environment_config = {}
+            environment_type = "default"
+            if db_task.get("environment"):
+                try:
+                    import json
+                    env_data = json.loads(db_task.get("environment"))
+                    if isinstance(env_data, dict):
+                        environment_type = env_data.get("type", "default")
+                        environment_config = env_data.get("config", {})
+                except:
+                    # If parsing fails, use the raw value
+                    environment_type = db_task.get("environment")
+            
+            return {
+                "id": db_task.get("id"),
+                "title": db_task.get("name"),
+                "description": db_task.get("description"),
+                "instructions": db_task.get("instructions"),
+                "webArenaEnvironment": environment_type,
+                "environmentConfig": environment_config,
+                "createdAt": db_task.get("created_at"),
+                "updatedAt": db_task.get("updated_at")
+            }
         except HTTPException:
             raise
         except Exception as e:
@@ -50,19 +112,43 @@ class TaskService:
         Create a new task
         """
         try:
-            # Generate a UUID if not provided
-            if "id" not in task_data:
-                task_data["id"] = str(uuid.uuid4())
+            # Map the task data to the actual database schema
+            new_task = {
+                "id": str(uuid.uuid4()),
+                "name": task_data.get("title", "Untitled Task"),
+                "description": task_data.get("description", ""),
+                "instructions": task_data.get("instructions", ""),
+                "environment": task_data.get("webArenaEnvironment", "default"),
+                # Let the database set created_at and updated_at
+            }
+            
+            # Store the full task data as JSON in the environment field if needed
+            if "environmentConfig" in task_data:
+                import json
+                new_task["environment"] = json.dumps({
+                    "type": task_data.get("webArenaEnvironment", "default"),
+                    "config": task_data.get("environmentConfig", {})
+                })
                 
-            result = self._db.table("tasks").insert(task_data).execute()
+            result = self._db.table("tasks").insert(new_task).execute()
             
             if not result.data or len(result.data) == 0:
                 raise HTTPException(
                     status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                     detail="Failed to create task"
                 )
-                
-            return result.data[0]
+            
+            # Convert the database record back to the expected format
+            db_task = result.data[0]
+            return {
+                "id": db_task.get("id"),
+                "title": db_task.get("name"),
+                "description": db_task.get("description"),
+                "instructions": db_task.get("instructions"),
+                "webArenaEnvironment": db_task.get("environment"),
+                "createdAt": db_task.get("created_at"),
+                "updatedAt": db_task.get("updated_at")
+            }
         except Exception as e:
             logger.error(f"Error creating task: {str(e)}")
             raise HTTPException(
