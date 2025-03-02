@@ -1,11 +1,50 @@
 import React, { useState, useEffect } from 'react';
 import HomeLayout from '../Layouts/HomeLayout';
+import { 
+  Container, 
+  Typography, 
+  Box, 
+  FormControl, 
+  InputLabel, 
+  Select, 
+  MenuItem, 
+  Paper, 
+  Table, 
+  TableBody, 
+  TableCell, 
+  TableContainer, 
+  TableHead, 
+  TableRow,
+  Chip,
+  Card,
+  CardContent,
+  Grid,
+  Tooltip,
+  IconButton,
+  Zoom
+} from '@mui/material';
+import { 
+  EmojiEvents, 
+  Workspaces, 
+  Timer, 
+  FilterList,
+  Info,
+  Search,
+  TrendingUp
+} from '@mui/icons-material';
+import { 
+  PageContainer, 
+  PageTitle, 
+  CardContainer, 
+  slideInAnimation 
+} from '../components/SharedComponents';
 
 function Leaderboard() {
   const [leaderboardData, setLeaderboardData] = useState([]);
   const [selectedTask, setSelectedTask] = useState('all');
   const [selectedTimeframe, setSelectedTimeframe] = useState('all');
   const [availableTasks, setAvailableTasks] = useState([]);
+  const [showFilters, setShowFilters] = useState(false);
 
   useEffect(() => {
     // Simulated data - would be replaced with actual API calls
@@ -39,85 +78,257 @@ function Leaderboard() {
     return true;
   });
 
+  const getScoreColor = (score) => {
+    if (score >= 90) return 'success';
+    if (score >= 70) return 'primary';
+    if (score >= 50) return 'warning';
+    return 'error';
+  };
+
+  const getRankIcon = (rank) => {
+    if (rank === 1) return <EmojiEvents sx={{ color: '#FFD700' }} />;
+    if (rank === 2) return <EmojiEvents sx={{ color: '#C0C0C0' }} />;
+    if (rank === 3) return <EmojiEvents sx={{ color: '#CD7F32' }} />;
+    return null;
+  };
+
+  const getTaskColor = (task) => {
+    switch (task) {
+      case 'Web Search Task':
+        return 'info';
+      case 'Form Filling Task':
+        return 'warning';
+      case 'Navigation Task':
+        return 'success';
+      default:
+        return 'default';
+    }
+  };
+
   return (
     <HomeLayout>
-      <div className="min-h-[90vh] pt-12 px-8 md:px-20 flex flex-col">
-        <h1 className="text-3xl font-semibold mb-8 text-secondary-800">
-          <span className="font-bold text-primary-600">Leaderboard</span>
-        </h1>
+      <Container maxWidth="lg" sx={{ 
+        minHeight: '90vh', 
+        py: 4,
+        ...slideInAnimation
+      }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
+          <Typography variant="h4" component="h1" color="primary" fontWeight="bold">
+            Leaderboard
+          </Typography>
+          
+          <Tooltip title="Toggle filters" arrow>
+            <IconButton 
+              color="primary" 
+              onClick={() => setShowFilters(!showFilters)}
+              sx={{ 
+                bgcolor: 'primary.50', 
+                '&:hover': { bgcolor: 'primary.100' } 
+              }}
+            >
+              <FilterList />
+            </IconButton>
+          </Tooltip>
+        </Box>
+
+        {/* Stats Cards */}
+        <Grid container spacing={3} sx={{ mb: 4 }}>
+          <Grid item xs={12} md={4}>
+            <Card 
+              elevation={2} 
+              sx={{ 
+                borderRadius: 2, 
+                background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)',
+                transition: 'transform 0.3s',
+                '&:hover': {
+                  transform: 'translateY(-5px)'
+                }
+              }}
+            >
+              <CardContent sx={{ p: 3 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+                  <EmojiEvents sx={{ color: 'primary.main', mr: 1 }} />
+                  <Typography variant="h6" color="primary.dark" fontWeight="bold">
+                    Top Score
+                  </Typography>
+                </Box>
+                <Typography variant="h3" color="primary.dark" fontWeight="bold">
+                  {Math.max(...leaderboardData.map(item => item.score))}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                  Achieved by {leaderboardData.find(item => item.rank === 1)?.agent}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          
+          <Grid item xs={12} md={4}>
+            <Card 
+              elevation={2} 
+              sx={{ 
+                borderRadius: 2, 
+                background: 'linear-gradient(135deg, #eff6ff 0%, #bfdbfe 100%)',
+                transition: 'transform 0.3s',
+                '&:hover': {
+                  transform: 'translateY(-5px)'
+                }
+              }}
+            >
+              <CardContent sx={{ p: 3 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+                  <Workspaces sx={{ color: 'info.main', mr: 1 }} />
+                  <Typography variant="h6" color="info.dark" fontWeight="bold">
+                    Total Agents
+                  </Typography>
+                </Box>
+                <Typography variant="h3" color="info.dark" fontWeight="bold">
+                  {new Set(leaderboardData.map(item => item.agent)).size}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                  Competing across {new Set(leaderboardData.map(item => item.task)).size} tasks
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          
+          <Grid item xs={12} md={4}>
+            <Card 
+              elevation={2} 
+              sx={{ 
+                borderRadius: 2, 
+                background: 'linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%)',
+                transition: 'transform 0.3s',
+                '&:hover': {
+                  transform: 'translateY(-5px)'
+                }
+              }}
+            >
+              <CardContent sx={{ p: 3 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
+                  <Timer sx={{ color: 'warning.main', mr: 1 }} />
+                  <Typography variant="h6" color="warning.dark" fontWeight="bold">
+                    Best Time
+                  </Typography>
+                </Box>
+                <Typography variant="h3" color="warning.dark" fontWeight="bold">
+                  {leaderboardData.sort((a, b) => {
+                    const timeA = a.completionTime.split(':').reduce((acc, time) => (60 * acc) + +time);
+                    const timeB = b.completionTime.split(':').reduce((acc, time) => (60 * acc) + +time);
+                    return timeA - timeB;
+                  })[0]?.completionTime}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+                  Fastest completion time recorded
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
 
         {/* Filters */}
-        <div className="flex flex-wrap gap-4 mb-8">
-          <div>
-            <label className="block text-sm text-secondary-600 mb-1">Task</label>
-            <select 
-              value={selectedTask} 
-              onChange={(e) => setSelectedTask(e.target.value)}
-              className="bg-white border border-primary-200 text-secondary-800 rounded-md px-4 py-2 focus:border-primary-400 focus:ring focus:ring-primary-100 transition-all"
-            >
-              <option value="all">All Tasks</option>
-              {availableTasks.map(task => (
-                <option key={task.id} value={task.title}>{task.title}</option>
-              ))}
-            </select>
-          </div>
-          
-          <div>
-            <label className="block text-sm text-secondary-600 mb-1">Timeframe</label>
-            <select 
-              value={selectedTimeframe} 
-              onChange={(e) => setSelectedTimeframe(e.target.value)}
-              className="bg-white border border-primary-200 text-secondary-800 rounded-md px-4 py-2 focus:border-primary-400 focus:ring focus:ring-primary-100 transition-all"
-            >
-              <option value="all">All Time</option>
-              <option value="week">This Week</option>
-              <option value="month">This Month</option>
-              <option value="year">This Year</option>
-            </select>
-          </div>
-        </div>
+        <Zoom in={showFilters}>
+          <Box sx={{ display: showFilters ? 'flex' : 'none', flexWrap: 'wrap', gap: 3, mb: 4 }}>
+            <FormControl sx={{ minWidth: 200 }}>
+              <InputLabel id="task-select-label">Task</InputLabel>
+              <Select
+                labelId="task-select-label"
+                id="task-select"
+                value={selectedTask}
+                label="Task"
+                onChange={(e) => setSelectedTask(e.target.value)}
+              >
+                <MenuItem value="all">All Tasks</MenuItem>
+                {availableTasks.map(task => (
+                  <MenuItem key={task.id} value={task.title}>{task.title}</MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+            
+            <FormControl sx={{ minWidth: 200 }}>
+              <InputLabel id="timeframe-select-label">Timeframe</InputLabel>
+              <Select
+                labelId="timeframe-select-label"
+                id="timeframe-select"
+                value={selectedTimeframe}
+                label="Timeframe"
+                onChange={(e) => setSelectedTimeframe(e.target.value)}
+              >
+                <MenuItem value="all">All Time</MenuItem>
+                <MenuItem value="week">This Week</MenuItem>
+                <MenuItem value="month">This Month</MenuItem>
+                <MenuItem value="year">This Year</MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+        </Zoom>
 
         {/* Leaderboard Table */}
-        <div className="overflow-x-auto rounded-lg border border-primary-200 shadow-md">
-          <table className="min-w-full bg-white rounded-lg overflow-hidden">
-            <thead className="bg-primary-50">
-              <tr>
-                <th className="py-3 px-4 text-left text-secondary-700 font-semibold">#</th>
-                <th className="py-3 px-4 text-left text-secondary-700 font-semibold">User</th>
-                <th className="py-3 px-4 text-left text-secondary-700 font-semibold">Agent</th>
-                <th className="py-3 px-4 text-left text-secondary-700 font-semibold">Task</th>
-                <th className="py-3 px-4 text-left text-secondary-700 font-semibold">Score</th>
-                <th className="py-3 px-4 text-left text-secondary-700 font-semibold">Time</th>
-              </tr>
-            </thead>
-            <tbody>
+        <TableContainer component={Paper} elevation={3} sx={{ borderRadius: 2, overflow: 'hidden' }}>
+          <Table sx={{ minWidth: 650 }}>
+            <TableHead>
+              <TableRow sx={{ backgroundColor: 'primary.light' }}>
+                <TableCell sx={{ fontWeight: 'bold', color: 'white' }}>#</TableCell>
+                <TableCell sx={{ fontWeight: 'bold', color: 'white' }}>User</TableCell>
+                <TableCell sx={{ fontWeight: 'bold', color: 'white' }}>Agent</TableCell>
+                <TableCell sx={{ fontWeight: 'bold', color: 'white' }}>Task</TableCell>
+                <TableCell sx={{ fontWeight: 'bold', color: 'white' }}>Score</TableCell>
+                <TableCell sx={{ fontWeight: 'bold', color: 'white' }}>Time</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
               {filteredData.map((entry) => (
-                <tr key={entry.rank} className="border-t border-gray-100 hover:bg-primary-50 transition-colors">
-                  <td className="py-3 px-4 font-bold text-secondary-800">
-                    {entry.rank === 1 && <span className="text-yellow-500">🏆 </span>}
-                    {entry.rank === 2 && <span className="text-gray-500">🥈 </span>}
-                    {entry.rank === 3 && <span className="text-amber-600">🥉 </span>}
-                    {entry.rank}
-                  </td>
-                  <td className="py-3 px-4 text-secondary-800">{entry.user}</td>
-                  <td className="py-3 px-4 font-medium text-secondary-800">{entry.agent}</td>
-                  <td className="py-3 px-4 text-secondary-800">{entry.task}</td>
-                  <td className="py-3 px-4 font-bold">
-                    <span className={
-                      entry.score >= 90 ? 'text-green-600' :
-                      entry.score >= 70 ? 'text-primary-600' :
-                      entry.score >= 50 ? 'text-yellow-600' : 'text-red-600'
-                    }>
-                      {entry.score}
-                    </span>
-                  </td>
-                  <td className="py-3 px-4 text-secondary-800">{entry.completionTime}</td>
-                </tr>
+                <TableRow 
+                  key={entry.rank} 
+                  sx={{ 
+                    '&:nth-of-type(odd)': { backgroundColor: 'background.paper' },
+                    '&:hover': { backgroundColor: 'primary.50' },
+                    transition: 'background-color 0.2s'
+                  }}
+                >
+                  <TableCell>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                      {getRankIcon(entry.rank)}
+                      <Typography variant="body1" fontWeight="bold" sx={{ ml: entry.rank <= 3 ? 1 : 0 }}>
+                        {entry.rank}
+                      </Typography>
+                    </Box>
+                  </TableCell>
+                  <TableCell>{entry.user}</TableCell>
+                  <TableCell>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                      <Workspaces sx={{ color: 'primary.main', mr: 1 }} />
+                      <Typography variant="body1" fontWeight="medium">
+                        {entry.agent}
+                      </Typography>
+                    </Box>
+                  </TableCell>
+                  <TableCell>
+                    <Chip 
+                      label={entry.task} 
+                      size="small" 
+                      color={getTaskColor(entry.task)}
+                      sx={{ fontWeight: 'medium' }} 
+                    />
+                  </TableCell>
+                  <TableCell>
+                    <Chip 
+                      label={entry.score} 
+                      color={getScoreColor(entry.score)} 
+                      sx={{ fontWeight: 'bold' }} 
+                    />
+                  </TableCell>
+                  <TableCell>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                      <Timer sx={{ color: 'text.secondary', mr: 1, fontSize: 18 }} />
+                      {entry.completionTime}
+                    </Box>
+                  </TableCell>
+                </TableRow>
               ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Container>
     </HomeLayout>
   );
 }

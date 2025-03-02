@@ -4,6 +4,25 @@ import toast from 'react-hot-toast';
 import axiosInstance from '../Helper/axiosInstance';
 import { AuthContext } from '../utils/AuthContext';
 import HomeLayout from '../Layouts/HomeLayout';
+import { 
+  Box, 
+  TextField, 
+  Button, 
+  Typography, 
+  Container, 
+  Paper, 
+  InputAdornment, 
+  IconButton,
+  Avatar,
+  Divider
+} from '@mui/material';
+import { Visibility, VisibilityOff, LockOutlined } from '@mui/icons-material';
+import { 
+  CardContainer, 
+  FormField, 
+  LoadingButton, 
+  fadeInAnimation 
+} from '../components/SharedComponents';
 
 function Login() {
   const [user, setUser] = useState({
@@ -11,6 +30,7 @@ function Login() {
     password: '',
   });
 
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { login } = useContext(AuthContext);
@@ -22,6 +42,10 @@ function Login() {
       [name]: value,
     });
   }
+
+  const handleClickShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -59,63 +83,118 @@ function Login() {
 
   return (
     <HomeLayout>
-      <div className="min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-b from-white to-primary-50 py-12">
-        <form 
-          onSubmit={handleLogin}
-          className="flex flex-col justify-center gap-6 rounded-lg p-8 w-96 bg-white shadow-xl border border-primary-100"
+      <Container component="main" maxWidth="xs" sx={{ 
+        minHeight: '90vh', 
+        display: 'flex', 
+        alignItems: 'center',
+        justifyContent: 'center',
+        ...fadeInAnimation
+      }}>
+        <Paper 
+          elevation={3} 
+          sx={{ 
+            p: 4, 
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center',
+            background: 'linear-gradient(to bottom right, #ffffff, #f0fdf4)',
+            borderRadius: 2,
+            border: '1px solid #dcfce7',
+            width: '100%',
+            maxWidth: 400
+          }}
         >
-          <h1 className="text-center text-3xl font-bold text-primary-600">Login</h1>
+          <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
+            <LockOutlined />
+          </Avatar>
+          <Typography component="h1" variant="h5" color="primary.dark" fontWeight="bold" mb={1}>
+            Welcome Back
+          </Typography>
+          <Typography variant="body2" color="text.secondary" mb={3}>
+            Sign in to continue to RealEvals
+          </Typography>
           
-          <div className="flex flex-col gap-1">
-            <label htmlFor="email" className="text-primary-700 font-medium">
-              Email
-            </label>
-            <input
-              type="email"
+          <Box component="form" onSubmit={handleLogin} sx={{ width: '100%' }}>
+            <FormField
+              margin="normal"
               required
-              name="email"
+              fullWidth
               id="email"
-              placeholder="Enter your email"
-              className="bg-white border border-primary-200 px-3 py-2 rounded-lg text-secondary-800 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500"
-              onChange={handleUserInput}
+              label="Email Address"
+              name="email"
+              autoComplete="email"
+              autoFocus
               value={user.email}
-            />
-          </div>
-          
-          <div className="flex flex-col gap-1">
-            <label htmlFor="password" className="text-primary-700 font-medium">
-              Password
-            </label>
-            <input
-              type="password"
-              required
-              name="password"
-              id="password"
-              placeholder="Enter your password"
-              className="bg-white border border-primary-200 px-3 py-2 rounded-lg text-secondary-800 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500"
               onChange={handleUserInput}
-              value={user.password}
+              variant="outlined"
             />
-          </div>
-          
-          <button
-            type="submit"
-            disabled={loading}
-            className={`mt-2 py-2 px-3 rounded-lg bg-primary-700 text-white font-semibold transition-all duration-300 hover:bg-primary-800 ${
-              loading ? 'opacity-70 cursor-not-allowed' : ''
-            }`}
-          >
-            {loading ? 'Logging in...' : 'Login'}
-          </button>
-          
-          <p className="text-center text-secondary-700">
-            Don't have an account?{' '}
-            <Link to="/signup" className="text-primary-700 hover:underline">
-              Sign up
-            </Link>
-          </p>
-        </form>
-      </div>
+            <FormField
+              margin="normal"
+              required
+              fullWidth
+              name="password"
+              label="Password"
+              type={showPassword ? 'text' : 'password'}
+              id="password"
+              autoComplete="current-password"
+              value={user.password}
+              onChange={handleUserInput}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={handleClickShowPassword}
+                      edge="end"
+                    >
+                      {showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
+            />
+            <LoadingButton
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              loading={loading}
+              sx={{ 
+                mt: 3, 
+                mb: 2,
+                py: 1.5,
+              }}
+            >
+              {loading ? 'Signing in...' : 'Sign In'}
+            </LoadingButton>
+            
+            <Divider sx={{ my: 2 }}>
+              <Typography variant="body2" color="text.secondary">
+                OR
+              </Typography>
+            </Divider>
+            
+            <Box sx={{ textAlign: 'center', mt: 2 }}>
+              <Typography variant="body2" color="text.secondary">
+                Don't have an account?{' '}
+                <Link 
+                  to="/signup" 
+                  style={{ 
+                    color: '#16a34a', 
+                    fontWeight: 500, 
+                    textDecoration: 'none',
+                    transition: 'color 0.2s'
+                  }}
+                  onMouseOver={(e) => e.target.style.color = '#15803d'}
+                  onMouseOut={(e) => e.target.style.color = '#16a34a'}
+                >
+                  Sign up now
+                </Link>
+              </Typography>
+            </Box>
+          </Box>
+        </Paper>
+      </Container>
     </HomeLayout>
   );
 }
