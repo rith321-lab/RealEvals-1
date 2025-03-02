@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Updated to point to our FastAPI server on port 8000
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'http://localhost:8000/api/v1';
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,

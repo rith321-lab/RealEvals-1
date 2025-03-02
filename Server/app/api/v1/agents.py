@@ -20,12 +20,8 @@ async def create_agent(
 async def get_my_agents(
     current_user: User = Depends(get_current_user)
 ):
-<<<<<<< HEAD:RealEvals/app/api/v1/agents.py
     """Get all agents for current user"""
     controller = AgentController()
-=======
-    controller = AgentController(db)
->>>>>>> 3c266bd207f7bfaddbaff471d9c0a0073a0857d1:Server/app/api/v1/agents.py
     return await controller.get_user_agents(current_user.id)
 
 @router.get("/{agent_id}", response_model=AgentResponse)
