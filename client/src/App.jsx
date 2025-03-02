@@ -12,7 +12,9 @@ import Leaderboard from './Pages/Leaderboard';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import NotFound from './Pages/NotFound';
+import UIComparison from './Pages/UIComparison';
 import { useState, useEffect } from 'react';
+import { UIProvider } from './utils/UIContext';
 
 function ProtectedRoute({ children, allowedRoles }) {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('access_token'));
@@ -31,25 +33,28 @@ function ProtectedRoute({ children, allowedRoles }) {
 
 function App() {
   return (
-    <div className="bg-white min-h-screen">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/tasks" element={<DisplayTasks />} />
-        <Route path="/tasks/create" element={<AddTask />} />
-        <Route path="/task/:taskId" element={<TaskDetails />} />
-        <Route path="/admin/dashboard" element={
-          <ProtectedRoute allowedRoles={['ADMIN']}>
-            <AdminDashboard />
-          </ProtectedRoute>
-        } />
-        <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </div>
+    <UIProvider>
+      <div className="bg-white min-h-screen">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/tasks" element={<DisplayTasks />} />
+          <Route path="/tasks/create" element={<AddTask />} />
+          <Route path="/task/:taskId" element={<TaskDetails />} />
+          <Route path="/admin/dashboard" element={
+            <ProtectedRoute allowedRoles={['ADMIN']}>
+              <AdminDashboard />
+            </ProtectedRoute>
+          } />
+          <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/ui-comparison" element={<UIComparison />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
+    </UIProvider>
   );
 }
 
