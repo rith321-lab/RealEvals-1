@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { FiArrowLeft, FiPlus, FiTrash2, FiSettings, FiCheckCircle } from 'react-icons/fi';
 import { Link, useNavigate } from 'react-router-dom';
@@ -11,13 +11,45 @@ function CreateTask() {
   const [loading, setLoading] = useState(false);
 
   const [taskInput, setTaskInput] = useState({
-    title: '',
-    description: '',
-    difficulty: '',
-    webArenaEnvironment: '',
-    environmentConfig: {},
+    title: 'Search for Wireless Headphones on Staynb',
+    description: 'This task tests the ability to search for wireless headphones on the Staynb website and extract product information.',
+    instructions: 'Navigate to Staynb.com, search for "wireless headphones", and extract the top 3 results with their prices.',
+    difficulty: 'MEDIUM',
+    webArenaEnvironment: 'staynb',
+    environmentConfig: {
+      startUrl: 'https://staynb.com',
+      objective: 'Search for wireless headphones and extract the top 3 results with prices'
+    },
   });
-  const [configEntries, setConfigEntries] = useState([]);
+  const [configEntries, setConfigEntries] = useState([
+    { key: 'startUrl', value: 'https://staynb.com' },
+    { key: 'objective', value: 'Search for wireless headphones and extract the top 3 results with prices' }
+  ]);
+  
+  useEffect(() => {
+    // Clear any existing token and get a fresh one
+    localStorage.removeItem('token');
+    
+    // Get a development token
+    axiosInstance.get('/auth/dev-login')
+      .then(response => {
+        console.log('Dev login response:', response.data);
+        const token = response.data.access_token;
+        if (token) {
+          localStorage.setItem('token', token);
+          // Update axios instance with the token
+          axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+          toast.success('Development login successful');
+        } else {
+          console.error('No token in response:', response.data);
+          toast.error('Failed to get development token');
+        }
+      })
+      .catch(error => {
+        console.error('Dev login error:', error);
+        toast.error('Failed to get development token');
+      });
+  }, []);
 
   function handleInputChange(e) {
     const { name, value } = e.target;
@@ -62,21 +94,32 @@ function CreateTask() {
     }
     
     try {
+      // Ensure we have a valid token
+      const token = localStorage.getItem('token');
+      if (!token) {
+        // Try to get a new token
+        const authResponse = await axiosInstance.get('/auth/dev-login');
+        const newToken = authResponse.data.access_token;
+        if (newToken) {
+          localStorage.setItem('token', newToken);
+          axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${newToken}`;
+        } else {
+          throw new Error('Failed to get authentication token');
+        }
+      }
+      
+      console.log('Submitting task:', taskInput);
       const response = await axiosInstance.post('/tasks', taskInput);
+      console.log('Task creation response:', response.data);
+      
       toast.success('Task created successfully!');
       
-      // Reset form
-      setTaskInput({
-        title: '',
-        description: '',
-        difficulty: '',
-        webArenaEnvironment: '',
-        environmentConfig: {},
-      });
-      setConfigEntries([]);
-      
-      // Navigate back to tasks list
-      navigate('/tasks');
+      // Navigate to the task detail page if we have an ID
+      if (response.data && response.data.id) {
+        navigate(`/task/${response.data.id}`);
+      } else {
+        navigate('/tasks');
+      }
     } catch (error) {
       console.error('Error creating task:', error);
       toast.error(error.response?.data?.message || 'Failed to create task');
