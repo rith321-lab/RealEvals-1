@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import HomeLayout from '../Layouts/HomeLayout';
 import { toast } from 'react-hot-toast';
-import { FiTrash2, FiEye, FiUsers, FiClipboard, FiBarChart2 } from 'react-icons/fi';
+import { 
+  FiTrash2, FiEye, FiUsers, FiClipboard, FiBarChart2, 
+  FiCpu, FiCheckCircle, FiClock, FiPlus, FiGrid, FiList,
+  FiAlertCircle, FiActivity
+} from 'react-icons/fi';
 import axiosInstance from '../Helper/axiosInstance';
+import { 
+  Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter,
+  Button, Badge, Table, TableHeader, TableBody, TableRow, TableCell, TableHeaderCell,
+  Spinner
+} from '../components/ui';
 
 const AdminDashboard = () => {
   const [tasks, setTasks] = useState([]);
@@ -79,162 +89,303 @@ const AdminDashboard = () => {
     });
   };
 
+  // Helper function to get badge variant based on difficulty
+  const getDifficultyBadgeVariant = (difficulty) => {
+    if (!difficulty) return 'primary';
+    const lowerDifficulty = difficulty.toLowerCase();
+    if (lowerDifficulty === 'easy') return 'success';
+    if (lowerDifficulty === 'medium') return 'warning';
+    if (lowerDifficulty === 'hard') return 'danger';
+    return 'primary';
+  };
+
   return (
     <HomeLayout>
-      <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-6 text-center">Admin Dashboard</h1>
-
-        {/* Dashboard Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-          <div className="stat bg-base-200 shadow rounded-lg">
-            <div className="stat-figure text-primary">
-              <FiClipboard size={24} />
-            </div>
-            <div className="stat-title">Total Tasks</div>
-            <div className="stat-value text-primary">{taskStats.total}</div>
+      <div className="min-h-[90vh] py-12 px-4 md:px-8 lg:px-16 flex flex-col items-center bg-gradient-to-br from-white via-primary-50 to-white animate-fade-in">
+        <div className="w-full max-w-7xl">
+          <div className="text-center mb-8 animate-slide-up">
+            <h1 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-2">
+              <span className="bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">Admin Dashboard</span>
+            </h1>
+            <p className="text-secondary-600 max-w-2xl mx-auto">
+              Manage tasks, agents, and monitor platform performance
+            </p>
           </div>
 
-          <div className="stat bg-base-200 shadow rounded-lg">
-            <div className="stat-figure text-secondary">
-              <FiBarChart2 size={24} />
-            </div>
-            <div className="stat-title">Completed Tasks</div>
-            <div className="stat-value text-secondary">{taskStats.completed}</div>
-          </div>
-
-          <div className="stat bg-base-200 shadow rounded-lg">
-            <div className="stat-figure text-accent">
-              <FiUsers size={24} />
-            </div>
-            <div className="stat-title">Total Agents</div>
-            <div className="stat-value text-accent">{agentStats.total}</div>
-          </div>
-
-          <div className="stat bg-base-200 shadow rounded-lg">
-            <div className="stat-figure text-info">
-              <FiUsers size={24} />
-            </div>
-            <div className="stat-title">Active Agents</div>
-            <div className="stat-value text-info">{agentStats.active}</div>
-          </div>
-        </div>
-
-        {/* Tab Navigation */}
-        <div className="tabs tabs-boxed mb-6">
-          <a className={`tab ${activeTab === 'tasks' ? 'tab-active' : ''}`} onClick={() => setActiveTab('tasks')}>
-            Tasks Management
-          </a>
-          <a className={`tab ${activeTab === 'agents' ? 'tab-active' : ''}`} onClick={() => setActiveTab('agents')}>
-            Agents Management
-          </a>
-        </div>
-
-        {/* Tasks Tab */}
-        {activeTab === 'tasks' && (
-          <div>
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-semibold">Tasks</h2>
-              <a href="/tasks/create" className="btn btn-primary">
-                Create New Task
-              </a>
-            </div>
-
-            {loading ? (
-              <div className="flex justify-center">
-                <span className="loading loading-spinner loading-lg"></span>
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {tasks.length > 0 ? (
-                  tasks.map((task) => (
-                    <div key={task.id} className="card bg-base-200 shadow-lg">
-                      <div className="card-body">
-                        <h2 className="card-title">{task.title}</h2>
-                        <div className="badge badge-primary mb-2">{task.difficulty}</div>
-                        <p className="text-sm mb-2 overflow-hidden text-ellipsis" style={{ maxHeight: '3rem' }}>
-                          {task.description.substring(0, 100)}...
-                        </p>
-                        <div className="text-sm opacity-70">
-                          <p>Environment: {task.webArenaEnvironment}</p>
-                          <p>Created: {formatDate(task.createdAt)}</p>
-                        </div>
-                        <div className="card-actions justify-end mt-2">
-                          <a href={`/tasks/${task.id}`} className="btn btn-sm btn-outline">
-                            <FiEye /> View
-                          </a>
-                          <button className="btn btn-sm btn-error" onClick={() => handleDeleteTask(task.id)}>
-                            <FiTrash2 /> Delete
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  ))
-                ) : (
-                  <div className="col-span-3 text-center py-10">
-                    <p className="text-lg">No tasks found. Create your first task!</p>
-                    <a href="/tasks/create" className="btn btn-primary mt-4">
-                      Create Task
-                    </a>
+          {/* Dashboard Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            <Card variant="flat" className="bg-gradient-to-br from-primary-50 to-white border-l-4 border-primary-500">
+              <CardContent className="p-6">
+                <div className="flex justify-between items-center">
+                  <div>
+                    <p className="text-sm font-medium text-secondary-600 mb-1">Total Tasks</p>
+                    <p className="text-3xl font-bold text-primary-700">{taskStats.total}</p>
                   </div>
-                )}
-              </div>
-            )}
+                  <div className="bg-primary-100 p-3 rounded-full">
+                    <FiClipboard className="h-6 w-6 text-primary-600" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card variant="flat" className="bg-gradient-to-br from-green-50 to-white border-l-4 border-green-500">
+              <CardContent className="p-6">
+                <div className="flex justify-between items-center">
+                  <div>
+                    <p className="text-sm font-medium text-secondary-600 mb-1">Completed Tasks</p>
+                    <p className="text-3xl font-bold text-green-600">{taskStats.completed}</p>
+                  </div>
+                  <div className="bg-green-100 p-3 rounded-full">
+                    <FiCheckCircle className="h-6 w-6 text-green-600" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card variant="flat" className="bg-gradient-to-br from-blue-50 to-white border-l-4 border-blue-500">
+              <CardContent className="p-6">
+                <div className="flex justify-between items-center">
+                  <div>
+                    <p className="text-sm font-medium text-secondary-600 mb-1">Total Agents</p>
+                    <p className="text-3xl font-bold text-blue-600">{agentStats.total}</p>
+                  </div>
+                  <div className="bg-blue-100 p-3 rounded-full">
+                    <FiCpu className="h-6 w-6 text-blue-600" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card variant="flat" className="bg-gradient-to-br from-purple-50 to-white border-l-4 border-purple-500">
+              <CardContent className="p-6">
+                <div className="flex justify-between items-center">
+                  <div>
+                    <p className="text-sm font-medium text-secondary-600 mb-1">Active Agents</p>
+                    <p className="text-3xl font-bold text-purple-600">{agentStats.active}</p>
+                  </div>
+                  <div className="bg-purple-100 p-3 rounded-full">
+                    <FiActivity className="h-6 w-6 text-purple-600" />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
-        )}
 
-        {/* Agents Tab */}
-        {activeTab === 'agents' && (
-          <div>
-            <h2 className="text-xl font-semibold mb-4">Agents</h2>
+          {/* Tab Navigation */}
+          <div className="flex flex-wrap justify-center gap-2 md:gap-4 border-b border-primary-100 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <button
+              className={`px-4 py-3 md:px-6 md:py-4 transition-all duration-300 rounded-t-lg text-base md:text-lg flex items-center gap-2 ${
+                activeTab === 'tasks'
+                  ? 'bg-white text-primary-700 border-b-4 border-primary-600 font-semibold shadow-soft-md'
+                  : 'bg-primary-50 text-secondary-600 hover:bg-white hover:text-primary-600'
+              }`}
+              onClick={() => setActiveTab('tasks')}
+            >
+              <FiClipboard />
+              Tasks Management
+            </button>
+            <button
+              className={`px-4 py-3 md:px-6 md:py-4 transition-all duration-300 rounded-t-lg text-base md:text-lg flex items-center gap-2 ${
+                activeTab === 'agents'
+                  ? 'bg-white text-primary-700 border-b-4 border-primary-600 font-semibold shadow-soft-md'
+                  : 'bg-primary-50 text-secondary-600 hover:bg-white hover:text-primary-600'
+              }`}
+              onClick={() => setActiveTab('agents')}
+            >
+              <FiUsers />
+              Agents Management
+            </button>
+          </div>
 
-            {loading ? (
-              <div className="flex justify-center">
-                <span className="loading loading-spinner loading-lg"></span>
+          {/* Tasks Tab */}
+          {activeTab === 'tasks' && (
+            <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
+              <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div className="flex items-center mb-4 md:mb-0">
+                  <div className="bg-primary-100 p-2 rounded-full mr-3">
+                    <FiClipboard className="h-5 w-5 text-primary-600" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-secondary-900">Tasks</h2>
+                </div>
+                
+                <div className="flex gap-3">
+                  <Button 
+                    variant="outline"
+                    leftIcon={<FiGrid />}
+                    className="hidden md:flex"
+                  >
+                    Grid View
+                  </Button>
+                  <Link to="/tasks/create">
+                    <Button 
+                      leftIcon={<FiPlus />}
+                    >
+                      Create New Task
+                    </Button>
+                  </Link>
+                </div>
               </div>
-            ) : (
-              <div className="overflow-x-auto">
-                <table className="table w-full">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Description</th>
-                      <th>Status</th>
-                      <th>Created At</th>
-                      <th>Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {agents.length > 0 ? (
-                      agents.map((agent) => (
-                        <tr key={agent.id}>
-                          <td>{agent.name}</td>
-                          <td>{agent.description || 'No description'}</td>
-                          <td>
-                            <div className={`badge ${agent.isActive ? 'badge-success' : 'badge-error'}`}>
-                              {agent.isActive ? 'Active' : 'Inactive'}
+
+              {loading ? (
+                <div className="flex justify-center py-20">
+                  <Spinner size="lg" />
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {tasks.length > 0 ? (
+                    tasks.map((task) => (
+                      <Card key={task.id} variant="elevated" className="h-full transform transition-all duration-300 hover:shadow-soft-lg hover:scale-[1.02]">
+                        <CardContent className="p-6">
+                          <div className="flex justify-between items-start mb-3">
+                            <h3 className="text-xl font-bold text-secondary-900 line-clamp-1">{task.title}</h3>
+                            <Badge variant={getDifficultyBadgeVariant(task.difficulty)}>
+                              {task.difficulty || 'Unknown'}
+                            </Badge>
+                          </div>
+                          
+                          <p className="text-secondary-600 mb-4 line-clamp-2">
+                            {task.description ? task.description.substring(0, 100) + (task.description.length > 100 ? '...' : '') : 'No description'}
+                          </p>
+                          
+                          <div className="space-y-2 text-sm text-secondary-500 mb-4">
+                            <div className="flex items-center">
+                              <FiBarChart2 className="mr-2 h-4 w-4" />
+                              <span>Environment: {task.webArenaEnvironment || 'Standard'}</span>
                             </div>
-                          </td>
-                          <td>{formatDate(agent.createdAt)}</td>
-                          <td>
-                            <a href={`/agents/${agent.id}`} className="btn btn-xs btn-outline mr-2">
-                              <FiEye /> View
-                            </a>
-                          </td>
-                        </tr>
-                      ))
-                    ) : (
-                      <tr>
-                        <td colSpan="5" className="text-center py-10">
-                          <p className="text-lg">No agents found.</p>
-                        </td>
-                      </tr>
-                    )}
-                  </tbody>
-                </table>
+                            <div className="flex items-center">
+                              <FiClock className="mr-2 h-4 w-4" />
+                              <span>Created: {formatDate(task.createdAt)}</span>
+                            </div>
+                          </div>
+                          
+                          <div className="flex justify-end gap-2 mt-auto pt-2">
+                            <Link to={`/tasks/${task.id}`}>
+                              <Button 
+                                variant="outline" 
+                                size="sm"
+                                leftIcon={<FiEye />}
+                              >
+                                View
+                              </Button>
+                            </Link>
+                            <Button 
+                              variant="danger" 
+                              size="sm"
+                              leftIcon={<FiTrash2 />}
+                              onClick={() => handleDeleteTask(task.id)}
+                            >
+                              Delete
+                            </Button>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))
+                  ) : (
+                    <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center py-16 bg-primary-50 rounded-lg">
+                      <div className="bg-white p-4 rounded-full inline-flex mb-4 shadow-soft-sm">
+                        <FiAlertCircle className="h-8 w-8 text-secondary-400" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-secondary-800 mb-3">No tasks found</h3>
+                      <p className="text-secondary-600 max-w-md mx-auto mb-6">
+                        Create your first task to start evaluating agents on the platform.
+                      </p>
+                      <Link to="/tasks/create">
+                        <Button leftIcon={<FiPlus />}>
+                          Create Task
+                        </Button>
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Agents Tab */}
+          {activeTab === 'agents' && (
+            <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
+              <div className="flex items-center mb-6">
+                <div className="bg-primary-100 p-2 rounded-full mr-3">
+                  <FiUsers className="h-5 w-5 text-primary-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-secondary-900">Agents</h2>
               </div>
-            )}
-          </div>
-        )}
+
+              {loading ? (
+                <div className="flex justify-center py-20">
+                  <Spinner size="lg" />
+                </div>
+              ) : (
+                <Card variant="elevated">
+                  <CardContent className="p-0">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHeaderCell>Name</TableHeaderCell>
+                          <TableHeaderCell>Description</TableHeaderCell>
+                          <TableHeaderCell className="w-24">Status</TableHeaderCell>
+                          <TableHeaderCell className="w-40">Created At</TableHeaderCell>
+                          <TableHeaderCell className="w-24">Actions</TableHeaderCell>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {agents.length > 0 ? (
+                          agents.map((agent) => (
+                            <TableRow key={agent.id} isHoverable={true}>
+                              <TableCell className="font-medium">
+                                <div className="flex items-center">
+                                  <FiCpu className="mr-2 text-primary-500" />
+                                  {agent.name}
+                                </div>
+                              </TableCell>
+                              <TableCell className="max-w-xs truncate">
+                                {agent.description || 'No description'}
+                              </TableCell>
+                              <TableCell>
+                                <Badge variant={agent.isActive ? 'success' : 'danger'}>
+                                  {agent.isActive ? 'Active' : 'Inactive'}
+                                </Badge>
+                              </TableCell>
+                              <TableCell>
+                                <div className="flex items-center">
+                                  <FiClock className="mr-1 text-secondary-500" />
+                                  {formatDate(agent.createdAt)}
+                                </div>
+                              </TableCell>
+                              <TableCell>
+                                <Link to={`/agents/${agent.id}`}>
+                                  <Button 
+                                    variant="outline" 
+                                    size="sm"
+                                    leftIcon={<FiEye />}
+                                  >
+                                    View
+                                  </Button>
+                                </Link>
+                              </TableCell>
+                            </TableRow>
+                          ))
+                        ) : (
+                          <TableRow>
+                            <TableCell colSpan={5} className="text-center py-10">
+                              <div className="flex flex-col items-center">
+                                <div className="bg-primary-50 p-3 rounded-full mb-3">
+                                  <FiCpu className="h-6 w-6 text-secondary-400" />
+                                </div>
+                                <p className="text-lg font-medium text-secondary-800 mb-1">No agents found</p>
+                                <p className="text-secondary-600">Agents will appear here once they are created.</p>
+                              </div>
+                            </TableCell>
+                          </TableRow>
+                        )}
+                      </TableBody>
+                    </Table>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </HomeLayout>
   );
