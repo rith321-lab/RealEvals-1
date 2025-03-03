@@ -103,7 +103,7 @@ function Signup() {
     }
 
     try {
-      const response = axiosInstance.post('/auth/register', signupData);
+      const response = axiosInstance.post('/api/v1/auth/register', signupData);
 
       toast.promise(response, {
         loading: 'Creating your account...',
@@ -114,6 +114,15 @@ function Signup() {
           localStorage.setItem('access_token', access_token);
           localStorage.setItem('refresh_token', refresh_token);
           localStorage.setItem('role', role);
+
+          // Create user data object from signup info
+          const userData = {
+            email: signupData.email,
+            firstName: signupData.firstName,
+            role: role
+          };
+          
+          localStorage.setItem('user_data', JSON.stringify(userData));
 
           navigate('/');
           return 'Account created successfully!';

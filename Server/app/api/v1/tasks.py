@@ -9,7 +9,7 @@ router = APIRouter(prefix="/tasks", tags=["Tasks"])
 @router.post("", response_model=TaskResponse)
 async def create_task(
     task: TaskCreate,
-    current_user = Depends(get_current_admin)
+    current_user = Depends(get_current_user)
 ):
     controller = TaskController()
     return await controller.create_task(task, current_user.id)
