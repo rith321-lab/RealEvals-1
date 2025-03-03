@@ -1,68 +1,130 @@
 import React from 'react';
+import { FiClock, FiCheckCircle, FiAlertCircle, FiActivity, FiList, FiBarChart2 } from 'react-icons/fi';
+import { Card, CardContent, Table, TableHeader, TableBody, TableRow, TableCell, TableHeaderCell, Badge, Spinner } from '../components/ui';
 
 const SubmissionList = ({ submissionsData }) => {
-  const length = submissionsData.items.length;
+  const length = submissionsData?.items?.length || 0;
+  
   if (!submissionsData?.items || submissionsData.items.length === 0) {
     return (
-      <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl font-semibold text-yellow-500 mb-4">My Submissions</h2>
-        <p className="text-gray-400">No submissions yet.</p>
-      </div>
+      <Card variant="elevated" className="animate-slide-up">
+        <CardContent className="p-6">
+          <div className="flex items-center mb-4">
+            <div className="bg-primary-100 p-2 rounded-full mr-3">
+              <FiList className="h-5 w-5 text-primary-600" />
+            </div>
+            <h2 className="text-xl font-bold text-secondary-900">My Submissions</h2>
+          </div>
+          
+          <div className="text-center py-12 bg-primary-50 rounded-lg">
+            <div className="bg-white p-3 rounded-full inline-flex mb-3 shadow-soft-sm">
+              <FiList className="h-6 w-6 text-secondary-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-secondary-800 mb-2">No submissions yet</h3>
+            <p className="text-secondary-600 max-w-md mx-auto">
+              Submit an agent to see your submissions history here.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
     );
   }
 
-  const getStatusColor = (status) => {
-    switch (status) {
-      case 'COMPLETED':
-        return 'text-green-500';
-      case 'PROCESSING':
-      case 'QUEUE':
-        return 'text-yellow-500';
-      case 'FAILED':
-        return 'text-red-500';
-      default:
-        return 'text-gray-500';
-    }
+  // Helper function to get badge variant based on status
+  const getStatusBadgeVariant = (status) => {
+    if (!status) return 'secondary';
+    const upperStatus = status.toUpperCase();
+    if (upperStatus === 'COMPLETED') return 'success';
+    if (upperStatus === 'PROCESSING' || upperStatus === 'QUEUE') return 'warning';
+    if (upperStatus === 'FAILED') return 'danger';
+    return 'secondary';
+  };
+
+  // Helper function to get icon based on status
+  const getStatusIcon = (status) => {
+    if (!status) return <FiActivity />;
+    const upperStatus = status.toUpperCase();
+    if (upperStatus === 'COMPLETED') return <FiCheckCircle />;
+    if (upperStatus === 'PROCESSING' || upperStatus === 'QUEUE') return <FiActivity className="animate-pulse" />;
+    if (upperStatus === 'FAILED') return <FiAlertCircle />;
+    return <FiActivity />;
   };
 
   return (
-    <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-      <h2 className="text-xl font-semibold text-yellow-500 mb-4">My Submissions</h2>
-      <div className="overflow-x-auto">
-        <table className="min-w-full bg-gray-800 rounded-lg">
-          <thead>
-            <tr className="text-gray-300 border-b border-gray-700">
-              <th className="px-4 py-2">#</th>
-              <th className="px-4 py-2">Status</th>
-              <th className="px-4 py-2">Score</th>
-              <th className="px-4 py-2">Accuracy</th>
-              <th className="px-4 py-2">Time Taken</th>
-              <th className="px-4 py-2">Date</th>
-            </tr>
-          </thead>
-          <tbody>
+    <Card variant="elevated" className="animate-slide-up">
+      <CardContent className="p-6">
+        <div className="flex items-center mb-6">
+          <div className="bg-primary-100 p-2 rounded-full mr-3">
+            <FiList className="h-5 w-5 text-primary-600" />
+          </div>
+          <h2 className="text-xl font-bold text-secondary-900">My Submissions</h2>
+        </div>
+        
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHeaderCell className="w-16 text-center">#</TableHeaderCell>
+              <TableHeaderCell className="w-32">Status</TableHeaderCell>
+              <TableHeaderCell className="w-24 text-center">Score</TableHeaderCell>
+              <TableHeaderCell className="w-24 text-center">Accuracy</TableHeaderCell>
+              <TableHeaderCell className="w-32 text-center">Time Taken</TableHeaderCell>
+              <TableHeaderCell>Submitted At</TableHeaderCell>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {submissionsData.items.slice().map((submission, index) => (
-              <tr key={submission.id} className="border-b border-gray-700 text-gray-200">
-                <td className="px-4 py-2 text-center">{length - index}</td>
-                <td className={`px-4 py-2 font-semibold ${getStatusColor(submission.status)}`}>{submission.status}</td>
-                <td className="px-4 py-2 text-center">{submission.result?.score.toFixed(2)}</td>
-                <td className="px-4 py-2 text-center">{(submission.result?.accuracy * 100).toFixed(2)}%</td>
-                <td className="px-4 py-2 text-center">{submission.result?.timeTaken.toFixed(2)}s</td>
-                <td className="px-4 py-2 text-center">
-                  {new Date(submission.submittedAt).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'short',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                  })}
-                </td>
-              </tr>
+              <TableRow key={submission.id} isHoverable={true}>
+                <TableCell className="text-center font-semibold">
+                  {length - index}
+                </TableCell>
+                <TableCell>
+                  <Badge 
+                    variant={getStatusBadgeVariant(submission.status)}
+                    className="flex items-center gap-1 w-fit"
+                  >
+                    {getStatusIcon(submission.status)}
+                    {submission.status}
+                  </Badge>
+                </TableCell>
+                <TableCell className="text-center">
+                  <div className="flex items-center justify-center">
+                    <FiBarChart2 className="mr-1 text-primary-500" />
+                    {submission.result?.score ? submission.result.score.toFixed(2) : 'N/A'}
+                  </div>
+                </TableCell>
+                <TableCell className="text-center">
+                  <Badge variant={
+                    !submission.result?.accuracy ? 'secondary' :
+                    submission.result.accuracy >= 0.8 ? 'success' :
+                    submission.result.accuracy >= 0.5 ? 'warning' : 'danger'
+                  }>
+                    {submission.result?.accuracy ? `${(submission.result.accuracy * 100).toFixed(2)}%` : 'N/A'}
+                  </Badge>
+                </TableCell>
+                <TableCell className="text-center">
+                  <div className="flex items-center justify-center">
+                    <FiClock className="mr-1 text-secondary-500" />
+                    {submission.result?.timeTaken ? `${submission.result.timeTaken.toFixed(2)}s` : 'N/A'}
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <div className="flex items-center">
+                    <FiClock className="mr-2 text-secondary-500" />
+                    {submission.submittedAt ? new Date(submission.submittedAt).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric',
+                      hour: '2-digit',
+                      minute: '2-digit',
+                    }) : 'N/A'}
+                  </div>
+                </TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+          </TableBody>
+        </Table>
+      </CardContent>
+    </Card>
   );
 };
 

@@ -6,14 +6,7 @@ from ..db.database import get_db
 from .config import settings
 from uuid import UUID
 from pydantic import BaseModel
-from loguru import logger
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/v1/auth/login")
-
-class UserModel(BaseModel):
-    id: UUID
-    email: str
-    role: UserRole
 
 async def get_current_user(
     token: str = Depends(oauth2_scheme),
@@ -63,29 +56,7 @@ async def get_current_user(
             logger.error(f"Invalid UUID format: {user_id}")
             raise credentials_exception
 
-        # Use Supabase to get user
-        result = db.table("users").select("*").eq("id", str(user_uuid)).execute()
-        
-        if not result.data or len(result.data) == 0:
-            raise credentials_exception
-            
-        user_data = result.data[0]
-        
-        # Create a UserModel from the data
-        try:
-            user = UserModel(
-                id=UUID(user_data["id"]),
-                email=user_data["email"],
-                role=UserRole(user_data["role"])
-            )
-        except Exception as e:
-            logger.error(f"Error creating UserModel: {str(e)}")
-            logger.debug(f"User data: {user_data}")
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail=f"Error creating user model: {str(e)}"
-            )
-        
+
         return user
 
     except JWTError as e:
@@ -101,7 +72,7 @@ async def get_current_user(
 async def get_current_admin(
     current_user: UserModel = Depends(get_current_user)
 ) -> UserModel:
-    if current_user.role != UserRole.ADMIN:
+
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Only administrators can perform this action"

@@ -4,7 +4,6 @@ import HomePage from './Pages/HomePage';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
 import DisplayTasks from './Pages/tasks/DisplayTasks';
-import AddTask from './Pages/tasks/AddTask';
 import TaskDetails from './Pages/tasks/TaskDetail';
 import CreateTask from './Pages/tasks/CreateTask';
 import AdminDashboard from './Pages/AdminDashboard';
@@ -57,7 +56,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/tasks" element={<DisplayTasks />} />
-        <Route path="/tasks/create" element={<AddTask />} />
+        <Route path="/tasks/create" element={<CreateTask />} />
         <Route path="/task/:taskId" element={<TaskDetails />} />
         <Route path="/admin/dashboard" element={
           <ProtectedRoute allowedRoles={['ADMIN']}>
