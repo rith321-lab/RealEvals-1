@@ -140,14 +140,32 @@ class TaskService:
             
             # Convert the database record back to the expected format
             db_task = result.data[0]
+            
+            # Parse environment as JSON if it's a string
+            environment_config = {}
+            environment_type = "default"
+            if db_task.get("environment"):
+                try:
+                    import json
+                    env_data = json.loads(db_task.get("environment"))
+                    if isinstance(env_data, dict):
+                        environment_type = env_data.get("type", "default")
+                        environment_config = env_data.get("config", {})
+                except:
+                    # If parsing fails, use the raw value
+                    environment_type = db_task.get("environment")
+            
+            # Ensure all required fields are present
             return {
                 "id": db_task.get("id"),
                 "title": db_task.get("name"),
                 "description": db_task.get("description"),
-                "instructions": db_task.get("instructions"),
-                "webArenaEnvironment": db_task.get("environment"),
+                "difficulty": task_data.get("difficulty", "MEDIUM"),  # Add difficulty
+                "webArenaEnvironment": environment_type,
+                "environmentConfig": environment_config,  # Add environmentConfig
                 "createdAt": db_task.get("created_at"),
-                "updatedAt": db_task.get("updated_at")
+                "updatedAt": db_task.get("updated_at"),
+                "createdBy": task_data.get("createdBy")  # Add createdBy
             }
         except Exception as e:
             logger.error(f"Error creating task: {str(e)}")

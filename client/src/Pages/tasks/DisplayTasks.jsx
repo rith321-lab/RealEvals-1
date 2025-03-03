@@ -22,9 +22,25 @@ function DisplayTasks() {
     async function fetchTasks() {
       setLoading(true);
       try {
-        const response = await axiosInstance.get('/tasks');
-        console.log(response);
-        setTasks(response.data.items || []);
+        // Get a development token first
+        const tokenResponse = await axiosInstance.get('/auth/dev-login');
+        const token = tokenResponse.data.access_token;
+        
+        // Set the token in localStorage and axios headers
+        if (token) {
+          localStorage.setItem('token', token);
+          axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+          console.log('Development login successful, token:', token);
+          
+          // Now fetch tasks with the token
+          const response = await axiosInstance.get('/tasks');
+          console.log('Tasks response:', response);
+          setTasks(response.data.items || []);
+        } else {
+          console.error('No token in response:', tokenResponse.data);
+          toast.error('Authentication failed. Please try again later.');
+          setTasks([]);
+        }
       } catch (error) {
         console.error('Error fetching tasks from API:', error);
         toast.error('Could not load tasks. Please try again later.');

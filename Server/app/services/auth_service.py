@@ -9,8 +9,9 @@ from ..models.enums import UserRole
 import uuid
 
 class AuthService:
-    def __init__(self, db: Client):
-        self._db = db
+    def __init__(self, db: Client = None):
+        from ..db.database import get_db
+        self._db = db if db else get_db()
         self._password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
     def _get_hashed_password(self, password: str) -> str:
@@ -28,6 +29,47 @@ class AuthService:
         expires_delta = datetime.utcnow() + timedelta(days=settings.REFRESH_TOKEN_EXPIRE_DAYS)  
         to_encode = {"exp": expires_delta, "sub": subject}
         return jwt.encode(to_encode, settings.JWT_SECRET_KEY, settings.JWT_ALGORITHM) 
+        
+    async def dev_login(self) -> Dict[str, str]:
+        """Development-only method to get an admin token without password"""
+        try:
+            # Get admin user
+            response = self._db.table("users").select("*").eq("role", "ADMIN").limit(1).execute()
+            
+            if not response.data or len(response.data) == 0:
+                # Create a temporary admin user if none exists
+                admin_user = {
+                    "id": str(uuid.uuid4()),
+                    "email": "admin@example.com",
+                    "firstName": "Admin",
+                    "lastName": "User",
+                    "role": "ADMIN",
+                    "isActive": True,
+                    "isEmailVerified": True,
+                    "password": self._get_hashed_password("admin123")  # Default password for dev
+                }
+                result = self._db.table("users").insert(admin_user).execute()
+                if result.data:
+                    user_id = result.data[0]["id"]
+                    user_role = "ADMIN"
+                else:
+                    raise HTTPException(status_code=500, detail="Failed to create admin user")
+            else:
+                user_id = response.data[0]["id"]
+                user_role = response.data[0].get("role", "ADMIN")
+                
+            # Generate token
+            access_token = self._create_access_token(user_id)
+            refresh_token = self._create_refresh_token(user_id)
+            
+            return {
+                "access_token": access_token,
+                "refresh_token": refresh_token,
+                "token_type": "bearer",
+                "role": user_role
+            }
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Dev login error: {str(e)}")
 
     def register_user(self, user_data: dict) -> dict:
         try:

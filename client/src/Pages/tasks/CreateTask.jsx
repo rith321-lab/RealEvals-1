@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { FiArrowLeft, FiPlus, FiTrash2, FiSettings, FiCheckCircle } from 'react-icons/fi';
 import { Link, useNavigate } from 'react-router-dom';
@@ -18,6 +18,32 @@ function CreateTask() {
     environmentConfig: {},
   });
   const [configEntries, setConfigEntries] = useState([]);
+  
+  useEffect(() => {
+    // Clear any existing token and get a fresh one
+    localStorage.removeItem('token');
+    
+    // Get a development token
+    axiosInstance.get('/auth/dev-login')
+      .then(response => {
+        console.log('Dev login response:', response.data);
+        // The response has access_token, not access_token
+        const token = response.data.access_token;
+        if (token) {
+          localStorage.setItem('token', token);
+          // Update axios instance with the token
+          axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+          toast.success('Development login successful');
+        } else {
+          console.error('No token in response:', response.data);
+          toast.error('Failed to get development token');
+        }
+      })
+      .catch(error => {
+        console.error('Dev login error:', error);
+        toast.error('Failed to get development token');
+      });
+  }, []);
 
   function handleInputChange(e) {
     const { name, value } = e.target;
@@ -25,7 +51,24 @@ function CreateTask() {
   }
 
   function handleAddConfigEntry() {
-    setConfigEntries([...configEntries, { key: '', value: '' }]);
+    // If no entries yet, add the required ones for a browser task
+    if (configEntries.length === 0) {
+      const defaultEntries = [
+        { key: 'startUrl', value: 'https://staynb.com' },
+        { key: 'objective', value: 'Search for wireless headphones and extract the top 3 results with prices' }
+      ];
+      setConfigEntries(defaultEntries);
+      
+      // Update the task input with these values
+      const newConfig = defaultEntries.reduce((acc, { key, value }) => {
+        acc[key] = value;
+        return acc;
+      }, {});
+      setTaskInput({ ...taskInput, environmentConfig: newConfig });
+    } else {
+      // Original behavior for adding additional entries
+      setConfigEntries([...configEntries, { key: '', value: '' }]);
+    }
   }
 
   function handleConfigChange(index, field, value) {
