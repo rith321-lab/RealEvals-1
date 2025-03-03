@@ -11,7 +11,8 @@ const axiosInstance = axios.create({
 // ✅ Attach Authorization Token for Every Request
 axiosInstance.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('access_token'); // Retrieve token
+    // Check both token storage locations
+    const token = localStorage.getItem('token') || localStorage.getItem('access_token');
     if (token) {
       config.headers['Authorization'] = `Bearer ${token}`; // Set header
     }

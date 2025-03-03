@@ -11,6 +11,15 @@ class TaskController:
         task_dict = task_data.dict() if hasattr(task_data, 'dict') else task_data.model_dump()
         task_dict["createdBy"] = str(creator_id)
         task = self.task_service.create_task(task_dict)
+        
+        # Ensure all required fields are present
+        if "difficulty" not in task:
+            task["difficulty"] = task_dict.get("difficulty", "MEDIUM")
+        if "environmentConfig" not in task:
+            task["environmentConfig"] = task_dict.get("environmentConfig", {})
+        if "createdBy" not in task:
+            task["createdBy"] = str(creator_id)
+        
         return TaskResponse(**task)
 
     async def get_tasks(self, skip: int = 0, limit: int = 10) -> TaskListResponse:
