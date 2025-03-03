@@ -1,6 +1,4 @@
 from fastapi import HTTPException
-from sqlalchemy.orm import Session, joinedload
-from ..models.models import Submission, EvaluationResult, Leaderboard, Agent, Task
 from ..models.enums import SubmissionStatus, EvaluationStatus
 import random
 import uuid
@@ -8,82 +6,118 @@ from uuid import UUID
 from ..schemas.submission_schema import LeaderboardResponse
 from datetime import datetime
 import time
+from ..db.database import get_db
+from loguru import logger
 
 class SubmissionService:
-    def __init__(self, db: Session):
-        self._db = db
+    def __init__(self):
+        self._db = get_db()
 
-    def create_submission(self, user_id: uuid.UUID, agent_id: uuid.UUID, task_id: uuid.UUID) -> Submission:
+    def create_submission(self, user_id: uuid.UUID, agent_id: uuid.UUID, task_id: uuid.UUID) -> dict:
         try:
-            submission = Submission(userId=user_id, agentId=agent_id, taskId=task_id, status=SubmissionStatus.QUEUED, submittedAt=datetime.utcnow())
-            self._db.add(submission)
-            self._db.commit()
-            self._db.refresh(submission)
-            return submission
+            submission_data = {
+                "id": str(uuid.uuid4()),
+                "userId": str(user_id),
+                "agentId": str(agent_id),
+                "taskId": str(task_id),
+                "status": SubmissionStatus.QUEUED,
+                "submittedAt": datetime.utcnow().isoformat()
+            }
+            
+            response = self._db.table("submissions").insert(submission_data).execute()
+            
+            if response.data:
+                return response.data[0]
+            raise HTTPException(status_code=500, detail="Failed to create submission")
         except Exception as e:
-            self._db.rollback()
+            logger.error(f"Error creating submission: {str(e)}")
             raise HTTPException(status_code=500, detail=str(e))
 
-    def process_submission(self, submission_id: uuid.UUID, taskId: uuid.UUID):
+    def process_submission(self, submission_id: uuid.UUID, options=None):
         try:
-            submission = self._db.query(Submission).filter(Submission.id == submission_id).with_for_update().first()
-            task = self._db.query(Task).filter(Task.id == taskId).first()
+            # Get submission
+            submission_response = self._db.table("submissions").select("*").eq("id", str(submission_id)).execute()
             
-            if not submission:
+            if not submission_response.data or len(submission_response.data) == 0:
                 raise HTTPException(status_code=404, detail="Submission not found")
             
-            if not task:
+            submission = submission_response.data[0]
+            
+            # Get task
+            task_response = self._db.table("tasks").select("*").eq("id", submission["taskId"]).execute()
+            
+            if not task_response.data or len(task_response.data) == 0:
                 raise HTTPException(status_code=404, detail="Task not found")
-                
-            web_arena_config = task.environmentConfig
-            submission.status = SubmissionStatus.PROCESSING
-            self._db.commit()
+            
+            task = task_response.data[0]
+            
+            # Update submission status to PROCESSING
+            self._db.table("submissions").update({"status": SubmissionStatus.PROCESSING}).eq("id", str(submission_id)).execute()
+            
+            # Extract configuration from task
+            web_arena_config = task.get("environmentConfig", {})
+            
+            # Simulate processing time
             difficulty_multiplier = web_arena_config.get("difficultyMultiplier", 1.0)
             time_factor = web_arena_config.get("timeFactor", 1.0)
             processing_time = random.uniform(1, 3) * difficulty_multiplier * time_factor
             time.sleep(processing_time)
+            
+            # Generate evaluation metrics
             accuracy_boost = web_arena_config.get("accuracyBoost", 1.0)
             base_score = random.uniform(60, 90)
             score = min(100, base_score * accuracy_boost)            
             time_taken = random.uniform(1, 8) * time_factor            
             accuracy = random.uniform(0.7, 0.95) * accuracy_boost
             max_steps = web_arena_config.get("maxSteps", 15)
-            evaluation = EvaluationResult(
-                submissionId=submission.id,
-                score=score,
-                timeTaken=time_taken,
-                accuracy=accuracy,
-                completedAt=datetime.utcnow(),
-                status=EvaluationStatus.SUCCESS,
-                resultDetails=self._generate_result_details(max_steps, web_arena_config)
-            )
-            self._db.add(evaluation)
             
-            leaderboard = Leaderboard(
-                taskId=submission.taskId,
-                agentId=submission.agentId,
-                submissionId=submission.id,
-                score=score,
-                timeTaken=time_taken,
-                accuracy=accuracy,
-                rank=0
-            )
-            self._db.add(leaderboard)
-            self._db.commit()
+            # Create evaluation result
+            evaluation_data = {
+                "id": str(uuid.uuid4()),
+                "submissionId": str(submission_id),
+                "score": score,
+                "timeTaken": time_taken,
+                "accuracy": accuracy,
+                "completedAt": datetime.utcnow().isoformat(),
+                "status": EvaluationStatus.SUCCESS,
+                "resultDetails": self._generate_result_details(max_steps, web_arena_config)
+            }
             
-            self._update_ranks(submission.taskId)
-            submission.status = SubmissionStatus.COMPLETED
-            self._db.commit()
+            evaluation_response = self._db.table("evaluation_results").insert(evaluation_data).execute()
             
-            return self._get_full_submission(submission.id)
+            # Create leaderboard entry
+            leaderboard_data = {
+                "id": str(uuid.uuid4()),
+                "taskId": submission["taskId"],
+                "agentId": submission["agentId"],
+                "submissionId": str(submission_id),
+                "score": score,
+                "timeTaken": time_taken,
+                "accuracy": accuracy,
+                "rank": 0
+            }
+            
+            leaderboard_response = self._db.table("leaderboard").insert(leaderboard_data).execute()
+            
+            # Update ranks
+            self._update_ranks(submission["taskId"])
+            
+            # Update submission status to COMPLETED
+            self._db.table("submissions").update({"status": SubmissionStatus.COMPLETED}).eq("id", str(submission_id)).execute()
+            
+            # Return full submission data
+            return self._get_full_submission(submission_id)
         except Exception as e:
-            self._db.rollback()
-            submission.status = SubmissionStatus.FAILED
-            self._db.commit()
+            logger.error(f"Error processing submission: {str(e)}")
+            # Update submission status to FAILED
+            self._db.table("submissions").update({"status": SubmissionStatus.FAILED}).eq("id", str(submission_id)).execute()
             raise HTTPException(status_code=500, detail=f"Processing failed: {str(e)}")
 
     def _generate_result_details(self, max_steps=15, web_arena_config=None):
-        web_arena_environment = web_arena_config.get("webArenaEnvironment", "Simulation") if web_arena_config else "Simulation"
+        if web_arena_config is None:
+            web_arena_config = {}
+            
+        web_arena_environment = web_arena_config.get("webArenaEnvironment", "Simulation")
         
         result = {
             "task_completion": random.uniform(0.8, 1.0),
@@ -136,66 +170,150 @@ class SubmissionService:
                 }
         return result
         
-    def get_user_submissions(self, user_id: uuid.UUID, skip: int = 0, limit: int = 20) -> dict[str, any]:
+    def get_user_submissions(self, user_id: uuid.UUID, skip: int = 0, limit: int = 20) -> dict:
         try:
-            total = self._db.query(Submission).filter(Submission.userId == user_id).count()
-            submissions = self._db.query(Submission).options(joinedload(Submission.evaluation), joinedload(Submission.leaderboard_entry)).filter(Submission.userId == user_id).order_by(Submission.submittedAt.desc()).offset(skip).limit(limit).all()
-            return {"items": submissions, "total": total}
+            # Get all submissions for the user
+            response = self._db.table("submissions").select("*").eq("userId", str(user_id)).execute()
+            
+            if not response.data:
+                return {"items": [], "total": 0}
+            
+            # Sort by submittedAt in descending order (in memory)
+            sorted_submissions = sorted(
+                response.data, 
+                key=lambda x: x.get("submittedAt", ""), 
+                reverse=True
+            )
+            
+            # Apply pagination in memory
+            paginated_submissions = sorted_submissions[skip:skip + limit]
+            
+            # Get evaluation results and leaderboard entries for each submission
+            for submission in paginated_submissions:
+                # Get evaluation result
+                eval_response = self._db.table("evaluation_results").select("*").eq("submissionId", submission["id"]).execute()
+                submission["evaluation"] = eval_response.data[0] if eval_response.data else None
+                
+                # Get leaderboard entry
+                leaderboard_response = self._db.table("leaderboard").select("*").eq("submissionId", submission["id"]).execute()
+                submission["leaderboard_entry"] = leaderboard_response.data[0] if leaderboard_response.data else None
+            
+            return {"items": paginated_submissions, "total": len(response.data)}
         except Exception as e:
+            logger.error(f"Error getting user submissions: {str(e)}")
             raise HTTPException(status_code=500, detail=str(e))
 
     def _get_full_submission(self, submission_id: uuid.UUID):
-        return (
-            self._db.query(Submission)
-            .options(joinedload(Submission.evaluation), joinedload(Submission.leaderboard_entry))
-            .filter(Submission.id == submission_id)
-            .first()
-        )
+        try:
+            # Get submission
+            submission_response = self._db.table("submissions").select("*").eq("id", str(submission_id)).execute()
+            
+            if not submission_response.data or len(submission_response.data) == 0:
+                raise HTTPException(status_code=404, detail="Submission not found")
+            
+            submission = submission_response.data[0]
+            
+            # Get evaluation result
+            eval_response = self._db.table("evaluation_results").select("*").eq("submissionId", str(submission_id)).execute()
+            submission["evaluation"] = eval_response.data[0] if eval_response.data else None
+            
+            # Get leaderboard entry
+            leaderboard_response = self._db.table("leaderboard").select("*").eq("submissionId", str(submission_id)).execute()
+            submission["leaderboard_entry"] = leaderboard_response.data[0] if leaderboard_response.data else None
+            
+            return submission
+        except Exception as e:
+            logger.error(f"Error getting full submission: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))
 
     def _update_ranks(self, task_id: uuid.UUID):
-        entries = (
-            self._db.query(Leaderboard)
-            .filter(Leaderboard.taskId == task_id)
-            .order_by(Leaderboard.score.desc())
-            .all()
-        )
-        for index, entry in enumerate(entries, 1):
-            entry.rank = index
-        self._db.commit()
-
-    def get_leaderboard(self, task_id: UUID) -> list[LeaderboardResponse]:
         try:
-            leaderboard_entries = self._db.query(Leaderboard, Agent.name)\
-                .join(Agent, Leaderboard.agentId == Agent.id)\
-                .filter(Leaderboard.taskId == task_id)\
-                .order_by(Leaderboard.rank.asc())\
-                .all()
-            leaderboard_response = [
-                LeaderboardResponse(
-                    rank=entry.Leaderboard.rank,
-                    score=entry.Leaderboard.score,
-                    timeTaken=entry.Leaderboard.timeTaken,
-                    accuracy=entry.Leaderboard.accuracy,
-                    submissionId=entry.Leaderboard.submissionId,
-                    agentId=entry.Leaderboard.agentId,
-                    taskId=entry.Leaderboard.taskId,
-                    agentName=entry.name  
-                )
-                for entry in leaderboard_entries
-            ]
-
-            return leaderboard_response
+            # Get all leaderboard entries for the task
+            response = self._db.table("leaderboard").select("*").eq("taskId", str(task_id)).execute()
+            
+            if not response.data:
+                return
+            
+            # Sort by score in descending order
+            sorted_entries = sorted(response.data, key=lambda x: x.get("score", 0), reverse=True)
+            
+            # Update ranks
+            for index, entry in enumerate(sorted_entries, 1):
+                self._db.table("leaderboard").update({"rank": index}).eq("id", entry["id"]).execute()
+                
         except Exception as e:
+            logger.error(f"Error updating ranks: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))
+
+    def get_leaderboard(self, task_id: UUID) -> list:
+        try:
+            # Get all leaderboard entries for the task
+            leaderboard_response = self._db.table("leaderboard").select("*").eq("taskId", str(task_id)).execute()
+            
+            if not leaderboard_response.data:
+                return []
+            
+            leaderboard_entries = leaderboard_response.data
+            
+            # Get agent names
+            leaderboard_response_with_names = []
+            for entry in leaderboard_entries:
+                # Get agent name
+                agent_response = self._db.table("agents").select("name").eq("id", entry["agentId"]).execute()
+                agent_name = agent_response.data[0]["name"] if agent_response.data else "Unknown Agent"
+                
+                leaderboard_response_with_names.append(
+                    LeaderboardResponse(
+                        rank=entry["rank"],
+                        score=entry["score"],
+                        timeTaken=entry["timeTaken"],
+                        accuracy=entry["accuracy"],
+                        submissionId=entry["submissionId"],
+                        agentId=entry["agentId"],
+                        taskId=entry["taskId"],
+                        agentName=agent_name
+                    )
+                )
+            
+            # Sort by rank
+            sorted_entries = sorted(leaderboard_response_with_names, key=lambda x: x.rank)
+            
+            return sorted_entries
+        except Exception as e:
+            logger.error(f"Error getting leaderboard: {str(e)}")
             raise HTTPException(status_code=500, detail=str(e))
     
     def get_user_submissions_by_task(self, user_id: uuid.UUID, task_id: uuid.UUID, skip: int = 0, limit: int = 20):
         try:
-            query = self._db.query(Submission).filter(Submission.userId == user_id, Submission.taskId == task_id)
-            total = query.count()
-            submission_ids = query.order_by(Submission.submittedAt.desc()).offset(skip).limit(limit).with_entities(Submission.id).all()
-            submissions = self._db.query(Submission).filter(Submission.id.in_([sub.id for sub in submission_ids])).options(
-                joinedload(Submission.evaluation), joinedload(Submission.leaderboard_entry)
-            ).all()
-            return {"items": submissions, "total": total}
+            # Get all submissions for the user and task
+            response = self._db.table("submissions").select("*").eq("userId", str(user_id)).eq("taskId", str(task_id)).execute()
+            
+            if not response.data:
+                return {"items": [], "total": 0}
+            
+            # Sort by submittedAt in descending order (in memory)
+            sorted_submissions = sorted(
+                response.data, 
+                key=lambda x: x.get("submittedAt", ""), 
+                reverse=True
+            )
+            
+            total = len(sorted_submissions)
+            
+            # Apply pagination in memory
+            paginated_submissions = sorted_submissions[skip:skip + limit]
+            
+            # Get evaluation results and leaderboard entries for each submission
+            for submission in paginated_submissions:
+                # Get evaluation result
+                eval_response = self._db.table("evaluation_results").select("*").eq("submissionId", submission["id"]).execute()
+                submission["evaluation"] = eval_response.data[0] if eval_response.data else None
+                
+                # Get leaderboard entry
+                leaderboard_response = self._db.table("leaderboard").select("*").eq("submissionId", submission["id"]).execute()
+                submission["leaderboard_entry"] = leaderboard_response.data[0] if leaderboard_response.data else None
+            
+            return {"items": paginated_submissions, "total": total}
         except Exception as e:
+            logger.error(f"Error getting user submissions by task: {str(e)}")
             raise HTTPException(status_code=500, detail=str(e))

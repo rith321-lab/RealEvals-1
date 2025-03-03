@@ -1,19 +1,31 @@
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
-from sqlalchemy.orm import Session
-from ..models.models import User
 from ..models.enums import UserRole
 from ..db.database import get_db
 from .config import settings
 from uuid import UUID
+from pydantic import BaseModel
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/v1/auth/login")
 
+# Pydantic model for User
+class UserModel(BaseModel):
+    id: str
+    email: str
+    firstName: str
+    lastName: str | None = None
+    role: str
+    isActive: bool = True
+    isEmailVerified: bool = False
+    
+    class Config:
+        from_attributes = True
+
 async def get_current_user(
     token: str = Depends(oauth2_scheme),
-    db: Session = Depends(get_db)
-) -> User:
+    db = Depends(get_db)
+) -> UserModel:
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
@@ -32,16 +44,19 @@ async def get_current_user(
 
         print("Token Payload:", payload)
 
-    
         try:
             user_uuid = UUID(str(user_id))
         except ValueError:
             raise credentials_exception
 
-
-        user = db.query(User).filter(User.id == user_uuid).first()
-        if not user:
+        # Use Supabase client to get user
+        response = db.table("users").select("*").eq("id", str(user_uuid)).execute()
+        
+        if not response.data or len(response.data) == 0:
             raise credentials_exception
+            
+        user_data = response.data[0]
+        user = UserModel(**user_data)
         
         return user
 
@@ -56,9 +71,9 @@ async def get_current_user(
         )
 
 async def get_current_admin(
-    current_user: User = Depends(get_current_user)
-) -> User:
-    if current_user.role != UserRole.ADMIN:
+    current_user: UserModel = Depends(get_current_user)
+) -> UserModel:
+    if current_user.role != UserRole.ADMIN and current_user.role != "ADMIN":
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Only administrators can perform this action"
