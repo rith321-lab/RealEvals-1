@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { FiMail, FiPhone, FiMapPin, FiSend, FiHelpCircle, FiUser, FiMessageSquare } from 'react-icons/fi';
 import HomeLayout from '../Layouts/HomeLayout';
+import { Card, CardContent, CardHeader, CardTitle, Input, Button, Alert } from '../components/ui';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -52,161 +54,192 @@ function Contact() {
 
   return (
     <HomeLayout>
-      <div className="min-h-[90vh] pt-12 px-8 md:px-20 flex flex-col">
-        <h1 className="text-3xl font-semibold mb-8 text-secondary-800">
-          Contact <span className="font-bold text-primary-600">Us</span>
-        </h1>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-lg shadow-md border border-primary-200">
-            <h2 className="text-xl font-semibold mb-6 text-primary-700">Get in Touch</h2>
-            
-            {submitStatus && (
-              <div className={`p-4 mb-6 rounded-md ${submitStatus.success ? 'bg-green-100 text-green-800 border border-green-200' : 'bg-red-100 text-red-800 border border-red-200'}`}>
-                {submitStatus.message}
-              </div>
-            )}
-            
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-sm text-secondary-600 mb-1">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full p-2 bg-white border border-primary-200 rounded text-secondary-800 focus:border-primary-400 focus:ring focus:ring-primary-100"
-                  required
-                />
-              </div>
-              
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-sm text-secondary-600 mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full p-2 bg-white border border-primary-200 rounded text-secondary-800 focus:border-primary-400 focus:ring focus:ring-primary-100"
-                  required
-                />
-              </div>
-              
-              <div className="mb-4">
-                <label htmlFor="subject" className="block text-sm text-secondary-600 mb-1">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="w-full p-2 bg-white border border-primary-200 rounded text-secondary-800 focus:border-primary-400 focus:ring focus:ring-primary-100"
-                  required
-                />
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-sm text-secondary-600 mb-1">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows="5"
-                  className="w-full p-2 bg-white border border-primary-200 rounded text-secondary-800 focus:border-primary-400 focus:ring focus:ring-primary-100"
-                  required
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={`px-4 py-2 bg-primary-600 text-white rounded ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-primary-700'} transition-colors`}
-              >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </button>
-            </form>
+      <div className="min-h-[90vh] py-12 px-4 md:px-8 lg:px-16 flex flex-col items-center bg-gradient-to-br from-white via-primary-50 to-white animate-fade-in">
+        <div className="w-full max-w-7xl">
+          <div className="text-center mb-10 animate-slide-up">
+            <h1 className="text-3xl md:text-5xl font-bold text-secondary-900 mb-4">
+              Contact <span className="bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">Us</span>
+            </h1>
+            <p className="text-lg text-secondary-600 max-w-3xl mx-auto">
+              Have questions or feedback? We'd love to hear from you.
+            </p>
           </div>
           
-          <div className="space-y-6">
-            <div className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-lg shadow-md border border-primary-200">
-              <h2 className="text-xl font-semibold mb-4 text-primary-700">Contact Information</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            <Card variant="elevated" className="h-fit">
+              <CardHeader className="bg-gradient-to-r from-primary-600 to-primary-700 py-4">
+                <div className="flex items-center">
+                  <div className="bg-white p-2 rounded-full mr-3">
+                    <FiMessageSquare className="h-5 w-5 text-primary-600" />
+                  </div>
+                  <CardTitle className="text-white">Get in Touch</CardTitle>
+                </div>
+              </CardHeader>
               
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="text-primary-600 mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-secondary-800">Email</h3>
-                    <p className="text-secondary-600">contact@realevals.com</p>
-                  </div>
-                </div>
+              <CardContent className="p-6">
+                {submitStatus && (
+                  <Alert 
+                    variant={submitStatus.success ? 'success' : 'danger'}
+                    className="mb-6"
+                  >
+                    {submitStatus.message}
+                  </Alert>
+                )}
                 
-                <div className="flex items-start">
-                  <div className="text-primary-600 mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <Input
+                    label="Your Name"
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Enter your name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    leftIcon={<FiUser className="text-secondary-400" />}
+                  />
+                  
+                  <Input
+                    label="Email Address"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    leftIcon={<FiMail className="text-secondary-400" />}
+                  />
+                  
+                  <Input
+                    label="Subject"
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    placeholder="What is this regarding?"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                  />
+                  
+                  <div className="space-y-1">
+                    <label htmlFor="message" className="block text-sm font-medium text-secondary-700">
+                      Message
+                    </label>
+                    <div className="relative rounded-md shadow-sm">
+                      <textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        rows="5"
+                        className="block w-full rounded-md border-secondary-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm px-3 py-2"
+                        placeholder="How can we help you?"
+                        required
+                      ></textarea>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-medium text-secondary-800">Phone</h3>
-                    <p className="text-secondary-600">+1 (555) 123-4567</p>
+                  
+                  <div className="pt-2">
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full sm:w-auto"
+                      leftIcon={<FiSend />}
+                      isLoading={isSubmitting}
+                    >
+                      {isSubmitting ? 'Sending...' : 'Send Message'}
+                    </Button>
                   </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="text-primary-600 mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-secondary-800">Location</h3>
-                    <p className="text-secondary-600">San Francisco, CA, USA</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+                </form>
+              </CardContent>
+            </Card>
             
-            <div className="bg-gradient-to-br from-white to-primary-50 p-6 rounded-lg shadow-md border border-primary-200">
-              <h2 className="text-xl font-semibold mb-4 text-primary-700">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <Card variant="elevated">
+                <CardHeader className="bg-gradient-to-r from-primary-600 to-primary-700 py-4">
+                  <div className="flex items-center">
+                    <div className="bg-white p-2 rounded-full mr-3">
+                      <FiMail className="h-5 w-5 text-primary-600" />
+                    </div>
+                    <CardTitle className="text-white">Contact Information</CardTitle>
+                  </div>
+                </CardHeader>
+                
+                <CardContent className="p-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start p-3 hover:bg-primary-50 rounded-lg transition-colors">
+                      <div className="bg-primary-100 p-3 rounded-full text-primary-600 mr-4">
+                        <FiMail className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-secondary-800 text-lg">Email</h3>
+                        <a href="mailto:contact@realevals.com" className="text-primary-600 hover:text-primary-700 transition-colors">
+                          contact@realevals.com
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start p-3 hover:bg-primary-50 rounded-lg transition-colors">
+                      <div className="bg-primary-100 p-3 rounded-full text-primary-600 mr-4">
+                        <FiPhone className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-secondary-800 text-lg">Phone</h3>
+                        <a href="tel:+15551234567" className="text-primary-600 hover:text-primary-700 transition-colors">
+                          +1 (555) 123-4567
+                        </a>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start p-3 hover:bg-primary-50 rounded-lg transition-colors">
+                      <div className="bg-primary-100 p-3 rounded-full text-primary-600 mr-4">
+                        <FiMapPin className="h-6 w-6" />
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-secondary-800 text-lg">Location</h3>
+                        <p className="text-secondary-600">San Francisco, CA, USA</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
               
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-medium text-primary-600">How do I create an account?</h3>
-                  <p className="text-secondary-600 mt-1">
-                    Simply click on the "Sign Up" button in the top right corner and follow the registration process.
-                  </p>
-                </div>
+              <Card variant="elevated">
+                <CardHeader className="bg-gradient-to-r from-primary-600 to-primary-700 py-4">
+                  <div className="flex items-center">
+                    <div className="bg-white p-2 rounded-full mr-3">
+                      <FiHelpCircle className="h-5 w-5 text-primary-600" />
+                    </div>
+                    <CardTitle className="text-white">Frequently Asked Questions</CardTitle>
+                  </div>
+                </CardHeader>
                 
-                <div>
-                  <h3 className="font-medium text-primary-600">Can I create my own tasks?</h3>
-                  <p className="text-secondary-600 mt-1">
-                    Currently, only administrators can create tasks. However, you can request specific task types through our contact form.
-                  </p>
-                </div>
-                
-                <div>
-                  <h3 className="font-medium text-primary-600">How are agents evaluated?</h3>
-                  <p className="text-secondary-600 mt-1">
-                    Agents are evaluated based on task completion, accuracy, efficiency, and time taken. Each task has specific criteria.
-                  </p>
-                </div>
-              </div>
+                <CardContent className="p-6">
+                  <div className="space-y-5">
+                    <div className="p-3 hover:bg-primary-50 rounded-lg transition-colors">
+                      <h3 className="font-semibold text-primary-700 text-lg">How do I create an account?</h3>
+                      <p className="text-secondary-600 mt-2">
+                        Simply click on the "Sign Up" button in the navigation menu and follow the registration process.
+                      </p>
+                    </div>
+                    
+                    <div className="p-3 hover:bg-primary-50 rounded-lg transition-colors">
+                      <h3 className="font-semibold text-primary-700 text-lg">Can I create my own tasks?</h3>
+                      <p className="text-secondary-600 mt-2">
+                        Currently, only administrators can create tasks. However, you can request specific task types through our contact form.
+                      </p>
+                    </div>
+                    
+                    <div className="p-3 hover:bg-primary-50 rounded-lg transition-colors">
+                      <h3 className="font-semibold text-primary-700 text-lg">How are agents evaluated?</h3>
+                      <p className="text-secondary-600 mt-2">
+                        Agents are evaluated based on task completion, accuracy, efficiency, and time taken. Each task has specific criteria.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
