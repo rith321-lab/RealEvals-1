@@ -1,8 +1,15 @@
 import os
 import json
 import glob
+import logging
 import pandas as pd
 from datetime import datetime
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
+logger = logging.getLogger(__name__)
 
 def get_latest_files(dataset_name):
     """Get the latest result files for a dataset"""
@@ -32,14 +39,40 @@ def analyze_dataset(dataset_name):
         print(f"{dataset_name.upper()}: No results available")
         return None
     
-    df = pd.read_csv(csv_file)
-    
-    total_tasks = len(df)
-    success_count = df['success'].sum()
-    success_rate = (success_count / total_tasks) * 100 if total_tasks > 0 else 0
-    avg_time = df['time_taken'].mean()
-    
-    error_counts = df['error'].value_counts().head(3)
+    try:
+        df = pd.read_csv(csv_file)
+        
+        if df.empty:
+            logger.warning(f"Empty DataFrame for {dataset_name}")
+            return {
+                "dataset": dataset_name,
+                "total_tasks": 0,
+                "success_count": 0,
+                "success_rate": 0,
+                "avg_time": 0,
+                "common_errors": {},
+                "csv_file": csv_file,
+                "json_file": json_file
+            }
+        
+        total_tasks = len(df)
+        success_count = df['success'].sum() if 'success' in df.columns else 0
+        success_rate = (success_count / total_tasks) * 100 if total_tasks > 0 else 0
+        avg_time = df['time_taken'].mean() if 'time_taken' in df.columns else 0
+        
+        error_counts = df['error'].value_counts().head(3) if 'error' in df.columns else pd.Series()
+    except Exception as e:
+        print(f"Error reading CSV file {csv_file}: {str(e)}")
+        return {
+            "dataset": dataset_name,
+            "total_tasks": 0,
+            "success_count": 0,
+            "success_rate": 0,
+            "avg_time": 0,
+            "common_errors": {},
+            "csv_file": csv_file,
+            "json_file": json_file
+        }
     
     result = {
         "dataset": dataset_name,

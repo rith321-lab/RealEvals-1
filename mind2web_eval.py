@@ -65,8 +65,8 @@ def save_results(results, dataset_name):
     for result in results:
         csv_data.append({
             "task_id": result["task_id"],
-            "success": result["success"],
-            "time_taken": result["time_taken"],
+            "success": result.get("success", False),
+            "time_taken": result.get("time_taken", 0),
             "error": result.get("error", "")
         })
     
@@ -76,8 +76,13 @@ def save_results(results, dataset_name):
     
     logger.info(f"Saved summary results to {csv_file}")
     
-    success_rate = df["success"].mean() * 100
-    avg_time = df["time_taken"].mean()
+    if not df.empty and "success" in df.columns:
+        success_rate = df["success"].mean() * 100
+        avg_time = df["time_taken"].mean() if "time_taken" in df.columns else 0
+    else:
+        success_rate = 0
+        avg_time = 0
+        logger.warning(f"Empty DataFrame or missing columns for {dataset_name}")
     
     logger.info(f"Evaluation complete for {dataset_name}")
     logger.info(f"Success rate: {success_rate:.2f}%")
