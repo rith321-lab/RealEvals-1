@@ -168,7 +168,20 @@ def main():
     logger.info(f"Headless mode: {args.headless}")
     logger.info(f"Max retries: {args.max_retries}")
     
-    tasks = load_tasks("data/mind2web.jsonl")
+    try:
+        tasks = load_tasks("data/mind2web.jsonl")
+        if not tasks:
+            logger.warning("No tasks loaded from mind2web.jsonl, trying direct JSON parsing")
+            with open("data/mind2web.jsonl", 'r') as f:
+                tasks = json.load(f)
+                logger.info(f"Successfully loaded {len(tasks)} tasks directly from JSON file")
+    except Exception as e:
+        logger.error(f"Error loading tasks: {str(e)}")
+        tasks = []
+    
+    if not tasks:
+        logger.error("No tasks loaded. Exiting.")
+        return
     
     if args.limit > 0 and args.limit < len(tasks):
         logger.info(f"Limiting evaluation to {args.limit} tasks")
