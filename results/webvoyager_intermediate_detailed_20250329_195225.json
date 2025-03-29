@@ -1,0 +1,82 @@
+[
+  {
+    "task_id": "e1fc63a2-da7a-432f-be78-7c4a95598703",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 16.730175256729126,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "8e867cd7-cff9-4e6c-867a-ff5ddc2550be",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 55.39429068565369,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "5d0080cb-90d7-4712-bc33-848150e917d3",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 60.001060962677,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 116.20013499259949,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "46719c30-f4c3-4cad-be07-d5cb21eee6bb",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 80.08886408805847,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "4b6bb5f7-f634-410e-815d-e673ab7f8632",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 81.11736416816711,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "b816bfce-3d80-4913-a07d-69b752ce6377",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 81.83682322502136,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "72e110e7-464c-453c-a309-90a95aed6538",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 82.83527183532715,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "b415aba4-4b68-4fc6-9b89-2c812e55a3e1",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 85.26137685775757,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "935e2cff-ae78-4218-b3f5-115589b19dae",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 84.14273977279663,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  }
+]

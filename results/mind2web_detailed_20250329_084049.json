@@ -1,0 +1,26 @@
+[
+  {
+    "task_id": "98.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 14.679338932037354,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "99.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 12.04952883720398,
+    "error": "net::ERR_NAME_NOT_RESOLVED at https://www.example-airline.com/"
+  },
+  {
+    "task_id": "100.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 0.016022920608520508,
+    "error": "Unable to retrieve content because the page is navigating and changing the content."
+  }
+]

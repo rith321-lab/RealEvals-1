@@ -1,0 +1,101 @@
+2025-03-29 19:48:46,784 [INFO] Starting Mind2Web evaluation
+2025-03-29 19:48:46,784 [INFO] Headless mode: True
+2025-03-29 19:48:46,784 [INFO] Max retries: 2
+2025-03-29 19:48:46,784 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 2 (char 1)
+2025-03-29 19:48:46,784 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:48:46,784 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:48:46,785 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:48:46,786 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:48:46,786 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:48:46,786 [WARNING] No tasks loaded from mind2web.jsonl, trying direct JSON parsing
+2025-03-29 19:48:46,786 [INFO] Successfully loaded 3 tasks directly from JSON file
+2025-03-29 19:48:46,786 [INFO] Using API key index: 0
+2025-03-29 19:48:47,217 [INFO] Processing task 1/3: 98.0
+2025-03-29 19:48:47,217 [INFO] Starting task: 98.0
+2025-03-29 19:48:47,837 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:49:00,139 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:49:00,144 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:49:00,144 [INFO] Task completed in 12.93 seconds
+2025-03-29 19:49:00,144 [WARNING] Task 98.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:49:02,145 [INFO] Retry 1/2 for task 98.0
+2025-03-29 19:49:02,145 [INFO] Starting task: 98.0
+2025-03-29 19:49:02,604 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:49:16,427 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:49:16,428 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:49:16,428 [INFO] Task completed in 14.28 seconds
+2025-03-29 19:49:16,428 [WARNING] Task 98.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:49:18,429 [INFO] Retry 2/2 for task 98.0
+2025-03-29 19:49:18,429 [INFO] Starting task: 98.0
+2025-03-29 19:49:18,757 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:49:32,566 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:49:32,567 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:49:32,567 [INFO] Task completed in 14.14 seconds
+2025-03-29 19:49:32,567 [WARNING] Task 98.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:49:32,567 [INFO] Progress: 1/3 tasks completed
+2025-03-29 19:49:32,567 [INFO] Success rate so far: 0.00%
+2025-03-29 19:49:32,567 [INFO] Processing task 2/3: 99.0
+2025-03-29 19:49:32,567 [INFO] Starting task: 99.0
+2025-03-29 19:49:32,637 [ERROR] Navigation failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:49:32,637 [WARNING] Task 99.0 failed: Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:49:34,637 [INFO] Retry 1/2 for task 99.0
+2025-03-29 19:49:34,637 [INFO] Starting task: 99.0
+2025-03-29 19:49:34,842 [ERROR] Navigation failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:49:34,842 [WARNING] Task 99.0 failed: Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:49:36,842 [INFO] Retry 2/2 for task 99.0
+2025-03-29 19:49:36,843 [INFO] Starting task: 99.0
+2025-03-29 19:49:37,020 [ERROR] Navigation failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:49:37,020 [WARNING] Task 99.0 failed: Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:49:37,020 [INFO] Progress: 2/3 tasks completed
+2025-03-29 19:49:37,020 [INFO] Success rate so far: 0.00%
+2025-03-29 19:49:37,020 [INFO] Processing task 3/3: 100.0
+2025-03-29 19:49:37,020 [INFO] Starting task: 100.0
+2025-03-29 19:49:37,617 [INFO] Navigated to https://www.espn.com
+2025-03-29 19:49:53,860 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:49:53,861 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:49:53,861 [INFO] Task completed in 16.84 seconds
+2025-03-29 19:49:53,861 [WARNING] Task 100.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:49:55,861 [INFO] Retry 1/2 for task 100.0
+2025-03-29 19:49:55,862 [INFO] Starting task: 100.0
+2025-03-29 19:49:56,258 [INFO] Navigated to https://www.espn.com
+2025-03-29 19:50:06,489 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:50:06,491 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:50:06,491 [INFO] Task completed in 10.63 seconds
+2025-03-29 19:50:06,491 [WARNING] Task 100.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:50:08,491 [INFO] Retry 2/2 for task 100.0
+2025-03-29 19:50:08,492 [INFO] Starting task: 100.0
+2025-03-29 19:50:08,853 [INFO] Navigated to https://www.espn.com
+2025-03-29 19:50:18,945 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:50:18,946 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:50:18,946 [INFO] Task completed in 10.45 seconds
+2025-03-29 19:50:18,946 [WARNING] Task 100.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:50:18,946 [INFO] Saved detailed results to results/mind2web_intermediate_detailed_20250329_194846.json
+2025-03-29 19:50:18,950 [INFO] Saved summary results to results/mind2web_intermediate_summary_20250329_194846.csv
+2025-03-29 19:50:18,950 [INFO] Evaluation complete for mind2web_intermediate
+2025-03-29 19:50:18,950 [INFO] Success rate: 0.00%
+2025-03-29 19:50:18,950 [INFO] Average time per task: 8.26 seconds
+2025-03-29 19:50:18,950 [INFO] Progress: 3/3 tasks completed
+2025-03-29 19:50:18,950 [INFO] Success rate so far: 0.00%
+2025-03-29 19:50:19,019 [INFO] Saved detailed results to results/mind2web_detailed_20250329_194846.json
+2025-03-29 19:50:19,021 [INFO] Saved summary results to results/mind2web_summary_20250329_194846.csv
+2025-03-29 19:50:19,022 [INFO] Evaluation complete for mind2web
+2025-03-29 19:50:19,022 [INFO] Success rate: 0.00%
+2025-03-29 19:50:19,022 [INFO] Average time per task: 8.26 seconds
+2025-03-29 19:50:19,022 [INFO] Evaluation completed in 92.23 seconds
+2025-03-29 19:50:19,022 [INFO] Total tasks: 3
+2025-03-29 19:50:19,022 [INFO] Successful tasks: 0
+2025-03-29 19:50:19,022 [INFO] Success rate: 0.00%
+2025-03-29 19:50:19,022 [INFO] Results saved to results/mind2web_detailed_20250329_194846.json and results/mind2web_summary_20250329_194846.csv

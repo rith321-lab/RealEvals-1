@@ -1,0 +1,26 @@
+[
+  {
+    "task_id": "98.0",
+    "success": true,
+    "answer": "Track link copied to share",
+    "expected_answer": "",
+    "time_taken": 41.31860613822937,
+    "error": ""
+  },
+  {
+    "task_id": "99.0",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "",
+    "time_taken": 33.392091512680054,
+    "error": ""
+  },
+  {
+    "task_id": "100.0",
+    "success": true,
+    "answer": "Followed one of the team leaders from an Atlantic Division NHL team on ESPN.com by navigating to the NHL standings page, filtering to the Atlantic Division, selecting a team, viewing their roster, and clicking on one of the top players.",
+    "expected_answer": "",
+    "time_taken": 68.52719044685364,
+    "error": ""
+  }
+]

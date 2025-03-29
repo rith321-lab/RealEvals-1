@@ -1,0 +1,722 @@
+[
+  {
+    "task_id": "e1fc63a2-da7a-432f-be78-7c4a95598703",
+    "success": false,
+    "answer": "",
+    "expected_answer": "17",
+    "time_taken": 0.7546021938323975,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "8e867cd7-cff9-4e6c-867a-ff5ddc2550be",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3",
+    "time_taken": 0.4956202507019043,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "5d0080cb-90d7-4712-bc33-848150e917d3",
+    "success": false,
+    "answer": "",
+    "expected_answer": "0.1777",
+    "time_taken": 0.39905667304992676,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3",
+    "time_taken": 0.2838258743286133,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "46719c30-f4c3-4cad-be07-d5cb21eee6bb",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Mapping Human Oriented Information to Software Agents for Online Systems Usage",
+    "time_taken": 0.29981374740600586,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "4b6bb5f7-f634-410e-815d-e673ab7f8632",
+    "success": false,
+    "answer": "",
+    "expected_answer": "THE CASTLE",
+    "time_taken": 0.2822885513305664,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "b816bfce-3d80-4913-a07d-69b752ce6377",
+    "success": false,
+    "answer": "",
+    "expected_answer": "fluffy",
+    "time_taken": 0.26760220527648926,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "72e110e7-464c-453c-a309-90a95aed6538",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Guatemala",
+    "time_taken": 0.2987198829650879,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "b415aba4-4b68-4fc6-9b89-2c812e55a3e1",
+    "success": false,
+    "answer": "",
+    "expected_answer": "diamond",
+    "time_taken": 0.2830643653869629,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "935e2cff-ae78-4218-b3f5-115589b19dae",
+    "success": false,
+    "answer": "",
+    "expected_answer": "research",
+    "time_taken": 0.2833220958709717,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "4fc2f1ae-8625-45b5-ab34-ad4433bc21f8",
+    "success": false,
+    "answer": "",
+    "expected_answer": "FunkMonk",
+    "time_taken": 0.2793099880218506,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "5188369a-3bbe-43d8-8b94-11558f909a08",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Annie Levin",
+    "time_taken": 0.2831761837005615,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "9d191bce-651d-4746-be2d-7ef8ecadb9c2",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Extremely",
+    "time_taken": 0.28261351585388184,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "cabe07ed-9eca-40ea-8ead-410ef5e83f91",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Louvrier",
+    "time_taken": 0.2831459045410156,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "d0633230-7067-47a9-9dbf-ee11e0a2cdd6",
+    "success": false,
+    "answer": "",
+    "expected_answer": "BaseLabelPropagation",
+    "time_taken": 0.28334856033325195,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "0383a3ee-47a7-41a4-b493-519bdefe0488",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Rockhopper penguin",
+    "time_taken": 0.26721882820129395,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "11af4e1a-5f45-467d-9aeb-46f4bb0bf034",
+    "success": false,
+    "answer": "",
+    "expected_answer": "6",
+    "time_taken": 0.2818880081176758,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "7673d772-ef80-4f0f-a602-1bf4485c9b43",
+    "success": false,
+    "answer": "",
+    "expected_answer": "inference",
+    "time_taken": 0.28377676010131836,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Braintree, Honolulu",
+    "time_taken": 0.2986421585083008,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "7d4a7d1d-cac6-44a8-96e8-ea9584a70825",
+    "success": false,
+    "answer": "",
+    "expected_answer": "22",
+    "time_taken": 0.283252477645874,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "dc22a632-937f-4e6a-b72f-ba0ff3f5ff97",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Five Hundred Things To Eat Before It's Too Late: and the Very Best Places to Eat Them",
+    "time_taken": 0.29752063751220703,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "3f57289b-8c60-48be-bd80-01f8099ca449",
+    "success": false,
+    "answer": "",
+    "expected_answer": "519",
+    "time_taken": 0.29902219772338867,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "23dd907f-1261-4488-b21c-e9185af91d5e",
+    "success": false,
+    "answer": "",
+    "expected_answer": "2",
+    "time_taken": 0.29955530166625977,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "840bfca7-4f7b-481a-8794-c560c340185d",
+    "success": false,
+    "answer": "",
+    "expected_answer": "80GSFC21M0002",
+    "time_taken": 0.2836594581604004,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "a0068077-79f4-461a-adfe-75c1a4148545",
+    "success": false,
+    "answer": "",
+    "expected_answer": "90",
+    "time_taken": 0.2901649475097656,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "bda648d7-d618-4883-88f4-3466eabd860e",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Saint Petersburg",
+    "time_taken": 0.3081831932067871,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "c61d22de-5f6c-4958-a7f6-5e9707bd3466",
+    "success": false,
+    "answer": "",
+    "expected_answer": "egalitarian",
+    "time_taken": 0.3002603054046631,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc",
+    "success": false,
+    "answer": "",
+    "expected_answer": "34689",
+    "time_taken": 0.30455780029296875,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "04a04a9b-226c-43fd-b319-d5e89743676f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "41",
+    "time_taken": 0.31185030937194824,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "14569e28-c88c-43e4-8c32-097d35b9a67d",
+    "success": false,
+    "answer": "",
+    "expected_answer": "backtick",
+    "time_taken": 0.3164668083190918,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "3627a8be-a77f-41bb-b807-7e1bd4c0ebdf",
+    "success": false,
+    "answer": "",
+    "expected_answer": "142",
+    "time_taken": 0.29547762870788574,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "7619a514-5fa8-43ef-9143-83b66a43d7a4",
+    "success": false,
+    "answer": "",
+    "expected_answer": "04/15/18",
+    "time_taken": 0.28421592712402344,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "2a649bb1-795f-4a01-b3be-9a01868dae73",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3.1.3.1; 1.11.1.7",
+    "time_taken": 0.28293395042419434,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "87c610df-bef7-4932-b950-1d83ef4e282b",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Morarji Desai",
+    "time_taken": 0.3371608257293701,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "624cbf11-6a41-4692-af9c-36b3e5ca3130",
+    "success": false,
+    "answer": "",
+    "expected_answer": "So we had to let it die.",
+    "time_taken": 0.31171226501464844,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "dd3c7503-f62a-4bd0-9f67-1b63b94194cc",
+    "success": false,
+    "answer": "",
+    "expected_answer": "6",
+    "time_taken": 0.29900312423706055,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "f0f46385-fc03-4599-b5d3-f56496c3e69f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Indonesia, Myanmar",
+    "time_taken": 0.3073873519897461,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "e4e91f1c-1dcd-439e-9fdd-cb976f5293fd",
+    "success": false,
+    "answer": "",
+    "expected_answer": "cloak",
+    "time_taken": 0.32535505294799805,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "56137764-b4e0-45b8-9c52-1866420c3df5",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Li Peng",
+    "time_taken": 0.30086469650268555,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "8b3379c0-0981-4f5b-8407-6444610cb212",
+    "success": false,
+    "answer": "",
+    "expected_answer": "1.8",
+    "time_taken": 0.30019187927246094,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "0ff53813-3367-4f43-bcbd-3fd725c1bf4b",
+    "success": false,
+    "answer": "",
+    "expected_answer": "beta geometric",
+    "time_taken": 0.29625916481018066,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "a7feb290-76bb-4cb7-8800-7edaf7954f2f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "31",
+    "time_taken": 0.2822723388671875,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "b4cc024b-3f5e-480e-b96a-6656493255b5",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Russian-German Legion",
+    "time_taken": 0.3380308151245117,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "33d8ea3b-6c6b-4ff1-803d-7e270dea8a57",
+    "success": false,
+    "answer": "",
+    "expected_answer": "2",
+    "time_taken": 0.31114983558654785,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "e8cb5b03-41e0-4086-99e5-f6806cd97211",
+    "success": false,
+    "answer": "",
+    "expected_answer": "shrimp",
+    "time_taken": 0.30021023750305176,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "f46b4380-207e-4434-820b-f32ce04ae2a4",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Harbinger, Tidal",
+    "time_taken": 0.3030071258544922,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "05407167-39ec-4d3a-a234-73a9120c325d",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Format Document",
+    "time_taken": 0.3295609951019287,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "b9763138-c053-4832-9f55-86200cb1f99c",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3",
+    "time_taken": 0.2989237308502197,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "16d825ff-1623-4176-a5b5-42e0f5c2b0ac",
+    "success": false,
+    "answer": "",
+    "expected_answer": "6:41 PM",
+    "time_taken": 0.3005383014678955,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "544b7f0c-173a-4377-8d56-57b36eb26ddf",
+    "success": false,
+    "answer": "",
+    "expected_answer": "A Nightmare on Elm Street",
+    "time_taken": 0.2992386817932129,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "6b078778-0b90-464d-83f6-59511c811b01",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Alfonso Visconti",
+    "time_taken": 0.27968883514404297,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "08cae58d-4084-4616-b6dd-dd6534e4825b",
+    "success": false,
+    "answer": "",
+    "expected_answer": "2018",
+    "time_taken": 0.3373117446899414,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "2dfc4c37-fec1-4518-84a7-10095d30ad75",
+    "success": false,
+    "answer": "",
+    "expected_answer": "6",
+    "time_taken": 0.33126187324523926,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "9f41b083-683e-4dcf-9185-ccfeaa88fa45",
+    "success": false,
+    "answer": "",
+    "expected_answer": "0",
+    "time_taken": 0.35346198081970215,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "ecbc4f94-95a3-4cc7-b255-6741a458a625",
+    "success": false,
+    "answer": "",
+    "expected_answer": "13",
+    "time_taken": 0.3498189449310303,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "71345b0a-9c7d-4b50-b2bf-937ec5879845",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Here be dragons",
+    "time_taken": 0.32584333419799805,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "7b5377b0-3f38-4103-8ad2-90fe89864c04",
+    "success": false,
+    "answer": "",
+    "expected_answer": "563.9",
+    "time_taken": 0.300508975982666,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "114d5fd0-e2ae-4b6d-a65a-870da2d19c08",
+    "success": false,
+    "answer": "",
+    "expected_answer": "4",
+    "time_taken": 0.34032130241394043,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "ad37a656-079a-49f9-a493-7b739c9167d1",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Bravo",
+    "time_taken": 0.30925774574279785,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "f3917a3d-1d17-4ee2-90c5-683b072218fe",
+    "success": false,
+    "answer": "",
+    "expected_answer": "2732",
+    "time_taken": 0.3003561496734619,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "48eb8242-1099-4c26-95d4-ef22b002457a",
+    "success": false,
+    "answer": "",
+    "expected_answer": "6",
+    "time_taken": 0.3115406036376953,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "c8b7e059-c60d-472e-ad64-3b04ae1166dc",
+    "success": false,
+    "answer": "",
+    "expected_answer": "8",
+    "time_taken": 0.2841002941131592,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "d1af70ea-a9a4-421a-b9cc-94b5e02f1788",
+    "success": false,
+    "answer": "",
+    "expected_answer": "736455",
+    "time_taken": 0.3572516441345215,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "ded28325-3447-4c56-860f-e497d6fb3577",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Picnic is in Ploybius Plaza.",
+    "time_taken": 0.3654940128326416,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "d700d50d-c707-4dca-90dc-4528cddd0c80",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Roger Miller",
+    "time_taken": 0.3690674304962158,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "0a3cd321-3e76-4622-911b-0fda2e5d6b1a",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Brunei, China, Morocco, Singapore",
+    "time_taken": 0.3507983684539795,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "f2feb6a4-363c-4c09-a804-0db564eafd68",
+    "success": false,
+    "answer": "",
+    "expected_answer": "900000",
+    "time_taken": 0.35558342933654785,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "0b260a57-3f3a-4405-9f29-6d7a1012dbfb",
+    "success": false,
+    "answer": "",
+    "expected_answer": "0.269",
+    "time_taken": 0.31648683547973633,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "ed58682d-bc52-4baa-9eb0-4eb81e1edacc",
+    "success": false,
+    "answer": "",
+    "expected_answer": "stare",
+    "time_taken": 0.33969640731811523,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "023e9d44-96ae-4eed-b912-244ee8c3b994",
+    "success": false,
+    "answer": "",
+    "expected_answer": "8",
+    "time_taken": 0.3090541362762451,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "0e9e85b8-52b9-4de4-b402-5f635ab9631f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "1927",
+    "time_taken": 0.32877326011657715,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "20194330-9976-4043-8632-f8485c6c71b2",
+    "success": false,
+    "answer": "",
+    "expected_answer": "4",
+    "time_taken": 0.3020763397216797,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "65638e28-7f37-4fa7-b7b9-8c19bb609879",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Kleinpaul",
+    "time_taken": 0.29912805557250977,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "3ff6b7a9-a5bd-4412-ad92-0cd0d45c0fee",
+    "success": false,
+    "answer": "",
+    "expected_answer": "56000",
+    "time_taken": 0.3230936527252197,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "708b99c5-e4a7-49cb-a5cf-933c8d46470d",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Citations",
+    "time_taken": 0.3248112201690674,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "0a65cb96-cb6e-4a6a-8aae-c1084f613456",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Holabird",
+    "time_taken": 0.3394603729248047,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "65da0822-a48a-4a68-bbad-8ed1b835a834",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Santa Clara, Boston",
+    "time_taken": 0.3786306381225586,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "73c1b9fe-ee1d-4cf4-96ca-35c08f97b054",
+    "success": false,
+    "answer": "",
+    "expected_answer": "1954",
+    "time_taken": 0.3849470615386963,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "e2d69698-bc99-4e85-9880-67eaccd66e6c",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Michele Fitzgerald",
+    "time_taken": 0.36298441886901855,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "a56f1527-3abf-41d6-91f8-7296d6336c3f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "185",
+    "time_taken": 0.33979034423828125,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "42d4198c-5895-4f0a-b0c0-424a66465d83",
+    "success": false,
+    "answer": "",
+    "expected_answer": "60",
+    "time_taken": 0.3731379508972168,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "a26649c6-1cb2-470a-871e-6910c64c3e53",
+    "success": false,
+    "answer": "",
+    "expected_answer": "116",
+    "time_taken": 0.3495621681213379,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "d5141ca5-e7a0-469f-bf3e-e773507c86e2",
+    "success": false,
+    "answer": "",
+    "expected_answer": "19/02/2009",
+    "time_taken": 0.3358607292175293,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "1dcc160f-c187-48c2-b68e-319bd4354f3d",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3",
+    "time_taken": 0.3452897071838379,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "e0c10771-d627-4fd7-9694-05348e54ee36",
+    "success": false,
+    "answer": "",
+    "expected_answer": "234.9",
+    "time_taken": 0.33940839767456055,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "e29834fd-413a-455c-a33e-c3915b07401c",
+    "success": false,
+    "answer": "",
+    "expected_answer": "21",
+    "time_taken": 0.3602182865142822,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "08c0b6e9-1b43-4c2e-ae55-4e3fce2c2715",
+    "success": false,
+    "answer": "",
+    "expected_answer": "orange, white",
+    "time_taken": 0.36089015007019043,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "db4fd70a-2d37-40ea-873f-9433dc5e301f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "10",
+    "time_taken": 0.33826780319213867,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "853c8244-429e-46ca-89f2-addf40dfb2bd",
+    "success": false,
+    "answer": "",
+    "expected_answer": "11",
+    "time_taken": 0.29929018020629883,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "7a4a336d-dcfa-45a0-b014-824c7619e8de",
+    "success": false,
+    "answer": "",
+    "expected_answer": "1:41.614",
+    "time_taken": 0.2995944023132324,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  }
+]

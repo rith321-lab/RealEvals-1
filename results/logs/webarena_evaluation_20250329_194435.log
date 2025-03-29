@@ -1,0 +1,8 @@
+2025-03-29 19:44:35,875 [INFO] Starting WebArena evaluation
+2025-03-29 19:44:35,875 [INFO] Headless mode: True
+2025-03-29 19:44:35,875 [INFO] Max retries: 2
+2025-03-29 19:44:35,882 [INFO] Loaded 812 tasks from JSON file data/webarena.json
+2025-03-29 19:44:35,882 [INFO] Using API key index: 0
+2025-03-29 19:44:36,384 [INFO] Processing task 1/812: 0
+2025-03-29 19:44:36,384 [INFO] Starting task: 0
+2025-03-29 19:44:36,667 [INFO] Navigated to https://www.google.com

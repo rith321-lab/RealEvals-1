@@ -1,0 +1,26 @@
+[
+  {
+    "task_id": "98.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 0.06572794914245605,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "99.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 0.029098987579345703,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  },
+  {
+    "task_id": "100.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 0.03180384635925293,
+    "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\""
+  }
+]

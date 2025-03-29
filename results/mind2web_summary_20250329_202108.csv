@@ -1,0 +1,7 @@
+task_id,success,time_taken,error
+98.0,False,5.977775573730469,"Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role ""system"". The Messages API accepts a top-level `system` parameter, not ""system"" as an input message role.'}}"
+99.0,False,0.11449694633483887,net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+100.0,False,30.71191120147705,"Timeout 30000ms exceeded.
+=========================== logs ===========================
+""load"" event fired
+============================================================"

@@ -1,0 +1,26 @@
+2025-03-29 19:42:57,982 [INFO] Starting WebVoyager evaluation
+2025-03-29 19:42:57,983 [INFO] Headless mode: True
+2025-03-29 19:42:57,983 [INFO] Max retries: 2
+2025-03-29 19:42:57,983 [INFO] Using API key index: 0
+2025-03-29 19:42:58,961 [INFO] Processing task 1/90: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:42:58,961 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:42:58,961 [WARNING] Invalid navigation URL: 
+2025-03-29 19:42:58,961 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: Invalid URL: 
+2025-03-29 19:43:00,962 [INFO] Retry 1/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:43:00,962 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:43:00,962 [WARNING] Invalid navigation URL: 
+2025-03-29 19:43:00,962 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: Invalid URL: 
+2025-03-29 19:43:02,962 [INFO] Retry 2/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:43:02,962 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:43:02,962 [WARNING] Invalid navigation URL: 
+2025-03-29 19:43:02,962 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: Invalid URL: 
+2025-03-29 19:43:02,962 [INFO] Progress: 1/90 tasks completed
+2025-03-29 19:43:02,962 [INFO] Success rate so far: 0.00%
+2025-03-29 19:43:02,963 [INFO] Processing task 2/90: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 19:43:02,963 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 19:43:02,963 [WARNING] Invalid navigation URL: 
+2025-03-29 19:43:02,963 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: Invalid URL: 
+2025-03-29 19:43:04,963 [INFO] Retry 1/2 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 19:43:04,963 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 19:43:04,963 [WARNING] Invalid navigation URL: 
+2025-03-29 19:43:04,963 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: Invalid URL: 

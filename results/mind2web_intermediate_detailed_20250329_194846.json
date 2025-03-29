@@ -1,0 +1,26 @@
+[
+  {
+    "task_id": "98.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 14.138178825378418,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "task_id": "99.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 0.17726349830627441,
+    "error": "Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/"
+  },
+  {
+    "task_id": "100.0",
+    "success": false,
+    "answer": "",
+    "expected_answer": "",
+    "time_taken": 10.453954458236694,
+    "error": "Response parsing error: Expecting value: line 1 column 1 (char 0)"
+  }
+]

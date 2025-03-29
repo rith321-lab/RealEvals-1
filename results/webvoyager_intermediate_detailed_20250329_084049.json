@@ -1,0 +1,402 @@
+[
+  {
+    "task_id": "e1fc63a2-da7a-432f-be78-7c4a95598703",
+    "success": false,
+    "answer": "",
+    "expected_answer": "17",
+    "time_taken": 23.155288457870483,
+    "error": "Unexpected token \"\"Orbit of the Moon\"\" while parsing selector \"link with text 'Orbit of the Moon'\""
+  },
+  {
+    "task_id": "8e867cd7-cff9-4e6c-867a-ff5ddc2550be",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3",
+    "time_taken": 18.72688341140747,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "5d0080cb-90d7-4712-bc33-848150e917d3",
+    "success": false,
+    "answer": "",
+    "expected_answer": "0.1777",
+    "time_taken": 47.78393006324768,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3",
+    "time_taken": 15.726556301116943,
+    "error": "Frame.goto() missing 1 required positional argument: 'url'"
+  },
+  {
+    "task_id": "46719c30-f4c3-4cad-be07-d5cb21eee6bb",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Mapping Human Oriented Information to Software Agents for Online Systems Usage",
+    "time_taken": 81.10559606552124,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "4b6bb5f7-f634-410e-815d-e673ab7f8632",
+    "success": false,
+    "answer": "",
+    "expected_answer": "THE CASTLE",
+    "time_taken": 13.173774242401123,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "b816bfce-3d80-4913-a07d-69b752ce6377",
+    "success": false,
+    "answer": "",
+    "expected_answer": "fluffy",
+    "time_taken": 72.31711745262146,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "72e110e7-464c-453c-a309-90a95aed6538",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Guatemala",
+    "time_taken": 16.6685893535614,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "b415aba4-4b68-4fc6-9b89-2c812e55a3e1",
+    "success": false,
+    "answer": "",
+    "expected_answer": "diamond",
+    "time_taken": 36.90442109107971,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "935e2cff-ae78-4218-b3f5-115589b19dae",
+    "success": false,
+    "answer": "",
+    "expected_answer": "research",
+    "time_taken": 51.67339205741882,
+    "error": "Unexpected token \"\"View history\"\" while parsing selector \"link with text 'View history'\""
+  },
+  {
+    "task_id": "4fc2f1ae-8625-45b5-ab34-ad4433bc21f8",
+    "success": false,
+    "answer": "",
+    "expected_answer": "FunkMonk",
+    "time_taken": 69.54026889801025,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "5188369a-3bbe-43d8-8b94-11558f909a08",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Annie Levin",
+    "time_taken": 18.547239303588867,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "9d191bce-651d-4746-be2d-7ef8ecadb9c2",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Extremely",
+    "time_taken": 39.21016192436218,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "cabe07ed-9eca-40ea-8ead-410ef5e83f91",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Louvrier",
+    "time_taken": 44.77490568161011,
+    "error": "Frame.goto() missing 1 required positional argument: 'url'"
+  },
+  {
+    "task_id": "d0633230-7067-47a9-9dbf-ee11e0a2cdd6",
+    "success": false,
+    "answer": "",
+    "expected_answer": "BaseLabelPropagation",
+    "time_taken": 44.451775312423706,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "0383a3ee-47a7-41a4-b493-519bdefe0488",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Rockhopper penguin",
+    "time_taken": 42.99107480049133,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "11af4e1a-5f45-467d-9aeb-46f4bb0bf034",
+    "success": false,
+    "answer": "",
+    "expected_answer": "6",
+    "time_taken": 46.86207342147827,
+    "error": "Unexpected token \"\"BERT base encoder\"\" while parsing selector \"Search for 'BERT base encoder' on the page\""
+  },
+  {
+    "task_id": "7673d772-ef80-4f0f-a602-1bf4485c9b43",
+    "success": false,
+    "answer": "",
+    "expected_answer": "inference",
+    "time_taken": 40.85521602630615,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Braintree, Honolulu",
+    "time_taken": 74.2964448928833,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "7d4a7d1d-cac6-44a8-96e8-ea9584a70825",
+    "success": false,
+    "answer": "",
+    "expected_answer": "22",
+    "time_taken": 17.38442087173462,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "dc22a632-937f-4e6a-b72f-ba0ff3f5ff97",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Five Hundred Things To Eat Before It's Too Late: and the Very Best Places to Eat Them",
+    "time_taken": 74.09880232810974,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "3f57289b-8c60-48be-bd80-01f8099ca449",
+    "success": false,
+    "answer": "",
+    "expected_answer": "519",
+    "time_taken": 51.519513845443726,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "23dd907f-1261-4488-b21c-e9185af91d5e",
+    "success": true,
+    "answer": "The 5th stanza of the poem \"Father Son and Holy Ghost\" by Audre Lorde has lines that are indented.",
+    "expected_answer": "2",
+    "time_taken": 21.88737940788269,
+    "error": ""
+  },
+  {
+    "task_id": "840bfca7-4f7b-481a-8794-c560c340185d",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "80GSFC21M0002",
+    "time_taken": 21.738707780838013,
+    "error": ""
+  },
+  {
+    "task_id": "a0068077-79f4-461a-adfe-75c1a4148545",
+    "success": false,
+    "answer": "",
+    "expected_answer": "90",
+    "time_taken": 45.67270541191101,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "bda648d7-d618-4883-88f4-3466eabd860e",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Saint Petersburg",
+    "time_taken": 81.90589570999146,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "c61d22de-5f6c-4958-a7f6-5e9707bd3466",
+    "success": false,
+    "answer": "",
+    "expected_answer": "egalitarian",
+    "time_taken": 54.32799053192139,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc",
+    "success": false,
+    "answer": "",
+    "expected_answer": "34689",
+    "time_taken": 50.67147135734558,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "04a04a9b-226c-43fd-b319-d5e89743676f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "41",
+    "time_taken": 33.894354581832886,
+    "error": "Unexpected token \"\"View all\"\" while parsing selector \"button with text 'View all'\""
+  },
+  {
+    "task_id": "14569e28-c88c-43e4-8c32-097d35b9a67d",
+    "success": false,
+    "answer": "",
+    "expected_answer": "backtick",
+    "time_taken": 42.23242259025574,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "3627a8be-a77f-41bb-b807-7e1bd4c0ebdf",
+    "success": false,
+    "answer": "",
+    "expected_answer": "142",
+    "time_taken": 18.525310754776,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "7619a514-5fa8-43ef-9143-83b66a43d7a4",
+    "success": false,
+    "answer": "",
+    "expected_answer": "04/15/18",
+    "time_taken": 35.97607135772705,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "2a649bb1-795f-4a01-b3be-9a01868dae73",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3.1.3.1; 1.11.1.7",
+    "time_taken": 79.68994855880737,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "87c610df-bef7-4932-b950-1d83ef4e282b",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Morarji Desai",
+    "time_taken": 52.70646357536316,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "624cbf11-6a41-4692-af9c-36b3e5ca3130",
+    "success": false,
+    "answer": "",
+    "expected_answer": "So we had to let it die.",
+    "time_taken": 19.70372486114502,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "dd3c7503-f62a-4bd0-9f67-1b63b94194cc",
+    "success": false,
+    "answer": "",
+    "expected_answer": "6",
+    "time_taken": 121.51015830039978,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "f0f46385-fc03-4599-b5d3-f56496c3e69f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Indonesia, Myanmar",
+    "time_taken": 23.21458649635315,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "e4e91f1c-1dcd-439e-9fdd-cb976f5293fd",
+    "success": false,
+    "answer": "",
+    "expected_answer": "cloak",
+    "time_taken": 48.693979024887085,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "56137764-b4e0-45b8-9c52-1866420c3df5",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Li Peng",
+    "time_taken": 53.1730580329895,
+    "error": "Timeout 30000ms exceeded."
+  },
+  {
+    "task_id": "8b3379c0-0981-4f5b-8407-6444610cb212",
+    "success": false,
+    "answer": "",
+    "expected_answer": "1.8",
+    "time_taken": 48.90846800804138,
+    "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}"
+  },
+  {
+    "task_id": "0ff53813-3367-4f43-bcbd-3fd725c1bf4b",
+    "success": false,
+    "answer": "",
+    "expected_answer": "beta geometric",
+    "time_taken": 56.31115102767944,
+    "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}"
+  },
+  {
+    "task_id": "a7feb290-76bb-4cb7-8800-7edaf7954f2f",
+    "success": false,
+    "answer": "",
+    "expected_answer": "31",
+    "time_taken": 39.526357889175415,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "b4cc024b-3f5e-480e-b96a-6656493255b5",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Russian-German Legion",
+    "time_taken": 53.856218576431274,
+    "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}"
+  },
+  {
+    "task_id": "33d8ea3b-6c6b-4ff1-803d-7e270dea8a57",
+    "success": false,
+    "answer": "",
+    "expected_answer": "2",
+    "time_taken": 40.50470519065857,
+    "error": "Unexpected token \"\"J. R. R. Tolkien\"\" while parsing selector \"link with text 'J. R. R. Tolkien'\""
+  },
+  {
+    "task_id": "e8cb5b03-41e0-4086-99e5-f6806cd97211",
+    "success": false,
+    "answer": "",
+    "expected_answer": "shrimp",
+    "time_taken": 42.23701047897339,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "f46b4380-207e-4434-820b-f32ce04ae2a4",
+    "success": true,
+    "answer": "Tidal, This Fire",
+    "expected_answer": "Harbinger, Tidal",
+    "time_taken": 56.02174735069275,
+    "error": ""
+  },
+  {
+    "task_id": "05407167-39ec-4d3a-a234-73a9120c325d",
+    "success": false,
+    "answer": "",
+    "expected_answer": "Format Document",
+    "time_taken": 14.803161144256592,
+    "error": "Protocol error (Page.navigate): Cannot navigate to invalid URL"
+  },
+  {
+    "task_id": "b9763138-c053-4832-9f55-86200cb1f99c",
+    "success": false,
+    "answer": "",
+    "expected_answer": "3",
+    "time_taken": 76.27160978317261,
+    "error": "Unexpected token \"\"ISBN-10\"\" while parsing selector \"radio button labeled 'ISBN-10'\""
+  },
+  {
+    "task_id": "16d825ff-1623-4176-a5b5-42e0f5c2b0ac",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "6:41 PM",
+    "time_taken": 12.374516487121582,
+    "error": ""
+  },
+  {
+    "task_id": "544b7f0c-173a-4377-8d56-57b36eb26ddf",
+    "success": false,
+    "answer": "",
+    "expected_answer": "A Nightmare on Elm Street",
+    "time_taken": 90.03233051300049,
+    "error": "Timeout 30000ms exceeded."
+  }
+]

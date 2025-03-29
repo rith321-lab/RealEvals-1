@@ -1,0 +1,81 @@
+2025-03-29 19:45:16,846 [INFO] Starting Mind2Web evaluation
+2025-03-29 19:45:16,846 [INFO] Headless mode: True
+2025-03-29 19:45:16,846 [INFO] Max retries: 2
+2025-03-29 19:45:16,846 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 2 (char 1)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:45:16,847 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:45:16,848 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:45:16,848 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:45:16,848 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:45:16,848 [WARNING] No tasks loaded from mind2web.jsonl, trying direct JSON parsing
+2025-03-29 19:45:16,848 [INFO] Successfully loaded 3 tasks directly from JSON file
+2025-03-29 19:45:16,848 [WARNING] No Anthropic API keys found in environment variables
+2025-03-29 19:45:16,848 [INFO] Using API key index: 0
+2025-03-29 19:45:17,299 [INFO] Processing task 1/3: 98.0
+2025-03-29 19:45:17,299 [INFO] Starting task: 98.0
+2025-03-29 19:45:17,969 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:45:18,110 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:18,111 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:18,111 [INFO] Backing off _call_claude_with_retry(...) for 0.5s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:18,688 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:18,689 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:18,689 [INFO] Backing off _call_claude_with_retry(...) for 2.0s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:20,776 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:20,777 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:20,777 [INFO] Backing off _call_claude_with_retry(...) for 7.0s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:27,936 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:27,936 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:27,937 [INFO] Backing off _call_claude_with_retry(...) for 5.5s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:33,586 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:33,587 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:33,587 [ERROR] Giving up _call_claude_with_retry(...) after 5 tries (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:33,587 [ERROR] Task execution failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:33,587 [INFO] Task completed in 16.29 seconds
+2025-03-29 19:45:33,587 [WARNING] Task 98.0 failed: Execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:35,588 [INFO] Retry 1/2 for task 98.0
+2025-03-29 19:45:35,588 [INFO] Starting task: 98.0
+2025-03-29 19:45:36,029 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:45:36,143 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:36,144 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:36,144 [INFO] Backing off _call_claude_with_retry(...) for 0.6s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:36,839 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:36,840 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:36,840 [INFO] Backing off _call_claude_with_retry(...) for 1.1s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:38,076 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:38,076 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:38,076 [INFO] Backing off _call_claude_with_retry(...) for 2.4s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:40,548 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:40,548 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:40,548 [INFO] Backing off _call_claude_with_retry(...) for 7.3s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:47,993 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:47,994 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:47,994 [ERROR] Giving up _call_claude_with_retry(...) after 5 tries (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:47,994 [ERROR] Task execution failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:47,994 [INFO] Task completed in 12.41 seconds
+2025-03-29 19:45:47,994 [WARNING] Task 98.0 failed: Execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:49,994 [INFO] Retry 2/2 for task 98.0
+2025-03-29 19:45:49,995 [INFO] Starting task: 98.0
+2025-03-29 19:45:50,473 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:45:50,597 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:50,597 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:50,597 [INFO] Backing off _call_claude_with_retry(...) for 1.6s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:52,273 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:52,274 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:52,274 [INFO] Backing off _call_claude_with_retry(...) for 3.2s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:55,549 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:55,549 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:55,550 [INFO] Backing off _call_claude_with_retry(...) for 7.0s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})

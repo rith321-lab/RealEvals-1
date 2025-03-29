@@ -1,0 +1,525 @@
+2025-03-29 20:33:30,208 [INFO] Starting WebVoyager evaluation
+2025-03-29 20:33:30,208 [INFO] Headless mode: True
+2025-03-29 20:33:30,208 [INFO] Max retries: 2
+2025-03-29 20:33:30,209 [INFO] Loaded 2 Anthropic API keys
+2025-03-29 20:33:30,835 [INFO] Processing task 1/90: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:33:30,835 [INFO] Executing task e1fc63a2-da7a-432f-be78-7c4a95598703: If Eliud Kipchoge could maintain his record-making marathon pace indefinitely, how many thousand hours would it take him to run the distance between the Earth and the Moon its closest approach? Please use the minimum perigee value on the Wikipedia page for the Moon when carrying out your calculation. Round your result to the nearest 1000 hours and do not use any comma separators if necessary.
+2025-03-29 20:33:30,886 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:33:32,980 [INFO] Step 1/15 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:33:32,981 [ERROR] Error in step 1 for task e1fc63a2-da7a-432f-be78-7c4a95598703: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:32,981 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:34,982 [INFO] Retry 1/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:33:34,982 [INFO] Executing task e1fc63a2-da7a-432f-be78-7c4a95598703: If Eliud Kipchoge could maintain his record-making marathon pace indefinitely, how many thousand hours would it take him to run the distance between the Earth and the Moon its closest approach? Please use the minimum perigee value on the Wikipedia page for the Moon when carrying out your calculation. Round your result to the nearest 1000 hours and do not use any comma separators if necessary.
+2025-03-29 20:33:35,035 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:33:36,533 [INFO] Step 1/15 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:33:36,534 [ERROR] Error in step 1 for task e1fc63a2-da7a-432f-be78-7c4a95598703: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:36,534 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:38,535 [INFO] Retry 2/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:33:38,535 [INFO] Executing task e1fc63a2-da7a-432f-be78-7c4a95598703: If Eliud Kipchoge could maintain his record-making marathon pace indefinitely, how many thousand hours would it take him to run the distance between the Earth and the Moon its closest approach? Please use the minimum perigee value on the Wikipedia page for the Moon when carrying out your calculation. Round your result to the nearest 1000 hours and do not use any comma separators if necessary.
+2025-03-29 20:33:38,614 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:33:40,846 [INFO] Step 1/15 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:33:40,846 [ERROR] Error in step 1 for task e1fc63a2-da7a-432f-be78-7c4a95598703: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:40,846 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:40,846 [INFO] Progress: 1/90 tasks completed
+2025-03-29 20:33:40,846 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:40,846 [INFO] Processing task 2/90: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:33:40,846 [INFO] Executing task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be: How many studio albums were published by Mercedes Sosa between 2000 and 2009 (included)? You can use the latest 2022 version of english wikipedia.
+2025-03-29 20:33:40,902 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:33:43,096 [INFO] Step 1/15 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:33:43,097 [ERROR] Error in step 1 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:43,097 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:45,110 [INFO] Retry 1/2 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:33:45,110 [INFO] Executing task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be: How many studio albums were published by Mercedes Sosa between 2000 and 2009 (included)? You can use the latest 2022 version of english wikipedia.
+2025-03-29 20:33:45,184 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:33:47,339 [INFO] Step 1/15 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:33:47,339 [ERROR] Error in step 1 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:47,339 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:49,339 [INFO] Retry 2/2 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:33:49,340 [INFO] Executing task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be: How many studio albums were published by Mercedes Sosa between 2000 and 2009 (included)? You can use the latest 2022 version of english wikipedia.
+2025-03-29 20:33:49,408 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:33:51,616 [INFO] Step 1/15 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:33:51,616 [ERROR] Error in step 1 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:51,616 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:51,616 [INFO] Progress: 2/90 tasks completed
+2025-03-29 20:33:51,616 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:51,616 [INFO] Processing task 3/90: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:33:51,616 [INFO] Executing task 5d0080cb-90d7-4712-bc33-848150e917d3: What was the volume in m^3 of the fish bag that was calculated in the University of Leicester paper "Can Hiccup Supply Enough Fish to Maintain a Dragon’s Diet?"
+2025-03-29 20:33:51,705 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:33:53,885 [INFO] Step 1/15 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:33:53,885 [ERROR] Error in step 1 for task 5d0080cb-90d7-4712-bc33-848150e917d3: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:53,885 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:55,885 [INFO] Retry 1/2 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:33:55,886 [INFO] Executing task 5d0080cb-90d7-4712-bc33-848150e917d3: What was the volume in m^3 of the fish bag that was calculated in the University of Leicester paper "Can Hiccup Supply Enough Fish to Maintain a Dragon’s Diet?"
+2025-03-29 20:33:55,950 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:33:58,073 [INFO] Step 1/15 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:33:58,074 [ERROR] Error in step 1 for task 5d0080cb-90d7-4712-bc33-848150e917d3: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:58,074 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:00,077 [INFO] Retry 2/2 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:34:00,078 [INFO] Executing task 5d0080cb-90d7-4712-bc33-848150e917d3: What was the volume in m^3 of the fish bag that was calculated in the University of Leicester paper "Can Hiccup Supply Enough Fish to Maintain a Dragon’s Diet?"
+2025-03-29 20:34:00,176 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:02,481 [INFO] Step 1/15 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:34:02,481 [ERROR] Error in step 1 for task 5d0080cb-90d7-4712-bc33-848150e917d3: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:02,482 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:02,482 [INFO] Progress: 3/90 tasks completed
+2025-03-29 20:34:02,482 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:02,482 [INFO] Processing task 4/90: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:34:02,482 [INFO] Executing task a1e91b78-d3d8-4675-bb8d-62741b4b68a6: In the video https://www.youtube.com/watch?v=L1vXCYZAYYM, what is the highest number of bird species to be on camera simultaneously?
+2025-03-29 20:34:02,557 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:04,802 [INFO] Step 1/15 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:34:04,803 [ERROR] Error in step 1 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:04,803 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:06,803 [INFO] Retry 1/2 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:34:06,803 [INFO] Executing task a1e91b78-d3d8-4675-bb8d-62741b4b68a6: In the video https://www.youtube.com/watch?v=L1vXCYZAYYM, what is the highest number of bird species to be on camera simultaneously?
+2025-03-29 20:34:06,860 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:08,362 [INFO] Step 1/15 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:34:08,362 [ERROR] Error in step 1 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:08,362 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:10,363 [INFO] Retry 2/2 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:34:10,364 [INFO] Executing task a1e91b78-d3d8-4675-bb8d-62741b4b68a6: In the video https://www.youtube.com/watch?v=L1vXCYZAYYM, what is the highest number of bird species to be on camera simultaneously?
+2025-03-29 20:34:10,444 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:11,945 [INFO] Step 1/15 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:34:11,945 [ERROR] Error in step 1 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:11,945 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:11,945 [INFO] Progress: 4/90 tasks completed
+2025-03-29 20:34:11,946 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:11,946 [INFO] Processing task 5/90: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:34:11,946 [INFO] Executing task 46719c30-f4c3-4cad-be07-d5cb21eee6bb: Of the authors (First M. Last) that worked on the paper "Pie Menus or Linear Menus, Which Is Better?" in 2015, what was the title of the first paper authored by the one that had authored prior papers?
+2025-03-29 20:34:11,995 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:13,423 [INFO] Step 1/15 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:34:13,424 [ERROR] Error in step 1 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:13,424 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:15,424 [INFO] Retry 1/2 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:34:15,424 [INFO] Executing task 46719c30-f4c3-4cad-be07-d5cb21eee6bb: Of the authors (First M. Last) that worked on the paper "Pie Menus or Linear Menus, Which Is Better?" in 2015, what was the title of the first paper authored by the one that had authored prior papers?
+2025-03-29 20:34:15,484 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:16,949 [INFO] Step 1/15 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:34:16,950 [ERROR] Error in step 1 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:16,950 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:18,950 [INFO] Retry 2/2 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:34:18,950 [INFO] Executing task 46719c30-f4c3-4cad-be07-d5cb21eee6bb: Of the authors (First M. Last) that worked on the paper "Pie Menus or Linear Menus, Which Is Better?" in 2015, what was the title of the first paper authored by the one that had authored prior papers?
+2025-03-29 20:34:19,032 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:20,463 [INFO] Step 1/15 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:34:20,463 [ERROR] Error in step 1 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:20,464 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:20,464 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_203330.json
+2025-03-29 20:34:20,466 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_203330.csv
+2025-03-29 20:34:20,467 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 20:34:20,467 [INFO] Success rate: 0.00%
+2025-03-29 20:34:20,467 [INFO] Average time per task: 2.02 seconds
+2025-03-29 20:34:20,467 [INFO] Progress: 5/90 tasks completed
+2025-03-29 20:34:20,467 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:20,467 [INFO] Processing task 6/90: 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 20:34:20,467 [INFO] Executing task 4b6bb5f7-f634-410e-815d-e673ab7f8632: In Series 9, Episode 11 of Doctor Who, the Doctor is trapped inside an ever-shifting maze. What is this location called in the official script for the episode? Give the setting exactly as it appears in the first scene heading.
+2025-03-29 20:34:20,514 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:21,992 [INFO] Step 1/15 for task 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 20:34:21,992 [ERROR] Error in step 1 for task 4b6bb5f7-f634-410e-815d-e673ab7f8632: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:21,992 [WARNING] Task 4b6bb5f7-f634-410e-815d-e673ab7f8632 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:23,997 [INFO] Retry 1/2 for task 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 20:34:23,997 [INFO] Executing task 4b6bb5f7-f634-410e-815d-e673ab7f8632: In Series 9, Episode 11 of Doctor Who, the Doctor is trapped inside an ever-shifting maze. What is this location called in the official script for the episode? Give the setting exactly as it appears in the first scene heading.
+2025-03-29 20:34:24,052 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:25,541 [INFO] Step 1/15 for task 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 20:34:25,541 [ERROR] Error in step 1 for task 4b6bb5f7-f634-410e-815d-e673ab7f8632: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:25,542 [WARNING] Task 4b6bb5f7-f634-410e-815d-e673ab7f8632 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:27,542 [INFO] Retry 2/2 for task 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 20:34:27,542 [INFO] Executing task 4b6bb5f7-f634-410e-815d-e673ab7f8632: In Series 9, Episode 11 of Doctor Who, the Doctor is trapped inside an ever-shifting maze. What is this location called in the official script for the episode? Give the setting exactly as it appears in the first scene heading.
+2025-03-29 20:34:27,592 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:29,146 [INFO] Step 1/15 for task 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 20:34:29,147 [ERROR] Error in step 1 for task 4b6bb5f7-f634-410e-815d-e673ab7f8632: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:29,147 [WARNING] Task 4b6bb5f7-f634-410e-815d-e673ab7f8632 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:29,147 [INFO] Progress: 6/90 tasks completed
+2025-03-29 20:34:29,147 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:29,147 [INFO] Processing task 7/90: b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 20:34:29,147 [INFO] Executing task b816bfce-3d80-4913-a07d-69b752ce6377: In Emily Midkiff's June 2014 article in a journal named for the one of Hreidmar's sons that guarded his house, what word was quoted from two different authors in distaste for the nature of dragon depictions?
+2025-03-29 20:34:29,216 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:30,714 [INFO] Step 1/15 for task b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 20:34:30,714 [ERROR] Error in step 1 for task b816bfce-3d80-4913-a07d-69b752ce6377: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:30,715 [WARNING] Task b816bfce-3d80-4913-a07d-69b752ce6377 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:32,716 [INFO] Retry 1/2 for task b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 20:34:32,717 [INFO] Executing task b816bfce-3d80-4913-a07d-69b752ce6377: In Emily Midkiff's June 2014 article in a journal named for the one of Hreidmar's sons that guarded his house, what word was quoted from two different authors in distaste for the nature of dragon depictions?
+2025-03-29 20:34:32,784 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:34,928 [INFO] Step 1/15 for task b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 20:34:34,928 [ERROR] Error in step 1 for task b816bfce-3d80-4913-a07d-69b752ce6377: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:34,928 [WARNING] Task b816bfce-3d80-4913-a07d-69b752ce6377 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:36,929 [INFO] Retry 2/2 for task b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 20:34:36,929 [INFO] Executing task b816bfce-3d80-4913-a07d-69b752ce6377: In Emily Midkiff's June 2014 article in a journal named for the one of Hreidmar's sons that guarded his house, what word was quoted from two different authors in distaste for the nature of dragon depictions?
+2025-03-29 20:34:36,979 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:38,453 [INFO] Step 1/15 for task b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 20:34:38,453 [ERROR] Error in step 1 for task b816bfce-3d80-4913-a07d-69b752ce6377: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:38,453 [WARNING] Task b816bfce-3d80-4913-a07d-69b752ce6377 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:38,453 [INFO] Progress: 7/90 tasks completed
+2025-03-29 20:34:38,454 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:38,454 [INFO] Processing task 8/90: 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 20:34:38,454 [INFO] Executing task 72e110e7-464c-453c-a309-90a95aed6538: Under DDC 633 on Bielefeld University Library's BASE, as of 2020, from what country was the unknown language article with a flag unique from the others?
+2025-03-29 20:34:38,511 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:40,034 [INFO] Step 1/15 for task 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 20:34:40,034 [ERROR] Error in step 1 for task 72e110e7-464c-453c-a309-90a95aed6538: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:40,036 [WARNING] Task 72e110e7-464c-453c-a309-90a95aed6538 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:42,036 [INFO] Retry 1/2 for task 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 20:34:42,036 [INFO] Executing task 72e110e7-464c-453c-a309-90a95aed6538: Under DDC 633 on Bielefeld University Library's BASE, as of 2020, from what country was the unknown language article with a flag unique from the others?
+2025-03-29 20:34:42,088 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:43,669 [INFO] Step 1/15 for task 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 20:34:43,669 [ERROR] Error in step 1 for task 72e110e7-464c-453c-a309-90a95aed6538: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:43,669 [WARNING] Task 72e110e7-464c-453c-a309-90a95aed6538 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:45,670 [INFO] Retry 2/2 for task 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 20:34:45,670 [INFO] Executing task 72e110e7-464c-453c-a309-90a95aed6538: Under DDC 633 on Bielefeld University Library's BASE, as of 2020, from what country was the unknown language article with a flag unique from the others?
+2025-03-29 20:34:45,732 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:47,164 [INFO] Step 1/15 for task 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 20:34:47,164 [ERROR] Error in step 1 for task 72e110e7-464c-453c-a309-90a95aed6538: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:47,164 [WARNING] Task 72e110e7-464c-453c-a309-90a95aed6538 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:47,164 [INFO] Progress: 8/90 tasks completed
+2025-03-29 20:34:47,164 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:47,164 [INFO] Processing task 9/90: b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 20:34:47,164 [INFO] Executing task b415aba4-4b68-4fc6-9b89-2c812e55a3e1: In Nature journal's Scientific Reports conference proceedings from 2012, in the article that did not mention plasmons or plasmonics, what nano-compound is studied? Don't use the prefix nano in your answer if there is one.
+2025-03-29 20:34:47,206 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:48,628 [INFO] Step 1/15 for task b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 20:34:48,628 [ERROR] Error in step 1 for task b415aba4-4b68-4fc6-9b89-2c812e55a3e1: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:48,628 [WARNING] Task b415aba4-4b68-4fc6-9b89-2c812e55a3e1 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:50,628 [INFO] Retry 1/2 for task b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 20:34:50,629 [INFO] Executing task b415aba4-4b68-4fc6-9b89-2c812e55a3e1: In Nature journal's Scientific Reports conference proceedings from 2012, in the article that did not mention plasmons or plasmonics, what nano-compound is studied? Don't use the prefix nano in your answer if there is one.
+2025-03-29 20:34:50,677 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:52,107 [INFO] Step 1/15 for task b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 20:34:52,107 [ERROR] Error in step 1 for task b415aba4-4b68-4fc6-9b89-2c812e55a3e1: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:52,108 [WARNING] Task b415aba4-4b68-4fc6-9b89-2c812e55a3e1 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:54,108 [INFO] Retry 2/2 for task b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 20:34:54,108 [INFO] Executing task b415aba4-4b68-4fc6-9b89-2c812e55a3e1: In Nature journal's Scientific Reports conference proceedings from 2012, in the article that did not mention plasmons or plasmonics, what nano-compound is studied? Don't use the prefix nano in your answer if there is one.
+2025-03-29 20:34:54,162 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:55,702 [INFO] Step 1/15 for task b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 20:34:55,702 [ERROR] Error in step 1 for task b415aba4-4b68-4fc6-9b89-2c812e55a3e1: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:55,702 [WARNING] Task b415aba4-4b68-4fc6-9b89-2c812e55a3e1 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:55,702 [INFO] Progress: 9/90 tasks completed
+2025-03-29 20:34:55,703 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:55,703 [INFO] Processing task 10/90: 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 20:34:55,703 [INFO] Executing task 935e2cff-ae78-4218-b3f5-115589b19dae: In the year 2022, and before December, what does "R" stand for in the three core policies of the type of content that was violated in the public logs on the Legume Wikipedia page?
+2025-03-29 20:34:55,756 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:34:57,210 [INFO] Step 1/15 for task 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 20:34:57,210 [ERROR] Error in step 1 for task 935e2cff-ae78-4218-b3f5-115589b19dae: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:57,210 [WARNING] Task 935e2cff-ae78-4218-b3f5-115589b19dae failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:59,210 [INFO] Retry 1/2 for task 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 20:34:59,211 [INFO] Executing task 935e2cff-ae78-4218-b3f5-115589b19dae: In the year 2022, and before December, what does "R" stand for in the three core policies of the type of content that was violated in the public logs on the Legume Wikipedia page?
+2025-03-29 20:34:59,266 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:00,784 [INFO] Step 1/15 for task 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 20:35:00,785 [ERROR] Error in step 1 for task 935e2cff-ae78-4218-b3f5-115589b19dae: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:00,785 [WARNING] Task 935e2cff-ae78-4218-b3f5-115589b19dae failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:02,785 [INFO] Retry 2/2 for task 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 20:35:02,785 [INFO] Executing task 935e2cff-ae78-4218-b3f5-115589b19dae: In the year 2022, and before December, what does "R" stand for in the three core policies of the type of content that was violated in the public logs on the Legume Wikipedia page?
+2025-03-29 20:35:02,856 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:04,334 [INFO] Step 1/15 for task 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 20:35:04,334 [ERROR] Error in step 1 for task 935e2cff-ae78-4218-b3f5-115589b19dae: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:04,334 [WARNING] Task 935e2cff-ae78-4218-b3f5-115589b19dae failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:04,335 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_203330.json
+2025-03-29 20:35:04,337 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_203330.csv
+2025-03-29 20:35:04,337 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 20:35:04,337 [INFO] Success rate: 0.00%
+2025-03-29 20:35:04,337 [INFO] Average time per task: 1.79 seconds
+2025-03-29 20:35:04,338 [INFO] Progress: 10/90 tasks completed
+2025-03-29 20:35:04,338 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:04,338 [INFO] Processing task 11/90: 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 20:35:04,338 [INFO] Executing task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8: Who nominated the only Featured Article on English Wikipedia about a dinosaur that was promoted in November 2016?
+2025-03-29 20:35:04,388 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:05,885 [INFO] Step 1/15 for task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 20:35:05,885 [ERROR] Error in step 1 for task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:05,885 [WARNING] Task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:07,886 [INFO] Retry 1/2 for task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 20:35:07,886 [INFO] Executing task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8: Who nominated the only Featured Article on English Wikipedia about a dinosaur that was promoted in November 2016?
+2025-03-29 20:35:07,935 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:09,378 [INFO] Step 1/15 for task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 20:35:09,378 [ERROR] Error in step 1 for task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:09,378 [WARNING] Task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:11,379 [INFO] Retry 2/2 for task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 20:35:11,379 [INFO] Executing task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8: Who nominated the only Featured Article on English Wikipedia about a dinosaur that was promoted in November 2016?
+2025-03-29 20:35:11,473 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:12,854 [INFO] Step 1/15 for task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 20:35:12,855 [ERROR] Error in step 1 for task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:12,855 [WARNING] Task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:12,855 [INFO] Progress: 11/90 tasks completed
+2025-03-29 20:35:12,855 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:12,856 [INFO] Processing task 12/90: 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 20:35:12,856 [INFO] Executing task 5188369a-3bbe-43d8-8b94-11558f909a08: What writer is quoted by Merriam-Webster for the Word of the Day from June 27, 2022?
+2025-03-29 20:35:12,927 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:14,332 [INFO] Step 1/15 for task 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 20:35:14,332 [ERROR] Error in step 1 for task 5188369a-3bbe-43d8-8b94-11558f909a08: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:14,332 [WARNING] Task 5188369a-3bbe-43d8-8b94-11558f909a08 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:16,333 [INFO] Retry 1/2 for task 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 20:35:16,333 [INFO] Executing task 5188369a-3bbe-43d8-8b94-11558f909a08: What writer is quoted by Merriam-Webster for the Word of the Day from June 27, 2022?
+2025-03-29 20:35:16,385 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:17,806 [INFO] Step 1/15 for task 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 20:35:17,806 [ERROR] Error in step 1 for task 5188369a-3bbe-43d8-8b94-11558f909a08: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:17,806 [WARNING] Task 5188369a-3bbe-43d8-8b94-11558f909a08 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:19,806 [INFO] Retry 2/2 for task 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 20:35:19,807 [INFO] Executing task 5188369a-3bbe-43d8-8b94-11558f909a08: What writer is quoted by Merriam-Webster for the Word of the Day from June 27, 2022?
+2025-03-29 20:35:19,878 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:21,455 [INFO] Step 1/15 for task 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 20:35:21,455 [ERROR] Error in step 1 for task 5188369a-3bbe-43d8-8b94-11558f909a08: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:21,455 [WARNING] Task 5188369a-3bbe-43d8-8b94-11558f909a08 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:21,455 [INFO] Progress: 12/90 tasks completed
+2025-03-29 20:35:21,455 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:21,455 [INFO] Processing task 13/90: 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 20:35:21,455 [INFO] Executing task 9d191bce-651d-4746-be2d-7ef8ecadb9c2: Examine the video at https://www.youtube.com/watch?v=1htKBjuUWec.
+
+What does Teal'c say in response to the question "Isn't that hot?"
+2025-03-29 20:35:21,509 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:23,090 [INFO] Step 1/15 for task 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 20:35:23,090 [ERROR] Error in step 1 for task 9d191bce-651d-4746-be2d-7ef8ecadb9c2: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:23,090 [WARNING] Task 9d191bce-651d-4746-be2d-7ef8ecadb9c2 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:25,093 [INFO] Retry 1/2 for task 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 20:35:25,094 [INFO] Executing task 9d191bce-651d-4746-be2d-7ef8ecadb9c2: Examine the video at https://www.youtube.com/watch?v=1htKBjuUWec.
+
+What does Teal'c say in response to the question "Isn't that hot?"
+2025-03-29 20:35:25,159 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:26,748 [INFO] Step 1/15 for task 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 20:35:26,748 [ERROR] Error in step 1 for task 9d191bce-651d-4746-be2d-7ef8ecadb9c2: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:26,749 [WARNING] Task 9d191bce-651d-4746-be2d-7ef8ecadb9c2 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:28,749 [INFO] Retry 2/2 for task 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 20:35:28,749 [INFO] Executing task 9d191bce-651d-4746-be2d-7ef8ecadb9c2: Examine the video at https://www.youtube.com/watch?v=1htKBjuUWec.
+
+What does Teal'c say in response to the question "Isn't that hot?"
+2025-03-29 20:35:28,800 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:30,324 [INFO] Step 1/15 for task 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 20:35:30,324 [ERROR] Error in step 1 for task 9d191bce-651d-4746-be2d-7ef8ecadb9c2: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:30,324 [WARNING] Task 9d191bce-651d-4746-be2d-7ef8ecadb9c2 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:30,324 [INFO] Progress: 13/90 tasks completed
+2025-03-29 20:35:30,325 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:30,325 [INFO] Processing task 14/90: cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 20:35:30,325 [INFO] Executing task cabe07ed-9eca-40ea-8ead-410ef5e83f91: What is the surname of the equine veterinarian mentioned in 1.E Exercises from the chemistry materials licensed by Marisa Alviar-Agnew & Henry Agnew under the CK-12 license in LibreText's Introductory Chemistry materials as compiled 08/21/2023?
+2025-03-29 20:35:30,392 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:32,544 [INFO] Step 1/15 for task cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 20:35:32,544 [ERROR] Error in step 1 for task cabe07ed-9eca-40ea-8ead-410ef5e83f91: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:32,544 [WARNING] Task cabe07ed-9eca-40ea-8ead-410ef5e83f91 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:34,546 [INFO] Retry 1/2 for task cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 20:35:34,546 [INFO] Executing task cabe07ed-9eca-40ea-8ead-410ef5e83f91: What is the surname of the equine veterinarian mentioned in 1.E Exercises from the chemistry materials licensed by Marisa Alviar-Agnew & Henry Agnew under the CK-12 license in LibreText's Introductory Chemistry materials as compiled 08/21/2023?
+2025-03-29 20:35:34,614 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:36,067 [INFO] Step 1/15 for task cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 20:35:36,067 [ERROR] Error in step 1 for task cabe07ed-9eca-40ea-8ead-410ef5e83f91: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:36,067 [WARNING] Task cabe07ed-9eca-40ea-8ead-410ef5e83f91 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:38,068 [INFO] Retry 2/2 for task cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 20:35:38,068 [INFO] Executing task cabe07ed-9eca-40ea-8ead-410ef5e83f91: What is the surname of the equine veterinarian mentioned in 1.E Exercises from the chemistry materials licensed by Marisa Alviar-Agnew & Henry Agnew under the CK-12 license in LibreText's Introductory Chemistry materials as compiled 08/21/2023?
+2025-03-29 20:35:38,114 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:39,559 [INFO] Step 1/15 for task cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 20:35:39,559 [ERROR] Error in step 1 for task cabe07ed-9eca-40ea-8ead-410ef5e83f91: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:39,559 [WARNING] Task cabe07ed-9eca-40ea-8ead-410ef5e83f91 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:39,559 [INFO] Progress: 14/90 tasks completed
+2025-03-29 20:35:39,559 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:39,560 [INFO] Processing task 15/90: d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 20:35:39,560 [INFO] Executing task d0633230-7067-47a9-9dbf-ee11e0a2cdd6: In the Scikit-Learn July 2017 changelog, what other predictor base command received a bug fix? Just give the name, not a path.
+2025-03-29 20:35:39,610 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:40,945 [INFO] Step 1/15 for task d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 20:35:40,945 [ERROR] Error in step 1 for task d0633230-7067-47a9-9dbf-ee11e0a2cdd6: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:40,945 [WARNING] Task d0633230-7067-47a9-9dbf-ee11e0a2cdd6 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:42,945 [INFO] Retry 1/2 for task d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 20:35:42,946 [INFO] Executing task d0633230-7067-47a9-9dbf-ee11e0a2cdd6: In the Scikit-Learn July 2017 changelog, what other predictor base command received a bug fix? Just give the name, not a path.
+2025-03-29 20:35:42,989 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:44,330 [INFO] Step 1/15 for task d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 20:35:44,330 [ERROR] Error in step 1 for task d0633230-7067-47a9-9dbf-ee11e0a2cdd6: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:44,330 [WARNING] Task d0633230-7067-47a9-9dbf-ee11e0a2cdd6 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:46,330 [INFO] Retry 2/2 for task d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 20:35:46,331 [INFO] Executing task d0633230-7067-47a9-9dbf-ee11e0a2cdd6: In the Scikit-Learn July 2017 changelog, what other predictor base command received a bug fix? Just give the name, not a path.
+2025-03-29 20:35:46,387 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:47,743 [INFO] Step 1/15 for task d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 20:35:47,743 [ERROR] Error in step 1 for task d0633230-7067-47a9-9dbf-ee11e0a2cdd6: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:47,743 [WARNING] Task d0633230-7067-47a9-9dbf-ee11e0a2cdd6 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:47,743 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_203330.json
+2025-03-29 20:35:47,745 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_203330.csv
+2025-03-29 20:35:47,745 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 20:35:47,746 [INFO] Success rate: 0.00%
+2025-03-29 20:35:47,746 [INFO] Average time per task: 1.70 seconds
+2025-03-29 20:35:47,746 [INFO] Progress: 15/90 tasks completed
+2025-03-29 20:35:47,746 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:47,746 [INFO] Processing task 16/90: 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 20:35:47,746 [INFO] Executing task 0383a3ee-47a7-41a4-b493-519bdefe0488: On the BBC Earth YouTube video of the Top 5 Silliest Animal Moments, what species of bird is featured?
+2025-03-29 20:35:47,796 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:49,108 [INFO] Step 1/15 for task 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 20:35:49,108 [ERROR] Error in step 1 for task 0383a3ee-47a7-41a4-b493-519bdefe0488: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:49,108 [WARNING] Task 0383a3ee-47a7-41a4-b493-519bdefe0488 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:51,108 [INFO] Retry 1/2 for task 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 20:35:51,109 [INFO] Executing task 0383a3ee-47a7-41a4-b493-519bdefe0488: On the BBC Earth YouTube video of the Top 5 Silliest Animal Moments, what species of bird is featured?
+2025-03-29 20:35:51,152 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:52,561 [INFO] Step 1/15 for task 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 20:35:52,561 [ERROR] Error in step 1 for task 0383a3ee-47a7-41a4-b493-519bdefe0488: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:52,561 [WARNING] Task 0383a3ee-47a7-41a4-b493-519bdefe0488 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:54,561 [INFO] Retry 2/2 for task 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 20:35:54,562 [INFO] Executing task 0383a3ee-47a7-41a4-b493-519bdefe0488: On the BBC Earth YouTube video of the Top 5 Silliest Animal Moments, what species of bird is featured?
+2025-03-29 20:35:54,600 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:55,976 [INFO] Step 1/15 for task 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 20:35:55,976 [ERROR] Error in step 1 for task 0383a3ee-47a7-41a4-b493-519bdefe0488: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:55,976 [WARNING] Task 0383a3ee-47a7-41a4-b493-519bdefe0488 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:55,977 [INFO] Progress: 16/90 tasks completed
+2025-03-29 20:35:55,977 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:55,977 [INFO] Processing task 17/90: 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 20:35:55,977 [INFO] Executing task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034: How many more blocks (also denoted as layers) in BERT base encoder than the encoder from the architecture proposed in Attention is All You Need?
+2025-03-29 20:35:56,016 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:35:57,375 [INFO] Step 1/15 for task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 20:35:57,375 [ERROR] Error in step 1 for task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:57,375 [WARNING] Task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:35:59,376 [INFO] Retry 1/2 for task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 20:35:59,376 [INFO] Executing task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034: How many more blocks (also denoted as layers) in BERT base encoder than the encoder from the architecture proposed in Attention is All You Need?
+2025-03-29 20:35:59,420 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:00,707 [INFO] Step 1/15 for task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 20:36:00,707 [ERROR] Error in step 1 for task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:00,707 [WARNING] Task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:02,707 [INFO] Retry 2/2 for task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 20:36:02,707 [INFO] Executing task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034: How many more blocks (also denoted as layers) in BERT base encoder than the encoder from the architecture proposed in Attention is All You Need?
+2025-03-29 20:36:02,751 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:04,108 [INFO] Step 1/15 for task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 20:36:04,108 [ERROR] Error in step 1 for task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:04,108 [WARNING] Task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:04,108 [INFO] Progress: 17/90 tasks completed
+2025-03-29 20:36:04,108 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:04,109 [INFO] Processing task 18/90: 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 20:36:04,109 [INFO] Executing task 7673d772-ef80-4f0f-a602-1bf4485c9b43: On Cornell Law School website's legal information institute, under the fifth section of federal rules alphabetically, what word was deleted in the last amendment to the first rule in the article that has "witnesses" in the most titles as of 2021?
+2025-03-29 20:36:04,146 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:05,526 [INFO] Step 1/15 for task 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 20:36:05,526 [ERROR] Error in step 1 for task 7673d772-ef80-4f0f-a602-1bf4485c9b43: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:05,526 [WARNING] Task 7673d772-ef80-4f0f-a602-1bf4485c9b43 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:07,526 [INFO] Retry 1/2 for task 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 20:36:07,527 [INFO] Executing task 7673d772-ef80-4f0f-a602-1bf4485c9b43: On Cornell Law School website's legal information institute, under the fifth section of federal rules alphabetically, what word was deleted in the last amendment to the first rule in the article that has "witnesses" in the most titles as of 2021?
+2025-03-29 20:36:07,565 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:08,943 [INFO] Step 1/15 for task 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 20:36:08,944 [ERROR] Error in step 1 for task 7673d772-ef80-4f0f-a602-1bf4485c9b43: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:08,944 [WARNING] Task 7673d772-ef80-4f0f-a602-1bf4485c9b43 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:10,944 [INFO] Retry 2/2 for task 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 20:36:10,944 [INFO] Executing task 7673d772-ef80-4f0f-a602-1bf4485c9b43: On Cornell Law School website's legal information institute, under the fifth section of federal rules alphabetically, what word was deleted in the last amendment to the first rule in the article that has "witnesses" in the most titles as of 2021?
+2025-03-29 20:36:10,983 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:12,419 [INFO] Step 1/15 for task 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 20:36:12,420 [ERROR] Error in step 1 for task 7673d772-ef80-4f0f-a602-1bf4485c9b43: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:12,420 [WARNING] Task 7673d772-ef80-4f0f-a602-1bf4485c9b43 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:12,420 [INFO] Progress: 18/90 tasks completed
+2025-03-29 20:36:12,420 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:12,420 [INFO] Processing task 19/90: c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 20:36:12,420 [INFO] Executing task c365c1c7-a3db-4d5e-a9a1-66f56eae7865: Of the cities within the United States where U.S. presidents were born, which two are the farthest apart from the westernmost to the easternmost going east, giving the city names only? Give them to me in alphabetical order, in a comma-separated list
+2025-03-29 20:36:12,467 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:13,813 [INFO] Step 1/15 for task c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 20:36:13,813 [ERROR] Error in step 1 for task c365c1c7-a3db-4d5e-a9a1-66f56eae7865: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:13,813 [WARNING] Task c365c1c7-a3db-4d5e-a9a1-66f56eae7865 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:15,814 [INFO] Retry 1/2 for task c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 20:36:15,814 [INFO] Executing task c365c1c7-a3db-4d5e-a9a1-66f56eae7865: Of the cities within the United States where U.S. presidents were born, which two are the farthest apart from the westernmost to the easternmost going east, giving the city names only? Give them to me in alphabetical order, in a comma-separated list
+2025-03-29 20:36:15,855 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:17,094 [INFO] Step 1/15 for task c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 20:36:17,094 [ERROR] Error in step 1 for task c365c1c7-a3db-4d5e-a9a1-66f56eae7865: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:17,094 [WARNING] Task c365c1c7-a3db-4d5e-a9a1-66f56eae7865 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:19,095 [INFO] Retry 2/2 for task c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 20:36:19,095 [INFO] Executing task c365c1c7-a3db-4d5e-a9a1-66f56eae7865: Of the cities within the United States where U.S. presidents were born, which two are the farthest apart from the westernmost to the easternmost going east, giving the city names only? Give them to me in alphabetical order, in a comma-separated list
+2025-03-29 20:36:19,136 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:20,582 [INFO] Step 1/15 for task c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 20:36:20,582 [ERROR] Error in step 1 for task c365c1c7-a3db-4d5e-a9a1-66f56eae7865: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:20,582 [WARNING] Task c365c1c7-a3db-4d5e-a9a1-66f56eae7865 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:20,583 [INFO] Progress: 19/90 tasks completed
+2025-03-29 20:36:20,583 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:20,583 [INFO] Processing task 20/90: 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 20:36:20,583 [INFO] Executing task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825: According to Girls Who Code, how long did it take in years for the percentage of computer scientists that were women to change by 13% from a starting point of 37%?
+2025-03-29 20:36:20,658 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:22,146 [INFO] Step 1/15 for task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 20:36:22,146 [ERROR] Error in step 1 for task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:22,146 [WARNING] Task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:24,146 [INFO] Retry 1/2 for task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 20:36:24,147 [INFO] Executing task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825: According to Girls Who Code, how long did it take in years for the percentage of computer scientists that were women to change by 13% from a starting point of 37%?
+2025-03-29 20:36:24,183 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:25,552 [INFO] Step 1/15 for task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 20:36:25,552 [ERROR] Error in step 1 for task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:25,552 [WARNING] Task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:27,552 [INFO] Retry 2/2 for task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 20:36:27,553 [INFO] Executing task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825: According to Girls Who Code, how long did it take in years for the percentage of computer scientists that were women to change by 13% from a starting point of 37%?
+2025-03-29 20:36:27,592 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:28,940 [INFO] Step 1/15 for task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 20:36:28,940 [ERROR] Error in step 1 for task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:28,941 [WARNING] Task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:28,942 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_203330.json
+2025-03-29 20:36:28,943 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_203330.csv
+2025-03-29 20:36:28,944 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 20:36:28,944 [INFO] Success rate: 0.00%
+2025-03-29 20:36:28,944 [INFO] Average time per task: 1.63 seconds
+2025-03-29 20:36:28,944 [INFO] Progress: 20/90 tasks completed
+2025-03-29 20:36:28,944 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:28,944 [INFO] Processing task 21/90: dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 20:36:28,944 [INFO] Executing task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97: What was the complete title of the book in which two James Beard Award winners recommended the restaurant where Ali Khan enjoyed a New Mexican staple in his cost-conscious TV show that started in 2015? Write the numbers in plain text if there are some in the title.
+2025-03-29 20:36:28,991 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:30,345 [INFO] Step 1/15 for task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 20:36:30,345 [ERROR] Error in step 1 for task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:30,345 [WARNING] Task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:32,346 [INFO] Retry 1/2 for task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 20:36:32,346 [INFO] Executing task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97: What was the complete title of the book in which two James Beard Award winners recommended the restaurant where Ali Khan enjoyed a New Mexican staple in his cost-conscious TV show that started in 2015? Write the numbers in plain text if there are some in the title.
+2025-03-29 20:36:32,397 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:33,753 [INFO] Step 1/15 for task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 20:36:33,753 [ERROR] Error in step 1 for task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:33,754 [WARNING] Task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:35,754 [INFO] Retry 2/2 for task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 20:36:35,754 [INFO] Executing task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97: What was the complete title of the book in which two James Beard Award winners recommended the restaurant where Ali Khan enjoyed a New Mexican staple in his cost-conscious TV show that started in 2015? Write the numbers in plain text if there are some in the title.
+2025-03-29 20:36:35,798 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:37,171 [INFO] Step 1/15 for task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 20:36:37,171 [ERROR] Error in step 1 for task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:37,171 [WARNING] Task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:37,171 [INFO] Progress: 21/90 tasks completed
+2025-03-29 20:36:37,171 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:37,171 [INFO] Processing task 22/90: 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 20:36:37,171 [INFO] Executing task 3f57289b-8c60-48be-bd80-01f8099ca449: How many at bats did the Yankee with the most walks in the 1977 regular season have that same season?
+2025-03-29 20:36:37,209 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:38,562 [INFO] Step 1/15 for task 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 20:36:38,562 [ERROR] Error in step 1 for task 3f57289b-8c60-48be-bd80-01f8099ca449: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:38,562 [WARNING] Task 3f57289b-8c60-48be-bd80-01f8099ca449 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:40,563 [INFO] Retry 1/2 for task 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 20:36:40,563 [INFO] Executing task 3f57289b-8c60-48be-bd80-01f8099ca449: How many at bats did the Yankee with the most walks in the 1977 regular season have that same season?
+2025-03-29 20:36:40,602 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:41,943 [INFO] Step 1/15 for task 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 20:36:41,943 [ERROR] Error in step 1 for task 3f57289b-8c60-48be-bd80-01f8099ca449: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:41,943 [WARNING] Task 3f57289b-8c60-48be-bd80-01f8099ca449 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:43,944 [INFO] Retry 2/2 for task 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 20:36:43,944 [INFO] Executing task 3f57289b-8c60-48be-bd80-01f8099ca449: How many at bats did the Yankee with the most walks in the 1977 regular season have that same season?
+2025-03-29 20:36:43,987 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:45,341 [INFO] Step 1/15 for task 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 20:36:45,341 [ERROR] Error in step 1 for task 3f57289b-8c60-48be-bd80-01f8099ca449: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:45,341 [WARNING] Task 3f57289b-8c60-48be-bd80-01f8099ca449 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:45,341 [INFO] Progress: 22/90 tasks completed
+2025-03-29 20:36:45,341 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:45,341 [INFO] Processing task 23/90: 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 20:36:45,341 [INFO] Executing task 23dd907f-1261-4488-b21c-e9185af91d5e: In Audre Lorde’s poem “Father Son and Holy Ghost”, what is the number of the stanza in which some lines are indented?
+2025-03-29 20:36:45,383 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:46,727 [INFO] Step 1/15 for task 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 20:36:46,727 [ERROR] Error in step 1 for task 23dd907f-1261-4488-b21c-e9185af91d5e: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:46,727 [WARNING] Task 23dd907f-1261-4488-b21c-e9185af91d5e failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:48,728 [INFO] Retry 1/2 for task 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 20:36:48,728 [INFO] Executing task 23dd907f-1261-4488-b21c-e9185af91d5e: In Audre Lorde’s poem “Father Son and Holy Ghost”, what is the number of the stanza in which some lines are indented?
+2025-03-29 20:36:48,783 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:50,120 [INFO] Step 1/15 for task 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 20:36:50,124 [ERROR] Error in step 1 for task 23dd907f-1261-4488-b21c-e9185af91d5e: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:50,124 [WARNING] Task 23dd907f-1261-4488-b21c-e9185af91d5e failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:52,124 [INFO] Retry 2/2 for task 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 20:36:52,124 [INFO] Executing task 23dd907f-1261-4488-b21c-e9185af91d5e: In Audre Lorde’s poem “Father Son and Holy Ghost”, what is the number of the stanza in which some lines are indented?
+2025-03-29 20:36:52,175 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:53,607 [INFO] Step 1/15 for task 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 20:36:53,607 [ERROR] Error in step 1 for task 23dd907f-1261-4488-b21c-e9185af91d5e: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:53,607 [WARNING] Task 23dd907f-1261-4488-b21c-e9185af91d5e failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:53,607 [INFO] Progress: 23/90 tasks completed
+2025-03-29 20:36:53,608 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:53,608 [INFO] Processing task 24/90: 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 20:36:53,608 [INFO] Executing task 840bfca7-4f7b-481a-8794-c560c340185d: On June 6, 2023, an article by Carolyn Collins Petersen was published in Universe Today. This article mentions a team that produced a paper about their observations, linked at the bottom of the article. Find this paper. Under what NASA award number was the work performed by R. G. Arendt supported by?
+2025-03-29 20:36:53,652 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:54,971 [INFO] Step 1/15 for task 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 20:36:54,971 [ERROR] Error in step 1 for task 840bfca7-4f7b-481a-8794-c560c340185d: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:54,971 [WARNING] Task 840bfca7-4f7b-481a-8794-c560c340185d failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:56,972 [INFO] Retry 1/2 for task 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 20:36:56,972 [INFO] Executing task 840bfca7-4f7b-481a-8794-c560c340185d: On June 6, 2023, an article by Carolyn Collins Petersen was published in Universe Today. This article mentions a team that produced a paper about their observations, linked at the bottom of the article. Find this paper. Under what NASA award number was the work performed by R. G. Arendt supported by?
+2025-03-29 20:36:57,032 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:36:58,492 [INFO] Step 1/15 for task 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 20:36:58,492 [ERROR] Error in step 1 for task 840bfca7-4f7b-481a-8794-c560c340185d: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:36:58,492 [WARNING] Task 840bfca7-4f7b-481a-8794-c560c340185d failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:37:00,493 [INFO] Retry 2/2 for task 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 20:37:00,493 [INFO] Executing task 840bfca7-4f7b-481a-8794-c560c340185d: On June 6, 2023, an article by Carolyn Collins Petersen was published in Universe Today. This article mentions a team that produced a paper about their observations, linked at the bottom of the article. Find this paper. Under what NASA award number was the work performed by R. G. Arendt supported by?
+2025-03-29 20:37:00,540 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:37:01,903 [INFO] Step 1/15 for task 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 20:37:01,903 [ERROR] Error in step 1 for task 840bfca7-4f7b-481a-8794-c560c340185d: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:37:01,903 [WARNING] Task 840bfca7-4f7b-481a-8794-c560c340185d failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:37:01,903 [INFO] Progress: 24/90 tasks completed
+2025-03-29 20:37:01,904 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:01,904 [INFO] Processing task 25/90: a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 20:37:01,904 [INFO] Executing task a0068077-79f4-461a-adfe-75c1a4148545: What was the actual enrollment count of the clinical trial on H. pylori in acne vulgaris patients from Jan-May 2018 as listed on the NIH website?
+2025-03-29 20:37:01,942 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:37:03,872 [INFO] Step 1/15 for task a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 20:37:03,872 [ERROR] Error in step 1 for task a0068077-79f4-461a-adfe-75c1a4148545: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:37:03,872 [WARNING] Task a0068077-79f4-461a-adfe-75c1a4148545 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:37:05,873 [INFO] Retry 1/2 for task a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 20:37:05,873 [INFO] Executing task a0068077-79f4-461a-adfe-75c1a4148545: What was the actual enrollment count of the clinical trial on H. pylori in acne vulgaris patients from Jan-May 2018 as listed on the NIH website?
+2025-03-29 20:37:05,912 [INFO] Navigating to https://www.google.com/
+2025-03-29 20:37:07,806 [INFO] Step 1/15 for task a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 20:37:07,806 [ERROR] Error in step 1 for task a0068077-79f4-461a-adfe-75c1a4148545: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:37:07,806 [WARNING] Task a0068077-79f4-461a-adfe-75c1a4148545 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:37:09,806 [INFO] Retry 2/2 for task a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 20:37:09,807 [INFO] Executing task a0068077-79f4-461a-adfe-75c1a4148545: What was the actual enrollment count of the clinical trial on H. pylori in acne vulgaris patients from Jan-May 2018 as listed on the NIH website?
+2025-03-29 20:37:09,846 [INFO] Navigating to https://www.google.com/

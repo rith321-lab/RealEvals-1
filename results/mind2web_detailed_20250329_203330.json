@@ -1,0 +1,20 @@
+[
+  {
+    "task_id": "98.0",
+    "success": false,
+    "error": "AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'",
+    "time_taken": 5.294006586074829
+  },
+  {
+    "task_id": "99.0",
+    "success": false,
+    "error": "net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/",
+    "time_taken": 0.1924586296081543
+  },
+  {
+    "task_id": "100.0",
+    "success": false,
+    "error": "Timeout 30000ms exceeded.\n=========================== logs ===========================\n\"load\" event fired\n============================================================",
+    "time_taken": 30.846885919570923
+  }
+]

@@ -1,0 +1,51 @@
+2025-03-29 20:17:33,294 [INFO] Starting WebVoyager evaluation
+2025-03-29 20:17:33,294 [INFO] Headless mode: True
+2025-03-29 20:17:33,294 [INFO] Max retries: 2
+2025-03-29 20:17:33,295 [INFO] Loaded 3 Anthropic API keys
+2025-03-29 20:17:33,824 [INFO] Processing task 1/90: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:17:33,825 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: No URL provided in task
+2025-03-29 20:17:35,825 [INFO] Retry 1/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:17:35,825 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: No URL provided in task
+2025-03-29 20:17:37,825 [INFO] Retry 2/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 20:17:37,826 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: No URL provided in task
+2025-03-29 20:17:37,826 [INFO] Progress: 1/90 tasks completed
+2025-03-29 20:17:37,826 [INFO] Success rate so far: 0.00%
+2025-03-29 20:17:37,826 [INFO] Processing task 2/90: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:17:37,826 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: No URL provided in task
+2025-03-29 20:17:39,826 [INFO] Retry 1/2 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:17:39,826 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: No URL provided in task
+2025-03-29 20:17:41,827 [INFO] Retry 2/2 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 20:17:41,827 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: No URL provided in task
+2025-03-29 20:17:41,827 [INFO] Progress: 2/90 tasks completed
+2025-03-29 20:17:41,827 [INFO] Success rate so far: 0.00%
+2025-03-29 20:17:41,827 [INFO] Processing task 3/90: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:17:41,827 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: No URL provided in task
+2025-03-29 20:17:43,828 [INFO] Retry 1/2 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:17:43,828 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: No URL provided in task
+2025-03-29 20:17:45,828 [INFO] Retry 2/2 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 20:17:45,828 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: No URL provided in task
+2025-03-29 20:17:45,828 [INFO] Progress: 3/90 tasks completed
+2025-03-29 20:17:45,828 [INFO] Success rate so far: 0.00%
+2025-03-29 20:17:45,829 [INFO] Processing task 4/90: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:17:45,829 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: No URL provided in task
+2025-03-29 20:17:47,829 [INFO] Retry 1/2 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:17:47,829 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: No URL provided in task
+2025-03-29 20:17:49,829 [INFO] Retry 2/2 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 20:17:49,830 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: No URL provided in task
+2025-03-29 20:17:49,830 [INFO] Progress: 4/90 tasks completed
+2025-03-29 20:17:49,830 [INFO] Success rate so far: 0.00%
+2025-03-29 20:17:49,830 [INFO] Processing task 5/90: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:17:49,830 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: No URL provided in task
+2025-03-29 20:17:51,830 [INFO] Retry 1/2 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:17:51,831 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: No URL provided in task
+2025-03-29 20:17:53,831 [INFO] Retry 2/2 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 20:17:53,831 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: No URL provided in task
+2025-03-29 20:17:53,831 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_201733.json
+2025-03-29 20:17:53,836 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_201733.csv
+2025-03-29 20:17:53,837 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 20:17:53,837 [INFO] Success rate: 0.00%
+2025-03-29 20:17:53,837 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:17:53,837 [INFO] Progress: 5/90 tasks completed
+2025-03-29 20:17:53,837 [INFO] Success rate so far: 0.00%
+2025-03-29 20:17:53,837 [INFO] Processing task 6/90: 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 20:17:53,837 [WARNING] Task 4b6bb5f7-f634-410e-815d-e673ab7f8632 failed: No URL provided in task

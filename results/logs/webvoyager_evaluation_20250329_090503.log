@@ -1,0 +1,23 @@
+2025-03-29 09:05:03,552 [INFO] Starting WebVoyager evaluation
+2025-03-29 09:05:03,552 [INFO] Headless mode: True
+2025-03-29 09:05:03,552 [INFO] Max retries: 1
+2025-03-29 09:05:03,553 [INFO] Loaded 90 tasks from data/webvoyager.jsonl
+2025-03-29 09:05:03,553 [INFO] Limiting evaluation to 2 tasks
+2025-03-29 09:05:03,997 [INFO] Processing task 1/2: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:05:03,997 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:05:04,623 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:05:21,282 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:05:22,066 [INFO] Navigated to https://en.wikipedia.org/wiki/Moon
+2025-03-29 09:05:23,993 [ERROR] Action step failed: Unexpected token ""Perigee"" while parsing selector "span element containing 'Perigee' under 'Orbit' section"
+2025-03-29 09:05:25,319 [INFO] Navigated to https://en.wikipedia.org/wiki/Eliud_Kipchoge
+2025-03-29 09:05:32,082 [INFO] Task completed in 28.08 seconds
+2025-03-29 09:05:32,082 [INFO] Task e1fc63a2-da7a-432f-be78-7c4a95598703 completed successfully
+2025-03-29 09:05:32,082 [INFO] Progress: 1/2 tasks completed
+2025-03-29 09:05:32,082 [INFO] Success rate so far: 100.00%
+2025-03-29 09:05:32,082 [INFO] Processing task 2/2: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:05:32,082 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:05:32,474 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:05:32,697 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:05:32,698 [INFO] Retrying request to /v1/messages in 23.000000 seconds
+2025-03-29 09:05:55,818 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:05:55,818 [INFO] Retrying request to /v1/messages in 22.000000 seconds

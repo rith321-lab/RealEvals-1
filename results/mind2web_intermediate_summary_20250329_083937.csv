@@ -1,0 +1,4 @@
+task_id,success,time_taken,error
+98.0,False,0.06572794914245605,"""Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"""
+99.0,False,0.029098987579345703,"""Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"""
+100.0,False,0.03180384635925293,"""Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"""

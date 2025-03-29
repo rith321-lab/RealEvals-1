@@ -1,0 +1,132 @@
+2025-03-29 09:33:51,767 [INFO] Starting WebArena evaluation
+2025-03-29 09:33:51,767 [INFO] Headless mode: True
+2025-03-29 09:33:51,767 [INFO] Max retries: 2
+2025-03-29 09:33:51,774 [INFO] Loaded 812 tasks from JSON file data/webarena.json
+2025-03-29 09:33:51,775 [INFO] Limiting evaluation to 10 tasks
+2025-03-29 09:33:52,249 [INFO] Processing task 1/10: 0
+2025-03-29 09:33:52,250 [INFO] Starting task: 0
+2025-03-29 09:33:52,920 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:34:03,755 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:34:08,761 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:34:13,765 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:34:13,765 [INFO] Task completed in 21.52 seconds
+2025-03-29 09:34:13,765 [INFO] Task 0 completed successfully
+2025-03-29 09:34:13,765 [INFO] Progress: 1/10 tasks completed
+2025-03-29 09:34:13,765 [INFO] Success rate so far: 100.00%
+2025-03-29 09:34:13,765 [INFO] Processing task 2/10: 1
+2025-03-29 09:34:13,765 [INFO] Starting task: 1
+2025-03-29 09:34:14,159 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:34:23,812 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:34:23,813 [INFO] Task completed in 10.05 seconds
+2025-03-29 09:34:23,813 [INFO] Task 1 completed successfully
+2025-03-29 09:34:23,813 [INFO] Progress: 2/10 tasks completed
+2025-03-29 09:34:23,813 [INFO] Success rate so far: 100.00%
+2025-03-29 09:34:23,814 [INFO] Processing task 3/10: 2
+2025-03-29 09:34:23,814 [INFO] Starting task: 2
+2025-03-29 09:34:24,151 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:34:24,342 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:34:24,342 [INFO] Retrying request to /v1/messages in 26.000000 seconds
+2025-03-29 09:34:58,281 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:34:58,611 [INFO] Navigated to https://www.google.com
+2025-03-29 09:35:00,141 [INFO] Task completed in 36.33 seconds
+2025-03-29 09:35:00,141 [INFO] Task 2 completed successfully
+2025-03-29 09:35:00,141 [INFO] Progress: 3/10 tasks completed
+2025-03-29 09:35:00,141 [INFO] Success rate so far: 100.00%
+2025-03-29 09:35:00,141 [INFO] Processing task 4/10: 3
+2025-03-29 09:35:00,141 [INFO] Starting task: 3
+2025-03-29 09:35:00,473 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:35:00,649 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:35:00,649 [INFO] Retrying request to /v1/messages in 42.000000 seconds
+2025-03-29 09:35:49,417 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:35:49,418 [WARNING] Failed to find JSON in response, using default action
+2025-03-29 09:35:49,418 [INFO] Task completed in 49.28 seconds
+2025-03-29 09:35:49,418 [INFO] Task 3 completed successfully
+2025-03-29 09:35:49,418 [INFO] Progress: 4/10 tasks completed
+2025-03-29 09:35:49,418 [INFO] Success rate so far: 100.00%
+2025-03-29 09:35:49,418 [INFO] Processing task 5/10: 4
+2025-03-29 09:35:49,419 [INFO] Starting task: 4
+2025-03-29 09:35:49,721 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:35:49,900 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:35:49,901 [INFO] Retrying request to /v1/messages in 45.000000 seconds
+2025-03-29 09:36:43,408 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:36:43,724 [INFO] Navigated to https://www.google.com
+2025-03-29 09:36:45,255 [INFO] Task completed in 55.84 seconds
+2025-03-29 09:36:45,255 [INFO] Task 4 completed successfully
+2025-03-29 09:36:45,255 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_093351.json
+2025-03-29 09:36:45,261 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_093351.csv
+2025-03-29 09:36:45,261 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 09:36:45,261 [INFO] Success rate: 100.00%
+2025-03-29 09:36:45,262 [INFO] Average time per task: 34.60 seconds
+2025-03-29 09:36:45,262 [INFO] Progress: 5/10 tasks completed
+2025-03-29 09:36:45,262 [INFO] Success rate so far: 100.00%
+2025-03-29 09:36:45,262 [INFO] Processing task 6/10: 5
+2025-03-29 09:36:45,262 [INFO] Starting task: 5
+2025-03-29 09:36:45,581 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:36:45,781 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:36:45,781 [INFO] Retrying request to /v1/messages in 42.000000 seconds
+2025-03-29 09:37:44,911 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:37:49,913 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:37:54,916 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:37:54,916 [INFO] Task completed in 69.65 seconds
+2025-03-29 09:37:54,916 [INFO] Task 5 completed successfully
+2025-03-29 09:37:54,916 [INFO] Progress: 6/10 tasks completed
+2025-03-29 09:37:54,916 [INFO] Success rate so far: 100.00%
+2025-03-29 09:37:54,916 [INFO] Processing task 7/10: 6
+2025-03-29 09:37:54,916 [INFO] Starting task: 6
+2025-03-29 09:37:55,214 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:37:55,422 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:37:55,423 [INFO] Retrying request to /v1/messages in 25.000000 seconds
+2025-03-29 09:38:29,209 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:38:29,210 [INFO] Task completed in 34.29 seconds
+2025-03-29 09:38:29,210 [INFO] Task 6 completed successfully
+2025-03-29 09:38:29,210 [INFO] Progress: 7/10 tasks completed
+2025-03-29 09:38:29,210 [INFO] Success rate so far: 100.00%
+2025-03-29 09:38:29,210 [INFO] Processing task 8/10: 7
+2025-03-29 09:38:29,210 [INFO] Starting task: 7
+2025-03-29 09:38:29,519 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:38:29,726 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:38:29,727 [INFO] Retrying request to /v1/messages in 43.000000 seconds
+2025-03-29 09:39:21,137 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:39:21,448 [INFO] Navigated to https://www.google.com
+2025-03-29 09:39:22,981 [INFO] Task completed in 53.77 seconds
+2025-03-29 09:39:22,981 [INFO] Task 7 completed successfully
+2025-03-29 09:39:22,981 [INFO] Progress: 8/10 tasks completed
+2025-03-29 09:39:22,981 [INFO] Success rate so far: 100.00%
+2025-03-29 09:39:22,981 [INFO] Processing task 9/10: 8
+2025-03-29 09:39:22,981 [INFO] Starting task: 8
+2025-03-29 09:39:23,295 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:39:23,474 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:39:23,474 [INFO] Retrying request to /v1/messages in 42.000000 seconds
+2025-03-29 09:40:14,345 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:40:14,346 [WARNING] Invalid navigation URL: None
+2025-03-29 09:40:15,349 [INFO] Task completed in 52.37 seconds
+2025-03-29 09:40:15,350 [INFO] Task 8 completed successfully
+2025-03-29 09:40:15,350 [INFO] Progress: 9/10 tasks completed
+2025-03-29 09:40:15,350 [INFO] Success rate so far: 100.00%
+2025-03-29 09:40:15,350 [INFO] Processing task 10/10: 9
+2025-03-29 09:40:15,350 [INFO] Starting task: 9
+2025-03-29 09:40:15,654 [INFO] No URL provided. Navigated to default URL (Google)
+2025-03-29 09:40:15,845 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:40:15,846 [INFO] Retrying request to /v1/messages in 42.000000 seconds
+2025-03-29 09:41:09,236 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:41:14,238 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:41:19,242 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:41:19,242 [INFO] Task completed in 63.89 seconds
+2025-03-29 09:41:19,242 [INFO] Task 9 completed successfully
+2025-03-29 09:41:19,243 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_093351.json
+2025-03-29 09:41:19,244 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_093351.csv
+2025-03-29 09:41:19,245 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 09:41:19,245 [INFO] Success rate: 100.00%
+2025-03-29 09:41:19,245 [INFO] Average time per task: 44.70 seconds
+2025-03-29 09:41:19,245 [INFO] Progress: 10/10 tasks completed
+2025-03-29 09:41:19,245 [INFO] Success rate so far: 100.00%
+2025-03-29 09:41:19,282 [INFO] Saved detailed results to results/webarena_detailed_20250329_093351.json
+2025-03-29 09:41:19,283 [INFO] Saved summary results to results/webarena_summary_20250329_093351.csv
+2025-03-29 09:41:19,284 [INFO] Evaluation complete for webarena
+2025-03-29 09:41:19,284 [INFO] Success rate: 100.00%
+2025-03-29 09:41:19,284 [INFO] Average time per task: 44.70 seconds
+2025-03-29 09:41:19,284 [INFO] Evaluation completed in 447.51 seconds
+2025-03-29 09:41:19,284 [INFO] Total tasks: 10
+2025-03-29 09:41:19,284 [INFO] Successful tasks: 10
+2025-03-29 09:41:19,284 [INFO] Success rate: 100.00%
+2025-03-29 09:41:19,284 [INFO] Results saved to results/webarena_detailed_20250329_093351.json and results/webarena_summary_20250329_093351.csv

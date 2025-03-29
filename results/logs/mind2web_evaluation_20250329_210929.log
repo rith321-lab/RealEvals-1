@@ -1,0 +1,4 @@
+2025-03-29 21:09:29,791 [INFO] Starting Mind2Web evaluation
+2025-03-29 21:09:29,792 [INFO] Headless mode: True
+2025-03-29 21:09:29,792 [INFO] Max retries: 2
+2025-03-29 21:09:29,793 [INFO] Loaded 1000 tasks from JSON array in data/mind2web.jsonl

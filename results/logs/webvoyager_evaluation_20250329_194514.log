@@ -1,0 +1,41 @@
+2025-03-29 19:45:14,755 [INFO] Starting WebVoyager evaluation
+2025-03-29 19:45:14,755 [INFO] Headless mode: True
+2025-03-29 19:45:14,756 [INFO] Max retries: 2
+2025-03-29 19:45:14,756 [WARNING] No Anthropic API keys found in environment variables
+2025-03-29 19:45:14,756 [INFO] Using API key index: 0
+2025-03-29 19:45:15,177 [INFO] Processing task 1/90: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:45:15,177 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:45:15,440 [INFO] Navigated to https://www.google.com
+2025-03-29 19:45:15,665 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:15,666 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:15,666 [INFO] Backing off _call_claude_with_retry(...) for 0.2s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:15,952 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:15,953 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:15,953 [INFO] Backing off _call_claude_with_retry(...) for 3.0s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:19,065 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:19,065 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:19,065 [INFO] Backing off _call_claude_with_retry(...) for 5.4s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:25,098 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:25,099 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:25,099 [INFO] Backing off _call_claude_with_retry(...) for 4.9s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:30,067 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:30,068 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:30,068 [ERROR] Giving up _call_claude_with_retry(...) after 5 tries (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:30,068 [ERROR] Task execution failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:30,068 [INFO] Task completed in 14.89 seconds
+2025-03-29 19:45:30,068 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: Execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:32,068 [INFO] Retry 1/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:45:32,068 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:45:32,300 [INFO] Navigated to https://www.google.com
+2025-03-29 19:45:32,491 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:32,491 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:32,492 [INFO] Backing off _call_claude_with_retry(...) for 1.8s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:34,403 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:34,403 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:34,404 [INFO] Backing off _call_claude_with_retry(...) for 3.0s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:37,461 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:37,462 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:37,462 [INFO] Backing off _call_claude_with_retry(...) for 7.6s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:45:45,209 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:45:45,209 [ERROR] API call failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:45:45,209 [INFO] Backing off _call_claude_with_retry(...) for 13.8s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})

@@ -1,0 +1,25 @@
+2025-03-29 09:18:52,528 [INFO] Starting Mind2Web evaluation
+2025-03-29 09:18:52,528 [INFO] Headless mode: True
+2025-03-29 09:18:52,528 [INFO] Max retries: 2
+2025-03-29 09:18:52,528 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 2 (char 1)
+2025-03-29 09:18:52,528 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 09:18:52,529 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 09:18:52,530 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 09:18:53,041 [INFO] Saved detailed results to results/mind2web_detailed_20250329_091852.json
+2025-03-29 09:18:53,044 [INFO] Saved summary results to results/mind2web_summary_20250329_091852.csv

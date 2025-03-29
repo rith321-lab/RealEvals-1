@@ -1,0 +1,120 @@
+2025-03-29 09:06:28,708 [INFO] Starting WebVoyager evaluation
+2025-03-29 09:06:28,708 [INFO] Headless mode: True
+2025-03-29 09:06:28,709 [INFO] Max retries: 2
+2025-03-29 09:06:28,709 [INFO] Loaded 90 tasks from data/webvoyager.jsonl
+2025-03-29 09:06:28,709 [INFO] Limiting evaluation to 5 tasks
+2025-03-29 09:06:29,210 [INFO] Processing task 1/5: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:06:29,211 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:06:30,032 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:30,203 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:30,204 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:30,204 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:32,204 [INFO] Retry 1/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:06:32,204 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:06:32,614 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:32,781 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:32,781 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:32,781 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:34,782 [INFO] Retry 2/2 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:06:34,782 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:06:35,138 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:35,303 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:35,304 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:35,304 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:35,304 [INFO] Progress: 1/5 tasks completed
+2025-03-29 09:06:35,304 [INFO] Success rate so far: 0.00%
+2025-03-29 09:06:35,304 [INFO] Processing task 2/5: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:06:35,304 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:06:35,483 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:35,699 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:35,699 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:35,700 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:37,700 [INFO] Retry 1/2 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:06:37,700 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:06:37,865 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:38,110 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:38,110 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:38,110 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:40,111 [INFO] Retry 2/2 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:06:40,111 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:06:40,283 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:40,510 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:40,511 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:40,511 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:40,511 [INFO] Progress: 2/5 tasks completed
+2025-03-29 09:06:40,511 [INFO] Success rate so far: 0.00%
+2025-03-29 09:06:40,511 [INFO] Processing task 3/5: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:06:40,511 [INFO] Starting task: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:06:40,738 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:40,899 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:40,900 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:40,900 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:42,900 [INFO] Retry 1/2 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:06:42,900 [INFO] Starting task: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:06:43,065 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:43,262 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:43,263 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:43,263 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:45,263 [INFO] Retry 2/2 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:06:45,263 [INFO] Starting task: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:06:45,479 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:45,631 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:45,632 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:45,632 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:45,632 [INFO] Progress: 3/5 tasks completed
+2025-03-29 09:06:45,632 [INFO] Success rate so far: 0.00%
+2025-03-29 09:06:45,632 [INFO] Processing task 4/5: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 09:06:45,632 [INFO] Starting task: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 09:06:45,863 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:46,013 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:46,014 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:46,014 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:48,014 [INFO] Retry 1/2 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 09:06:48,014 [INFO] Starting task: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 09:06:48,179 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:48,397 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:48,397 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:48,397 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:50,399 [INFO] Retry 2/2 for task a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 09:06:50,400 [INFO] Starting task: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 09:06:50,565 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:50,762 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:50,762 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:50,762 [WARNING] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:50,762 [INFO] Progress: 4/5 tasks completed
+2025-03-29 09:06:50,762 [INFO] Success rate so far: 0.00%
+2025-03-29 09:06:50,762 [INFO] Processing task 5/5: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 09:06:50,762 [INFO] Starting task: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 09:06:50,953 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:51,150 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:51,151 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:51,151 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:53,151 [INFO] Retry 1/2 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 09:06:53,152 [INFO] Starting task: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 09:06:53,318 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:53,537 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:53,538 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:53,538 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:55,538 [INFO] Retry 2/2 for task 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 09:06:55,538 [INFO] Starting task: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 09:06:55,709 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:06:55,913 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:55,914 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:55,914 [WARNING] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:55,914 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_090628.json
+2025-03-29 09:06:55,917 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_090628.csv
+2025-03-29 09:06:55,917 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:06:55,917 [INFO] Success rate: 0.00%
+2025-03-29 09:06:55,918 [INFO] Average time per task: 0.41 seconds
+2025-03-29 09:06:55,918 [INFO] Progress: 5/5 tasks completed
+2025-03-29 09:06:55,918 [INFO] Success rate so far: 0.00%
+2025-03-29 09:06:55,960 [INFO] Saved detailed results to results/webvoyager_detailed_20250329_090628.json
+2025-03-29 09:06:55,961 [INFO] Saved summary results to results/webvoyager_summary_20250329_090628.csv
+2025-03-29 09:06:55,961 [INFO] Evaluation complete for webvoyager
+2025-03-29 09:06:55,962 [INFO] Success rate: 0.00%
+2025-03-29 09:06:55,962 [INFO] Average time per task: 0.41 seconds
+2025-03-29 09:06:55,962 [INFO] Evaluation completed in 27.25 seconds
+2025-03-29 09:06:55,962 [INFO] Total tasks: 5
+2025-03-29 09:06:55,962 [INFO] Successful tasks: 0
+2025-03-29 09:06:55,962 [INFO] Success rate: 0.00%
+2025-03-29 09:06:55,962 [INFO] Results saved to results/webvoyager_detailed_20250329_090628.json and results/webvoyager_summary_20250329_090628.csv

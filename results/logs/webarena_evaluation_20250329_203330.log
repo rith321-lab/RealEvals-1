@@ -1,0 +1,549 @@
+2025-03-29 20:33:30,164 [INFO] Starting WebArena evaluation
+2025-03-29 20:33:30,164 [INFO] Headless mode: True
+2025-03-29 20:33:30,164 [INFO] Max retries: 2
+2025-03-29 20:33:30,172 [INFO] Loaded 812 tasks from data/webarena.json
+2025-03-29 20:33:30,172 [INFO] Loaded 2 Anthropic API keys
+2025-03-29 20:33:30,761 [INFO] Processing task 1/812: 0
+2025-03-29 20:33:30,762 [WARNING] Task 0 failed: No URL provided in task
+2025-03-29 20:33:32,762 [INFO] Retry 1/2 for task 0
+2025-03-29 20:33:32,762 [WARNING] Task 0 failed: No URL provided in task
+2025-03-29 20:33:34,763 [INFO] Retry 2/2 for task 0
+2025-03-29 20:33:34,763 [WARNING] Task 0 failed: No URL provided in task
+2025-03-29 20:33:34,763 [INFO] Progress: 1/812 tasks completed
+2025-03-29 20:33:34,763 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:34,763 [INFO] Processing task 2/812: 1
+2025-03-29 20:33:34,763 [WARNING] Task 1 failed: No URL provided in task
+2025-03-29 20:33:36,763 [INFO] Retry 1/2 for task 1
+2025-03-29 20:33:36,763 [WARNING] Task 1 failed: No URL provided in task
+2025-03-29 20:33:38,764 [INFO] Retry 2/2 for task 1
+2025-03-29 20:33:38,764 [WARNING] Task 1 failed: No URL provided in task
+2025-03-29 20:33:38,764 [INFO] Progress: 2/812 tasks completed
+2025-03-29 20:33:38,764 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:38,764 [INFO] Processing task 3/812: 2
+2025-03-29 20:33:38,764 [WARNING] Task 2 failed: No URL provided in task
+2025-03-29 20:33:40,764 [INFO] Retry 1/2 for task 2
+2025-03-29 20:33:40,765 [WARNING] Task 2 failed: No URL provided in task
+2025-03-29 20:33:42,769 [INFO] Retry 2/2 for task 2
+2025-03-29 20:33:42,770 [WARNING] Task 2 failed: No URL provided in task
+2025-03-29 20:33:42,770 [INFO] Progress: 3/812 tasks completed
+2025-03-29 20:33:42,770 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:42,770 [INFO] Processing task 4/812: 3
+2025-03-29 20:33:42,771 [WARNING] Task 3 failed: No URL provided in task
+2025-03-29 20:33:44,771 [INFO] Retry 1/2 for task 3
+2025-03-29 20:33:44,771 [WARNING] Task 3 failed: No URL provided in task
+2025-03-29 20:33:46,771 [INFO] Retry 2/2 for task 3
+2025-03-29 20:33:46,771 [WARNING] Task 3 failed: No URL provided in task
+2025-03-29 20:33:46,772 [INFO] Progress: 4/812 tasks completed
+2025-03-29 20:33:46,772 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:46,772 [INFO] Processing task 5/812: 4
+2025-03-29 20:33:46,772 [WARNING] Task 4 failed: No URL provided in task
+2025-03-29 20:33:48,772 [INFO] Retry 1/2 for task 4
+2025-03-29 20:33:48,772 [WARNING] Task 4 failed: No URL provided in task
+2025-03-29 20:33:50,772 [INFO] Retry 2/2 for task 4
+2025-03-29 20:33:50,773 [WARNING] Task 4 failed: No URL provided in task
+2025-03-29 20:33:50,773 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:33:50,776 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:33:50,776 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:33:50,777 [INFO] Success rate: 0.00%
+2025-03-29 20:33:50,777 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:33:50,777 [INFO] Progress: 5/812 tasks completed
+2025-03-29 20:33:50,777 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:50,777 [INFO] Processing task 6/812: 5
+2025-03-29 20:33:50,778 [WARNING] Task 5 failed: No URL provided in task
+2025-03-29 20:33:52,778 [INFO] Retry 1/2 for task 5
+2025-03-29 20:33:52,778 [WARNING] Task 5 failed: No URL provided in task
+2025-03-29 20:33:54,778 [INFO] Retry 2/2 for task 5
+2025-03-29 20:33:54,778 [WARNING] Task 5 failed: No URL provided in task
+2025-03-29 20:33:54,779 [INFO] Progress: 6/812 tasks completed
+2025-03-29 20:33:54,779 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:54,779 [INFO] Processing task 7/812: 6
+2025-03-29 20:33:54,779 [WARNING] Task 6 failed: No URL provided in task
+2025-03-29 20:33:56,781 [INFO] Retry 1/2 for task 6
+2025-03-29 20:33:56,782 [WARNING] Task 6 failed: No URL provided in task
+2025-03-29 20:33:58,784 [INFO] Retry 2/2 for task 6
+2025-03-29 20:33:58,784 [WARNING] Task 6 failed: No URL provided in task
+2025-03-29 20:33:58,784 [INFO] Progress: 7/812 tasks completed
+2025-03-29 20:33:58,784 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:58,785 [INFO] Processing task 8/812: 7
+2025-03-29 20:33:58,785 [WARNING] Task 7 failed: No URL provided in task
+2025-03-29 20:34:00,786 [INFO] Retry 1/2 for task 7
+2025-03-29 20:34:00,786 [WARNING] Task 7 failed: No URL provided in task
+2025-03-29 20:34:02,787 [INFO] Retry 2/2 for task 7
+2025-03-29 20:34:02,787 [WARNING] Task 7 failed: No URL provided in task
+2025-03-29 20:34:02,787 [INFO] Progress: 8/812 tasks completed
+2025-03-29 20:34:02,787 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:02,788 [INFO] Processing task 9/812: 8
+2025-03-29 20:34:02,788 [WARNING] Task 8 failed: No URL provided in task
+2025-03-29 20:34:04,788 [INFO] Retry 1/2 for task 8
+2025-03-29 20:34:04,788 [WARNING] Task 8 failed: No URL provided in task
+2025-03-29 20:34:06,788 [INFO] Retry 2/2 for task 8
+2025-03-29 20:34:06,789 [WARNING] Task 8 failed: No URL provided in task
+2025-03-29 20:34:06,789 [INFO] Progress: 9/812 tasks completed
+2025-03-29 20:34:06,789 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:06,789 [INFO] Processing task 10/812: 9
+2025-03-29 20:34:06,789 [WARNING] Task 9 failed: No URL provided in task
+2025-03-29 20:34:08,789 [INFO] Retry 1/2 for task 9
+2025-03-29 20:34:08,789 [WARNING] Task 9 failed: No URL provided in task
+2025-03-29 20:34:10,790 [INFO] Retry 2/2 for task 9
+2025-03-29 20:34:10,790 [WARNING] Task 9 failed: No URL provided in task
+2025-03-29 20:34:10,791 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:34:10,793 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:34:10,793 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:34:10,793 [INFO] Success rate: 0.00%
+2025-03-29 20:34:10,793 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:34:10,793 [INFO] Progress: 10/812 tasks completed
+2025-03-29 20:34:10,794 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:10,794 [INFO] Processing task 11/812: 10
+2025-03-29 20:34:10,794 [WARNING] Task 10 failed: No URL provided in task
+2025-03-29 20:34:12,794 [INFO] Retry 1/2 for task 10
+2025-03-29 20:34:12,794 [WARNING] Task 10 failed: No URL provided in task
+2025-03-29 20:34:14,797 [INFO] Retry 2/2 for task 10
+2025-03-29 20:34:14,798 [WARNING] Task 10 failed: No URL provided in task
+2025-03-29 20:34:14,798 [INFO] Progress: 11/812 tasks completed
+2025-03-29 20:34:14,798 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:14,798 [INFO] Processing task 12/812: 11
+2025-03-29 20:34:14,798 [WARNING] Task 11 failed: No URL provided in task
+2025-03-29 20:34:16,798 [INFO] Retry 1/2 for task 11
+2025-03-29 20:34:16,798 [WARNING] Task 11 failed: No URL provided in task
+2025-03-29 20:34:18,799 [INFO] Retry 2/2 for task 11
+2025-03-29 20:34:18,799 [WARNING] Task 11 failed: No URL provided in task
+2025-03-29 20:34:18,799 [INFO] Progress: 12/812 tasks completed
+2025-03-29 20:34:18,799 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:18,799 [INFO] Processing task 13/812: 12
+2025-03-29 20:34:18,799 [WARNING] Task 12 failed: No URL provided in task
+2025-03-29 20:34:20,799 [INFO] Retry 1/2 for task 12
+2025-03-29 20:34:20,799 [WARNING] Task 12 failed: No URL provided in task
+2025-03-29 20:34:22,800 [INFO] Retry 2/2 for task 12
+2025-03-29 20:34:22,800 [WARNING] Task 12 failed: No URL provided in task
+2025-03-29 20:34:22,800 [INFO] Progress: 13/812 tasks completed
+2025-03-29 20:34:22,800 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:22,800 [INFO] Processing task 14/812: 13
+2025-03-29 20:34:22,800 [WARNING] Task 13 failed: No URL provided in task
+2025-03-29 20:34:24,801 [INFO] Retry 1/2 for task 13
+2025-03-29 20:34:24,801 [WARNING] Task 13 failed: No URL provided in task
+2025-03-29 20:34:26,802 [INFO] Retry 2/2 for task 13
+2025-03-29 20:34:26,802 [WARNING] Task 13 failed: No URL provided in task
+2025-03-29 20:34:26,803 [INFO] Progress: 14/812 tasks completed
+2025-03-29 20:34:26,803 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:26,803 [INFO] Processing task 15/812: 14
+2025-03-29 20:34:26,803 [WARNING] Task 14 failed: No URL provided in task
+2025-03-29 20:34:28,803 [INFO] Retry 1/2 for task 14
+2025-03-29 20:34:28,804 [WARNING] Task 14 failed: No URL provided in task
+2025-03-29 20:34:30,804 [INFO] Retry 2/2 for task 14
+2025-03-29 20:34:30,804 [WARNING] Task 14 failed: No URL provided in task
+2025-03-29 20:34:30,804 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:34:30,806 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:34:30,806 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:34:30,807 [INFO] Success rate: 0.00%
+2025-03-29 20:34:30,807 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:34:30,807 [INFO] Progress: 15/812 tasks completed
+2025-03-29 20:34:30,807 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:30,807 [INFO] Processing task 16/812: 15
+2025-03-29 20:34:30,807 [WARNING] Task 15 failed: No URL provided in task
+2025-03-29 20:34:32,807 [INFO] Retry 1/2 for task 15
+2025-03-29 20:34:32,807 [WARNING] Task 15 failed: No URL provided in task
+2025-03-29 20:34:34,808 [INFO] Retry 2/2 for task 15
+2025-03-29 20:34:34,808 [WARNING] Task 15 failed: No URL provided in task
+2025-03-29 20:34:34,808 [INFO] Progress: 16/812 tasks completed
+2025-03-29 20:34:34,808 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:34,809 [INFO] Processing task 17/812: 16
+2025-03-29 20:34:34,809 [WARNING] Task 16 failed: No URL provided in task
+2025-03-29 20:34:36,809 [INFO] Retry 1/2 for task 16
+2025-03-29 20:34:36,809 [WARNING] Task 16 failed: No URL provided in task
+2025-03-29 20:34:38,811 [INFO] Retry 2/2 for task 16
+2025-03-29 20:34:38,811 [WARNING] Task 16 failed: No URL provided in task
+2025-03-29 20:34:38,811 [INFO] Progress: 17/812 tasks completed
+2025-03-29 20:34:38,811 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:38,811 [INFO] Processing task 18/812: 17
+2025-03-29 20:34:38,811 [WARNING] Task 17 failed: No URL provided in task
+2025-03-29 20:34:40,811 [INFO] Retry 1/2 for task 17
+2025-03-29 20:34:40,811 [WARNING] Task 17 failed: No URL provided in task
+2025-03-29 20:34:42,813 [INFO] Retry 2/2 for task 17
+2025-03-29 20:34:42,813 [WARNING] Task 17 failed: No URL provided in task
+2025-03-29 20:34:42,813 [INFO] Progress: 18/812 tasks completed
+2025-03-29 20:34:42,813 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:42,814 [INFO] Processing task 19/812: 18
+2025-03-29 20:34:42,814 [WARNING] Task 18 failed: No URL provided in task
+2025-03-29 20:34:44,814 [INFO] Retry 1/2 for task 18
+2025-03-29 20:34:44,814 [WARNING] Task 18 failed: No URL provided in task
+2025-03-29 20:34:46,814 [INFO] Retry 2/2 for task 18
+2025-03-29 20:34:46,815 [WARNING] Task 18 failed: No URL provided in task
+2025-03-29 20:34:46,815 [INFO] Progress: 19/812 tasks completed
+2025-03-29 20:34:46,815 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:46,815 [INFO] Processing task 20/812: 19
+2025-03-29 20:34:46,815 [WARNING] Task 19 failed: No URL provided in task
+2025-03-29 20:34:48,815 [INFO] Retry 1/2 for task 19
+2025-03-29 20:34:48,815 [WARNING] Task 19 failed: No URL provided in task
+2025-03-29 20:34:50,817 [INFO] Retry 2/2 for task 19
+2025-03-29 20:34:50,817 [WARNING] Task 19 failed: No URL provided in task
+2025-03-29 20:34:50,818 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:34:50,819 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:34:50,820 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:34:50,820 [INFO] Success rate: 0.00%
+2025-03-29 20:34:50,820 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:34:50,820 [INFO] Progress: 20/812 tasks completed
+2025-03-29 20:34:50,820 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:50,820 [INFO] Processing task 21/812: 20
+2025-03-29 20:34:50,820 [WARNING] Task 20 failed: No URL provided in task
+2025-03-29 20:34:52,821 [INFO] Retry 1/2 for task 20
+2025-03-29 20:34:52,822 [WARNING] Task 20 failed: No URL provided in task
+2025-03-29 20:34:54,822 [INFO] Retry 2/2 for task 20
+2025-03-29 20:34:54,822 [WARNING] Task 20 failed: No URL provided in task
+2025-03-29 20:34:54,822 [INFO] Progress: 21/812 tasks completed
+2025-03-29 20:34:54,822 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:54,822 [INFO] Processing task 22/812: 21
+2025-03-29 20:34:54,822 [WARNING] Task 21 failed: No URL provided in task
+2025-03-29 20:34:56,825 [INFO] Retry 1/2 for task 21
+2025-03-29 20:34:56,826 [WARNING] Task 21 failed: No URL provided in task
+2025-03-29 20:34:58,826 [INFO] Retry 2/2 for task 21
+2025-03-29 20:34:58,826 [WARNING] Task 21 failed: No URL provided in task
+2025-03-29 20:34:58,826 [INFO] Progress: 22/812 tasks completed
+2025-03-29 20:34:58,826 [INFO] Success rate so far: 0.00%
+2025-03-29 20:34:58,826 [INFO] Processing task 23/812: 22
+2025-03-29 20:34:58,826 [WARNING] Task 22 failed: No URL provided in task
+2025-03-29 20:35:00,827 [INFO] Retry 1/2 for task 22
+2025-03-29 20:35:00,827 [WARNING] Task 22 failed: No URL provided in task
+2025-03-29 20:35:02,828 [INFO] Retry 2/2 for task 22
+2025-03-29 20:35:02,828 [WARNING] Task 22 failed: No URL provided in task
+2025-03-29 20:35:02,828 [INFO] Progress: 23/812 tasks completed
+2025-03-29 20:35:02,828 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:02,828 [INFO] Processing task 24/812: 23
+2025-03-29 20:35:02,828 [WARNING] Task 23 failed: No URL provided in task
+2025-03-29 20:35:04,828 [INFO] Retry 1/2 for task 23
+2025-03-29 20:35:04,829 [WARNING] Task 23 failed: No URL provided in task
+2025-03-29 20:35:06,829 [INFO] Retry 2/2 for task 23
+2025-03-29 20:35:06,829 [WARNING] Task 23 failed: No URL provided in task
+2025-03-29 20:35:06,829 [INFO] Progress: 24/812 tasks completed
+2025-03-29 20:35:06,829 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:06,829 [INFO] Processing task 25/812: 24
+2025-03-29 20:35:06,829 [WARNING] Task 24 failed: No URL provided in task
+2025-03-29 20:35:08,834 [INFO] Retry 1/2 for task 24
+2025-03-29 20:35:08,834 [WARNING] Task 24 failed: No URL provided in task
+2025-03-29 20:35:10,835 [INFO] Retry 2/2 for task 24
+2025-03-29 20:35:10,835 [WARNING] Task 24 failed: No URL provided in task
+2025-03-29 20:35:10,835 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:35:10,837 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:35:10,837 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:35:10,837 [INFO] Success rate: 0.00%
+2025-03-29 20:35:10,837 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:35:10,837 [INFO] Progress: 25/812 tasks completed
+2025-03-29 20:35:10,837 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:10,837 [INFO] Processing task 26/812: 25
+2025-03-29 20:35:10,838 [WARNING] Task 25 failed: No URL provided in task
+2025-03-29 20:35:12,838 [INFO] Retry 1/2 for task 25
+2025-03-29 20:35:12,839 [WARNING] Task 25 failed: No URL provided in task
+2025-03-29 20:35:14,839 [INFO] Retry 2/2 for task 25
+2025-03-29 20:35:14,839 [WARNING] Task 25 failed: No URL provided in task
+2025-03-29 20:35:14,839 [INFO] Progress: 26/812 tasks completed
+2025-03-29 20:35:14,839 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:14,839 [INFO] Processing task 27/812: 26
+2025-03-29 20:35:14,839 [WARNING] Task 26 failed: No URL provided in task
+2025-03-29 20:35:16,841 [INFO] Retry 1/2 for task 26
+2025-03-29 20:35:16,842 [WARNING] Task 26 failed: No URL provided in task
+2025-03-29 20:35:18,844 [INFO] Retry 2/2 for task 26
+2025-03-29 20:35:18,844 [WARNING] Task 26 failed: No URL provided in task
+2025-03-29 20:35:18,844 [INFO] Progress: 27/812 tasks completed
+2025-03-29 20:35:18,844 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:18,844 [INFO] Processing task 28/812: 27
+2025-03-29 20:35:18,844 [WARNING] Task 27 failed: No URL provided in task
+2025-03-29 20:35:20,845 [INFO] Retry 1/2 for task 27
+2025-03-29 20:35:20,845 [WARNING] Task 27 failed: No URL provided in task
+2025-03-29 20:35:22,847 [INFO] Retry 2/2 for task 27
+2025-03-29 20:35:22,847 [WARNING] Task 27 failed: No URL provided in task
+2025-03-29 20:35:22,847 [INFO] Progress: 28/812 tasks completed
+2025-03-29 20:35:22,847 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:22,847 [INFO] Processing task 29/812: 28
+2025-03-29 20:35:22,847 [WARNING] Task 28 failed: No URL provided in task
+2025-03-29 20:35:24,848 [INFO] Retry 1/2 for task 28
+2025-03-29 20:35:24,848 [WARNING] Task 28 failed: No URL provided in task
+2025-03-29 20:35:26,849 [INFO] Retry 2/2 for task 28
+2025-03-29 20:35:26,850 [WARNING] Task 28 failed: No URL provided in task
+2025-03-29 20:35:26,850 [INFO] Progress: 29/812 tasks completed
+2025-03-29 20:35:26,850 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:26,850 [INFO] Processing task 30/812: 29
+2025-03-29 20:35:26,850 [WARNING] Task 29 failed: No URL provided in task
+2025-03-29 20:35:28,851 [INFO] Retry 1/2 for task 29
+2025-03-29 20:35:28,852 [WARNING] Task 29 failed: No URL provided in task
+2025-03-29 20:35:30,853 [INFO] Retry 2/2 for task 29
+2025-03-29 20:35:30,854 [WARNING] Task 29 failed: No URL provided in task
+2025-03-29 20:35:30,854 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:35:30,856 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:35:30,861 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:35:30,861 [INFO] Success rate: 0.00%
+2025-03-29 20:35:30,861 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:35:30,864 [INFO] Progress: 30/812 tasks completed
+2025-03-29 20:35:30,864 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:30,864 [INFO] Processing task 31/812: 30
+2025-03-29 20:35:30,864 [WARNING] Task 30 failed: No URL provided in task
+2025-03-29 20:35:32,865 [INFO] Retry 1/2 for task 30
+2025-03-29 20:35:32,865 [WARNING] Task 30 failed: No URL provided in task
+2025-03-29 20:35:34,865 [INFO] Retry 2/2 for task 30
+2025-03-29 20:35:34,865 [WARNING] Task 30 failed: No URL provided in task
+2025-03-29 20:35:34,865 [INFO] Progress: 31/812 tasks completed
+2025-03-29 20:35:34,865 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:34,865 [INFO] Processing task 32/812: 31
+2025-03-29 20:35:34,865 [WARNING] Task 31 failed: No URL provided in task
+2025-03-29 20:35:36,866 [INFO] Retry 1/2 for task 31
+2025-03-29 20:35:36,866 [WARNING] Task 31 failed: No URL provided in task
+2025-03-29 20:35:38,866 [INFO] Retry 2/2 for task 31
+2025-03-29 20:35:38,866 [WARNING] Task 31 failed: No URL provided in task
+2025-03-29 20:35:38,867 [INFO] Progress: 32/812 tasks completed
+2025-03-29 20:35:38,867 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:38,867 [INFO] Processing task 33/812: 32
+2025-03-29 20:35:38,867 [WARNING] Task 32 failed: No URL provided in task
+2025-03-29 20:35:40,867 [INFO] Retry 1/2 for task 32
+2025-03-29 20:35:40,867 [WARNING] Task 32 failed: No URL provided in task
+2025-03-29 20:35:42,867 [INFO] Retry 2/2 for task 32
+2025-03-29 20:35:42,868 [WARNING] Task 32 failed: No URL provided in task
+2025-03-29 20:35:42,868 [INFO] Progress: 33/812 tasks completed
+2025-03-29 20:35:42,868 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:42,868 [INFO] Processing task 34/812: 33
+2025-03-29 20:35:42,868 [WARNING] Task 33 failed: No URL provided in task
+2025-03-29 20:35:44,868 [INFO] Retry 1/2 for task 33
+2025-03-29 20:35:44,869 [WARNING] Task 33 failed: No URL provided in task
+2025-03-29 20:35:46,869 [INFO] Retry 2/2 for task 33
+2025-03-29 20:35:46,869 [WARNING] Task 33 failed: No URL provided in task
+2025-03-29 20:35:46,869 [INFO] Progress: 34/812 tasks completed
+2025-03-29 20:35:46,869 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:46,869 [INFO] Processing task 35/812: 34
+2025-03-29 20:35:46,869 [WARNING] Task 34 failed: No URL provided in task
+2025-03-29 20:35:48,873 [INFO] Retry 1/2 for task 34
+2025-03-29 20:35:48,873 [WARNING] Task 34 failed: No URL provided in task
+2025-03-29 20:35:50,873 [INFO] Retry 2/2 for task 34
+2025-03-29 20:35:50,874 [WARNING] Task 34 failed: No URL provided in task
+2025-03-29 20:35:50,874 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:35:50,876 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:35:50,877 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:35:50,877 [INFO] Success rate: 0.00%
+2025-03-29 20:35:50,877 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:35:50,878 [INFO] Progress: 35/812 tasks completed
+2025-03-29 20:35:50,878 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:50,878 [INFO] Processing task 36/812: 35
+2025-03-29 20:35:50,878 [WARNING] Task 35 failed: No URL provided in task
+2025-03-29 20:35:52,878 [INFO] Retry 1/2 for task 35
+2025-03-29 20:35:52,878 [WARNING] Task 35 failed: No URL provided in task
+2025-03-29 20:35:54,879 [INFO] Retry 2/2 for task 35
+2025-03-29 20:35:54,879 [WARNING] Task 35 failed: No URL provided in task
+2025-03-29 20:35:54,879 [INFO] Progress: 36/812 tasks completed
+2025-03-29 20:35:54,879 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:54,879 [INFO] Processing task 37/812: 36
+2025-03-29 20:35:54,879 [WARNING] Task 36 failed: No URL provided in task
+2025-03-29 20:35:56,879 [INFO] Retry 1/2 for task 36
+2025-03-29 20:35:56,880 [WARNING] Task 36 failed: No URL provided in task
+2025-03-29 20:35:58,881 [INFO] Retry 2/2 for task 36
+2025-03-29 20:35:58,882 [WARNING] Task 36 failed: No URL provided in task
+2025-03-29 20:35:58,882 [INFO] Progress: 37/812 tasks completed
+2025-03-29 20:35:58,882 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:58,882 [INFO] Processing task 38/812: 37
+2025-03-29 20:35:58,882 [WARNING] Task 37 failed: No URL provided in task
+2025-03-29 20:36:00,882 [INFO] Retry 1/2 for task 37
+2025-03-29 20:36:00,882 [WARNING] Task 37 failed: No URL provided in task
+2025-03-29 20:36:02,882 [INFO] Retry 2/2 for task 37
+2025-03-29 20:36:02,883 [WARNING] Task 37 failed: No URL provided in task
+2025-03-29 20:36:02,883 [INFO] Progress: 38/812 tasks completed
+2025-03-29 20:36:02,883 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:02,883 [INFO] Processing task 39/812: 38
+2025-03-29 20:36:02,883 [WARNING] Task 38 failed: No URL provided in task
+2025-03-29 20:36:04,883 [INFO] Retry 1/2 for task 38
+2025-03-29 20:36:04,883 [WARNING] Task 38 failed: No URL provided in task
+2025-03-29 20:36:06,883 [INFO] Retry 2/2 for task 38
+2025-03-29 20:36:06,884 [WARNING] Task 38 failed: No URL provided in task
+2025-03-29 20:36:06,884 [INFO] Progress: 39/812 tasks completed
+2025-03-29 20:36:06,884 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:06,884 [INFO] Processing task 40/812: 39
+2025-03-29 20:36:06,884 [WARNING] Task 39 failed: No URL provided in task
+2025-03-29 20:36:08,884 [INFO] Retry 1/2 for task 39
+2025-03-29 20:36:08,884 [WARNING] Task 39 failed: No URL provided in task
+2025-03-29 20:36:10,884 [INFO] Retry 2/2 for task 39
+2025-03-29 20:36:10,885 [WARNING] Task 39 failed: No URL provided in task
+2025-03-29 20:36:10,885 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:36:10,887 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:36:10,887 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:36:10,887 [INFO] Success rate: 0.00%
+2025-03-29 20:36:10,887 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:36:10,887 [INFO] Progress: 40/812 tasks completed
+2025-03-29 20:36:10,887 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:10,887 [INFO] Processing task 41/812: 40
+2025-03-29 20:36:10,887 [WARNING] Task 40 failed: No URL provided in task
+2025-03-29 20:36:12,888 [INFO] Retry 1/2 for task 40
+2025-03-29 20:36:12,888 [WARNING] Task 40 failed: No URL provided in task
+2025-03-29 20:36:14,888 [INFO] Retry 2/2 for task 40
+2025-03-29 20:36:14,888 [WARNING] Task 40 failed: No URL provided in task
+2025-03-29 20:36:14,888 [INFO] Progress: 41/812 tasks completed
+2025-03-29 20:36:14,888 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:14,889 [INFO] Processing task 42/812: 41
+2025-03-29 20:36:14,889 [WARNING] Task 41 failed: No URL provided in task
+2025-03-29 20:36:16,889 [INFO] Retry 1/2 for task 41
+2025-03-29 20:36:16,889 [WARNING] Task 41 failed: No URL provided in task
+2025-03-29 20:36:18,889 [INFO] Retry 2/2 for task 41
+2025-03-29 20:36:18,890 [WARNING] Task 41 failed: No URL provided in task
+2025-03-29 20:36:18,890 [INFO] Progress: 42/812 tasks completed
+2025-03-29 20:36:18,890 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:18,890 [INFO] Processing task 43/812: 42
+2025-03-29 20:36:18,890 [WARNING] Task 42 failed: No URL provided in task
+2025-03-29 20:36:20,890 [INFO] Retry 1/2 for task 42
+2025-03-29 20:36:20,890 [WARNING] Task 42 failed: No URL provided in task
+2025-03-29 20:36:22,890 [INFO] Retry 2/2 for task 42
+2025-03-29 20:36:22,891 [WARNING] Task 42 failed: No URL provided in task
+2025-03-29 20:36:22,891 [INFO] Progress: 43/812 tasks completed
+2025-03-29 20:36:22,891 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:22,891 [INFO] Processing task 44/812: 43
+2025-03-29 20:36:22,891 [WARNING] Task 43 failed: No URL provided in task
+2025-03-29 20:36:24,892 [INFO] Retry 1/2 for task 43
+2025-03-29 20:36:24,892 [WARNING] Task 43 failed: No URL provided in task
+2025-03-29 20:36:26,892 [INFO] Retry 2/2 for task 43
+2025-03-29 20:36:26,892 [WARNING] Task 43 failed: No URL provided in task
+2025-03-29 20:36:26,892 [INFO] Progress: 44/812 tasks completed
+2025-03-29 20:36:26,892 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:26,892 [INFO] Processing task 45/812: 44
+2025-03-29 20:36:26,893 [WARNING] Task 44 failed: No URL provided in task
+2025-03-29 20:36:28,893 [INFO] Retry 1/2 for task 44
+2025-03-29 20:36:28,893 [WARNING] Task 44 failed: No URL provided in task
+2025-03-29 20:36:30,893 [INFO] Retry 2/2 for task 44
+2025-03-29 20:36:30,894 [WARNING] Task 44 failed: No URL provided in task
+2025-03-29 20:36:30,894 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:36:30,895 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:36:30,896 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:36:30,896 [INFO] Success rate: 0.00%
+2025-03-29 20:36:30,896 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:36:30,896 [INFO] Progress: 45/812 tasks completed
+2025-03-29 20:36:30,896 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:30,896 [INFO] Processing task 46/812: 45
+2025-03-29 20:36:30,896 [WARNING] Task 45 failed: No URL provided in task
+2025-03-29 20:36:32,896 [INFO] Retry 1/2 for task 45
+2025-03-29 20:36:32,897 [WARNING] Task 45 failed: No URL provided in task
+2025-03-29 20:36:34,897 [INFO] Retry 2/2 for task 45
+2025-03-29 20:36:34,897 [WARNING] Task 45 failed: No URL provided in task
+2025-03-29 20:36:34,897 [INFO] Progress: 46/812 tasks completed
+2025-03-29 20:36:34,897 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:34,897 [INFO] Processing task 47/812: 46
+2025-03-29 20:36:34,898 [WARNING] Task 46 failed: No URL provided in task
+2025-03-29 20:36:36,898 [INFO] Retry 1/2 for task 46
+2025-03-29 20:36:36,898 [WARNING] Task 46 failed: No URL provided in task
+2025-03-29 20:36:38,898 [INFO] Retry 2/2 for task 46
+2025-03-29 20:36:38,898 [WARNING] Task 46 failed: No URL provided in task
+2025-03-29 20:36:38,898 [INFO] Progress: 47/812 tasks completed
+2025-03-29 20:36:38,898 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:38,898 [INFO] Processing task 48/812: 47
+2025-03-29 20:36:38,899 [WARNING] Task 47 failed: No URL provided in task
+2025-03-29 20:36:40,899 [INFO] Retry 1/2 for task 47
+2025-03-29 20:36:40,899 [WARNING] Task 47 failed: No URL provided in task
+2025-03-29 20:36:42,899 [INFO] Retry 2/2 for task 47
+2025-03-29 20:36:42,900 [WARNING] Task 47 failed: No URL provided in task
+2025-03-29 20:36:42,900 [INFO] Progress: 48/812 tasks completed
+2025-03-29 20:36:42,900 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:42,900 [INFO] Processing task 49/812: 48
+2025-03-29 20:36:42,900 [WARNING] Task 48 failed: No URL provided in task
+2025-03-29 20:36:44,900 [INFO] Retry 1/2 for task 48
+2025-03-29 20:36:44,900 [WARNING] Task 48 failed: No URL provided in task
+2025-03-29 20:36:46,901 [INFO] Retry 2/2 for task 48
+2025-03-29 20:36:46,901 [WARNING] Task 48 failed: No URL provided in task
+2025-03-29 20:36:46,901 [INFO] Progress: 49/812 tasks completed
+2025-03-29 20:36:46,901 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:46,901 [INFO] Processing task 50/812: 49
+2025-03-29 20:36:46,901 [WARNING] Task 49 failed: No URL provided in task
+2025-03-29 20:36:48,901 [INFO] Retry 1/2 for task 49
+2025-03-29 20:36:48,902 [WARNING] Task 49 failed: No URL provided in task
+2025-03-29 20:36:50,902 [INFO] Retry 2/2 for task 49
+2025-03-29 20:36:50,902 [WARNING] Task 49 failed: No URL provided in task
+2025-03-29 20:36:50,903 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:36:50,904 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:36:50,905 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:36:50,905 [INFO] Success rate: 0.00%
+2025-03-29 20:36:50,905 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:36:50,905 [INFO] Progress: 50/812 tasks completed
+2025-03-29 20:36:50,905 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:50,905 [INFO] Processing task 51/812: 50
+2025-03-29 20:36:50,905 [WARNING] Task 50 failed: No URL provided in task
+2025-03-29 20:36:52,905 [INFO] Retry 1/2 for task 50
+2025-03-29 20:36:52,905 [WARNING] Task 50 failed: No URL provided in task
+2025-03-29 20:36:54,908 [INFO] Retry 2/2 for task 50
+2025-03-29 20:36:54,908 [WARNING] Task 50 failed: No URL provided in task
+2025-03-29 20:36:54,908 [INFO] Progress: 51/812 tasks completed
+2025-03-29 20:36:54,908 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:54,908 [INFO] Processing task 52/812: 51
+2025-03-29 20:36:54,908 [WARNING] Task 51 failed: No URL provided in task
+2025-03-29 20:36:56,908 [INFO] Retry 1/2 for task 51
+2025-03-29 20:36:56,909 [WARNING] Task 51 failed: No URL provided in task
+2025-03-29 20:36:58,909 [INFO] Retry 2/2 for task 51
+2025-03-29 20:36:58,909 [WARNING] Task 51 failed: No URL provided in task
+2025-03-29 20:36:58,909 [INFO] Progress: 52/812 tasks completed
+2025-03-29 20:36:58,909 [INFO] Success rate so far: 0.00%
+2025-03-29 20:36:58,909 [INFO] Processing task 53/812: 52
+2025-03-29 20:36:58,909 [WARNING] Task 52 failed: No URL provided in task
+2025-03-29 20:37:00,913 [INFO] Retry 1/2 for task 52
+2025-03-29 20:37:00,914 [WARNING] Task 52 failed: No URL provided in task
+2025-03-29 20:37:02,914 [INFO] Retry 2/2 for task 52
+2025-03-29 20:37:02,914 [WARNING] Task 52 failed: No URL provided in task
+2025-03-29 20:37:02,914 [INFO] Progress: 53/812 tasks completed
+2025-03-29 20:37:02,914 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:02,914 [INFO] Processing task 54/812: 53
+2025-03-29 20:37:02,914 [WARNING] Task 53 failed: No URL provided in task
+2025-03-29 20:37:04,914 [INFO] Retry 1/2 for task 53
+2025-03-29 20:37:04,915 [WARNING] Task 53 failed: No URL provided in task
+2025-03-29 20:37:06,915 [INFO] Retry 2/2 for task 53
+2025-03-29 20:37:06,915 [WARNING] Task 53 failed: No URL provided in task
+2025-03-29 20:37:06,915 [INFO] Progress: 54/812 tasks completed
+2025-03-29 20:37:06,916 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:06,916 [INFO] Processing task 55/812: 54
+2025-03-29 20:37:06,916 [WARNING] Task 54 failed: No URL provided in task
+2025-03-29 20:37:08,916 [INFO] Retry 1/2 for task 54
+2025-03-29 20:37:08,916 [WARNING] Task 54 failed: No URL provided in task
+2025-03-29 20:37:10,916 [INFO] Retry 2/2 for task 54
+2025-03-29 20:37:10,916 [WARNING] Task 54 failed: No URL provided in task
+2025-03-29 20:37:10,917 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:37:10,919 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:37:10,919 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:37:10,919 [INFO] Success rate: 0.00%
+2025-03-29 20:37:10,919 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:37:10,919 [INFO] Progress: 55/812 tasks completed
+2025-03-29 20:37:10,919 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:10,919 [INFO] Processing task 56/812: 55
+2025-03-29 20:37:10,919 [WARNING] Task 55 failed: No URL provided in task
+2025-03-29 20:37:12,920 [INFO] Retry 1/2 for task 55
+2025-03-29 20:37:12,920 [WARNING] Task 55 failed: No URL provided in task
+2025-03-29 20:37:14,920 [INFO] Retry 2/2 for task 55
+2025-03-29 20:37:14,920 [WARNING] Task 55 failed: No URL provided in task
+2025-03-29 20:37:14,920 [INFO] Progress: 56/812 tasks completed
+2025-03-29 20:37:14,920 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:14,920 [INFO] Processing task 57/812: 56
+2025-03-29 20:37:14,920 [WARNING] Task 56 failed: No URL provided in task
+2025-03-29 20:37:16,921 [INFO] Retry 1/2 for task 56
+2025-03-29 20:37:16,921 [WARNING] Task 56 failed: No URL provided in task
+2025-03-29 20:37:18,921 [INFO] Retry 2/2 for task 56
+2025-03-29 20:37:18,922 [WARNING] Task 56 failed: No URL provided in task
+2025-03-29 20:37:18,922 [INFO] Progress: 57/812 tasks completed
+2025-03-29 20:37:18,922 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:18,922 [INFO] Processing task 58/812: 57
+2025-03-29 20:37:18,922 [WARNING] Task 57 failed: No URL provided in task
+2025-03-29 20:37:20,922 [INFO] Retry 1/2 for task 57
+2025-03-29 20:37:20,922 [WARNING] Task 57 failed: No URL provided in task
+2025-03-29 20:37:22,923 [INFO] Retry 2/2 for task 57
+2025-03-29 20:37:22,923 [WARNING] Task 57 failed: No URL provided in task
+2025-03-29 20:37:22,923 [INFO] Progress: 58/812 tasks completed
+2025-03-29 20:37:22,923 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:22,923 [INFO] Processing task 59/812: 58
+2025-03-29 20:37:22,923 [WARNING] Task 58 failed: No URL provided in task
+2025-03-29 20:37:24,923 [INFO] Retry 1/2 for task 58
+2025-03-29 20:37:24,924 [WARNING] Task 58 failed: No URL provided in task
+2025-03-29 20:37:26,924 [INFO] Retry 2/2 for task 58
+2025-03-29 20:37:26,924 [WARNING] Task 58 failed: No URL provided in task
+2025-03-29 20:37:26,924 [INFO] Progress: 59/812 tasks completed
+2025-03-29 20:37:26,924 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:26,924 [INFO] Processing task 60/812: 59
+2025-03-29 20:37:26,924 [WARNING] Task 59 failed: No URL provided in task
+2025-03-29 20:37:28,924 [INFO] Retry 1/2 for task 59
+2025-03-29 20:37:28,925 [WARNING] Task 59 failed: No URL provided in task
+2025-03-29 20:37:30,925 [INFO] Retry 2/2 for task 59
+2025-03-29 20:37:30,925 [WARNING] Task 59 failed: No URL provided in task
+2025-03-29 20:37:30,926 [INFO] Saved detailed results to results/webarena_intermediate_detailed_20250329_203330.json
+2025-03-29 20:37:30,928 [INFO] Saved summary results to results/webarena_intermediate_summary_20250329_203330.csv
+2025-03-29 20:37:30,928 [INFO] Evaluation complete for webarena_intermediate
+2025-03-29 20:37:30,928 [INFO] Success rate: 0.00%
+2025-03-29 20:37:30,928 [INFO] Average time per task: 0.00 seconds
+2025-03-29 20:37:30,928 [INFO] Progress: 60/812 tasks completed
+2025-03-29 20:37:30,928 [INFO] Success rate so far: 0.00%
+2025-03-29 20:37:30,928 [INFO] Processing task 61/812: 60
+2025-03-29 20:37:30,928 [WARNING] Task 60 failed: No URL provided in task
+2025-03-29 20:37:32,929 [INFO] Retry 1/2 for task 60
+2025-03-29 20:37:32,929 [WARNING] Task 60 failed: No URL provided in task

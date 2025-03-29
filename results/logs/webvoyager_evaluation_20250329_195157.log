@@ -1,0 +1,7 @@
+2025-03-29 19:51:57,337 [INFO] Starting WebVoyager evaluation
+2025-03-29 19:51:57,337 [INFO] Headless mode: True
+2025-03-29 19:51:57,337 [INFO] Max retries: 2
+2025-03-29 19:51:57,338 [INFO] Using API key index: 0
+2025-03-29 19:51:57,844 [INFO] Processing task 1/90: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:51:57,845 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 19:51:58,125 [INFO] Navigated to https://www.google.com

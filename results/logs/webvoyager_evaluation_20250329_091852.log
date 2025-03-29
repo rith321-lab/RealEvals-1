@@ -1,0 +1,360 @@
+2025-03-29 09:18:52,531 [INFO] Starting WebVoyager evaluation
+2025-03-29 09:18:52,531 [INFO] Headless mode: True
+2025-03-29 09:18:52,531 [INFO] Max retries: 2
+2025-03-29 09:18:53,000 [INFO] Processing task 1/90: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:18:53,001 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:18:53,659 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:19:09,555 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:19:10,343 [INFO] Navigated to https://en.wikipedia.org/wiki/Moon
+2025-03-29 09:19:12,277 [ERROR] Action step failed: Unexpected token ""Orbit of the Moon"" while parsing selector "link with text 'Orbit of the Moon'"
+2025-03-29 09:19:14,628 [INFO] Navigated to https://en.wikipedia.org/wiki/Eliud_Kipchoge
+2025-03-29 09:19:18,356 [INFO] Task completed in 25.36 seconds
+2025-03-29 09:19:18,357 [INFO] Task e1fc63a2-da7a-432f-be78-7c4a95598703 completed successfully
+2025-03-29 09:19:18,357 [INFO] Progress: 1/90 tasks completed
+2025-03-29 09:19:18,357 [INFO] Success rate so far: 100.00%
+2025-03-29 09:19:18,357 [INFO] Processing task 2/90: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:19:18,357 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:19:18,758 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:19:19,500 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:19:19,502 [INFO] Retrying request to /v1/messages in 25.000000 seconds
+2025-03-29 09:19:58,124 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:19:58,125 [WARNING] Invalid navigation URL: 
+2025-03-29 09:20:04,130 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:20:09,133 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:20:10,136 [INFO] Task completed in 51.78 seconds
+2025-03-29 09:20:10,136 [INFO] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be completed successfully
+2025-03-29 09:20:10,136 [INFO] Progress: 2/90 tasks completed
+2025-03-29 09:20:10,136 [INFO] Success rate so far: 100.00%
+2025-03-29 09:20:10,137 [INFO] Processing task 3/90: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:20:10,137 [INFO] Starting task: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:20:10,569 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:20:23,575 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:20:28,577 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:20:33,578 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:20:38,580 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:20:38,581 [WARNING] Invalid navigation URL: 
+2025-03-29 09:20:40,587 [INFO] Task completed in 30.45 seconds
+2025-03-29 09:20:40,587 [INFO] Task 5d0080cb-90d7-4712-bc33-848150e917d3 completed successfully
+2025-03-29 09:20:40,588 [INFO] Progress: 3/90 tasks completed
+2025-03-29 09:20:40,588 [INFO] Success rate so far: 100.00%
+2025-03-29 09:20:40,588 [INFO] Processing task 4/90: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 09:20:40,588 [INFO] Starting task: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 09:20:40,958 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:20:52,029 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:20:53,598 [INFO] Navigated to https://www.youtube.com/watch?v=L1vXCYZAYYM
+2025-03-29 09:20:56,361 [INFO] Task completed in 15.77 seconds
+2025-03-29 09:20:56,361 [INFO] Task a1e91b78-d3d8-4675-bb8d-62741b4b68a6 completed successfully
+2025-03-29 09:20:56,361 [INFO] Progress: 4/90 tasks completed
+2025-03-29 09:20:56,361 [INFO] Success rate so far: 100.00%
+2025-03-29 09:20:56,361 [INFO] Processing task 5/90: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 09:20:56,361 [INFO] Starting task: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 09:20:56,755 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:20:56,956 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:20:56,956 [INFO] Retrying request to /v1/messages in 38.000000 seconds
+2025-03-29 09:21:53,407 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:21:53,816 [INFO] Navigated to https://scholar.google.com/
+2025-03-29 09:21:55,349 [INFO] Typed 'Pie Menus or Linear Menus, Which Is Better?' into input[name='q']
+2025-03-29 09:21:56,486 [INFO] Clicked on button[type='submit']
+2025-03-29 09:21:58,576 [ERROR] Action step failed: DOMException: Failed to execute 'querySelectorAll' on 'Document': 'a:contains("Pie Menus or Linear Menus, Which Is Better?")' is not a valid selector.
+    at query (<anonymous>:3329:41)
+    at <anonymous>:3339:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3326:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3206:19)
+    at <anonymous>:3154:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3147:19)
+    at Object.query (<anonymous>:3361:44)
+    at <anonymous>:3319:21
+2025-03-29 09:21:58,581 [ERROR] Action step failed: DOMException: Failed to execute 'querySelectorAll' on 'Document': 'a:contains("Cite")' is not a valid selector.
+    at query (<anonymous>:3329:41)
+    at <anonymous>:3339:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3326:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3206:19)
+    at <anonymous>:3154:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3147:19)
+    at Object.query (<anonymous>:3361:44)
+    at <anonymous>:3319:21
+2025-03-29 09:21:58,585 [ERROR] Action step failed: DOMException: Failed to execute 'querySelectorAll' on 'Document': 'a:contains("Search within citing articles")' is not a valid selector.
+    at query (<anonymous>:3329:41)
+    at <anonymous>:3339:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3326:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3206:19)
+    at <anonymous>:3154:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3147:19)
+    at Object.query (<anonymous>:3361:44)
+    at <anonymous>:3319:21
+2025-03-29 09:21:58,590 [ERROR] Action step failed: DOMException: Failed to execute 'querySelectorAll' on 'Document': 'a:contains("Oldest")' is not a valid selector.
+    at query (<anonymous>:3329:41)
+    at <anonymous>:3339:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3326:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3206:19)
+    at <anonymous>:3154:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3147:19)
+    at Object.query (<anonymous>:3361:44)
+    at <anonymous>:3319:21
+2025-03-29 09:21:58,596 [ERROR] Action step failed: DOMException: Failed to execute 'querySelectorAll' on 'Document': 'a:contains("First author name")' is not a valid selector.
+    at query (<anonymous>:3329:41)
+    at <anonymous>:3339:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3326:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3206:19)
+    at <anonymous>:3154:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3147:19)
+    at Object.query (<anonymous>:3361:44)
+    at <anonymous>:3319:21
+2025-03-29 09:21:58,601 [ERROR] Action step failed: DOMException: Failed to execute 'querySelectorAll' on 'Document': 'a:contains("Title of first prior paper by that author")' is not a valid selector.
+    at query (<anonymous>:3329:41)
+    at <anonymous>:3339:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:3326:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:3206:19)
+    at <anonymous>:3154:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:3116:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:3147:19)
+    at Object.query (<anonymous>:3361:44)
+    at <anonymous>:3319:21
+2025-03-29 09:21:58,601 [INFO] Task completed in 62.24 seconds
+2025-03-29 09:21:58,601 [INFO] Task 46719c30-f4c3-4cad-be07-d5cb21eee6bb completed successfully
+2025-03-29 09:21:58,602 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_091852.json
+2025-03-29 09:21:58,606 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_091852.csv
+2025-03-29 09:21:58,607 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:21:58,607 [INFO] Success rate: 100.00%
+2025-03-29 09:21:58,608 [INFO] Average time per task: 37.12 seconds
+2025-03-29 09:21:58,608 [INFO] Progress: 5/90 tasks completed
+2025-03-29 09:21:58,608 [INFO] Success rate so far: 100.00%
+2025-03-29 09:21:58,608 [INFO] Processing task 6/90: 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 09:21:58,608 [INFO] Starting task: 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 09:21:59,145 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:21:59,386 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:21:59,386 [INFO] Retrying request to /v1/messages in 28.000000 seconds
+2025-03-29 09:22:41,658 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:22:41,693 [INFO] Typed 'doctor who series 9 episode 11 script' into [name='q']
+2025-03-29 09:22:47,700 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:22:47,703 [ERROR] Action step failed: Unexpected token ""Doctor Who Series 9 Episode 11 - Heaven Sent - Shooting Script"" while parsing selector "Link containing 'Doctor Who Series 9 Episode 11 - Heaven Sent - Shooting Script'"
+2025-03-29 09:22:48,706 [INFO] Task completed in 50.10 seconds
+2025-03-29 09:22:48,706 [INFO] Task 4b6bb5f7-f634-410e-815d-e673ab7f8632 completed successfully
+2025-03-29 09:22:48,706 [INFO] Progress: 6/90 tasks completed
+2025-03-29 09:22:48,707 [INFO] Success rate so far: 100.00%
+2025-03-29 09:22:48,707 [INFO] Processing task 7/90: b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 09:22:48,707 [INFO] Starting task: b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 09:22:49,143 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:22:49,358 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:22:49,359 [INFO] Retrying request to /v1/messages in 31.000000 seconds
+2025-03-29 09:23:33,175 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:23:38,177 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:23:43,179 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:23:43,181 [ERROR] Action step failed: Unexpected token ""Debating the Dragon: What"" while parsing selector "Search result titled 'Debating the Dragon: What's the Point? - Tor.com'"
+2025-03-29 09:23:43,182 [WARNING] Invalid navigation URL: 
+2025-03-29 09:23:45,188 [INFO] Task completed in 56.48 seconds
+2025-03-29 09:23:45,188 [INFO] Task b816bfce-3d80-4913-a07d-69b752ce6377 completed successfully
+2025-03-29 09:23:45,188 [INFO] Progress: 7/90 tasks completed
+2025-03-29 09:23:45,189 [INFO] Success rate so far: 100.00%
+2025-03-29 09:23:45,189 [INFO] Processing task 8/90: 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 09:23:45,189 [INFO] Starting task: 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 09:23:45,560 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:23:45,772 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:23:45,776 [INFO] Retrying request to /v1/messages in 27.000000 seconds
+2025-03-29 09:24:30,088 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:24:30,089 [WARNING] Invalid navigation URL: 
+2025-03-29 09:24:36,093 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:24:41,094 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:24:46,095 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:24:51,097 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:24:52,100 [INFO] Task completed in 66.91 seconds
+2025-03-29 09:24:52,100 [INFO] Task 72e110e7-464c-453c-a309-90a95aed6538 completed successfully
+2025-03-29 09:24:52,101 [INFO] Progress: 8/90 tasks completed
+2025-03-29 09:24:52,101 [INFO] Success rate so far: 100.00%
+2025-03-29 09:24:52,101 [INFO] Processing task 9/90: b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 09:24:52,101 [INFO] Starting task: b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 09:24:52,438 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:24:52,696 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:24:52,697 [INFO] Retrying request to /v1/messages in 13.000000 seconds
+2025-03-29 09:25:22,600 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:25:22,925 [INFO] Navigated to https://www.google.com
+2025-03-29 09:25:29,458 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:25:34,459 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:25:34,461 [ERROR] Action step failed: Unexpected token ""Scientific Reports - Conference Proceedings - Nature"" while parsing selector "link to 'Scientific Reports - Conference Proceedings - Nature'"
+2025-03-29 09:25:34,464 [ERROR] Action step failed: Unexpected token "link" while parsing selector "2012 link under 'Previous years' section"
+2025-03-29 09:25:40,468 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:25:41,471 [INFO] Task completed in 49.37 seconds
+2025-03-29 09:25:41,471 [INFO] Task b415aba4-4b68-4fc6-9b89-2c812e55a3e1 completed successfully
+2025-03-29 09:25:41,471 [INFO] Progress: 9/90 tasks completed
+2025-03-29 09:25:41,471 [INFO] Success rate so far: 100.00%
+2025-03-29 09:25:41,471 [INFO] Processing task 10/90: 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 09:25:41,472 [INFO] Starting task: 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 09:25:41,824 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:25:42,050 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:25:42,051 [INFO] Retrying request to /v1/messages in 16.000000 seconds
+2025-03-29 09:26:05,772 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:26:05,773 [INFO] Task completed in 24.30 seconds
+2025-03-29 09:26:05,773 [INFO] Task 935e2cff-ae78-4218-b3f5-115589b19dae completed successfully
+2025-03-29 09:26:05,773 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_091852.json
+2025-03-29 09:26:05,775 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_091852.csv
+2025-03-29 09:26:05,775 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:26:05,775 [INFO] Success rate: 100.00%
+2025-03-29 09:26:05,776 [INFO] Average time per task: 43.28 seconds
+2025-03-29 09:26:05,776 [INFO] Progress: 10/90 tasks completed
+2025-03-29 09:26:05,776 [INFO] Success rate so far: 100.00%
+2025-03-29 09:26:05,776 [INFO] Processing task 11/90: 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 09:26:05,776 [INFO] Starting task: 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 09:26:06,150 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:26:06,320 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:26:06,321 [INFO] Retrying request to /v1/messages in 44.000000 seconds
+2025-03-29 09:27:09,532 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:27:10,092 [INFO] Navigated to https://en.wikipedia.org/wiki/Wikipedia:Featured_articles
+2025-03-29 09:27:11,905 [ERROR] Action step failed: Unexpected token ""By date"" while parsing selector "link with text 'By date'"
+2025-03-29 09:27:11,906 [ERROR] Action step failed: Unexpected token ""2016"" while parsing selector "link with text '2016'"
+2025-03-29 09:27:11,909 [ERROR] Action step failed: Unexpected token ""November 27, 2016"" while parsing selector "link with text 'November 27, 2016'"
+2025-03-29 09:27:12,164 [INFO] Navigated to https://en.wikipedia.org/wiki/Giganotosaurus
+2025-03-29 09:27:13,785 [ERROR] Action step failed: Unexpected token ""Talk"" while parsing selector "link with text 'Talk'"
+2025-03-29 09:27:13,787 [ERROR] Action step failed: Unexpected token ""Nomination"" while parsing selector "link with text 'Nomination'"
+2025-03-29 09:27:14,790 [INFO] Task completed in 69.01 seconds
+2025-03-29 09:27:14,790 [INFO] Task 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8 completed successfully
+2025-03-29 09:27:14,790 [INFO] Progress: 11/90 tasks completed
+2025-03-29 09:27:14,790 [INFO] Success rate so far: 100.00%
+2025-03-29 09:27:14,790 [INFO] Processing task 12/90: 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 09:27:14,790 [INFO] Starting task: 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 09:27:15,200 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:27:15,405 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:27:15,405 [INFO] Retrying request to /v1/messages in 27.000000 seconds
+2025-03-29 09:27:57,359 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:27:57,360 [WARNING] Invalid navigation URL: 
+2025-03-29 09:27:58,365 [ERROR] Action step failed: Unexpected token "2022" while parsing selector "button for June 2022 on the Word of the Day calendar"
+2025-03-29 09:27:58,368 [ERROR] Action step failed: Unexpected token "27" while parsing selector "link for June 27, 2022"
+2025-03-29 09:27:59,371 [INFO] Task completed in 44.58 seconds
+2025-03-29 09:27:59,371 [INFO] Task 5188369a-3bbe-43d8-8b94-11558f909a08 completed successfully
+2025-03-29 09:27:59,371 [INFO] Progress: 12/90 tasks completed
+2025-03-29 09:27:59,371 [INFO] Success rate so far: 100.00%
+2025-03-29 09:27:59,371 [INFO] Processing task 13/90: 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 09:27:59,371 [INFO] Starting task: 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 09:27:59,814 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:28:00,031 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:28:00,032 [INFO] Retrying request to /v1/messages in 35.000000 seconds
+2025-03-29 09:28:45,306 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:28:45,307 [WARNING] Invalid navigation URL: 
+2025-03-29 09:28:51,311 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:28:52,314 [INFO] Task completed in 52.94 seconds
+2025-03-29 09:28:52,315 [INFO] Task 9d191bce-651d-4746-be2d-7ef8ecadb9c2 completed successfully
+2025-03-29 09:28:52,315 [INFO] Progress: 13/90 tasks completed
+2025-03-29 09:28:52,315 [INFO] Success rate so far: 100.00%
+2025-03-29 09:28:52,315 [INFO] Processing task 14/90: cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 09:28:52,315 [INFO] Starting task: cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 09:28:52,688 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:28:52,906 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:28:52,907 [INFO] Retrying request to /v1/messages in 35.000000 seconds
+2025-03-29 09:29:35,056 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:29:35,057 [WARNING] Failed to find JSON in response, using default action
+2025-03-29 09:29:35,057 [INFO] Task completed in 42.74 seconds
+2025-03-29 09:29:35,057 [INFO] Task cabe07ed-9eca-40ea-8ead-410ef5e83f91 completed successfully
+2025-03-29 09:29:35,057 [INFO] Progress: 14/90 tasks completed
+2025-03-29 09:29:35,057 [INFO] Success rate so far: 100.00%
+2025-03-29 09:29:35,058 [INFO] Processing task 15/90: d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 09:29:35,058 [INFO] Starting task: d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 09:29:35,424 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:29:36,040 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:29:36,041 [INFO] Retrying request to /v1/messages in 18.000000 seconds
+2025-03-29 09:30:05,897 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:30:06,735 [INFO] Navigated to https://scikit-learn.org/stable/whats_new/v0.19.html
+2025-03-29 09:30:08,257 [ERROR] Action step failed: Unexpected token ""July 2017"" while parsing selector "link containing 'July 2017'"
+2025-03-29 09:30:08,259 [ERROR] Action step failed: Unexpected token ""Bug fixes"" while parsing selector "link containing 'Bug fixes'"
+2025-03-29 09:30:09,262 [INFO] Task completed in 34.20 seconds
+2025-03-29 09:30:09,262 [INFO] Task d0633230-7067-47a9-9dbf-ee11e0a2cdd6 completed successfully
+2025-03-29 09:30:09,263 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_091852.json
+2025-03-29 09:30:09,265 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_091852.csv
+2025-03-29 09:30:09,265 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:30:09,265 [INFO] Success rate: 100.00%
+2025-03-29 09:30:09,265 [INFO] Average time per task: 45.08 seconds
+2025-03-29 09:30:09,265 [INFO] Progress: 15/90 tasks completed
+2025-03-29 09:30:09,266 [INFO] Success rate so far: 100.00%
+2025-03-29 09:30:09,266 [INFO] Processing task 16/90: 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 09:30:09,266 [INFO] Starting task: 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 09:30:09,703 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:30:24,890 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:30:24,891 [WARNING] Invalid navigation URL: 
+2025-03-29 09:30:30,895 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:30:35,896 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:30:40,897 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:30:40,900 [ERROR] Action step failed: Unexpected token ""Top 5 Silliest Animal Moments"" while parsing selector "Video thumbnail for 'Top 5 Silliest Animal Moments'"
+2025-03-29 09:30:41,903 [INFO] Task completed in 32.64 seconds
+2025-03-29 09:30:41,903 [INFO] Task 0383a3ee-47a7-41a4-b493-519bdefe0488 completed successfully
+2025-03-29 09:30:41,903 [INFO] Progress: 16/90 tasks completed
+2025-03-29 09:30:41,903 [INFO] Success rate so far: 100.00%
+2025-03-29 09:30:41,903 [INFO] Processing task 17/90: 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 09:30:41,903 [INFO] Starting task: 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 09:30:42,369 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:31:00,943 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:31:05,945 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:31:10,946 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:31:10,947 [WARNING] Invalid navigation URL: 
+2025-03-29 09:31:17,955 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:31:22,958 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:31:22,958 [WARNING] Invalid navigation URL: 
+2025-03-29 09:31:25,968 [INFO] Task completed in 44.06 seconds
+2025-03-29 09:31:25,968 [INFO] Task 11af4e1a-5f45-467d-9aeb-46f4bb0bf034 completed successfully
+2025-03-29 09:31:25,968 [INFO] Progress: 17/90 tasks completed
+2025-03-29 09:31:25,968 [INFO] Success rate so far: 100.00%
+2025-03-29 09:31:25,968 [INFO] Processing task 18/90: 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 09:31:25,969 [INFO] Starting task: 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 09:31:26,332 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:31:41,786 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:31:41,788 [WARNING] Invalid navigation URL: 
+2025-03-29 09:31:47,792 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:31:52,795 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:31:57,796 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:32:02,798 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:32:07,800 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:32:07,800 [INFO] Task completed in 41.83 seconds
+2025-03-29 09:32:07,800 [INFO] Task 7673d772-ef80-4f0f-a602-1bf4485c9b43 completed successfully
+2025-03-29 09:32:07,800 [INFO] Progress: 18/90 tasks completed
+2025-03-29 09:32:07,800 [INFO] Success rate so far: 100.00%
+2025-03-29 09:32:07,801 [INFO] Processing task 19/90: c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 09:32:07,801 [INFO] Starting task: c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 09:32:08,139 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:32:24,124 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:32:24,449 [INFO] Navigated to https://www.google.com
+2025-03-29 09:32:30,983 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:32:35,984 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:32:40,985 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:32:41,988 [INFO] Task completed in 34.19 seconds
+2025-03-29 09:32:41,988 [INFO] Task c365c1c7-a3db-4d5e-a9a1-66f56eae7865 completed successfully
+2025-03-29 09:32:41,988 [INFO] Progress: 19/90 tasks completed
+2025-03-29 09:32:41,988 [INFO] Success rate so far: 100.00%
+2025-03-29 09:32:41,988 [INFO] Processing task 20/90: 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 09:32:41,988 [INFO] Starting task: 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 09:32:42,328 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:32:56,553 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:33:01,556 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:33:06,557 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:33:06,560 [ERROR] Action step failed: Unexpected token ""Girls Who Code"" while parsing selector "search result with title containing 'Girls Who Code'"
+2025-03-29 09:33:06,560 [WARNING] Invalid navigation URL: 
+2025-03-29 09:33:08,566 [INFO] Task completed in 26.58 seconds
+2025-03-29 09:33:08,566 [INFO] Task 7d4a7d1d-cac6-44a8-96e8-ea9584a70825 completed successfully
+2025-03-29 09:33:08,566 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_091852.json
+2025-03-29 09:33:08,568 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_091852.csv
+2025-03-29 09:33:08,568 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:33:08,568 [INFO] Success rate: 100.00%
+2025-03-29 09:33:08,568 [INFO] Average time per task: 42.78 seconds
+2025-03-29 09:33:08,568 [INFO] Progress: 20/90 tasks completed
+2025-03-29 09:33:08,569 [INFO] Success rate so far: 100.00%
+2025-03-29 09:33:08,569 [INFO] Processing task 21/90: dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 09:33:08,569 [INFO] Starting task: dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 09:33:08,885 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:33:20,173 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:33:25,176 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:33:30,178 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:33:30,180 [ERROR] Action step failed: Unexpected token ""Cheap Eats"" while parsing selector "Link to Wikipedia article 'Cheap Eats'"
+2025-03-29 09:33:31,183 [INFO] Task completed in 22.61 seconds
+2025-03-29 09:33:31,183 [INFO] Task dc22a632-937f-4e6a-b72f-ba0ff3f5ff97 completed successfully
+2025-03-29 09:33:31,183 [INFO] Progress: 21/90 tasks completed
+2025-03-29 09:33:31,183 [INFO] Success rate so far: 100.00%
+2025-03-29 09:33:31,183 [INFO] Processing task 22/90: 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 09:33:31,183 [INFO] Starting task: 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 09:33:31,527 [INFO] Navigated to https://www.google.com/

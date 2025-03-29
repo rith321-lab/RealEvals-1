@@ -1,0 +1,4 @@
+task_id,success,time_taken,error
+98.0,False,220.48481917381287,Response parsing error: Expecting value: line 1 column 1 (char 0)
+99.0,False,0.03206467628479004,Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+100.0,False,119.24765634536743,Response parsing error: Expecting value: line 1 column 1 (char 0)

@@ -1,0 +1,536 @@
+2025-03-29 08:40:49,042 [INFO] Starting WebVoyager evaluation
+2025-03-29 08:40:49,042 [INFO] Headless mode: True
+2025-03-29 08:40:49,043 [INFO] Loaded 90 tasks from data/webvoyager.jsonl
+2025-03-29 08:40:49,502 [INFO] Processing task 1/90: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 08:40:49,502 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 08:40:50,121 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:41:09,998 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:41:10,735 [INFO] Navigated to https://en.wikipedia.org/wiki/Moon
+2025-03-29 08:41:12,658 [ERROR] Action execution failed: Unexpected token ""Orbit of the Moon"" while parsing selector "link with text 'Orbit of the Moon'"
+2025-03-29 08:41:12,658 [INFO] Task completed in 23.16 seconds
+2025-03-29 08:41:12,658 [INFO] Progress: 1/90 tasks completed
+2025-03-29 08:41:12,658 [INFO] Success rate so far: 0.00%
+2025-03-29 08:41:12,658 [INFO] Processing task 2/90: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 08:41:12,658 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 08:41:13,056 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:41:31,381 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:41:31,385 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:41:31,385 [INFO] Task completed in 18.73 seconds
+2025-03-29 08:41:31,385 [INFO] Progress: 2/90 tasks completed
+2025-03-29 08:41:31,385 [INFO] Success rate so far: 0.00%
+2025-03-29 08:41:31,385 [INFO] Processing task 3/90: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 08:41:31,385 [INFO] Starting task: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 08:41:31,780 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:41:47,303 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:41:47,636 [INFO] Navigated to https://www.google.com
+2025-03-29 08:42:19,169 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 08:42:19,169 [INFO] Task completed in 47.78 seconds
+2025-03-29 08:42:19,169 [INFO] Progress: 3/90 tasks completed
+2025-03-29 08:42:19,169 [INFO] Success rate so far: 0.00%
+2025-03-29 08:42:19,169 [INFO] Processing task 4/90: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 08:42:19,169 [INFO] Starting task: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 08:42:19,507 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:42:34,894 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:42:34,896 [ERROR] Action execution failed: Frame.goto() missing 1 required positional argument: 'url'
+2025-03-29 08:42:34,896 [INFO] Task completed in 15.73 seconds
+2025-03-29 08:42:34,896 [INFO] Progress: 4/90 tasks completed
+2025-03-29 08:42:34,896 [INFO] Success rate so far: 0.00%
+2025-03-29 08:42:34,896 [INFO] Processing task 5/90: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 08:42:34,896 [INFO] Starting task: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 08:42:35,242 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:42:35,424 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:42:35,425 [INFO] Retrying request to /v1/messages in 28.000000 seconds
+2025-03-29 08:43:24,059 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:43:24,500 [INFO] Navigated to https://scholar.google.com/
+2025-03-29 08:43:56,001 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 08:43:56,001 [INFO] Task completed in 81.11 seconds
+2025-03-29 08:43:56,001 [INFO] Progress: 5/90 tasks completed
+2025-03-29 08:43:56,002 [INFO] Success rate so far: 0.00%
+2025-03-29 08:43:56,002 [INFO] Processing task 6/90: 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 08:43:56,002 [INFO] Starting task: 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 08:43:56,368 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:44:09,171 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:44:09,175 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:44:09,175 [INFO] Task completed in 13.17 seconds
+2025-03-29 08:44:09,175 [INFO] Progress: 6/90 tasks completed
+2025-03-29 08:44:09,175 [INFO] Success rate so far: 0.00%
+2025-03-29 08:44:09,176 [INFO] Processing task 7/90: b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 08:44:09,176 [INFO] Starting task: b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 08:44:09,521 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:44:09,765 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:44:09,767 [INFO] Retrying request to /v1/messages in 22.000000 seconds
+2025-03-29 08:44:49,639 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:44:49,958 [INFO] Navigated to https://www.google.com
+2025-03-29 08:45:21,493 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 08:45:21,493 [INFO] Task completed in 72.32 seconds
+2025-03-29 08:45:21,493 [INFO] Progress: 7/90 tasks completed
+2025-03-29 08:45:21,493 [INFO] Success rate so far: 0.00%
+2025-03-29 08:45:21,493 [INFO] Processing task 8/90: 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 08:45:21,493 [INFO] Starting task: 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 08:45:21,785 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:45:38,158 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:45:38,161 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:45:38,161 [INFO] Task completed in 16.67 seconds
+2025-03-29 08:45:38,162 [INFO] Progress: 8/90 tasks completed
+2025-03-29 08:45:38,162 [INFO] Success rate so far: 0.00%
+2025-03-29 08:45:38,162 [INFO] Processing task 9/90: b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 08:45:38,162 [INFO] Starting task: b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 08:45:38,447 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:45:38,639 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:45:38,640 [INFO] Retrying request to /v1/messages in 22.000000 seconds
+2025-03-29 08:46:15,062 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:46:15,066 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:46:15,066 [INFO] Task completed in 36.90 seconds
+2025-03-29 08:46:15,066 [INFO] Progress: 9/90 tasks completed
+2025-03-29 08:46:15,066 [INFO] Success rate so far: 0.00%
+2025-03-29 08:46:15,066 [INFO] Processing task 10/90: 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 08:46:15,066 [INFO] Starting task: 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 08:46:15,416 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:46:15,797 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:46:15,809 [INFO] Retrying request to /v1/messages in 29.000000 seconds
+2025-03-29 08:47:04,683 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:47:05,076 [INFO] Navigated to https://en.wikipedia.org/wiki/Legume
+2025-03-29 08:47:06,740 [ERROR] Action execution failed: Unexpected token ""View history"" while parsing selector "link with text 'View history'"
+2025-03-29 08:47:06,740 [INFO] Task completed in 51.67 seconds
+2025-03-29 08:47:06,740 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_084049.json
+2025-03-29 08:47:06,743 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_084049.csv
+2025-03-29 08:47:06,743 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:47:06,743 [INFO] Success rate: 0.00%
+2025-03-29 08:47:06,743 [INFO] Average time per task: 37.72 seconds
+2025-03-29 08:47:06,743 [INFO] Progress: 10/90 tasks completed
+2025-03-29 08:47:06,743 [INFO] Success rate so far: 0.00%
+2025-03-29 08:47:06,743 [INFO] Processing task 11/90: 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 08:47:06,743 [INFO] Starting task: 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 08:47:07,131 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:47:07,504 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:47:07,512 [INFO] Retrying request to /v1/messages in 21.000000 seconds
+2025-03-29 08:47:46,281 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:48:16,284 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 08:48:16,284 [INFO] Task completed in 69.54 seconds
+2025-03-29 08:48:16,284 [INFO] Progress: 11/90 tasks completed
+2025-03-29 08:48:16,284 [INFO] Success rate so far: 0.00%
+2025-03-29 08:48:16,284 [INFO] Processing task 12/90: 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 08:48:16,284 [INFO] Starting task: 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 08:48:16,684 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:48:34,827 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:48:34,831 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:48:34,831 [INFO] Task completed in 18.55 seconds
+2025-03-29 08:48:34,831 [INFO] Progress: 12/90 tasks completed
+2025-03-29 08:48:34,831 [INFO] Success rate so far: 0.00%
+2025-03-29 08:48:34,831 [INFO] Processing task 13/90: 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 08:48:34,831 [INFO] Starting task: 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 08:48:35,216 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:48:35,402 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:48:35,403 [INFO] Retrying request to /v1/messages in 22.000000 seconds
+2025-03-29 08:49:14,038 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:49:14,041 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:49:14,042 [INFO] Task completed in 39.21 seconds
+2025-03-29 08:49:14,042 [INFO] Progress: 13/90 tasks completed
+2025-03-29 08:49:14,042 [INFO] Success rate so far: 0.00%
+2025-03-29 08:49:14,042 [INFO] Processing task 14/90: cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 08:49:14,042 [INFO] Starting task: cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 08:49:14,381 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:49:14,562 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:49:14,562 [INFO] Retrying request to /v1/messages in 27.000000 seconds
+2025-03-29 08:49:58,815 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:49:58,817 [ERROR] Action execution failed: Frame.goto() missing 1 required positional argument: 'url'
+2025-03-29 08:49:58,817 [INFO] Task completed in 44.77 seconds
+2025-03-29 08:49:58,817 [INFO] Progress: 14/90 tasks completed
+2025-03-29 08:49:58,817 [INFO] Success rate so far: 0.00%
+2025-03-29 08:49:58,817 [INFO] Processing task 15/90: d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 08:49:58,817 [INFO] Starting task: d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 08:49:59,141 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:49:59,346 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:49:59,347 [INFO] Retrying request to /v1/messages in 26.000000 seconds
+2025-03-29 08:50:43,265 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:50:43,269 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:50:43,269 [INFO] Task completed in 44.45 seconds
+2025-03-29 08:50:43,269 [INFO] Progress: 15/90 tasks completed
+2025-03-29 08:50:43,269 [INFO] Success rate so far: 0.00%
+2025-03-29 08:50:43,269 [INFO] Processing task 16/90: 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 08:50:43,269 [INFO] Starting task: 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 08:50:43,638 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:50:43,843 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:50:43,843 [INFO] Retrying request to /v1/messages in 26.000000 seconds
+2025-03-29 08:51:26,256 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:51:26,260 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:51:26,260 [INFO] Task completed in 42.99 seconds
+2025-03-29 08:51:26,260 [INFO] Progress: 16/90 tasks completed
+2025-03-29 08:51:26,260 [INFO] Success rate so far: 0.00%
+2025-03-29 08:51:26,260 [INFO] Processing task 17/90: 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 08:51:26,260 [INFO] Starting task: 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 08:51:26,575 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:51:26,781 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:51:26,782 [INFO] Retrying request to /v1/messages in 27.000000 seconds
+2025-03-29 08:52:11,334 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:52:11,574 [INFO] Navigated to https://arxiv.org/abs/1810.04805
+2025-03-29 08:52:13,122 [ERROR] Action execution failed: Unexpected token ""BERT base encoder"" while parsing selector "Search for 'BERT base encoder' on the page"
+2025-03-29 08:52:13,122 [INFO] Task completed in 46.86 seconds
+2025-03-29 08:52:13,122 [INFO] Progress: 17/90 tasks completed
+2025-03-29 08:52:13,122 [INFO] Success rate so far: 0.00%
+2025-03-29 08:52:13,122 [INFO] Processing task 18/90: 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 08:52:13,122 [INFO] Starting task: 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 08:52:13,512 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:52:13,717 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:52:13,718 [INFO] Retrying request to /v1/messages in 24.000000 seconds
+2025-03-29 08:52:53,974 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:52:53,978 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:52:53,978 [INFO] Task completed in 40.86 seconds
+2025-03-29 08:52:53,978 [INFO] Progress: 18/90 tasks completed
+2025-03-29 08:52:53,978 [INFO] Success rate so far: 0.00%
+2025-03-29 08:52:53,978 [INFO] Processing task 19/90: c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 08:52:53,978 [INFO] Starting task: c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 08:52:54,383 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:52:54,583 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:52:54,584 [INFO] Retrying request to /v1/messages in 27.000000 seconds
+2025-03-29 08:53:36,386 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:53:36,737 [INFO] Navigated to https://www.google.com
+2025-03-29 08:54:08,274 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 08:54:08,274 [INFO] Task completed in 74.30 seconds
+2025-03-29 08:54:08,275 [INFO] Progress: 19/90 tasks completed
+2025-03-29 08:54:08,275 [INFO] Success rate so far: 0.00%
+2025-03-29 08:54:08,275 [INFO] Processing task 20/90: 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 08:54:08,275 [INFO] Starting task: 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 08:54:08,578 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:54:25,656 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:54:25,659 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:54:25,659 [INFO] Task completed in 17.38 seconds
+2025-03-29 08:54:25,660 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_084049.json
+2025-03-29 08:54:25,661 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_084049.csv
+2025-03-29 08:54:25,661 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:54:25,661 [INFO] Success rate: 0.00%
+2025-03-29 08:54:25,662 [INFO] Average time per task: 40.81 seconds
+2025-03-29 08:54:25,662 [INFO] Progress: 20/90 tasks completed
+2025-03-29 08:54:25,662 [INFO] Success rate so far: 0.00%
+2025-03-29 08:54:25,662 [INFO] Processing task 21/90: dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 08:54:25,662 [INFO] Starting task: dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 08:54:25,995 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:54:26,199 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:54:26,200 [INFO] Retrying request to /v1/messages in 24.000000 seconds
+2025-03-29 08:55:07,929 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:55:08,227 [INFO] Navigated to https://www.google.com
+2025-03-29 08:55:39,760 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 08:55:39,760 [INFO] Task completed in 74.10 seconds
+2025-03-29 08:55:39,761 [INFO] Progress: 21/90 tasks completed
+2025-03-29 08:55:39,761 [INFO] Success rate so far: 0.00%
+2025-03-29 08:55:39,761 [INFO] Processing task 22/90: 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 08:55:39,761 [INFO] Starting task: 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 08:55:40,061 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:55:57,389 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:55:59,023 [INFO] Navigated to https://www.baseball-reference.com/
+2025-03-29 08:56:31,280 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 08:56:31,280 [INFO] Task completed in 51.52 seconds
+2025-03-29 08:56:31,280 [INFO] Progress: 22/90 tasks completed
+2025-03-29 08:56:31,280 [INFO] Success rate so far: 0.00%
+2025-03-29 08:56:31,280 [INFO] Processing task 23/90: 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 08:56:31,280 [INFO] Starting task: 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 08:56:31,716 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:56:46,608 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:56:48,906 [INFO] Navigated to https://www.poetryfoundation.org/poems/42580/father-son-and-holy-ghost
+2025-03-29 08:56:53,168 [INFO] Task completed in 21.89 seconds
+2025-03-29 08:56:53,168 [INFO] Progress: 23/90 tasks completed
+2025-03-29 08:56:53,168 [INFO] Success rate so far: 4.35%
+2025-03-29 08:56:53,168 [INFO] Processing task 24/90: 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 08:56:53,168 [INFO] Starting task: 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 08:56:53,537 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:57:14,906 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:57:14,907 [ERROR] Failed to parse action: Expecting ',' delimiter: line 20 column 70 (char 540)
+2025-03-29 08:57:14,907 [INFO] Task completed in 21.74 seconds
+2025-03-29 08:57:14,907 [INFO] Progress: 24/90 tasks completed
+2025-03-29 08:57:14,907 [INFO] Success rate so far: 8.33%
+2025-03-29 08:57:14,907 [INFO] Processing task 25/90: a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 08:57:14,907 [INFO] Starting task: a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 08:57:15,305 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:57:15,496 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:57:15,497 [INFO] Retrying request to /v1/messages in 31.000000 seconds
+2025-03-29 08:58:00,576 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:58:00,580 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 08:58:00,580 [INFO] Task completed in 45.67 seconds
+2025-03-29 08:58:00,580 [INFO] Progress: 25/90 tasks completed
+2025-03-29 08:58:00,580 [INFO] Success rate so far: 8.00%
+2025-03-29 08:58:00,580 [INFO] Processing task 26/90: bda648d7-d618-4883-88f4-3466eabd860e
+2025-03-29 08:58:00,580 [INFO] Starting task: bda648d7-d618-4883-88f4-3466eabd860e
+2025-03-29 08:58:00,993 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:58:01,255 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 08:58:01,256 [INFO] Retrying request to /v1/messages in 29.000000 seconds
+2025-03-29 08:58:50,760 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:58:50,986 [INFO] Navigated to https://scholar.google.com/
+2025-03-29 08:59:22,486 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 08:59:22,486 [INFO] Task completed in 81.91 seconds
+2025-03-29 08:59:22,486 [INFO] Progress: 26/90 tasks completed
+2025-03-29 08:59:22,486 [INFO] Success rate so far: 7.69%
+2025-03-29 08:59:22,486 [INFO] Processing task 27/90: c61d22de-5f6c-4958-a7f6-5e9707bd3466
+2025-03-29 08:59:22,486 [INFO] Starting task: c61d22de-5f6c-4958-a7f6-5e9707bd3466
+2025-03-29 08:59:22,884 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:59:44,259 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 08:59:45,207 [INFO] Navigated to https://arxiv.org/search/?query=ai+regulation&searchtype=all&source=header
+2025-03-29 09:00:16,814 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:00:16,814 [INFO] Task completed in 54.33 seconds
+2025-03-29 09:00:16,814 [INFO] Progress: 27/90 tasks completed
+2025-03-29 09:00:16,814 [INFO] Success rate so far: 7.41%
+2025-03-29 09:00:16,814 [INFO] Processing task 28/90: 17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc
+2025-03-29 09:00:16,814 [INFO] Starting task: 17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc
+2025-03-29 09:00:17,204 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:00:35,546 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:00:35,953 [INFO] Navigated to https://www.google.com
+2025-03-29 09:01:07,486 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:01:07,486 [INFO] Task completed in 50.67 seconds
+2025-03-29 09:01:07,486 [INFO] Progress: 28/90 tasks completed
+2025-03-29 09:01:07,486 [INFO] Success rate so far: 7.14%
+2025-03-29 09:01:07,486 [INFO] Processing task 29/90: 04a04a9b-226c-43fd-b319-d5e89743676f
+2025-03-29 09:01:07,486 [INFO] Starting task: 04a04a9b-226c-43fd-b319-d5e89743676f
+2025-03-29 09:01:07,888 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:01:38,074 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:01:39,651 [INFO] Navigated to https://www.nature.com/nature/articles?type=article&year=2020
+2025-03-29 09:01:41,380 [ERROR] Action execution failed: Unexpected token ""View all"" while parsing selector "button with text 'View all'"
+2025-03-29 09:01:41,380 [INFO] Task completed in 33.89 seconds
+2025-03-29 09:01:41,381 [INFO] Progress: 29/90 tasks completed
+2025-03-29 09:01:41,381 [INFO] Success rate so far: 6.90%
+2025-03-29 09:01:41,381 [INFO] Processing task 30/90: 14569e28-c88c-43e4-8c32-097d35b9a67d
+2025-03-29 09:01:41,381 [INFO] Starting task: 14569e28-c88c-43e4-8c32-097d35b9a67d
+2025-03-29 09:01:41,777 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:01:53,611 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:02:23,613 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:02:23,613 [INFO] Task completed in 42.23 seconds
+2025-03-29 09:02:23,614 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_084049.json
+2025-03-29 09:02:23,615 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_084049.csv
+2025-03-29 09:02:23,616 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:02:23,616 [INFO] Success rate: 6.67%
+2025-03-29 09:02:23,616 [INFO] Average time per task: 43.14 seconds
+2025-03-29 09:02:23,616 [INFO] Progress: 30/90 tasks completed
+2025-03-29 09:02:23,616 [INFO] Success rate so far: 6.67%
+2025-03-29 09:02:23,616 [INFO] Processing task 31/90: 3627a8be-a77f-41bb-b807-7e1bd4c0ebdf
+2025-03-29 09:02:23,616 [INFO] Starting task: 3627a8be-a77f-41bb-b807-7e1bd4c0ebdf
+2025-03-29 09:02:24,023 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:02:42,138 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:02:42,141 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 09:02:42,141 [INFO] Task completed in 18.53 seconds
+2025-03-29 09:02:42,141 [INFO] Progress: 31/90 tasks completed
+2025-03-29 09:02:42,141 [INFO] Success rate so far: 6.45%
+2025-03-29 09:02:42,141 [INFO] Processing task 32/90: 7619a514-5fa8-43ef-9143-83b66a43d7a4
+2025-03-29 09:02:42,141 [INFO] Starting task: 7619a514-5fa8-43ef-9143-83b66a43d7a4
+2025-03-29 09:02:42,475 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:02:42,685 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:02:42,686 [INFO] Retrying request to /v1/messages in 20.000000 seconds
+2025-03-29 09:03:18,113 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:03:18,117 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 09:03:18,118 [INFO] Task completed in 35.98 seconds
+2025-03-29 09:03:18,118 [INFO] Progress: 32/90 tasks completed
+2025-03-29 09:03:18,118 [INFO] Success rate so far: 6.25%
+2025-03-29 09:03:18,118 [INFO] Processing task 33/90: 2a649bb1-795f-4a01-b3be-9a01868dae73
+2025-03-29 09:03:18,118 [INFO] Starting task: 2a649bb1-795f-4a01-b3be-9a01868dae73
+2025-03-29 09:03:18,431 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:03:18,637 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:03:18,637 [INFO] Retrying request to /v1/messages in 28.000000 seconds
+2025-03-29 09:04:05,927 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:04:06,273 [INFO] Navigated to https://www.google.com
+2025-03-29 09:04:37,808 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:04:37,808 [INFO] Task completed in 79.69 seconds
+2025-03-29 09:04:37,808 [INFO] Progress: 33/90 tasks completed
+2025-03-29 09:04:37,808 [INFO] Success rate so far: 6.06%
+2025-03-29 09:04:37,808 [INFO] Processing task 34/90: 87c610df-bef7-4932-b950-1d83ef4e282b
+2025-03-29 09:04:37,808 [INFO] Starting task: 87c610df-bef7-4932-b950-1d83ef4e282b
+2025-03-29 09:04:38,116 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:05:00,511 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:05:30,514 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:05:30,515 [INFO] Task completed in 52.71 seconds
+2025-03-29 09:05:30,515 [INFO] Progress: 34/90 tasks completed
+2025-03-29 09:05:30,515 [INFO] Success rate so far: 5.88%
+2025-03-29 09:05:30,515 [INFO] Processing task 35/90: 624cbf11-6a41-4692-af9c-36b3e5ca3130
+2025-03-29 09:05:30,515 [INFO] Starting task: 624cbf11-6a41-4692-af9c-36b3e5ca3130
+2025-03-29 09:05:30,888 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:05:50,214 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:05:50,218 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 09:05:50,218 [INFO] Task completed in 19.70 seconds
+2025-03-29 09:05:50,219 [INFO] Progress: 35/90 tasks completed
+2025-03-29 09:05:50,219 [INFO] Success rate so far: 5.71%
+2025-03-29 09:05:50,219 [INFO] Processing task 36/90: dd3c7503-f62a-4bd0-9f67-1b63b94194cc
+2025-03-29 09:05:50,219 [INFO] Starting task: dd3c7503-f62a-4bd0-9f67-1b63b94194cc
+2025-03-29 09:05:50,617 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:05:50,814 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:05:50,815 [INFO] Retrying request to /v1/messages in 34.000000 seconds
+2025-03-29 09:06:24,984 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:06:24,984 [INFO] Retrying request to /v1/messages in 28.000000 seconds
+2025-03-29 09:07:18,563 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:07:20,074 [INFO] Navigated to https://chem.libretexts.org/
+2025-03-29 09:07:51,729 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:07:51,729 [INFO] Task completed in 121.51 seconds
+2025-03-29 09:07:51,729 [INFO] Progress: 36/90 tasks completed
+2025-03-29 09:07:51,729 [INFO] Success rate so far: 5.56%
+2025-03-29 09:07:51,729 [INFO] Processing task 37/90: f0f46385-fc03-4599-b5d3-f56496c3e69f
+2025-03-29 09:07:51,729 [INFO] Starting task: f0f46385-fc03-4599-b5d3-f56496c3e69f
+2025-03-29 09:07:52,131 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:08:14,940 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:08:14,944 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 09:08:14,944 [INFO] Task completed in 23.21 seconds
+2025-03-29 09:08:14,944 [INFO] Progress: 37/90 tasks completed
+2025-03-29 09:08:14,944 [INFO] Success rate so far: 5.41%
+2025-03-29 09:08:14,944 [INFO] Processing task 38/90: e4e91f1c-1dcd-439e-9fdd-cb976f5293fd
+2025-03-29 09:08:14,944 [INFO] Starting task: e4e91f1c-1dcd-439e-9fdd-cb976f5293fd
+2025-03-29 09:08:15,351 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:08:31,008 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:08:32,132 [INFO] Navigated to https://muse.jhu.edu/
+2025-03-29 09:09:03,638 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:09:03,638 [INFO] Task completed in 48.69 seconds
+2025-03-29 09:09:03,638 [INFO] Progress: 38/90 tasks completed
+2025-03-29 09:09:03,638 [INFO] Success rate so far: 5.26%
+2025-03-29 09:09:03,638 [INFO] Processing task 39/90: 56137764-b4e0-45b8-9c52-1866420c3df5
+2025-03-29 09:09:03,638 [INFO] Starting task: 56137764-b4e0-45b8-9c52-1866420c3df5
+2025-03-29 09:09:04,028 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:09:24,925 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:09:26,787 [INFO] Navigated to https://github.com/opencv/opencv/commits/master
+2025-03-29 09:09:56,811 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:09:56,811 [INFO] Task completed in 53.17 seconds
+2025-03-29 09:09:56,811 [INFO] Progress: 39/90 tasks completed
+2025-03-29 09:09:56,811 [INFO] Success rate so far: 5.13%
+2025-03-29 09:09:56,811 [INFO] Processing task 40/90: 8b3379c0-0981-4f5b-8407-6444610cb212
+2025-03-29 09:09:56,812 [INFO] Starting task: 8b3379c0-0981-4f5b-8407-6444610cb212
+2025-03-29 09:09:57,203 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:09:57,435 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:09:57,435 [INFO] Retrying request to /v1/messages in 20.000000 seconds
+2025-03-29 09:10:17,579 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:10:17,579 [INFO] Retrying request to /v1/messages in 28.000000 seconds
+2025-03-29 09:10:45,719 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:10:45,720 [ERROR] Task failed: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 09:10:45,721 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_084049.json
+2025-03-29 09:10:45,722 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_084049.csv
+2025-03-29 09:10:45,723 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:10:45,723 [INFO] Success rate: 5.00%
+2025-03-29 09:10:45,723 [INFO] Average time per task: 44.91 seconds
+2025-03-29 09:10:45,723 [INFO] Progress: 40/90 tasks completed
+2025-03-29 09:10:45,723 [INFO] Success rate so far: 5.00%
+2025-03-29 09:10:45,723 [INFO] Processing task 41/90: 0ff53813-3367-4f43-bcbd-3fd725c1bf4b
+2025-03-29 09:10:45,723 [INFO] Starting task: 0ff53813-3367-4f43-bcbd-3fd725c1bf4b
+2025-03-29 09:10:46,137 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:10:46,344 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:10:46,344 [INFO] Retrying request to /v1/messages in 27.000000 seconds
+2025-03-29 09:11:13,487 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:11:13,487 [INFO] Retrying request to /v1/messages in 28.000000 seconds
+2025-03-29 09:11:42,034 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:11:42,034 [ERROR] Task failed: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 09:11:42,034 [INFO] Progress: 41/90 tasks completed
+2025-03-29 09:11:42,034 [INFO] Success rate so far: 4.88%
+2025-03-29 09:11:42,034 [INFO] Processing task 42/90: a7feb290-76bb-4cb7-8800-7edaf7954f2f
+2025-03-29 09:11:42,034 [INFO] Starting task: a7feb290-76bb-4cb7-8800-7edaf7954f2f
+2025-03-29 09:11:42,385 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:11:42,584 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:11:42,585 [INFO] Retrying request to /v1/messages in 20.000000 seconds
+2025-03-29 09:12:21,557 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:12:21,561 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 09:12:21,561 [INFO] Task completed in 39.53 seconds
+2025-03-29 09:12:21,561 [INFO] Progress: 42/90 tasks completed
+2025-03-29 09:12:21,561 [INFO] Success rate so far: 4.76%
+2025-03-29 09:12:21,561 [INFO] Processing task 43/90: b4cc024b-3f5e-480e-b96a-6656493255b5
+2025-03-29 09:12:21,561 [INFO] Starting task: b4cc024b-3f5e-480e-b96a-6656493255b5
+2025-03-29 09:12:21,875 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:12:22,077 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:12:22,077 [INFO] Retrying request to /v1/messages in 25.000000 seconds
+2025-03-29 09:12:47,250 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:12:47,250 [INFO] Retrying request to /v1/messages in 28.000000 seconds
+2025-03-29 09:13:15,417 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:13:15,417 [ERROR] Task failed: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 09:13:15,417 [INFO] Progress: 43/90 tasks completed
+2025-03-29 09:13:15,417 [INFO] Success rate so far: 4.65%
+2025-03-29 09:13:15,418 [INFO] Processing task 44/90: 33d8ea3b-6c6b-4ff1-803d-7e270dea8a57
+2025-03-29 09:13:15,418 [INFO] Starting task: 33d8ea3b-6c6b-4ff1-803d-7e270dea8a57
+2025-03-29 09:13:15,736 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:13:15,922 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:13:15,923 [INFO] Retrying request to /v1/messages in 21.000000 seconds
+2025-03-29 09:13:53,800 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:13:54,300 [INFO] Navigated to https://en.wikipedia.org/wiki/The_Lord_of_the_Rings
+2025-03-29 09:13:55,922 [ERROR] Action execution failed: Unexpected token ""J. R. R. Tolkien"" while parsing selector "link with text 'J. R. R. Tolkien'"
+2025-03-29 09:13:55,922 [INFO] Task completed in 40.50 seconds
+2025-03-29 09:13:55,922 [INFO] Progress: 44/90 tasks completed
+2025-03-29 09:13:55,922 [INFO] Success rate so far: 4.55%
+2025-03-29 09:13:55,922 [INFO] Processing task 45/90: e8cb5b03-41e0-4086-99e5-f6806cd97211
+2025-03-29 09:13:55,922 [INFO] Starting task: e8cb5b03-41e0-4086-99e5-f6806cd97211
+2025-03-29 09:13:56,318 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:13:56,540 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:13:56,540 [INFO] Retrying request to /v1/messages in 24.000000 seconds
+2025-03-29 09:14:38,155 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:14:38,159 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 09:14:38,159 [INFO] Task completed in 42.24 seconds
+2025-03-29 09:14:38,160 [INFO] Progress: 45/90 tasks completed
+2025-03-29 09:14:38,160 [INFO] Success rate so far: 4.44%
+2025-03-29 09:14:38,160 [INFO] Processing task 46/90: f46b4380-207e-4434-820b-f32ce04ae2a4
+2025-03-29 09:14:38,160 [INFO] Starting task: f46b4380-207e-4434-820b-f32ce04ae2a4
+2025-03-29 09:14:38,564 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:14:38,789 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:14:38,789 [INFO] Retrying request to /v1/messages in 26.000000 seconds
+2025-03-29 09:15:26,488 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:15:26,736 [INFO] Navigated to https://en.wikipedia.org/wiki/Fiona_Apple_discography
+2025-03-29 09:15:28,823 [INFO] Navigated to https://en.wikipedia.org/wiki/Paula_Cole_discography
+2025-03-29 09:15:31,039 [INFO] Navigated to https://www.robertchristgau.com/get_artist.php?name=Fiona+Apple
+2025-03-29 09:15:32,679 [INFO] Navigated to https://www.robertchristgau.com/get_artist.php?name=Paula+Cole
+2025-03-29 09:15:34,182 [INFO] Task completed in 56.02 seconds
+2025-03-29 09:15:34,182 [INFO] Progress: 46/90 tasks completed
+2025-03-29 09:15:34,182 [INFO] Success rate so far: 6.52%
+2025-03-29 09:15:34,182 [INFO] Processing task 47/90: 05407167-39ec-4d3a-a234-73a9120c325d
+2025-03-29 09:15:34,182 [INFO] Starting task: 05407167-39ec-4d3a-a234-73a9120c325d
+2025-03-29 09:15:34,582 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:15:48,981 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:15:48,985 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 09:15:48,985 [INFO] Task completed in 14.80 seconds
+2025-03-29 09:15:48,985 [INFO] Progress: 47/90 tasks completed
+2025-03-29 09:15:48,985 [INFO] Success rate so far: 6.38%
+2025-03-29 09:15:48,985 [INFO] Processing task 48/90: b9763138-c053-4832-9f55-86200cb1f99c
+2025-03-29 09:15:48,985 [INFO] Starting task: b9763138-c053-4832-9f55-86200cb1f99c
+2025-03-29 09:15:49,383 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:15:49,581 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:15:49,581 [INFO] Retrying request to /v1/messages in 42.000000 seconds
+2025-03-29 09:16:49,788 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:16:56,513 [INFO] Navigated to https://www.tropicos.org/name/90000001
+2025-03-29 09:17:03,753 [INFO] Navigated to https://www.isbn-check.com/
+2025-03-29 09:17:05,257 [ERROR] Action execution failed: Unexpected token ""ISBN-10"" while parsing selector "radio button labeled 'ISBN-10'"
+2025-03-29 09:17:05,257 [INFO] Task completed in 76.27 seconds
+2025-03-29 09:17:05,257 [INFO] Progress: 48/90 tasks completed
+2025-03-29 09:17:05,257 [INFO] Success rate so far: 6.25%
+2025-03-29 09:17:05,257 [INFO] Processing task 49/90: 16d825ff-1623-4176-a5b5-42e0f5c2b0ac
+2025-03-29 09:17:05,257 [INFO] Starting task: 16d825ff-1623-4176-a5b5-42e0f5c2b0ac
+2025-03-29 09:17:05,645 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:17:17,631 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:17:17,632 [INFO] Task completed in 12.37 seconds
+2025-03-29 09:17:17,632 [INFO] Progress: 49/90 tasks completed
+2025-03-29 09:17:17,632 [INFO] Success rate so far: 8.16%
+2025-03-29 09:17:17,632 [INFO] Processing task 50/90: 544b7f0c-173a-4377-8d56-57b36eb26ddf
+2025-03-29 09:17:17,632 [INFO] Starting task: 544b7f0c-173a-4377-8d56-57b36eb26ddf
+2025-03-29 09:17:18,036 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:17:18,231 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:17:18,231 [INFO] Retrying request to /v1/messages in 40.000000 seconds
+2025-03-29 09:18:15,770 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:18:16,131 [INFO] Navigated to https://www.google.com
+2025-03-29 09:18:47,664 [ERROR] Action execution failed: Timeout 30000ms exceeded.
+2025-03-29 09:18:47,664 [INFO] Task completed in 90.03 seconds
+2025-03-29 09:18:47,665 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_084049.json
+2025-03-29 09:18:47,667 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_084049.csv
+2025-03-29 09:18:47,667 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:18:47,667 [INFO] Success rate: 8.00%
+2025-03-29 09:18:47,667 [INFO] Average time per task: 45.56 seconds
+2025-03-29 09:18:47,667 [INFO] Progress: 50/90 tasks completed
+2025-03-29 09:18:47,667 [INFO] Success rate so far: 8.00%
+2025-03-29 09:18:47,668 [INFO] Processing task 51/90: 6b078778-0b90-464d-83f6-59511c811b01
+2025-03-29 09:18:47,668 [INFO] Starting task: 6b078778-0b90-464d-83f6-59511c811b01
+2025-03-29 09:18:48,034 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:19:04,504 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:19:04,507 [ERROR] Action execution failed: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2025-03-29 09:19:04,508 [INFO] Task completed in 16.84 seconds
+2025-03-29 09:19:04,508 [INFO] Progress: 51/90 tasks completed
+2025-03-29 09:19:04,508 [INFO] Success rate so far: 7.84%
+2025-03-29 09:19:04,508 [INFO] Processing task 52/90: 08cae58d-4084-4616-b6dd-dd6534e4825b
+2025-03-29 09:19:04,508 [INFO] Starting task: 08cae58d-4084-4616-b6dd-dd6534e4825b
+2025-03-29 09:19:04,830 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:19:05,019 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:19:05,020 [INFO] Retrying request to /v1/messages in 47.000000 seconds
+2025-03-29 09:19:52,156 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:19:52,156 [INFO] Retrying request to /v1/messages in 28.000000 seconds
+2025-03-29 09:20:20,297 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:20:20,298 [ERROR] Task failed: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 09:20:20,298 [INFO] Progress: 52/90 tasks completed
+2025-03-29 09:20:20,298 [INFO] Success rate so far: 7.69%
+2025-03-29 09:20:20,298 [INFO] Processing task 53/90: 2dfc4c37-fec1-4518-84a7-10095d30ad75
+2025-03-29 09:20:20,298 [INFO] Starting task: 2dfc4c37-fec1-4518-84a7-10095d30ad75
+2025-03-29 09:20:20,606 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:20:20,817 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:20:20,817 [INFO] Retrying request to /v1/messages in 27.000000 seconds
+2025-03-29 09:20:48,172 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 09:20:48,172 [INFO] Retrying request to /v1/messages in 40.000000 seconds

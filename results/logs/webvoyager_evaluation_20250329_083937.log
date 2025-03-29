@@ -1,0 +1,595 @@
+2025-03-29 08:39:37,877 [INFO] Starting WebVoyager evaluation
+2025-03-29 08:39:37,877 [INFO] Headless mode: True
+2025-03-29 08:39:37,878 [INFO] Loaded 90 tasks from data/webvoyager.jsonl
+2025-03-29 08:39:38,425 [INFO] Processing task 1/90: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 08:39:38,425 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 08:39:39,102 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:39,180 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:39,180 [INFO] Progress: 1/90 tasks completed
+2025-03-29 08:39:39,180 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:39,180 [INFO] Processing task 2/90: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 08:39:39,180 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 08:39:39,611 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:39,676 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:39,676 [INFO] Progress: 2/90 tasks completed
+2025-03-29 08:39:39,676 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:39,676 [INFO] Processing task 3/90: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 08:39:39,676 [INFO] Starting task: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 08:39:40,007 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:40,075 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:40,075 [INFO] Progress: 3/90 tasks completed
+2025-03-29 08:39:40,075 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:40,075 [INFO] Processing task 4/90: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 08:39:40,075 [INFO] Starting task: a1e91b78-d3d8-4675-bb8d-62741b4b68a6
+2025-03-29 08:39:40,252 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:40,359 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:40,359 [INFO] Progress: 4/90 tasks completed
+2025-03-29 08:39:40,359 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:40,359 [INFO] Processing task 5/90: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 08:39:40,359 [INFO] Starting task: 46719c30-f4c3-4cad-be07-d5cb21eee6bb
+2025-03-29 08:39:40,538 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:40,659 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:40,659 [INFO] Progress: 5/90 tasks completed
+2025-03-29 08:39:40,659 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:40,660 [INFO] Processing task 6/90: 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 08:39:40,660 [INFO] Starting task: 4b6bb5f7-f634-410e-815d-e673ab7f8632
+2025-03-29 08:39:40,828 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:40,942 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:40,942 [INFO] Progress: 6/90 tasks completed
+2025-03-29 08:39:40,942 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:40,942 [INFO] Processing task 7/90: b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 08:39:40,942 [INFO] Starting task: b816bfce-3d80-4913-a07d-69b752ce6377
+2025-03-29 08:39:41,109 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:41,210 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:41,210 [INFO] Progress: 7/90 tasks completed
+2025-03-29 08:39:41,210 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:41,210 [INFO] Processing task 8/90: 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 08:39:41,210 [INFO] Starting task: 72e110e7-464c-453c-a309-90a95aed6538
+2025-03-29 08:39:41,380 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:41,509 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:41,509 [INFO] Progress: 8/90 tasks completed
+2025-03-29 08:39:41,509 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:41,509 [INFO] Processing task 9/90: b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 08:39:41,509 [INFO] Starting task: b415aba4-4b68-4fc6-9b89-2c812e55a3e1
+2025-03-29 08:39:41,674 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:41,792 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:41,792 [INFO] Progress: 9/90 tasks completed
+2025-03-29 08:39:41,792 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:41,792 [INFO] Processing task 10/90: 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 08:39:41,792 [INFO] Starting task: 935e2cff-ae78-4218-b3f5-115589b19dae
+2025-03-29 08:39:41,956 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:42,076 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:42,076 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:39:42,079 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:39:42,079 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:39:42,079 [INFO] Success rate: 0.00%
+2025-03-29 08:39:42,079 [INFO] Average time per task: 0.36 seconds
+2025-03-29 08:39:42,079 [INFO] Progress: 10/90 tasks completed
+2025-03-29 08:39:42,079 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:42,080 [INFO] Processing task 11/90: 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 08:39:42,080 [INFO] Starting task: 4fc2f1ae-8625-45b5-ab34-ad4433bc21f8
+2025-03-29 08:39:42,243 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:42,359 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:42,359 [INFO] Progress: 11/90 tasks completed
+2025-03-29 08:39:42,359 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:42,359 [INFO] Processing task 12/90: 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 08:39:42,359 [INFO] Starting task: 5188369a-3bbe-43d8-8b94-11558f909a08
+2025-03-29 08:39:42,582 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:42,642 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:42,642 [INFO] Progress: 12/90 tasks completed
+2025-03-29 08:39:42,643 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:42,643 [INFO] Processing task 13/90: 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 08:39:42,643 [INFO] Starting task: 9d191bce-651d-4746-be2d-7ef8ecadb9c2
+2025-03-29 08:39:42,814 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:42,925 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:42,925 [INFO] Progress: 13/90 tasks completed
+2025-03-29 08:39:42,925 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:42,926 [INFO] Processing task 14/90: cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 08:39:42,926 [INFO] Starting task: cabe07ed-9eca-40ea-8ead-410ef5e83f91
+2025-03-29 08:39:43,102 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:43,209 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:43,209 [INFO] Progress: 14/90 tasks completed
+2025-03-29 08:39:43,209 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:43,209 [INFO] Processing task 15/90: d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 08:39:43,209 [INFO] Starting task: d0633230-7067-47a9-9dbf-ee11e0a2cdd6
+2025-03-29 08:39:43,431 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:43,492 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:43,492 [INFO] Progress: 15/90 tasks completed
+2025-03-29 08:39:43,492 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:43,493 [INFO] Processing task 16/90: 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 08:39:43,493 [INFO] Starting task: 0383a3ee-47a7-41a4-b493-519bdefe0488
+2025-03-29 08:39:43,653 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:43,760 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:43,760 [INFO] Progress: 16/90 tasks completed
+2025-03-29 08:39:43,760 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:43,760 [INFO] Processing task 17/90: 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 08:39:43,760 [INFO] Starting task: 11af4e1a-5f45-467d-9aeb-46f4bb0bf034
+2025-03-29 08:39:43,982 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:44,042 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:44,042 [INFO] Progress: 17/90 tasks completed
+2025-03-29 08:39:44,042 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:44,042 [INFO] Processing task 18/90: 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 08:39:44,042 [INFO] Starting task: 7673d772-ef80-4f0f-a602-1bf4485c9b43
+2025-03-29 08:39:44,217 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:44,326 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:44,326 [INFO] Progress: 18/90 tasks completed
+2025-03-29 08:39:44,326 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:44,326 [INFO] Processing task 19/90: c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 08:39:44,326 [INFO] Starting task: c365c1c7-a3db-4d5e-a9a1-66f56eae7865
+2025-03-29 08:39:44,506 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:44,625 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:44,625 [INFO] Progress: 19/90 tasks completed
+2025-03-29 08:39:44,625 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:44,625 [INFO] Processing task 20/90: 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 08:39:44,625 [INFO] Starting task: 7d4a7d1d-cac6-44a8-96e8-ea9584a70825
+2025-03-29 08:39:44,798 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:44,909 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:44,909 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:39:44,911 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:39:44,911 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:39:44,911 [INFO] Success rate: 0.00%
+2025-03-29 08:39:44,911 [INFO] Average time per task: 0.32 seconds
+2025-03-29 08:39:44,911 [INFO] Progress: 20/90 tasks completed
+2025-03-29 08:39:44,911 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:44,911 [INFO] Processing task 21/90: dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 08:39:44,911 [INFO] Starting task: dc22a632-937f-4e6a-b72f-ba0ff3f5ff97
+2025-03-29 08:39:45,087 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:45,209 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:45,209 [INFO] Progress: 21/90 tasks completed
+2025-03-29 08:39:45,209 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:45,209 [INFO] Processing task 22/90: 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 08:39:45,209 [INFO] Starting task: 3f57289b-8c60-48be-bd80-01f8099ca449
+2025-03-29 08:39:45,389 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:45,508 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:45,508 [INFO] Progress: 22/90 tasks completed
+2025-03-29 08:39:45,508 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:45,509 [INFO] Processing task 23/90: 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 08:39:45,509 [INFO] Starting task: 23dd907f-1261-4488-b21c-e9185af91d5e
+2025-03-29 08:39:45,740 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:45,808 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:45,808 [INFO] Progress: 23/90 tasks completed
+2025-03-29 08:39:45,808 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:45,808 [INFO] Processing task 24/90: 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 08:39:45,808 [INFO] Starting task: 840bfca7-4f7b-481a-8794-c560c340185d
+2025-03-29 08:39:45,980 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:46,092 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:46,092 [INFO] Progress: 24/90 tasks completed
+2025-03-29 08:39:46,092 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:46,092 [INFO] Processing task 25/90: a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 08:39:46,092 [INFO] Starting task: a0068077-79f4-461a-adfe-75c1a4148545
+2025-03-29 08:39:46,253 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:46,383 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:46,383 [INFO] Progress: 25/90 tasks completed
+2025-03-29 08:39:46,383 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:46,383 [INFO] Processing task 26/90: bda648d7-d618-4883-88f4-3466eabd860e
+2025-03-29 08:39:46,383 [INFO] Starting task: bda648d7-d618-4883-88f4-3466eabd860e
+2025-03-29 08:39:46,625 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:46,691 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:46,691 [INFO] Progress: 26/90 tasks completed
+2025-03-29 08:39:46,691 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:46,691 [INFO] Processing task 27/90: c61d22de-5f6c-4958-a7f6-5e9707bd3466
+2025-03-29 08:39:46,691 [INFO] Starting task: c61d22de-5f6c-4958-a7f6-5e9707bd3466
+2025-03-29 08:39:46,869 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:46,992 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:46,992 [INFO] Progress: 27/90 tasks completed
+2025-03-29 08:39:46,992 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:46,992 [INFO] Processing task 28/90: 17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc
+2025-03-29 08:39:46,992 [INFO] Starting task: 17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc
+2025-03-29 08:39:47,163 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:47,296 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:47,297 [INFO] Progress: 28/90 tasks completed
+2025-03-29 08:39:47,297 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:47,297 [INFO] Processing task 29/90: 04a04a9b-226c-43fd-b319-d5e89743676f
+2025-03-29 08:39:47,297 [INFO] Starting task: 04a04a9b-226c-43fd-b319-d5e89743676f
+2025-03-29 08:39:47,539 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:47,609 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:47,609 [INFO] Progress: 29/90 tasks completed
+2025-03-29 08:39:47,609 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:47,609 [INFO] Processing task 30/90: 14569e28-c88c-43e4-8c32-097d35b9a67d
+2025-03-29 08:39:47,609 [INFO] Starting task: 14569e28-c88c-43e4-8c32-097d35b9a67d
+2025-03-29 08:39:47,797 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:47,925 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:47,926 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:39:47,928 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:39:47,928 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:39:47,928 [INFO] Success rate: 0.00%
+2025-03-29 08:39:47,928 [INFO] Average time per task: 0.32 seconds
+2025-03-29 08:39:47,928 [INFO] Progress: 30/90 tasks completed
+2025-03-29 08:39:47,928 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:47,928 [INFO] Processing task 31/90: 3627a8be-a77f-41bb-b807-7e1bd4c0ebdf
+2025-03-29 08:39:47,928 [INFO] Starting task: 3627a8be-a77f-41bb-b807-7e1bd4c0ebdf
+2025-03-29 08:39:48,106 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:48,224 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:48,224 [INFO] Progress: 31/90 tasks completed
+2025-03-29 08:39:48,224 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:48,224 [INFO] Processing task 32/90: 7619a514-5fa8-43ef-9143-83b66a43d7a4
+2025-03-29 08:39:48,224 [INFO] Starting task: 7619a514-5fa8-43ef-9143-83b66a43d7a4
+2025-03-29 08:39:48,394 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:48,508 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:48,509 [INFO] Progress: 32/90 tasks completed
+2025-03-29 08:39:48,509 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:48,509 [INFO] Processing task 33/90: 2a649bb1-795f-4a01-b3be-9a01868dae73
+2025-03-29 08:39:48,509 [INFO] Starting task: 2a649bb1-795f-4a01-b3be-9a01868dae73
+2025-03-29 08:39:48,682 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:48,792 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:48,792 [INFO] Progress: 33/90 tasks completed
+2025-03-29 08:39:48,792 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:48,792 [INFO] Processing task 34/90: 87c610df-bef7-4932-b950-1d83ef4e282b
+2025-03-29 08:39:48,792 [INFO] Starting task: 87c610df-bef7-4932-b950-1d83ef4e282b
+2025-03-29 08:39:48,957 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:49,129 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:49,130 [INFO] Progress: 34/90 tasks completed
+2025-03-29 08:39:49,130 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:49,130 [INFO] Processing task 35/90: 624cbf11-6a41-4692-af9c-36b3e5ca3130
+2025-03-29 08:39:49,130 [INFO] Starting task: 624cbf11-6a41-4692-af9c-36b3e5ca3130
+2025-03-29 08:39:49,374 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:49,442 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:49,442 [INFO] Progress: 35/90 tasks completed
+2025-03-29 08:39:49,442 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:49,442 [INFO] Processing task 36/90: dd3c7503-f62a-4bd0-9f67-1b63b94194cc
+2025-03-29 08:39:49,442 [INFO] Starting task: dd3c7503-f62a-4bd0-9f67-1b63b94194cc
+2025-03-29 08:39:49,624 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:49,741 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:49,741 [INFO] Progress: 36/90 tasks completed
+2025-03-29 08:39:49,741 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:49,741 [INFO] Processing task 37/90: f0f46385-fc03-4599-b5d3-f56496c3e69f
+2025-03-29 08:39:49,741 [INFO] Starting task: f0f46385-fc03-4599-b5d3-f56496c3e69f
+2025-03-29 08:39:49,916 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:50,049 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:50,049 [INFO] Progress: 37/90 tasks completed
+2025-03-29 08:39:50,049 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:50,049 [INFO] Processing task 38/90: e4e91f1c-1dcd-439e-9fdd-cb976f5293fd
+2025-03-29 08:39:50,049 [INFO] Starting task: e4e91f1c-1dcd-439e-9fdd-cb976f5293fd
+2025-03-29 08:39:50,309 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:50,374 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:50,375 [INFO] Progress: 38/90 tasks completed
+2025-03-29 08:39:50,375 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:50,375 [INFO] Processing task 39/90: 56137764-b4e0-45b8-9c52-1866420c3df5
+2025-03-29 08:39:50,375 [INFO] Starting task: 56137764-b4e0-45b8-9c52-1866420c3df5
+2025-03-29 08:39:50,560 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:50,676 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:50,676 [INFO] Progress: 39/90 tasks completed
+2025-03-29 08:39:50,676 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:50,676 [INFO] Processing task 40/90: 8b3379c0-0981-4f5b-8407-6444610cb212
+2025-03-29 08:39:50,676 [INFO] Starting task: 8b3379c0-0981-4f5b-8407-6444610cb212
+2025-03-29 08:39:50,860 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:50,976 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:50,977 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:39:50,979 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:39:50,979 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:39:50,979 [INFO] Success rate: 0.00%
+2025-03-29 08:39:50,979 [INFO] Average time per task: 0.31 seconds
+2025-03-29 08:39:50,979 [INFO] Progress: 40/90 tasks completed
+2025-03-29 08:39:50,979 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:50,979 [INFO] Processing task 41/90: 0ff53813-3367-4f43-bcbd-3fd725c1bf4b
+2025-03-29 08:39:50,979 [INFO] Starting task: 0ff53813-3367-4f43-bcbd-3fd725c1bf4b
+2025-03-29 08:39:51,206 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:51,276 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:51,276 [INFO] Progress: 41/90 tasks completed
+2025-03-29 08:39:51,276 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:51,276 [INFO] Processing task 42/90: a7feb290-76bb-4cb7-8800-7edaf7954f2f
+2025-03-29 08:39:51,276 [INFO] Starting task: a7feb290-76bb-4cb7-8800-7edaf7954f2f
+2025-03-29 08:39:51,445 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:51,558 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:51,558 [INFO] Progress: 42/90 tasks completed
+2025-03-29 08:39:51,558 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:51,558 [INFO] Processing task 43/90: b4cc024b-3f5e-480e-b96a-6656493255b5
+2025-03-29 08:39:51,558 [INFO] Starting task: b4cc024b-3f5e-480e-b96a-6656493255b5
+2025-03-29 08:39:51,730 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:51,896 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:51,897 [INFO] Progress: 43/90 tasks completed
+2025-03-29 08:39:51,897 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:51,897 [INFO] Processing task 44/90: 33d8ea3b-6c6b-4ff1-803d-7e270dea8a57
+2025-03-29 08:39:51,897 [INFO] Starting task: 33d8ea3b-6c6b-4ff1-803d-7e270dea8a57
+2025-03-29 08:39:52,139 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:52,208 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:52,208 [INFO] Progress: 44/90 tasks completed
+2025-03-29 08:39:52,208 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:52,208 [INFO] Processing task 45/90: e8cb5b03-41e0-4086-99e5-f6806cd97211
+2025-03-29 08:39:52,208 [INFO] Starting task: e8cb5b03-41e0-4086-99e5-f6806cd97211
+2025-03-29 08:39:52,438 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:52,509 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:52,509 [INFO] Progress: 45/90 tasks completed
+2025-03-29 08:39:52,509 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:52,509 [INFO] Processing task 46/90: f46b4380-207e-4434-820b-f32ce04ae2a4
+2025-03-29 08:39:52,509 [INFO] Starting task: f46b4380-207e-4434-820b-f32ce04ae2a4
+2025-03-29 08:39:52,691 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:52,812 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:52,812 [INFO] Progress: 46/90 tasks completed
+2025-03-29 08:39:52,812 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:52,812 [INFO] Processing task 47/90: 05407167-39ec-4d3a-a234-73a9120c325d
+2025-03-29 08:39:52,812 [INFO] Starting task: 05407167-39ec-4d3a-a234-73a9120c325d
+2025-03-29 08:39:53,074 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:53,142 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:53,142 [INFO] Progress: 47/90 tasks completed
+2025-03-29 08:39:53,142 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:53,142 [INFO] Processing task 48/90: b9763138-c053-4832-9f55-86200cb1f99c
+2025-03-29 08:39:53,142 [INFO] Starting task: b9763138-c053-4832-9f55-86200cb1f99c
+2025-03-29 08:39:53,383 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:53,441 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:53,441 [INFO] Progress: 48/90 tasks completed
+2025-03-29 08:39:53,441 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:53,441 [INFO] Processing task 49/90: 16d825ff-1623-4176-a5b5-42e0f5c2b0ac
+2025-03-29 08:39:53,441 [INFO] Starting task: 16d825ff-1623-4176-a5b5-42e0f5c2b0ac
+2025-03-29 08:39:53,621 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:53,742 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:53,742 [INFO] Progress: 49/90 tasks completed
+2025-03-29 08:39:53,742 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:53,742 [INFO] Processing task 50/90: 544b7f0c-173a-4377-8d56-57b36eb26ddf
+2025-03-29 08:39:53,742 [INFO] Starting task: 544b7f0c-173a-4377-8d56-57b36eb26ddf
+2025-03-29 08:39:53,912 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:54,041 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:54,042 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:39:54,044 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:39:54,045 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:39:54,045 [INFO] Success rate: 0.00%
+2025-03-29 08:39:54,045 [INFO] Average time per task: 0.31 seconds
+2025-03-29 08:39:54,045 [INFO] Progress: 50/90 tasks completed
+2025-03-29 08:39:54,045 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:54,045 [INFO] Processing task 51/90: 6b078778-0b90-464d-83f6-59511c811b01
+2025-03-29 08:39:54,045 [INFO] Starting task: 6b078778-0b90-464d-83f6-59511c811b01
+2025-03-29 08:39:54,218 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:54,325 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:54,325 [INFO] Progress: 51/90 tasks completed
+2025-03-29 08:39:54,325 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:54,325 [INFO] Processing task 52/90: 08cae58d-4084-4616-b6dd-dd6534e4825b
+2025-03-29 08:39:54,325 [INFO] Starting task: 08cae58d-4084-4616-b6dd-dd6534e4825b
+2025-03-29 08:39:54,501 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:54,662 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:54,663 [INFO] Progress: 52/90 tasks completed
+2025-03-29 08:39:54,663 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:54,663 [INFO] Processing task 53/90: 2dfc4c37-fec1-4518-84a7-10095d30ad75
+2025-03-29 08:39:54,663 [INFO] Starting task: 2dfc4c37-fec1-4518-84a7-10095d30ad75
+2025-03-29 08:39:54,907 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:54,994 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:54,994 [INFO] Progress: 53/90 tasks completed
+2025-03-29 08:39:54,994 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:54,994 [INFO] Processing task 54/90: 9f41b083-683e-4dcf-9185-ccfeaa88fa45
+2025-03-29 08:39:54,994 [INFO] Starting task: 9f41b083-683e-4dcf-9185-ccfeaa88fa45
+2025-03-29 08:39:55,259 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:55,348 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:55,348 [INFO] Progress: 54/90 tasks completed
+2025-03-29 08:39:55,348 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:55,348 [INFO] Processing task 55/90: ecbc4f94-95a3-4cc7-b255-6741a458a625
+2025-03-29 08:39:55,348 [INFO] Starting task: ecbc4f94-95a3-4cc7-b255-6741a458a625
+2025-03-29 08:39:55,613 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:55,698 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:55,698 [INFO] Progress: 55/90 tasks completed
+2025-03-29 08:39:55,698 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:55,698 [INFO] Processing task 56/90: 71345b0a-9c7d-4b50-b2bf-937ec5879845
+2025-03-29 08:39:55,698 [INFO] Starting task: 71345b0a-9c7d-4b50-b2bf-937ec5879845
+2025-03-29 08:39:55,951 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:56,024 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:56,024 [INFO] Progress: 56/90 tasks completed
+2025-03-29 08:39:56,024 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:56,024 [INFO] Processing task 57/90: 7b5377b0-3f38-4103-8ad2-90fe89864c04
+2025-03-29 08:39:56,024 [INFO] Starting task: 7b5377b0-3f38-4103-8ad2-90fe89864c04
+2025-03-29 08:39:56,205 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:56,325 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:56,325 [INFO] Progress: 57/90 tasks completed
+2025-03-29 08:39:56,325 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:56,325 [INFO] Processing task 58/90: 114d5fd0-e2ae-4b6d-a65a-870da2d19c08
+2025-03-29 08:39:56,325 [INFO] Starting task: 114d5fd0-e2ae-4b6d-a65a-870da2d19c08
+2025-03-29 08:39:56,508 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:56,666 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:56,666 [INFO] Progress: 58/90 tasks completed
+2025-03-29 08:39:56,666 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:56,666 [INFO] Processing task 59/90: ad37a656-079a-49f9-a493-7b739c9167d1
+2025-03-29 08:39:56,666 [INFO] Starting task: ad37a656-079a-49f9-a493-7b739c9167d1
+2025-03-29 08:39:56,914 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:56,975 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:56,975 [INFO] Progress: 59/90 tasks completed
+2025-03-29 08:39:56,975 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:56,975 [INFO] Processing task 60/90: f3917a3d-1d17-4ee2-90c5-683b072218fe
+2025-03-29 08:39:56,975 [INFO] Starting task: f3917a3d-1d17-4ee2-90c5-683b072218fe
+2025-03-29 08:39:57,161 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:57,276 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:57,277 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:39:57,279 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:39:57,279 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:39:57,279 [INFO] Success rate: 0.00%
+2025-03-29 08:39:57,279 [INFO] Average time per task: 0.31 seconds
+2025-03-29 08:39:57,279 [INFO] Progress: 60/90 tasks completed
+2025-03-29 08:39:57,279 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:57,279 [INFO] Processing task 61/90: 48eb8242-1099-4c26-95d4-ef22b002457a
+2025-03-29 08:39:57,279 [INFO] Starting task: 48eb8242-1099-4c26-95d4-ef22b002457a
+2025-03-29 08:39:57,468 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:57,591 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:57,591 [INFO] Progress: 61/90 tasks completed
+2025-03-29 08:39:57,591 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:57,591 [INFO] Processing task 62/90: c8b7e059-c60d-472e-ad64-3b04ae1166dc
+2025-03-29 08:39:57,591 [INFO] Starting task: c8b7e059-c60d-472e-ad64-3b04ae1166dc
+2025-03-29 08:39:57,755 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:57,875 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:57,875 [INFO] Progress: 62/90 tasks completed
+2025-03-29 08:39:57,875 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:57,876 [INFO] Processing task 63/90: d1af70ea-a9a4-421a-b9cc-94b5e02f1788
+2025-03-29 08:39:57,876 [INFO] Starting task: d1af70ea-a9a4-421a-b9cc-94b5e02f1788
+2025-03-29 08:39:58,073 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:58,233 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:58,233 [INFO] Progress: 63/90 tasks completed
+2025-03-29 08:39:58,233 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:58,233 [INFO] Processing task 64/90: ded28325-3447-4c56-860f-e497d6fb3577
+2025-03-29 08:39:58,233 [INFO] Starting task: ded28325-3447-4c56-860f-e497d6fb3577
+2025-03-29 08:39:58,501 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:58,599 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:58,599 [INFO] Progress: 64/90 tasks completed
+2025-03-29 08:39:58,599 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:58,599 [INFO] Processing task 65/90: d700d50d-c707-4dca-90dc-4528cddd0c80
+2025-03-29 08:39:58,599 [INFO] Starting task: d700d50d-c707-4dca-90dc-4528cddd0c80
+2025-03-29 08:39:58,864 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:58,968 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:58,968 [INFO] Progress: 65/90 tasks completed
+2025-03-29 08:39:58,968 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:58,968 [INFO] Processing task 66/90: 0a3cd321-3e76-4622-911b-0fda2e5d6b1a
+2025-03-29 08:39:58,968 [INFO] Starting task: 0a3cd321-3e76-4622-911b-0fda2e5d6b1a
+2025-03-29 08:39:59,228 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:59,319 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:59,319 [INFO] Progress: 66/90 tasks completed
+2025-03-29 08:39:59,319 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:59,319 [INFO] Processing task 67/90: f2feb6a4-363c-4c09-a804-0db564eafd68
+2025-03-29 08:39:59,320 [INFO] Starting task: f2feb6a4-363c-4c09-a804-0db564eafd68
+2025-03-29 08:39:59,595 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:59,675 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:59,675 [INFO] Progress: 67/90 tasks completed
+2025-03-29 08:39:59,675 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:59,675 [INFO] Processing task 68/90: 0b260a57-3f3a-4405-9f29-6d7a1012dbfb
+2025-03-29 08:39:59,675 [INFO] Starting task: 0b260a57-3f3a-4405-9f29-6d7a1012dbfb
+2025-03-29 08:39:59,864 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:39:59,992 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:39:59,992 [INFO] Progress: 68/90 tasks completed
+2025-03-29 08:39:59,992 [INFO] Success rate so far: 0.00%
+2025-03-29 08:39:59,992 [INFO] Processing task 69/90: ed58682d-bc52-4baa-9eb0-4eb81e1edacc
+2025-03-29 08:39:59,992 [INFO] Starting task: ed58682d-bc52-4baa-9eb0-4eb81e1edacc
+2025-03-29 08:40:00,162 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:00,332 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:00,332 [INFO] Progress: 69/90 tasks completed
+2025-03-29 08:40:00,332 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:00,332 [INFO] Processing task 70/90: 023e9d44-96ae-4eed-b912-244ee8c3b994
+2025-03-29 08:40:00,332 [INFO] Starting task: 023e9d44-96ae-4eed-b912-244ee8c3b994
+2025-03-29 08:40:00,579 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:00,641 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:00,643 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:40:00,644 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:40:00,645 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:40:00,645 [INFO] Success rate: 0.00%
+2025-03-29 08:40:00,645 [INFO] Average time per task: 0.32 seconds
+2025-03-29 08:40:00,645 [INFO] Progress: 70/90 tasks completed
+2025-03-29 08:40:00,645 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:00,645 [INFO] Processing task 71/90: 0e9e85b8-52b9-4de4-b402-5f635ab9631f
+2025-03-29 08:40:00,645 [INFO] Starting task: 0e9e85b8-52b9-4de4-b402-5f635ab9631f
+2025-03-29 08:40:00,919 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:00,974 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:00,974 [INFO] Progress: 71/90 tasks completed
+2025-03-29 08:40:00,974 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:00,974 [INFO] Processing task 72/90: 20194330-9976-4043-8632-f8485c6c71b2
+2025-03-29 08:40:00,974 [INFO] Starting task: 20194330-9976-4043-8632-f8485c6c71b2
+2025-03-29 08:40:01,152 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:01,276 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:01,276 [INFO] Progress: 72/90 tasks completed
+2025-03-29 08:40:01,276 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:01,276 [INFO] Processing task 73/90: 65638e28-7f37-4fa7-b7b9-8c19bb609879
+2025-03-29 08:40:01,276 [INFO] Starting task: 65638e28-7f37-4fa7-b7b9-8c19bb609879
+2025-03-29 08:40:01,456 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:01,576 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:01,576 [INFO] Progress: 73/90 tasks completed
+2025-03-29 08:40:01,576 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:01,576 [INFO] Processing task 74/90: 3ff6b7a9-a5bd-4412-ad92-0cd0d45c0fee
+2025-03-29 08:40:01,576 [INFO] Starting task: 3ff6b7a9-a5bd-4412-ad92-0cd0d45c0fee
+2025-03-29 08:40:01,749 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:01,899 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:01,899 [INFO] Progress: 74/90 tasks completed
+2025-03-29 08:40:01,899 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:01,899 [INFO] Processing task 75/90: 708b99c5-e4a7-49cb-a5cf-933c8d46470d
+2025-03-29 08:40:01,899 [INFO] Starting task: 708b99c5-e4a7-49cb-a5cf-933c8d46470d
+2025-03-29 08:40:02,165 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:02,224 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:02,224 [INFO] Progress: 75/90 tasks completed
+2025-03-29 08:40:02,224 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:02,224 [INFO] Processing task 76/90: 0a65cb96-cb6e-4a6a-8aae-c1084f613456
+2025-03-29 08:40:02,224 [INFO] Starting task: 0a65cb96-cb6e-4a6a-8aae-c1084f613456
+2025-03-29 08:40:02,405 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:02,564 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:02,564 [INFO] Progress: 76/90 tasks completed
+2025-03-29 08:40:02,564 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:02,564 [INFO] Processing task 77/90: 65da0822-a48a-4a68-bbad-8ed1b835a834
+2025-03-29 08:40:02,564 [INFO] Starting task: 65da0822-a48a-4a68-bbad-8ed1b835a834
+2025-03-29 08:40:02,839 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:02,943 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:02,943 [INFO] Progress: 77/90 tasks completed
+2025-03-29 08:40:02,943 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:02,943 [INFO] Processing task 78/90: 73c1b9fe-ee1d-4cf4-96ca-35c08f97b054
+2025-03-29 08:40:02,943 [INFO] Starting task: 73c1b9fe-ee1d-4cf4-96ca-35c08f97b054
+2025-03-29 08:40:03,233 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:03,328 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:03,328 [INFO] Progress: 78/90 tasks completed
+2025-03-29 08:40:03,328 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:03,329 [INFO] Processing task 79/90: e2d69698-bc99-4e85-9880-67eaccd66e6c
+2025-03-29 08:40:03,329 [INFO] Starting task: e2d69698-bc99-4e85-9880-67eaccd66e6c
+2025-03-29 08:40:03,615 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:03,692 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:03,692 [INFO] Progress: 79/90 tasks completed
+2025-03-29 08:40:03,692 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:03,692 [INFO] Processing task 80/90: a56f1527-3abf-41d6-91f8-7296d6336c3f
+2025-03-29 08:40:03,692 [INFO] Starting task: a56f1527-3abf-41d6-91f8-7296d6336c3f
+2025-03-29 08:40:03,875 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:04,032 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:04,033 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:40:04,036 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:40:04,036 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:40:04,036 [INFO] Success rate: 0.00%
+2025-03-29 08:40:04,036 [INFO] Average time per task: 0.32 seconds
+2025-03-29 08:40:04,036 [INFO] Progress: 80/90 tasks completed
+2025-03-29 08:40:04,036 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:04,036 [INFO] Processing task 81/90: 42d4198c-5895-4f0a-b0c0-424a66465d83
+2025-03-29 08:40:04,036 [INFO] Starting task: 42d4198c-5895-4f0a-b0c0-424a66465d83
+2025-03-29 08:40:04,330 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:04,409 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:04,410 [INFO] Progress: 81/90 tasks completed
+2025-03-29 08:40:04,410 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:04,410 [INFO] Processing task 82/90: a26649c6-1cb2-470a-871e-6910c64c3e53
+2025-03-29 08:40:04,410 [INFO] Starting task: a26649c6-1cb2-470a-871e-6910c64c3e53
+2025-03-29 08:40:04,658 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:04,759 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:04,759 [INFO] Progress: 82/90 tasks completed
+2025-03-29 08:40:04,759 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:04,760 [INFO] Processing task 83/90: d5141ca5-e7a0-469f-bf3e-e773507c86e2
+2025-03-29 08:40:04,760 [INFO] Starting task: d5141ca5-e7a0-469f-bf3e-e773507c86e2
+2025-03-29 08:40:04,935 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:05,095 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:05,096 [INFO] Progress: 83/90 tasks completed
+2025-03-29 08:40:05,096 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:05,096 [INFO] Processing task 84/90: 1dcc160f-c187-48c2-b68e-319bd4354f3d
+2025-03-29 08:40:05,096 [INFO] Starting task: 1dcc160f-c187-48c2-b68e-319bd4354f3d
+2025-03-29 08:40:05,376 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:05,441 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:05,441 [INFO] Progress: 84/90 tasks completed
+2025-03-29 08:40:05,441 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:05,441 [INFO] Processing task 85/90: e0c10771-d627-4fd7-9694-05348e54ee36
+2025-03-29 08:40:05,441 [INFO] Starting task: e0c10771-d627-4fd7-9694-05348e54ee36
+2025-03-29 08:40:05,620 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:05,781 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:05,781 [INFO] Progress: 85/90 tasks completed
+2025-03-29 08:40:05,781 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:05,781 [INFO] Processing task 86/90: e29834fd-413a-455c-a33e-c3915b07401c
+2025-03-29 08:40:05,781 [INFO] Starting task: e29834fd-413a-455c-a33e-c3915b07401c
+2025-03-29 08:40:06,077 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:06,141 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:06,142 [INFO] Progress: 86/90 tasks completed
+2025-03-29 08:40:06,142 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:06,142 [INFO] Processing task 87/90: 08c0b6e9-1b43-4c2e-ae55-4e3fce2c2715
+2025-03-29 08:40:06,142 [INFO] Starting task: 08c0b6e9-1b43-4c2e-ae55-4e3fce2c2715
+2025-03-29 08:40:06,323 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:06,503 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:06,503 [INFO] Progress: 87/90 tasks completed
+2025-03-29 08:40:06,503 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:06,503 [INFO] Processing task 88/90: db4fd70a-2d37-40ea-873f-9433dc5e301f
+2025-03-29 08:40:06,503 [INFO] Starting task: db4fd70a-2d37-40ea-873f-9433dc5e301f
+2025-03-29 08:40:06,773 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:06,841 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:06,841 [INFO] Progress: 88/90 tasks completed
+2025-03-29 08:40:06,841 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:06,841 [INFO] Processing task 89/90: 853c8244-429e-46ca-89f2-addf40dfb2bd
+2025-03-29 08:40:06,841 [INFO] Starting task: 853c8244-429e-46ca-89f2-addf40dfb2bd
+2025-03-29 08:40:07,025 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:07,141 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:07,141 [INFO] Progress: 89/90 tasks completed
+2025-03-29 08:40:07,141 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:07,141 [INFO] Processing task 90/90: 7a4a336d-dcfa-45a0-b014-824c7619e8de
+2025-03-29 08:40:07,141 [INFO] Starting task: 7a4a336d-dcfa-45a0-b014-824c7619e8de
+2025-03-29 08:40:07,374 [INFO] Navigated to https://www.google.com/
+2025-03-29 08:40:07,441 [ERROR] Task failed: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 08:40:07,442 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_083937.json
+2025-03-29 08:40:07,444 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_083937.csv
+2025-03-29 08:40:07,444 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 08:40:07,444 [INFO] Success rate: 0.00%
+2025-03-29 08:40:07,445 [INFO] Average time per task: 0.32 seconds
+2025-03-29 08:40:07,445 [INFO] Progress: 90/90 tasks completed
+2025-03-29 08:40:07,445 [INFO] Success rate so far: 0.00%
+2025-03-29 08:40:07,492 [INFO] Saved detailed results to results/webvoyager_detailed_20250329_083937.json
+2025-03-29 08:40:07,494 [INFO] Saved summary results to results/webvoyager_summary_20250329_083937.csv
+2025-03-29 08:40:07,494 [INFO] Evaluation complete for webvoyager
+2025-03-29 08:40:07,494 [INFO] Success rate: 0.00%
+2025-03-29 08:40:07,494 [INFO] Average time per task: 0.32 seconds
+2025-03-29 08:40:07,494 [INFO] Evaluation completed in 29.61 seconds
+2025-03-29 08:40:07,494 [INFO] Results saved to results/webvoyager_detailed_20250329_083937.json and results/webvoyager_summary_20250329_083937.csv

@@ -1,0 +1,12 @@
+2025-03-29 21:09:10,528 [INFO] Direct JSON loading: Found 1000 tasks
+2025-03-29 21:09:10,530 [INFO] Loaded 1000 tasks from JSON array in data/mind2web.jsonl
+2025-03-29 21:09:10,530 [INFO] Using load_tasks function: Found 1000 tasks
+2025-03-29 21:09:10,530 [INFO] Sample task structure: {
+  "task_id": "1.0",
+  "website": "reddit",
+  "instruction": "Find the best-rated Italian restaurant in the area",
+  "url": "https://www.reddit.com"
+}
+2025-03-29 21:09:10,530 [INFO] Sample task contains all required fields
+2025-03-29 21:09:10,531 [INFO] Valid tasks with all required fields: 1000/1000
+2025-03-29 21:09:10,531 [INFO] ✅ Mind2Web dataset verification successful: 1000 valid tasks found

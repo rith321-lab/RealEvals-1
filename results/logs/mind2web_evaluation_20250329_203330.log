@@ -1,0 +1,108 @@
+2025-03-29 20:33:30,114 [INFO] Starting Mind2Web evaluation
+2025-03-29 20:33:30,114 [INFO] Headless mode: True
+2025-03-29 20:33:30,114 [INFO] Max retries: 2
+2025-03-29 20:33:30,114 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 2 (char 1)
+2025-03-29 20:33:30,114 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 20:33:30,114 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:33:30,114 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:33:30,114 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 20:33:30,114 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 20:33:30,114 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:33:30,115 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:33:30,115 [WARNING] No tasks loaded from mind2web.jsonl, trying direct JSON parsing
+2025-03-29 20:33:30,115 [INFO] Successfully loaded 3 tasks directly from JSON file
+2025-03-29 20:33:30,115 [INFO] Loaded 2 Anthropic API keys
+2025-03-29 20:33:30,796 [INFO] Processing task 1/3: 98.0
+2025-03-29 20:33:30,796 [INFO] Executing task 98.0: Find a Ricky Kej track to listen and share which has been added in the last year and is between 2 to 10 minutes.
+2025-03-29 20:33:30,857 [INFO] Navigating to https://www.soundcloud.com
+2025-03-29 20:33:35,785 [INFO] Step 1/15 for task 98.0
+2025-03-29 20:33:35,785 [ERROR] Error in step 1 for task 98.0: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:35,785 [WARNING] Task 98.0 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:37,785 [INFO] Retry 1/2 for task 98.0
+2025-03-29 20:33:37,785 [INFO] Executing task 98.0: Find a Ricky Kej track to listen and share which has been added in the last year and is between 2 to 10 minutes.
+2025-03-29 20:33:37,858 [INFO] Navigating to https://www.soundcloud.com
+2025-03-29 20:33:42,829 [INFO] Step 1/15 for task 98.0
+2025-03-29 20:33:42,829 [ERROR] Error in step 1 for task 98.0: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:42,830 [WARNING] Task 98.0 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:44,830 [INFO] Retry 2/2 for task 98.0
+2025-03-29 20:33:44,830 [INFO] Executing task 98.0: Find a Ricky Kej track to listen and share which has been added in the last year and is between 2 to 10 minutes.
+2025-03-29 20:33:44,922 [INFO] Navigating to https://www.soundcloud.com
+2025-03-29 20:33:50,124 [INFO] Step 1/15 for task 98.0
+2025-03-29 20:33:50,124 [ERROR] Error in step 1 for task 98.0: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:50,124 [WARNING] Task 98.0 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:33:50,124 [INFO] Progress: 1/3 tasks completed
+2025-03-29 20:33:50,124 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:50,124 [INFO] Processing task 2/3: 99.0
+2025-03-29 20:33:50,124 [INFO] Executing task 99.0: Find the flight schedule between London and New York for April 7 and check the upgrade details of the noon flight.
+2025-03-29 20:33:50,195 [INFO] Navigating to https://www.united.com
+2025-03-29 20:33:50,366 [ERROR] Error executing task 99.0: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 20:33:50,367 [WARNING] Task 99.0 failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 20:33:52,370 [INFO] Retry 1/2 for task 99.0
+2025-03-29 20:33:52,370 [INFO] Executing task 99.0: Find the flight schedule between London and New York for April 7 and check the upgrade details of the noon flight.
+2025-03-29 20:33:52,441 [INFO] Navigating to https://www.united.com
+2025-03-29 20:33:52,563 [ERROR] Error executing task 99.0: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 20:33:52,563 [WARNING] Task 99.0 failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 20:33:54,563 [INFO] Retry 2/2 for task 99.0
+2025-03-29 20:33:54,563 [INFO] Executing task 99.0: Find the flight schedule between London and New York for April 7 and check the upgrade details of the noon flight.
+2025-03-29 20:33:54,650 [INFO] Navigating to https://www.united.com
+2025-03-29 20:33:54,756 [ERROR] Error executing task 99.0: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 20:33:54,756 [WARNING] Task 99.0 failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 20:33:54,756 [INFO] Progress: 2/3 tasks completed
+2025-03-29 20:33:54,756 [INFO] Success rate so far: 0.00%
+2025-03-29 20:33:54,756 [INFO] Processing task 3/3: 100.0
+2025-03-29 20:33:54,756 [INFO] Executing task 100.0: Follow one of the team leaders of one of the NHL teams from the Atlantic Division
+2025-03-29 20:33:54,817 [INFO] Navigating to https://www.espn.com
+2025-03-29 20:34:25,782 [ERROR] Error executing task 100.0: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-03-29 20:34:25,783 [WARNING] Task 100.0 failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-03-29 20:34:27,789 [INFO] Retry 1/2 for task 100.0
+2025-03-29 20:34:27,790 [INFO] Executing task 100.0: Follow one of the team leaders of one of the NHL teams from the Atlantic Division
+2025-03-29 20:34:27,881 [INFO] Navigating to https://www.espn.com
+2025-03-29 20:34:37,243 [INFO] Step 1/15 for task 100.0
+2025-03-29 20:34:37,246 [ERROR] Error in step 1 for task 100.0: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:37,246 [WARNING] Task 100.0 failed: AnthropicOperatorAgent.call_anthropic_with_retry() got an unexpected keyword argument 'system'
+2025-03-29 20:34:39,247 [INFO] Retry 2/2 for task 100.0
+2025-03-29 20:34:39,248 [INFO] Executing task 100.0: Follow one of the team leaders of one of the NHL teams from the Atlantic Division
+2025-03-29 20:34:39,315 [INFO] Navigating to https://www.espn.com
+2025-03-29 20:35:10,094 [ERROR] Error executing task 100.0: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-03-29 20:35:10,095 [WARNING] Task 100.0 failed: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+2025-03-29 20:35:10,095 [INFO] Saved detailed results to results/mind2web_intermediate_detailed_20250329_203330.json
+2025-03-29 20:35:10,098 [INFO] Saved summary results to results/mind2web_intermediate_summary_20250329_203330.csv
+2025-03-29 20:35:10,098 [INFO] Evaluation complete for mind2web_intermediate
+2025-03-29 20:35:10,099 [INFO] Success rate: 0.00%
+2025-03-29 20:35:10,099 [INFO] Average time per task: 12.11 seconds
+2025-03-29 20:35:10,099 [INFO] Progress: 3/3 tasks completed
+2025-03-29 20:35:10,099 [INFO] Success rate so far: 0.00%
+2025-03-29 20:35:10,222 [INFO] Saved detailed results to results/mind2web_detailed_20250329_203330.json
+2025-03-29 20:35:10,223 [INFO] Saved summary results to results/mind2web_summary_20250329_203330.csv
+2025-03-29 20:35:10,223 [INFO] Evaluation complete for mind2web
+2025-03-29 20:35:10,224 [INFO] Success rate: 0.00%
+2025-03-29 20:35:10,224 [INFO] Average time per task: 12.11 seconds
+2025-03-29 20:35:10,224 [INFO] Evaluation completed in 100.11 seconds
+2025-03-29 20:35:10,224 [INFO] Total tasks: 3
+2025-03-29 20:35:10,224 [INFO] Successful tasks: 0
+2025-03-29 20:35:10,224 [INFO] Success rate: 0.00%
+2025-03-29 20:35:10,224 [INFO] Results saved to results/mind2web_detailed_20250329_203330.json and results/mind2web_summary_20250329_203330.csv

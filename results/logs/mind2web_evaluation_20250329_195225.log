@@ -1,0 +1,167 @@
+2025-03-29 19:52:25,937 [INFO] Starting Mind2Web evaluation
+2025-03-29 19:52:25,937 [INFO] Headless mode: True
+2025-03-29 19:52:25,937 [INFO] Max retries: 2
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 2 (char 1)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:52:25,938 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 19:52:25,939 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:52:25,939 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 19:52:25,939 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 19:52:25,939 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 19:52:25,939 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:52:25,939 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:52:25,939 [WARNING] No tasks loaded from mind2web.jsonl, trying direct JSON parsing
+2025-03-29 19:52:25,939 [INFO] Successfully loaded 3 tasks directly from JSON file
+2025-03-29 19:52:25,939 [INFO] Using API key index: 0
+2025-03-29 19:52:26,412 [INFO] Processing task 1/3: 98.0
+2025-03-29 19:52:26,412 [INFO] Starting task: 98.0
+2025-03-29 19:52:27,500 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:52:38,893 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:52:38,898 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:52:38,898 [INFO] Task completed in 12.49 seconds
+2025-03-29 19:52:38,898 [WARNING] Task 98.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:52:40,898 [INFO] Retry 1/2 for task 98.0
+2025-03-29 19:52:40,898 [INFO] Starting task: 98.0
+2025-03-29 19:52:41,250 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:52:41,394 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 19:52:41,394 [INFO] Retrying request to /v1/messages in 32.000000 seconds
+2025-03-29 19:53:26,803 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:53:26,804 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:53:26,804 [INFO] Task completed in 45.91 seconds
+2025-03-29 19:53:26,804 [WARNING] Task 98.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:53:28,804 [INFO] Retry 2/2 for task 98.0
+2025-03-29 19:53:28,805 [INFO] Starting task: 98.0
+2025-03-29 19:53:29,297 [INFO] Navigated to https://www.soundcloud.com
+2025-03-29 19:53:29,895 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 19:53:29,896 [INFO] Retrying request to /v1/messages in 17.000000 seconds
+2025-03-29 19:56:24,799 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 502 Bad Gateway"
+2025-03-29 19:56:24,800 [INFO] Retrying request to /v1/messages in 0.846107 seconds
+2025-03-29 19:56:30,233 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 503 Service Unavailable"
+2025-03-29 19:56:30,233 [ERROR] API call failed: upstream connect error or disconnect/reset before headers. reset reason: connection timeout
+2025-03-29 19:56:30,234 [INFO] Backing off _call_claude_with_retry(...) for 1.7s (anthropic.InternalServerError: upstream connect error or disconnect/reset before headers. reset reason: connection timeout)
+2025-03-29 19:56:36,478 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 503 Service Unavailable"
+2025-03-29 19:56:36,479 [INFO] Retrying request to /v1/messages in 0.447693 seconds
+2025-03-29 19:56:37,572 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 19:56:37,593 [INFO] Retrying request to /v1/messages in 18.000000 seconds
+2025-03-29 19:57:09,282 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 19:57:09,289 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:57:09,290 [INFO] Task completed in 220.48 seconds
+2025-03-29 19:57:09,290 [WARNING] Task 98.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 19:57:09,290 [INFO] Progress: 1/3 tasks completed
+2025-03-29 19:57:09,290 [INFO] Success rate so far: 0.00%
+2025-03-29 19:57:09,290 [INFO] Processing task 2/3: 99.0
+2025-03-29 19:57:09,290 [INFO] Starting task: 99.0
+2025-03-29 19:57:09,375 [ERROR] Navigation failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:57:09,375 [WARNING] Task 99.0 failed: Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:57:11,375 [INFO] Retry 1/2 for task 99.0
+2025-03-29 19:57:11,376 [INFO] Starting task: 99.0
+2025-03-29 19:57:11,440 [ERROR] Navigation failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:57:11,440 [WARNING] Task 99.0 failed: Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:57:13,440 [INFO] Retry 2/2 for task 99.0
+2025-03-29 19:57:13,441 [INFO] Starting task: 99.0
+2025-03-29 19:57:13,473 [ERROR] Navigation failed: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:57:13,473 [WARNING] Task 99.0 failed: Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 19:57:13,473 [INFO] Progress: 2/3 tasks completed
+2025-03-29 19:57:13,473 [INFO] Success rate so far: 0.00%
+2025-03-29 19:57:13,473 [INFO] Processing task 3/3: 100.0
+2025-03-29 19:57:13,473 [INFO] Starting task: 100.0
+2025-03-29 19:57:14,089 [INFO] Navigated to https://www.espn.com
+2025-03-29 19:57:15,396 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 19:57:15,397 [INFO] Retrying request to /v1/messages in 45.000000 seconds
+2025-03-29 19:58:05,331 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 19:58:05,332 [INFO] Retrying request to /v1/messages in 37.000000 seconds
+2025-03-29 19:58:42,478 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 19:58:42,478 [WARNING] API error: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 19:58:42,478 [INFO] Rotated to API key index: 1
+2025-03-29 19:58:42,478 [INFO] Using API key index: 1
+2025-03-29 19:58:42,507 [INFO] Rotated API key due to API error
+2025-03-29 19:58:42,507 [INFO] Backing off _call_claude_with_retry(...) for 1.5s (anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}})
+2025-03-29 19:58:44,080 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 19:58:44,081 [WARNING] API error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 19:58:44,081 [INFO] Rotated to API key index: 0
+2025-03-29 19:58:44,081 [INFO] Using API key index: 0
+2025-03-29 19:58:44,110 [INFO] Rotated API key due to API error
+2025-03-29 19:58:44,110 [INFO] Backing off _call_claude_with_retry(...) for 1.5s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 19:58:45,959 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 19:58:45,966 [INFO] Retrying request to /v1/messages in 34.000000 seconds
+2025-03-29 19:59:20,106 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 19:59:20,107 [INFO] Retrying request to /v1/messages in 45.000000 seconds
+2025-03-29 20:00:05,255 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 20:00:05,256 [WARNING] API error: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 20:00:05,256 [INFO] Rotated to API key index: 1
+2025-03-29 20:00:05,256 [INFO] Using API key index: 1
+2025-03-29 20:00:05,285 [INFO] Rotated API key due to API error
+2025-03-29 20:00:05,285 [INFO] Backing off _call_claude_with_retry(...) for 4.4s (anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}})
+2025-03-29 20:00:09,945 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 20:00:09,945 [WARNING] API error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 20:00:09,946 [INFO] Rotated to API key index: 0
+2025-03-29 20:00:09,946 [INFO] Using API key index: 0
+2025-03-29 20:00:09,974 [INFO] Rotated API key due to API error
+2025-03-29 20:00:09,974 [INFO] Backing off _call_claude_with_retry(...) for 12.3s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 20:00:22,480 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 20:00:22,481 [INFO] Retrying request to /v1/messages in 0.427933 seconds
+2025-03-29 20:00:23,027 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 20:00:23,028 [INFO] Retrying request to /v1/messages in 0.953653 seconds
+2025-03-29 20:00:24,107 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 20:00:24,107 [WARNING] API error: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 20:00:24,108 [INFO] Rotated to API key index: 1
+2025-03-29 20:00:24,108 [INFO] Using API key index: 1
+2025-03-29 20:00:24,137 [INFO] Rotated API key due to API error
+2025-03-29 20:00:24,137 [ERROR] Giving up _call_claude_with_retry(...) after 5 tries (anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}})
+2025-03-29 20:00:24,137 [ERROR] Task execution failed: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 20:00:24,137 [INFO] Task completed in 190.66 seconds
+2025-03-29 20:00:24,137 [WARNING] Task 100.0 failed: Execution error: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (13779575-173f-425a-a677-aa5cd9717174) of 40,000 input tokens per minute. For details, refer to: https://docs.anthropic.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}}
+2025-03-29 20:00:26,138 [INFO] Retry 1/2 for task 100.0
+2025-03-29 20:00:26,138 [INFO] Starting task: 100.0
+2025-03-29 20:00:26,657 [INFO] Navigated to https://www.espn.com
+2025-03-29 20:00:26,819 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 20:00:26,819 [WARNING] API error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 20:00:26,820 [INFO] Rotated to API key index: 0
+2025-03-29 20:00:26,820 [INFO] Using API key index: 0
+2025-03-29 20:00:26,848 [INFO] Rotated API key due to API error
+2025-03-29 20:00:26,848 [INFO] Backing off _call_claude_with_retry(...) for 1.5s (anthropic.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}})
+2025-03-29 20:00:28,486 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 20:00:28,486 [INFO] Retrying request to /v1/messages in 59.000000 seconds
+2025-03-29 20:01:40,853 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 20:01:40,854 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:01:40,854 [INFO] Task completed in 74.72 seconds
+2025-03-29 20:01:40,855 [WARNING] Task 100.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:01:42,855 [INFO] Retry 2/2 for task 100.0
+2025-03-29 20:01:42,855 [INFO] Starting task: 100.0
+2025-03-29 20:01:43,250 [INFO] Navigated to https://www.espn.com
+2025-03-29 20:01:43,554 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 20:01:43,555 [INFO] Retrying request to /v1/messages in 57.000000 seconds
+2025-03-29 20:02:40,705 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2025-03-29 20:02:40,705 [INFO] Retrying request to /v1/messages in 42.000000 seconds
+2025-03-29 20:03:42,102 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 20:03:42,103 [ERROR] Failed to parse response: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:03:42,103 [INFO] Task completed in 119.25 seconds
+2025-03-29 20:03:42,103 [WARNING] Task 100.0 failed: Response parsing error: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:03:42,103 [INFO] Saved detailed results to results/mind2web_intermediate_detailed_20250329_195225.json
+2025-03-29 20:03:42,106 [INFO] Saved summary results to results/mind2web_intermediate_summary_20250329_195225.csv
+2025-03-29 20:03:42,106 [INFO] Evaluation complete for mind2web_intermediate
+2025-03-29 20:03:42,106 [INFO] Success rate: 0.00%
+2025-03-29 20:03:42,106 [INFO] Average time per task: 113.25 seconds
+2025-03-29 20:03:42,106 [INFO] Progress: 3/3 tasks completed
+2025-03-29 20:03:42,106 [INFO] Success rate so far: 0.00%
+2025-03-29 20:03:42,172 [INFO] Saved detailed results to results/mind2web_detailed_20250329_195225.json
+2025-03-29 20:03:42,173 [INFO] Saved summary results to results/mind2web_summary_20250329_195225.csv
+2025-03-29 20:03:42,174 [INFO] Evaluation complete for mind2web
+2025-03-29 20:03:42,174 [INFO] Success rate: 0.00%
+2025-03-29 20:03:42,174 [INFO] Average time per task: 113.25 seconds
+2025-03-29 20:03:42,174 [INFO] Evaluation completed in 676.23 seconds
+2025-03-29 20:03:42,174 [INFO] Total tasks: 3
+2025-03-29 20:03:42,174 [INFO] Successful tasks: 0
+2025-03-29 20:03:42,174 [INFO] Success rate: 0.00%
+2025-03-29 20:03:42,174 [INFO] Results saved to results/mind2web_detailed_20250329_195225.json and results/mind2web_summary_20250329_195225.csv

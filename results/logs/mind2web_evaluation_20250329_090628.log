@@ -1,0 +1,82 @@
+2025-03-29 09:06:28,703 [INFO] Starting Mind2Web evaluation
+2025-03-29 09:06:28,703 [INFO] Headless mode: True
+2025-03-29 09:06:28,704 [INFO] Max retries: 2
+2025-03-29 09:06:28,704 [INFO] Loaded 3 tasks from JSON file data/mind2web.jsonl
+2025-03-29 09:06:29,183 [INFO] Processing task 1/3: 98.0
+2025-03-29 09:06:29,183 [INFO] Starting task: 98.0
+2025-03-29 09:06:32,014 [INFO] Navigated to https://www.soundcloud.com/
+2025-03-29 09:06:32,229 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:32,230 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:32,230 [WARNING] Task 98.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:34,230 [INFO] Retry 1/2 for task 98.0
+2025-03-29 09:06:34,231 [INFO] Starting task: 98.0
+2025-03-29 09:06:34,967 [INFO] Navigated to https://www.soundcloud.com/
+2025-03-29 09:06:35,159 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:35,160 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:35,160 [WARNING] Task 98.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:37,160 [INFO] Retry 2/2 for task 98.0
+2025-03-29 09:06:37,160 [INFO] Starting task: 98.0
+2025-03-29 09:06:37,561 [INFO] Navigated to https://www.soundcloud.com/
+2025-03-29 09:06:37,711 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:37,712 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:37,712 [WARNING] Task 98.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:37,712 [INFO] Progress: 1/3 tasks completed
+2025-03-29 09:06:37,712 [INFO] Success rate so far: 0.00%
+2025-03-29 09:06:37,712 [INFO] Processing task 2/3: 99.0
+2025-03-29 09:06:37,712 [INFO] Starting task: 99.0
+2025-03-29 09:06:37,834 [ERROR] Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 09:06:38,417 [INFO] Navigated to fallback URL (Google)
+2025-03-29 09:06:38,668 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:38,668 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:38,668 [WARNING] Task 99.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:40,668 [INFO] Retry 1/2 for task 99.0
+2025-03-29 09:06:40,668 [INFO] Starting task: 99.0
+2025-03-29 09:06:40,707 [ERROR] Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 09:06:41,100 [INFO] Navigated to fallback URL (Google)
+2025-03-29 09:06:41,267 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:41,268 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:41,268 [WARNING] Task 99.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:43,268 [INFO] Retry 2/2 for task 99.0
+2025-03-29 09:06:43,268 [INFO] Starting task: 99.0
+2025-03-29 09:06:43,300 [ERROR] Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 09:06:43,644 [INFO] Navigated to fallback URL (Google)
+2025-03-29 09:06:43,810 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:43,810 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:43,811 [WARNING] Task 99.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:43,811 [INFO] Progress: 2/3 tasks completed
+2025-03-29 09:06:43,811 [INFO] Success rate so far: 0.00%
+2025-03-29 09:06:43,811 [INFO] Processing task 3/3: 100.0
+2025-03-29 09:06:43,811 [INFO] Starting task: 100.0
+2025-03-29 09:06:48,141 [INFO] Navigated to https://www.espn.com/
+2025-03-29 09:06:48,717 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:48,718 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:48,718 [WARNING] Task 100.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:50,718 [INFO] Retry 1/2 for task 100.0
+2025-03-29 09:06:50,718 [INFO] Starting task: 100.0
+2025-03-29 09:06:53,513 [INFO] Navigated to https://www.espn.com/
+2025-03-29 09:06:54,101 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:54,101 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:54,101 [WARNING] Task 100.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:56,101 [INFO] Retry 2/2 for task 100.0
+2025-03-29 09:06:56,102 [INFO] Starting task: 100.0
+2025-03-29 09:06:58,936 [INFO] Navigated to https://www.espn.com/
+2025-03-29 09:06:59,305 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2025-03-29 09:06:59,306 [ERROR] API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:59,306 [WARNING] Task 100.0 failed: API or action execution error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}}
+2025-03-29 09:06:59,306 [INFO] Saved detailed results to results/mind2web_intermediate_detailed_20250329_090628.json
+2025-03-29 09:06:59,308 [INFO] Saved summary results to results/mind2web_intermediate_summary_20250329_090628.csv
+2025-03-29 09:06:59,309 [INFO] Evaluation complete for mind2web_intermediate
+2025-03-29 09:06:59,309 [INFO] Success rate: 0.00%
+2025-03-29 09:06:59,309 [INFO] Average time per task: 1.43 seconds
+2025-03-29 09:06:59,309 [INFO] Progress: 3/3 tasks completed
+2025-03-29 09:06:59,309 [INFO] Success rate so far: 0.00%
+2025-03-29 09:06:59,377 [INFO] Saved detailed results to results/mind2web_detailed_20250329_090628.json
+2025-03-29 09:06:59,379 [INFO] Saved summary results to results/mind2web_summary_20250329_090628.csv
+2025-03-29 09:06:59,379 [INFO] Evaluation complete for mind2web
+2025-03-29 09:06:59,379 [INFO] Success rate: 0.00%
+2025-03-29 09:06:59,379 [INFO] Average time per task: 1.43 seconds
+2025-03-29 09:06:59,379 [INFO] Evaluation completed in 30.67 seconds
+2025-03-29 09:06:59,379 [INFO] Total tasks: 3
+2025-03-29 09:06:59,379 [INFO] Successful tasks: 0
+2025-03-29 09:06:59,380 [INFO] Success rate: 0.00%
+2025-03-29 09:06:59,380 [INFO] Results saved to results/mind2web_detailed_20250329_090628.json and results/mind2web_summary_20250329_090628.csv

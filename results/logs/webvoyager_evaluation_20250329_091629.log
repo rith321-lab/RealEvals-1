@@ -1,0 +1,55 @@
+2025-03-29 09:16:29,096 [INFO] Starting WebVoyager evaluation
+2025-03-29 09:16:29,096 [INFO] Headless mode: True
+2025-03-29 09:16:29,096 [INFO] Max retries: 1
+2025-03-29 09:16:29,097 [INFO] Limiting evaluation to 3 tasks
+2025-03-29 09:16:29,536 [INFO] Processing task 1/3: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:16:29,536 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:16:30,164 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:16:30,240 [ERROR] API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:30,240 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:32,241 [INFO] Retry 1/1 for task e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:16:32,241 [INFO] Starting task: e1fc63a2-da7a-432f-be78-7c4a95598703
+2025-03-29 09:16:32,646 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:16:32,720 [ERROR] API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:32,720 [WARNING] Task e1fc63a2-da7a-432f-be78-7c4a95598703 failed: API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:32,720 [INFO] Progress: 1/3 tasks completed
+2025-03-29 09:16:32,720 [INFO] Success rate so far: 0.00%
+2025-03-29 09:16:32,721 [INFO] Processing task 2/3: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:16:32,721 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:16:33,069 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:16:33,138 [ERROR] API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:33,139 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:35,139 [INFO] Retry 1/1 for task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:16:35,139 [INFO] Starting task: 8e867cd7-cff9-4e6c-867a-ff5ddc2550be
+2025-03-29 09:16:35,305 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:16:35,420 [ERROR] API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:35,420 [WARNING] Task 8e867cd7-cff9-4e6c-867a-ff5ddc2550be failed: API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:35,421 [INFO] Progress: 2/3 tasks completed
+2025-03-29 09:16:35,421 [INFO] Success rate so far: 0.00%
+2025-03-29 09:16:35,421 [INFO] Processing task 3/3: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:16:35,421 [INFO] Starting task: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:16:35,592 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:16:35,703 [ERROR] API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:35,703 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:37,704 [INFO] Retry 1/1 for task 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:16:37,704 [INFO] Starting task: 5d0080cb-90d7-4712-bc33-848150e917d3
+2025-03-29 09:16:37,870 [INFO] Navigated to https://www.google.com/
+2025-03-29 09:16:37,971 [ERROR] API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:37,971 [WARNING] Task 5d0080cb-90d7-4712-bc33-848150e917d3 failed: API or action execution error: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2025-03-29 09:16:37,971 [INFO] Saved detailed results to results/webvoyager_intermediate_detailed_20250329_091629.json
+2025-03-29 09:16:37,974 [INFO] Saved summary results to results/webvoyager_intermediate_summary_20250329_091629.csv
+2025-03-29 09:16:37,974 [INFO] Evaluation complete for webvoyager_intermediate
+2025-03-29 09:16:37,974 [INFO] Success rate: 0.00%
+2025-03-29 09:16:37,974 [INFO] Average time per task: 0.34 seconds
+2025-03-29 09:16:37,975 [INFO] Progress: 3/3 tasks completed
+2025-03-29 09:16:37,975 [INFO] Success rate so far: 0.00%
+2025-03-29 09:16:38,013 [INFO] Saved detailed results to results/webvoyager_detailed_20250329_091629.json
+2025-03-29 09:16:38,015 [INFO] Saved summary results to results/webvoyager_summary_20250329_091629.csv
+2025-03-29 09:16:38,015 [INFO] Evaluation complete for webvoyager
+2025-03-29 09:16:38,015 [INFO] Success rate: 0.00%
+2025-03-29 09:16:38,015 [INFO] Average time per task: 0.34 seconds
+2025-03-29 09:16:38,016 [INFO] Evaluation completed in 8.92 seconds
+2025-03-29 09:16:38,016 [INFO] Total tasks: 3
+2025-03-29 09:16:38,016 [INFO] Successful tasks: 0
+2025-03-29 09:16:38,016 [INFO] Success rate: 0.00%
+2025-03-29 09:16:38,016 [INFO] Results saved to results/webvoyager_detailed_20250329_091629.json and results/webvoyager_summary_20250329_091629.csv

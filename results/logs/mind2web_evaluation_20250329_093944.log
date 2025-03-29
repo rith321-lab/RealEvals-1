@@ -1,0 +1,84 @@
+2025-03-29 09:39:44,096 [INFO] Starting Mind2Web evaluation
+2025-03-29 09:39:44,096 [INFO] Headless mode: True
+2025-03-29 09:39:44,097 [INFO] Max retries: 2
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 2 (char 1)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:39:44,097 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 09:39:44,098 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 09:39:44,098 [WARNING] No tasks loaded from mind2web.jsonl, trying direct JSON parsing
+2025-03-29 09:39:44,099 [INFO] Successfully loaded 3 tasks directly from JSON file
+2025-03-29 09:39:44,099 [INFO] Using API key index: 0
+2025-03-29 09:39:44,529 [INFO] Processing task 1/3: 98.0
+2025-03-29 09:39:44,529 [INFO] Starting task: 98.0
+2025-03-29 09:39:45,828 [INFO] Navigated to https://www.soundcloud.com/
+2025-03-29 09:39:59,958 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:40:04,964 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:40:09,967 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:40:14,968 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:40:19,969 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:40:24,971 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:40:29,972 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:40:29,975 [ERROR] Action step failed: Unexpected token "(" while parsing selector "Medium (2-10 minutes) option"
+2025-03-29 09:40:34,977 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:40:39,980 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:40:39,980 [INFO] Task completed in 55.45 seconds
+2025-03-29 09:40:39,980 [INFO] Task 98.0 completed successfully
+2025-03-29 09:40:39,980 [INFO] Progress: 1/3 tasks completed
+2025-03-29 09:40:39,980 [INFO] Success rate so far: 100.00%
+2025-03-29 09:40:39,980 [INFO] Processing task 2/3: 99.0
+2025-03-29 09:40:39,980 [INFO] Starting task: 99.0
+2025-03-29 09:40:40,078 [ERROR] Navigation error: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+2025-03-29 09:40:40,648 [INFO] Navigated to fallback URL (Google)
+2025-03-29 09:40:47,759 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:40:47,761 [WARNING] Failed to find JSON in response, using default action
+2025-03-29 09:40:47,762 [INFO] Task completed in 7.78 seconds
+2025-03-29 09:40:47,762 [INFO] Task 99.0 completed successfully
+2025-03-29 09:40:47,762 [INFO] Progress: 2/3 tasks completed
+2025-03-29 09:40:47,762 [INFO] Success rate so far: 100.00%
+2025-03-29 09:40:47,762 [INFO] Processing task 3/3: 100.0
+2025-03-29 09:40:47,762 [INFO] Starting task: 100.0
+2025-03-29 09:40:52,189 [INFO] Navigated to https://www.espn.com/
+2025-03-29 09:41:06,316 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-29 09:41:08,647 [INFO] Navigated to https://www.espn.com/nhl/
+2025-03-29 09:41:13,661 [WARNING] Timeout waiting for network idle
+2025-03-29 09:41:19,663 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:41:24,664 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:41:29,665 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:41:34,668 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:41:39,691 [WARNING] Timeout waiting for network idle
+2025-03-29 09:41:45,694 [ERROR] Action step failed: Timeout 5000ms exceeded.
+2025-03-29 09:41:45,694 [INFO] Task completed in 57.93 seconds
+2025-03-29 09:41:45,694 [INFO] Task 100.0 completed successfully
+2025-03-29 09:41:45,695 [INFO] Saved detailed results to results/mind2web_intermediate_detailed_20250329_093944.json
+2025-03-29 09:41:45,697 [INFO] Saved summary results to results/mind2web_intermediate_summary_20250329_093944.csv
+2025-03-29 09:41:45,698 [INFO] Evaluation complete for mind2web_intermediate
+2025-03-29 09:41:45,698 [INFO] Success rate: 100.00%
+2025-03-29 09:41:45,698 [INFO] Average time per task: 40.39 seconds
+2025-03-29 09:41:45,698 [INFO] Progress: 3/3 tasks completed
+2025-03-29 09:41:45,698 [INFO] Success rate so far: 100.00%
+2025-03-29 09:41:45,760 [INFO] Saved detailed results to results/mind2web_detailed_20250329_093944.json
+2025-03-29 09:41:45,762 [INFO] Saved summary results to results/mind2web_summary_20250329_093944.csv
+2025-03-29 09:41:45,762 [INFO] Evaluation complete for mind2web
+2025-03-29 09:41:45,762 [INFO] Success rate: 100.00%
+2025-03-29 09:41:45,762 [INFO] Average time per task: 40.39 seconds
+2025-03-29 09:41:45,762 [INFO] Evaluation completed in 121.66 seconds
+2025-03-29 09:41:45,762 [INFO] Total tasks: 3
+2025-03-29 09:41:45,762 [INFO] Successful tasks: 3
+2025-03-29 09:41:45,763 [INFO] Success rate: 100.00%
+2025-03-29 09:41:45,763 [INFO] Results saved to results/mind2web_detailed_20250329_093944.json and results/mind2web_summary_20250329_093944.csv

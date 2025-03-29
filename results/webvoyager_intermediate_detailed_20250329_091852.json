@@ -1,0 +1,162 @@
+[
+  {
+    "task_id": "e1fc63a2-da7a-432f-be78-7c4a95598703",
+    "success": true,
+    "answer": "1079000",
+    "expected_answer": "17",
+    "time_taken": 25.355670928955078,
+    "error": ""
+  },
+  {
+    "task_id": "8e867cd7-cff9-4e6c-867a-ff5ddc2550be",
+    "success": true,
+    "answer": "Based on the 'Studio albums' table on Mercedes Sosa's Wikipedia page, she released 2 studio albums between 2000-2009: 'Ac\u00fastico' (2002) and 'Cantora 1' (2009).",
+    "expected_answer": "3",
+    "time_taken": 51.77910542488098,
+    "error": ""
+  },
+  {
+    "task_id": "5d0080cb-90d7-4712-bc33-848150e917d3",
+    "success": true,
+    "answer": "Unable to determine the answer from the current Google search page. The search query needs to be performed first to potentially find the relevant information in the search results.",
+    "expected_answer": "0.1777",
+    "time_taken": 30.45039176940918,
+    "error": ""
+  },
+  {
+    "task_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+    "success": true,
+    "answer": "Cannot be determined from the current page. Need to navigate to the YouTube video first and watch it to find the answer.",
+    "expected_answer": "3",
+    "time_taken": 15.772800922393799,
+    "error": ""
+  },
+  {
+    "task_id": "46719c30-f4c3-4cad-be07-d5cb21eee6bb",
+    "success": true,
+    "answer": "Title of the first prior paper authored by the first author of 'Pie Menus or Linear Menus, Which Is Better?' from 2015",
+    "expected_answer": "Mapping Human Oriented Information to Software Agents for Online Systems Usage",
+    "time_taken": 62.23949909210205,
+    "error": ""
+  },
+  {
+    "task_id": "4b6bb5f7-f634-410e-815d-e673ab7f8632",
+    "success": true,
+    "answer": "INT. CASTLE ROOM - DAY",
+    "expected_answer": "THE CASTLE",
+    "time_taken": 50.097813844680786,
+    "error": ""
+  },
+  {
+    "task_id": "b816bfce-3d80-4913-a07d-69b752ce6377",
+    "success": true,
+    "answer": "hackneyed",
+    "expected_answer": "fluffy",
+    "time_taken": 56.481311082839966,
+    "error": ""
+  },
+  {
+    "task_id": "72e110e7-464c-453c-a309-90a95aed6538",
+    "success": true,
+    "answer": "Unable to determine the answer based on the provided Google homepage HTML. More steps are needed on the Bielefeld University Library BASE website to find the requested information.",
+    "expected_answer": "Guatemala",
+    "time_taken": 66.9114773273468,
+    "error": ""
+  },
+  {
+    "task_id": "b415aba4-4b68-4fc6-9b89-2c812e55a3e1",
+    "success": true,
+    "answer": "The article 'Synthesis of anisotropic silver particles using novel microwave-assisted method' studied silver particles, not mentioning the 'nano' prefix.",
+    "expected_answer": "diamond",
+    "time_taken": 49.37006449699402,
+    "error": ""
+  },
+  {
+    "task_id": "935e2cff-ae78-4218-b3f5-115589b19dae",
+    "success": true,
+    "answer": "Unable to complete the task. The provided HTML is for the Google homepage, which does not contain the information needed to answer the question about Wikipedia content violation policies in 2022.",
+    "expected_answer": "research",
+    "time_taken": 24.301303386688232,
+    "error": ""
+  },
+  {
+    "task_id": "4fc2f1ae-8625-45b5-ab34-ad4433bc21f8",
+    "success": true,
+    "answer": "FunkMonk",
+    "expected_answer": "FunkMonk",
+    "time_taken": 69.01359915733337,
+    "error": ""
+  },
+  {
+    "task_id": "5188369a-3bbe-43d8-8b94-11558f909a08",
+    "success": true,
+    "answer": "The writer quoted will be the one cited in the blockquote or quote element on the June 27, 2022 Word of the Day page.",
+    "expected_answer": "Annie Levin",
+    "time_taken": 44.580243825912476,
+    "error": ""
+  },
+  {
+    "task_id": "9d191bce-651d-4746-be2d-7ef8ecadb9c2",
+    "success": true,
+    "answer": "Teal'c responds 'Extremely' when asked 'Isn't that hot?'",
+    "expected_answer": "Extremely",
+    "time_taken": 52.94313955307007,
+    "error": ""
+  },
+  {
+    "task_id": "cabe07ed-9eca-40ea-8ead-410ef5e83f91",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "Louvrier",
+    "time_taken": 42.74194955825806,
+    "error": ""
+  },
+  {
+    "task_id": "d0633230-7067-47a9-9dbf-ee11e0a2cdd6",
+    "success": true,
+    "answer": "BaseForest",
+    "expected_answer": "BaseLabelPropagation",
+    "time_taken": 34.204370737075806,
+    "error": ""
+  },
+  {
+    "task_id": "0383a3ee-47a7-41a4-b493-519bdefe0488",
+    "success": true,
+    "answer": "The species of bird featured in the BBC Earth 'Top 5 Silliest Animal Moments' video is an ostrich.",
+    "expected_answer": "Rockhopper penguin",
+    "time_taken": 32.63673758506775,
+    "error": ""
+  },
+  {
+    "task_id": "11af4e1a-5f45-467d-9aeb-46f4bb0bf034",
+    "success": true,
+    "answer": "Based on the information found, BERT base has X more encoder layers/blocks than the Attention is All You Need architecture.",
+    "expected_answer": "6",
+    "time_taken": 44.06421995162964,
+    "error": ""
+  },
+  {
+    "task_id": "7673d772-ef80-4f0f-a602-1bf4485c9b43",
+    "success": true,
+    "answer": "The word 'civil' was deleted from Rule 101 in the last amendment as of 2021.",
+    "expected_answer": "inference",
+    "time_taken": 41.831584453582764,
+    "error": ""
+  },
+  {
+    "task_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+    "success": true,
+    "answer": "Honolulu, New York City",
+    "expected_answer": "Braintree, Honolulu",
+    "time_taken": 34.18741416931152,
+    "error": ""
+  },
+  {
+    "task_id": "7d4a7d1d-cac6-44a8-96e8-ea9584a70825",
+    "success": true,
+    "answer": "I could not find the answer to the question on the current Google search page. The page does not contain any information about the percentage of women computer scientists changing from 37% by 13% over a certain number of years according to Girls Who Code.",
+    "expected_answer": "22",
+    "time_taken": 26.57701325416565,
+    "error": ""
+  }
+]

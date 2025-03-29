@@ -1,0 +1,64 @@
+2025-03-29 20:17:33,281 [INFO] Starting Mind2Web evaluation
+2025-03-29 20:17:33,281 [INFO] Headless mode: True
+2025-03-29 20:17:33,281 [INFO] Max retries: 2
+2025-03-29 20:17:33,281 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 2 (char 1)
+2025-03-29 20:17:33,282 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 20:17:33,282 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:17:33,282 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:17:33,282 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 20:17:33,282 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 20:17:33,283 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:17:33,283 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 20:17:33,283 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:17:33,283 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:17:33,283 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 20:17:33,284 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 20:17:33,284 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:17:33,284 [ERROR] Error parsing JSONL line: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-03-29 20:17:33,284 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:17:33,284 [ERROR] Error parsing JSONL line: Extra data: line 1 column 10 (char 9)
+2025-03-29 20:17:33,285 [ERROR] Error parsing JSONL line: Extra data: line 1 column 14 (char 13)
+2025-03-29 20:17:33,285 [ERROR] Error parsing JSONL line: Extra data: line 1 column 6 (char 5)
+2025-03-29 20:17:33,285 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:17:33,285 [ERROR] Error parsing JSONL line: Expecting value: line 1 column 1 (char 0)
+2025-03-29 20:17:33,285 [WARNING] No tasks loaded from mind2web.jsonl, trying direct JSON parsing
+2025-03-29 20:17:33,285 [INFO] Successfully loaded 3 tasks directly from JSON file
+2025-03-29 20:17:33,285 [INFO] Loaded 3 Anthropic API keys
+2025-03-29 20:17:33,805 [INFO] Processing task 1/3: 98.0
+2025-03-29 20:17:33,805 [INFO] Executing task 98.0: Find a Ricky Kej track to listen and share which has been added in the last year and is between 2 to 10 minutes.
+2025-03-29 20:17:33,851 [INFO] Navigating to https://www.soundcloud.com
+2025-03-29 20:17:38,024 [INFO] Step 1/15 for task 98.0
+2025-03-29 20:17:38,278 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-03-29 20:17:38,278 [WARNING] API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:38,279 [INFO] Backing off call_anthropic_with_retry(...) for 0.4s (anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}})
+2025-03-29 20:17:38,279 [WARNING] Backing off 0.42477594588842205 seconds after 1 tries
+2025-03-29 20:17:38,939 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-03-29 20:17:38,940 [WARNING] API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:38,940 [INFO] Backing off call_anthropic_with_retry(...) for 0.3s (anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}})
+2025-03-29 20:17:38,940 [WARNING] Backing off 0.2726672509552266 seconds after 2 tries
+2025-03-29 20:17:39,401 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-03-29 20:17:39,402 [WARNING] API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:39,402 [ERROR] Giving up call_anthropic_with_retry(...) after 3 tries (anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}})
+2025-03-29 20:17:39,402 [ERROR] Error in step 1 for task 98.0: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:39,403 [WARNING] Task 98.0 failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:41,403 [INFO] Retry 1/2 for task 98.0
+2025-03-29 20:17:41,403 [INFO] Executing task 98.0: Find a Ricky Kej track to listen and share which has been added in the last year and is between 2 to 10 minutes.
+2025-03-29 20:17:41,451 [INFO] Navigating to https://www.soundcloud.com
+2025-03-29 20:17:45,820 [INFO] Step 1/15 for task 98.0
+2025-03-29 20:17:46,071 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-03-29 20:17:46,071 [WARNING] API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:46,071 [INFO] Backing off call_anthropic_with_retry(...) for 0.9s (anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}})
+2025-03-29 20:17:46,071 [WARNING] Backing off 0.9460475214069022 seconds after 1 tries
+2025-03-29 20:17:47,427 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-03-29 20:17:47,427 [WARNING] API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:47,427 [INFO] Backing off call_anthropic_with_retry(...) for 0.6s (anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}})
+2025-03-29 20:17:47,427 [WARNING] Backing off 0.6328767037021812 seconds after 2 tries
+2025-03-29 20:17:48,323 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-03-29 20:17:48,323 [WARNING] API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:48,323 [ERROR] Giving up call_anthropic_with_retry(...) after 3 tries (anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}})
+2025-03-29 20:17:48,323 [ERROR] Error in step 1 for task 98.0: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:48,324 [WARNING] Task 98.0 failed: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages: Unexpected role "system". The Messages API accepts a top-level `system` parameter, not "system" as an input message role.'}}
+2025-03-29 20:17:50,324 [INFO] Retry 2/2 for task 98.0
+2025-03-29 20:17:50,324 [INFO] Executing task 98.0: Find a Ricky Kej track to listen and share which has been added in the last year and is between 2 to 10 minutes.
+2025-03-29 20:17:50,376 [INFO] Navigating to https://www.soundcloud.com
+2025-03-29 20:17:55,263 [INFO] Step 1/15 for task 98.0

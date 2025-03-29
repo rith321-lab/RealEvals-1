@@ -1,0 +1,4 @@
+task_id,success,time_taken,error
+e1fc63a2-da7a-432f-be78-7c4a95598703,False,0.47922706604003906,"API or action execution error: ""Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"""
+8e867cd7-cff9-4e6c-867a-ff5ddc2550be,False,0.28114867210388184,"API or action execution error: ""Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"""
+5d0080cb-90d7-4712-bc33-848150e917d3,False,0.26702380180358887,"API or action execution error: ""Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"""

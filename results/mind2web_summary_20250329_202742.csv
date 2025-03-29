@@ -1,0 +1,4 @@
+task_id,success,time_taken,error
+98.0,False,8.2547607421875,"Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'system: Input should be a valid list'}}"
+99.0,False,0.10335874557495117,net::ERR_HTTP2_PROTOCOL_ERROR at https://www.united.com/
+100.0,False,9.225983142852783,"Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'system: Input should be a valid list'}}"

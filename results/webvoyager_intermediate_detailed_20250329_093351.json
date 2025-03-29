@@ -1,0 +1,602 @@
+[
+  {
+    "task_id": "e1fc63a2-da7a-432f-be78-7c4a95598703",
+    "success": true,
+    "answer": "358000",
+    "expected_answer": "17",
+    "time_taken": 22.76378560066223,
+    "error": ""
+  },
+  {
+    "task_id": "8e867cd7-cff9-4e6c-867a-ff5ddc2550be",
+    "success": true,
+    "answer": "Based on scanning Mercedes Sosa's discography section on her English Wikipedia page, she released 2 studio albums between 2000 and 2009: Ac\u00fastico (2002) and Coraz\u00f3n Libre (2005).",
+    "expected_answer": "3",
+    "time_taken": 19.0104341506958,
+    "error": ""
+  },
+  {
+    "task_id": "5d0080cb-90d7-4712-bc33-848150e917d3",
+    "success": true,
+    "answer": "According to the paper, the volume of the fish bag was calculated to be 1.5 m^3.",
+    "expected_answer": "0.1777",
+    "time_taken": 41.7930109500885,
+    "error": ""
+  },
+  {
+    "task_id": "a1e91b78-d3d8-4675-bb8d-62741b4b68a6",
+    "success": true,
+    "answer": "The highest number of bird species on camera simultaneously in the video is [NUMBER].",
+    "expected_answer": "3",
+    "time_taken": 46.438400983810425,
+    "error": ""
+  },
+  {
+    "task_id": "46719c30-f4c3-4cad-be07-d5cb21eee6bb",
+    "success": true,
+    "answer": "Title of the first paper authored by one of the authors of 'Pie Menus or Linear Menus, Which Is Better?' prior to 2015",
+    "expected_answer": "Mapping Human Oriented Information to Software Agents for Online Systems Usage",
+    "time_taken": 61.589306354522705,
+    "error": ""
+  },
+  {
+    "task_id": "4b6bb5f7-f634-410e-815d-e673ab7f8632",
+    "success": true,
+    "answer": "CASTLE",
+    "expected_answer": "THE CASTLE",
+    "time_taken": 39.966848850250244,
+    "error": ""
+  },
+  {
+    "task_id": "b816bfce-3d80-4913-a07d-69b752ce6377",
+    "success": true,
+    "answer": "The word 'worm' was quoted from two different authors in distaste for the nature of dragon depictions in Emily Midkiff's June 2014 article in Fafnir: Nordic Journal of Science Fiction and Fantasy Research, a journal named after one of the sons of Hreidmar that guarded his house in Norse mythology.",
+    "expected_answer": "fluffy",
+    "time_taken": 58.52339768409729,
+    "error": ""
+  },
+  {
+    "task_id": "72e110e7-464c-453c-a309-90a95aed6538",
+    "success": true,
+    "answer": "Based on the search results under DDC 633 in 2020, the article with a unique flag icon compared to the others appears to be from Kyrgyzstan.",
+    "expected_answer": "Guatemala",
+    "time_taken": 66.89655804634094,
+    "error": ""
+  },
+  {
+    "task_id": "b415aba4-4b68-4fc6-9b89-2c812e55a3e1",
+    "success": true,
+    "answer": "The nano-compound studied in the 2012 Scientific Reports conference proceeding article that did not mention plasmons or plasmonics is graphene.",
+    "expected_answer": "diamond",
+    "time_taken": 28.366790533065796,
+    "error": ""
+  },
+  {
+    "task_id": "935e2cff-ae78-4218-b3f5-115589b19dae",
+    "success": true,
+    "answer": "In the filtered revision history, 'R' stands for 'Revert' in the three revert rule policy violations in 2022 before December.",
+    "expected_answer": "research",
+    "time_taken": 92.98164987564087,
+    "error": ""
+  },
+  {
+    "task_id": "4fc2f1ae-8625-45b5-ab34-ad4433bc21f8",
+    "success": true,
+    "answer": "The value of the fa_nomination_by parameter in the Article history template on the talk page of the featured article.",
+    "expected_answer": "FunkMonk",
+    "time_taken": 35.45061683654785,
+    "error": ""
+  },
+  {
+    "task_id": "5188369a-3bbe-43d8-8b94-11558f909a08",
+    "success": true,
+    "answer": "Unable to determine the quoted writer, as the current webpage does not contain the Merriam-Webster Word of the Day content. Additional navigation to the Merriam-Webster website is required.",
+    "expected_answer": "Annie Levin",
+    "time_taken": 26.91707491874695,
+    "error": ""
+  },
+  {
+    "task_id": "9d191bce-651d-4746-be2d-7ef8ecadb9c2",
+    "success": true,
+    "answer": "Extremely.",
+    "expected_answer": "Extremely",
+    "time_taken": 23.722779035568237,
+    "error": ""
+  },
+  {
+    "task_id": "cabe07ed-9eca-40ea-8ead-410ef5e83f91",
+    "success": true,
+    "answer": "Unable to find the requested information to complete the task based on the current Google homepage. We first need to navigate to the relevant LibreTexts page with the chemistry exercises to locate the name of the equine veterinarian.",
+    "expected_answer": "Louvrier",
+    "time_taken": 9.972842693328857,
+    "error": ""
+  },
+  {
+    "task_id": "d0633230-7067-47a9-9dbf-ee11e0a2cdd6",
+    "success": true,
+    "answer": "ensemble.partial_dependence",
+    "expected_answer": "BaseLabelPropagation",
+    "time_taken": 18.193150997161865,
+    "error": ""
+  },
+  {
+    "task_id": "0383a3ee-47a7-41a4-b493-519bdefe0488",
+    "success": true,
+    "answer": "The species of bird featured in the BBC Earth YouTube video 'Top 5 Silliest Animal Moments' cannot be determined, as we are currently on the Google homepage and do not have access to watch the video in question. Navigating to the BBC Earth YouTube channel and finding the specific video would be required to identify the bird species shown.",
+    "expected_answer": "Rockhopper penguin",
+    "time_taken": 35.14273643493652,
+    "error": ""
+  },
+  {
+    "task_id": "11af4e1a-5f45-467d-9aeb-46f4bb0bf034",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "6",
+    "time_taken": 7.3225836753845215,
+    "error": ""
+  },
+  {
+    "task_id": "7673d772-ef80-4f0f-a602-1bf4485c9b43",
+    "success": true,
+    "answer": "The word deleted in the last amendment to Rule 601 of the Federal Rules of Evidence as of 2021 was 'husband-wife'.",
+    "expected_answer": "inference",
+    "time_taken": 55.980061769485474,
+    "error": ""
+  },
+  {
+    "task_id": "c365c1c7-a3db-4d5e-a9a1-66f56eae7865",
+    "success": true,
+    "answer": "Honolulu, New York City",
+    "expected_answer": "Braintree, Honolulu",
+    "time_taken": 23.66289782524109,
+    "error": ""
+  },
+  {
+    "task_id": "7d4a7d1d-cac6-44a8-96e8-ea9584a70825",
+    "success": true,
+    "answer": "According to Girls Who Code, in 1995, 37% of computer scientists were women. Today, it's only 24%. So it took approximately 27 years for the percentage to drop by 13%, from 37% to 24%.",
+    "expected_answer": "22",
+    "time_taken": 23.09725832939148,
+    "error": ""
+  },
+  {
+    "task_id": "dc22a632-937f-4e6a-b72f-ba0ff3f5ff97",
+    "success": true,
+    "answer": "The complete title of the book is 'Roadfood: The Coast-to-Coast Guide to Nine Hundred of the Best Barbecue Joints, Lobster Shacks, Ice Cream Parlors, Highway Diners, and Much, Much More'. In this book, two James Beard Award winners recommended the restaurant where Ali Khan enjoyed a New Mexican staple in his cost-conscious TV show Cheap Eats that started in 2015.",
+    "expected_answer": "Five Hundred Things To Eat Before It's Too Late: and the Very Best Places to Eat Them",
+    "time_taken": 25.058975219726562,
+    "error": ""
+  },
+  {
+    "task_id": "3f57289b-8c60-48be-bd80-01f8099ca449",
+    "success": true,
+    "answer": "Reggie Jackson had the most walks (93) for the 1977 Yankees and he had 525 at bats that season.",
+    "expected_answer": "519",
+    "time_taken": 24.51839780807495,
+    "error": ""
+  },
+  {
+    "task_id": "23dd907f-1261-4488-b21c-e9185af91d5e",
+    "success": true,
+    "answer": "The provided HTML does not contain the text of the poem 'Father Son and Holy Ghost' by Audre Lorde, so I do not have enough information to complete the task of determining which stanza has indented lines.",
+    "expected_answer": "2",
+    "time_taken": 10.39756441116333,
+    "error": ""
+  },
+  {
+    "task_id": "840bfca7-4f7b-481a-8794-c560c340185d",
+    "success": true,
+    "answer": "R. G. Arendt's work was supported by NASA award 80NSSC19K0572.",
+    "expected_answer": "80GSFC21M0002",
+    "time_taken": 56.55772161483765,
+    "error": ""
+  },
+  {
+    "task_id": "a0068077-79f4-461a-adfe-75c1a4148545",
+    "success": true,
+    "answer": "The actual enrollment count will be listed in the Enrollment field on the study details page.",
+    "expected_answer": "90",
+    "time_taken": 25.08757495880127,
+    "error": ""
+  },
+  {
+    "task_id": "bda648d7-d618-4883-88f4-3466eabd860e",
+    "success": true,
+    "answer": "Moscow",
+    "expected_answer": "Saint Petersburg",
+    "time_taken": 30.055649280548096,
+    "error": ""
+  },
+  {
+    "task_id": "c61d22de-5f6c-4958-a7f6-5e9707bd3466",
+    "success": true,
+    "answer": "The word 'dystopian' is used in Figure 1 to describe one end of the 'Political Stability' axis.",
+    "expected_answer": "egalitarian",
+    "time_taken": 26.68763542175293,
+    "error": ""
+  },
+  {
+    "task_id": "17b5a6a3-bc87-42e8-b0fb-6ab0781ef2cc",
+    "success": true,
+    "answer": "33067, 33351, 33441, 33442, 33558, 34741, 34743, 34744, 34746, 34747",
+    "expected_answer": "34689",
+    "time_taken": 24.767072916030884,
+    "error": ""
+  },
+  {
+    "task_id": "04a04a9b-226c-43fd-b319-d5e89743676f",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "41",
+    "time_taken": 9.52818250656128,
+    "error": ""
+  },
+  {
+    "task_id": "14569e28-c88c-43e4-8c32-097d35b9a67d",
+    "success": true,
+    "answer": "backtick",
+    "expected_answer": "backtick",
+    "time_taken": 20.304677486419678,
+    "error": ""
+  },
+  {
+    "task_id": "3627a8be-a77f-41bb-b807-7e1bd4c0ebdf",
+    "success": true,
+    "answer": "According to the abstract, beads made from Nassarius gibbosulus shells found in Indonesia are at least 30,000 years old.",
+    "expected_answer": "142",
+    "time_taken": 62.375274419784546,
+    "error": ""
+  },
+  {
+    "task_id": "7619a514-5fa8-43ef-9143-83b66a43d7a4",
+    "success": true,
+    "answer": "The oldest closed numpy issue with the Regression label was created on 02/20/14.",
+    "expected_answer": "04/15/18",
+    "time_taken": 28.683057069778442,
+    "error": ""
+  },
+  {
+    "task_id": "2a649bb1-795f-4a01-b3be-9a01868dae73",
+    "success": true,
+    "answer": "Unable to complete the task with the provided HTML, as it does not contain the relevant information to find the research paper or extract the requested chemical names and EC numbers.",
+    "expected_answer": "3.1.3.1; 1.11.1.7",
+    "time_taken": 29.288265228271484,
+    "error": ""
+  },
+  {
+    "task_id": "87c610df-bef7-4932-b950-1d83ef4e282b",
+    "success": true,
+    "answer": "In April 1977, the Prime Minister of Iran (the location of Susa, the first place mentioned in the Book of Esther) was Amir-Abbas Hoveida.",
+    "expected_answer": "Morarji Desai",
+    "time_taken": 40.992621421813965,
+    "error": ""
+  },
+  {
+    "task_id": "624cbf11-6a41-4692-af9c-36b3e5ca3130",
+    "success": true,
+    "answer": "I don't have enough information in the provided HTML to answer the question. Please provide the HTML from the Ben & Jerry's flavor graveyard page so I can locate the oldest flavor's headstone and read the last line of the rhyme.",
+    "expected_answer": "So we had to let it die.",
+    "time_taken": 11.96779489517212,
+    "error": ""
+  },
+  {
+    "task_id": "dd3c7503-f62a-4bd0-9f67-1b63b94194cc",
+    "success": true,
+    "answer": "You would need to remove 11 cups of honey for the remaining honey to weigh less than the gallon of mayonnaise, assuming the containers weigh the same.",
+    "expected_answer": "6",
+    "time_taken": 32.52615976333618,
+    "error": ""
+  },
+  {
+    "task_id": "f0f46385-fc03-4599-b5d3-f56496c3e69f",
+    "success": true,
+    "answer": "Jakarta, Manila",
+    "expected_answer": "Indonesia, Myanmar",
+    "time_taken": 36.11185812950134,
+    "error": ""
+  },
+  {
+    "task_id": "e4e91f1c-1dcd-439e-9fdd-cb976f5293fd",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "cloak",
+    "time_taken": 13.321021795272827,
+    "error": ""
+  },
+  {
+    "task_id": "56137764-b4e0-45b8-9c52-1866420c3df5",
+    "success": true,
+    "answer": "The contributor who added support for the Mask R-CNN model in OpenCV and has the same name as a former Chinese head of government is Hu Jintao (username hujintao37 on GitHub).",
+    "expected_answer": "Li Peng",
+    "time_taken": 28.863245010375977,
+    "error": ""
+  },
+  {
+    "task_id": "8b3379c0-0981-4f5b-8407-6444610cb212",
+    "success": true,
+    "answer": "9.6",
+    "expected_answer": "1.8",
+    "time_taken": 25.45026183128357,
+    "error": ""
+  },
+  {
+    "task_id": "0ff53813-3367-4f43-bcbd-3fd725c1bf4b",
+    "success": true,
+    "answer": "hiddenmarkov",
+    "expected_answer": "beta geometric",
+    "time_taken": 30.327382564544678,
+    "error": ""
+  },
+  {
+    "task_id": "a7feb290-76bb-4cb7-8800-7edaf7954f2f",
+    "success": true,
+    "answer": "The number of High Energy Physics - Lattice articles listed in January 2020 on Arxiv that had ps versions available is: 37",
+    "expected_answer": "31",
+    "time_taken": 18.271847248077393,
+    "error": ""
+  },
+  {
+    "task_id": "b4cc024b-3f5e-480e-b96a-6656493255b5",
+    "success": true,
+    "answer": "Rifle regiment",
+    "expected_answer": "Russian-German Legion",
+    "time_taken": 27.13176131248474,
+    "error": ""
+  },
+  {
+    "task_id": "33d8ea3b-6c6b-4ff1-803d-7e270dea8a57",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "2",
+    "time_taken": 16.492225408554077,
+    "error": ""
+  },
+  {
+    "task_id": "e8cb5b03-41e0-4086-99e5-f6806cd97211",
+    "success": true,
+    "answer": "pork chop",
+    "expected_answer": "shrimp",
+    "time_taken": 46.25817894935608,
+    "error": ""
+  },
+  {
+    "task_id": "f46b4380-207e-4434-820b-f32ce04ae2a4",
+    "success": true,
+    "answer": "This Is Not About Love",
+    "expected_answer": "Harbinger, Tidal",
+    "time_taken": 79.05246615409851,
+    "error": ""
+  },
+  {
+    "task_id": "05407167-39ec-4d3a-a234-73a9120c325d",
+    "success": true,
+    "answer": "The command clicked in the last video to remove extra lines was 'Trim Trailing Whitespace'.",
+    "expected_answer": "Format Document",
+    "time_taken": 36.450077056884766,
+    "error": ""
+  },
+  {
+    "task_id": "b9763138-c053-4832-9f55-86200cb1f99c",
+    "success": true,
+    "answer": "The check digit for the Tropicos ID 90000003 as an ISBN-10 number is 7.",
+    "expected_answer": "3",
+    "time_taken": 46.23100924491882,
+    "error": ""
+  },
+  {
+    "task_id": "16d825ff-1623-4176-a5b5-42e0f5c2b0ac",
+    "success": true,
+    "answer": "The answer will be the scheduled arrival time in Pompano Beach for the Tri-Rail train that carried the most passengers on May 27, 2019, expressed in 12-hour format with AM/PM.",
+    "expected_answer": "6:41 PM",
+    "time_taken": 21.185608863830566,
+    "error": ""
+  },
+  {
+    "task_id": "544b7f0c-173a-4377-8d56-57b36eb26ddf",
+    "success": true,
+    "answer": "A Nightmare on Elm Street",
+    "expected_answer": "A Nightmare on Elm Street",
+    "time_taken": 32.896421670913696,
+    "error": ""
+  },
+  {
+    "task_id": "6b078778-0b90-464d-83f6-59511c811b01",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "Alfonso Visconti",
+    "time_taken": 9.717470407485962,
+    "error": ""
+  },
+  {
+    "task_id": "08cae58d-4084-4616-b6dd-dd6534e4825b",
+    "success": true,
+    "answer": "According to the Google Finance chart, Apple stock first went above $50 in 2007, without adjusting for stock splits.",
+    "expected_answer": "2018",
+    "time_taken": 29.551452159881592,
+    "error": ""
+  },
+  {
+    "task_id": "2dfc4c37-fec1-4518-84a7-10095d30ad75",
+    "success": true,
+    "answer": "6",
+    "expected_answer": "6",
+    "time_taken": 18.53821086883545,
+    "error": ""
+  },
+  {
+    "task_id": "9f41b083-683e-4dcf-9185-ccfeaa88fa45",
+    "success": true,
+    "answer": "According to my search, the 85-page 2023 IPCC report mentions 'nuclear' on X out of 85 total pages.",
+    "expected_answer": "0",
+    "time_taken": 32.50586533546448,
+    "error": ""
+  },
+  {
+    "task_id": "ecbc4f94-95a3-4cc7-b255-6741a458a625",
+    "success": true,
+    "answer": "The number of images in the latest 2022 Lego English Wikipedia article is: <count>",
+    "expected_answer": "13",
+    "time_taken": 28.40091037750244,
+    "error": ""
+  },
+  {
+    "task_id": "71345b0a-9c7d-4b50-b2bf-937ec5879845",
+    "success": true,
+    "answer": "here be dragons",
+    "expected_answer": "Here be dragons",
+    "time_taken": 25.81363034248352,
+    "error": ""
+  },
+  {
+    "task_id": "7b5377b0-3f38-4103-8ad2-90fe89864c04",
+    "success": true,
+    "answer": "Failed to parse response",
+    "expected_answer": "563.9",
+    "time_taken": 17.456428050994873,
+    "error": ""
+  },
+  {
+    "task_id": "114d5fd0-e2ae-4b6d-a65a-870da2d19c08",
+    "success": true,
+    "answer": "14",
+    "expected_answer": "4",
+    "time_taken": 25.81287407875061,
+    "error": ""
+  },
+  {
+    "task_id": "ad37a656-079a-49f9-a493-7b739c9167d1",
+    "success": true,
+    "answer": "The last word of the US nuclear test with the same yield as the Tunguska event.",
+    "expected_answer": "Bravo",
+    "time_taken": 24.698365449905396,
+    "error": ""
+  },
+  {
+    "task_id": "f3917a3d-1d17-4ee2-90c5-683b072218fe",
+    "success": true,
+    "answer": "Unable to determine the number of edits based on the provided HTML. Navigate to the Wikipedia page on Antidisestablishmentarianism to find this information.",
+    "expected_answer": "2732",
+    "time_taken": 13.0776846408844,
+    "error": ""
+  },
+  {
+    "task_id": "48eb8242-1099-4c26-95d4-ef22b002457a",
+    "success": true,
+    "answer": "According to the USGS Nonindigenous Aquatic Species database, there were 193 records of nonindigenous crocodiles found in Florida between 2000 and 2020.",
+    "expected_answer": "6",
+    "time_taken": 17.205410718917847,
+    "error": ""
+  },
+  {
+    "task_id": "c8b7e059-c60d-472e-ad64-3b04ae1166dc",
+    "success": true,
+    "answer": "The absolute difference between the chapter numbers of the chapters that the titles of these two paintings quote is 2.",
+    "expected_answer": "8",
+    "time_taken": 39.595948934555054,
+    "error": ""
+  },
+  {
+    "task_id": "d1af70ea-a9a4-421a-b9cc-94b5e02f1788",
+    "success": true,
+    "answer": "Unable to provide final answer based on information in the provided HTML. More research is needed on external websites to determine the largest and smallest county seats by land area in Washington state, look up their populations on data.census.gov, and calculate the difference.",
+    "expected_answer": "736455",
+    "time_taken": 35.40969109535217,
+    "error": ""
+  },
+  {
+    "task_id": "ded28325-3447-4c56-860f-e497d6fb3577",
+    "success": true,
+    "answer": "Picnic is in Botanical Park.",
+    "expected_answer": "Picnic is in Ploybius Plaza.",
+    "time_taken": 33.13604521751404,
+    "error": ""
+  },
+  {
+    "task_id": "d700d50d-c707-4dca-90dc-4528cddd0c80",
+    "success": true,
+    "answer": "Unable to determine the answer based on the provided Google homepage HTML. More information is needed.",
+    "expected_answer": "Roger Miller",
+    "time_taken": 11.232503890991211,
+    "error": ""
+  },
+  {
+    "task_id": "0a3cd321-3e76-4622-911b-0fda2e5d6b1a",
+    "success": true,
+    "answer": "Unable to determine final answer based on the provided webpage. More targeted searching and data analysis is required.",
+    "expected_answer": "Brunei, China, Morocco, Singapore",
+    "time_taken": 27.1709086894989,
+    "error": ""
+  },
+  {
+    "task_id": "f2feb6a4-363c-4c09-a804-0db564eafd68",
+    "success": true,
+    "answer": "1150000",
+    "expected_answer": "900000",
+    "time_taken": 45.68746757507324,
+    "error": ""
+  },
+  {
+    "task_id": "0b260a57-3f3a-4405-9f29-6d7a1012dbfb",
+    "success": true,
+    "answer": "The difference between the sample standard deviations of the number of Reference Works in Life Science vs Health Sciences domains is X.XXX",
+    "expected_answer": "0.269",
+    "time_taken": 28.056639671325684,
+    "error": ""
+  },
+  {
+    "task_id": "ed58682d-bc52-4baa-9eb0-4eb81e1edacc",
+    "success": true,
+    "answer": "blame",
+    "expected_answer": "stare",
+    "time_taken": 26.25136661529541,
+    "error": ""
+  },
+  {
+    "task_id": "023e9d44-96ae-4eed-b912-244ee8c3b994",
+    "success": true,
+    "answer": "$7.50",
+    "expected_answer": "8",
+    "time_taken": 65.0376489162445,
+    "error": ""
+  },
+  {
+    "task_id": "0e9e85b8-52b9-4de4-b402-5f635ab9631f",
+    "success": true,
+    "answer": "1851",
+    "expected_answer": "1927",
+    "time_taken": 16.968000650405884,
+    "error": ""
+  },
+  {
+    "task_id": "20194330-9976-4043-8632-f8485c6c71b2",
+    "success": true,
+    "answer": "The phrase shown 30 seconds into the video is 'WHAT IS THIS'. The letter 'E' appears 1 time in this phrase.",
+    "expected_answer": "4",
+    "time_taken": 22.076953649520874,
+    "error": ""
+  },
+  {
+    "task_id": "65638e28-7f37-4fa7-b7b9-8c19bb609879",
+    "success": true,
+    "answer": "Unable to determine the answer based on the current Google homepage. More specific steps on a different webpage would be needed.",
+    "expected_answer": "Kleinpaul",
+    "time_taken": 16.985119342803955,
+    "error": ""
+  },
+  {
+    "task_id": "3ff6b7a9-a5bd-4412-ad92-0cd0d45c0fee",
+    "success": true,
+    "answer": "56,000",
+    "expected_answer": "56000",
+    "time_taken": 48.1030969619751,
+    "error": ""
+  },
+  {
+    "task_id": "708b99c5-e4a7-49cb-a5cf-933c8d46470d",
+    "success": true,
+    "answer": "The feature that caused the largest connected bubble in 2016 cannot be determined from the current Google search page. More information is needed by navigating to Connected Papers and examining the DeepFruits graph.",
+    "expected_answer": "Citations",
+    "time_taken": 32.50267291069031,
+    "error": ""
+  }
+]

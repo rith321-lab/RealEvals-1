@@ -1,0 +1,4 @@
+task_id,success,time_taken,error
+98.0,False,14.679338932037354,Protocol error (Page.navigate): Cannot navigate to invalid URL
+99.0,False,12.04952883720398,net::ERR_NAME_NOT_RESOLVED at https://www.example-airline.com/
+100.0,False,0.016022920608520508,Unable to retrieve content because the page is navigating and changing the content.
